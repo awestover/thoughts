@@ -1,6 +1,4 @@
 ---
-title: Welcome to Quartz
+title: Thoughts
 ---
-
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+I have yet to add content to this blog. 
