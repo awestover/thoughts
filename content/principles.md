@@ -38,6 +38,7 @@ stare into the abyss soon, but not when in poor condition.
 
 pain is not the unit of effort
 
----
+sunk costs, inconvenience, halo, motivated reasoning etc don't necessarily mean you hold incorrect beliefs, but they should cause you to be more skeptical
 
-hmm, I shall curate more tomorrow. sleep for now. 
+Do you want to X or to have X'ed?
+
