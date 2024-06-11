@@ -92,7 +92,7 @@ If $\eta$ is small, then $g(y)$ is basically just $f(y)$.
 
 **Claim 4:**
 Technical claim.
-![[Pasted image 20240610094604.png]]
+![[alon-lemma.png]]
 
 **proof:** modulo 2 stuff cancels.
 
@@ -120,7 +120,7 @@ If $\eta$ is small, then $\eta$ is large.
 **Proof**:
 Let $X_S$ be a random variable indicating whether $f(\sum_{i\in S} y_i) = g(\sum_{i\in S} y_i)$. 
 The $X_S$'s are pairwise independent. 
-$\mathbb{E}\sum X_S = (2^{k+1}-1) d \ge \mathsf{Var}[\sum X_S]$.
+$$\mathbb{E}\sum X_S = (2^{k+1}-1) d \ge \mathsf{Var}[\sum X_S].$$
 Thus, by standard probability tools there is a good chance that $\sum X_S = 1$, as claimed. 
 
 **Theorem 1**: 
@@ -135,3 +135,4 @@ So we can get away with $1000/\eta$ tries of the algorithm.
 
 > [!bug] Q
 > They pull out some fancy coding theory here. Not sure what's going on. 
+

@@ -1,4 +1,5 @@
 In this note I summarize "Direct Sum Testing: The General Case", by Dinur and Golubev, in the **grid** setting, rather than the $k$-fold setting of [[direct-sum-testing-k-fold]]
+
 ## Direct Product Test
 > [!bug] Q1: How to analyze the Direct Product Test?
 
@@ -9,6 +10,12 @@ In this note I summarize "Direct Sum Testing: The General Case", by Dinur and Go
 
 ## Shapka Test
 This one is pretty clear. 
+
+>[!bug]
+>However, I think their exposition has some rather serious typos in it. 
+>For instance, they define the Shapka test incorrectly. 
+
+
 If 
 $$\Pr_{a,b}[f(b_1,b_2,b_3)=f(a_1,a_2,b_3)+f(a_1,b_2,a_3)+f(b_1,a_2,a_3)]>1-\epsilon,$$
 then, $f$ is close to $f^{a}$ for some $a$, where $f^{a}$ is
@@ -103,8 +110,9 @@ Let $X$ be the set of edges in a hypergraph.
 
 Then they compute the eigenvalues of some matrix to show that something is an HDX.
 ## open questions
-- can you analyze this test with fourier analysis?
+- can you analyze this test with Fourier analysis?
 - Can reconstruct the function using the Shapka scheme?
 - does this other test also works for direct-sum testing?
 
 - (Alek): higher order dependencies (i.e., not just a direct-sum, but maybe a sum of things that are allowed to depend on e.g., two terms at a time)
+- (Alek) Are either of these tests self-correcting?
