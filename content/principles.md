@@ -27,7 +27,8 @@ state purpose verbally; no aimlessness
 go places
 
 **Avoid "minor" concessions**
-- they're never *actually* minor
+- they're never *actually* minor (historically)
+- except, also, don't *fail with abandon*, concessions can be minor!
 
 "recovery strategies":
 - good: human interaction, going outside 
