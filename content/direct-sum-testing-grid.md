@@ -143,7 +143,7 @@ $$
 
 If we can show that, then we get, ( #todo would we actually?) 
 $$
-\Pr_{a}\left[ f(a)=\sum_i \phi_i(a_i) \right]>1-200\eps.
+\Pr_{a}\left[ f(a)=\sum_i \phi_i(a_i) \right]>1-O(\eps).
 $$
 Which would be lovely. 
 
