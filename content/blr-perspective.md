@@ -22,8 +22,9 @@ For all $x$, $\Pr_{a}[f(a)-f(x-a)=g(x)]\ge 1-4\eps$.
 Fix $x$. Sample $a,b,y$ randomly.
 Consider $f$ applied to all of the elements of this table:
 
-| $x$   | $x-a$   | $a$       |
+|       |         |           |
 | ----- | ------- | --------- |
+| $x$   | $x-a$   | $a$       |
 | $x-b$ | $y$     | $x+y-b$   |
 | $b$   | $x-a+y$ | $a+x+y-b$ |
 
