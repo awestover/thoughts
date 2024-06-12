@@ -5,16 +5,19 @@ $\newcommand{\RM}{\mathsf{RM}}$
 # An Alternate Analysis of BLR test
 Here we give a purely combinatorial analysis of the BLR test  (i.e., no Fourier Analysis). 
 This proof is quite nice, and generalizes to some other situations.
+
 In this post I will focus on characteristic $2$, although I think this should generalize with a bit more care about the negative signs. 
 
 Fix $\eps\in (0,1/1000)$.
 Suppose that $f:\F_2^n\to \F_2$ has $\Pr_{x,y}[f(x+y)=f(x)+f(y)]\ge 1-\eps$.
 Define the **corrected** version of $f$ to be $g(x)=\text{plurality}_a(f(a)+f(x-a))$.
 We will show that $f$ is close to $g$, and that $g$ is linear. 
+
 We note that another interpretation of this is, if $f$ is a slightly corrupted version of linear function $L$ then we can recover the values of $L$, namely $L=g$.
 
 **Lemma 1:**
 For all $x$, $\Pr_{a}[f(a)-f(x-a)=g(x)]\ge 1-4\eps$.
+
 **proof:**
 Fix $x$. Sample $a,b,y$ randomly.
 Consider $f$ applied to all of the elements of this table:
@@ -23,6 +26,7 @@ Consider $f$ applied to all of the elements of this table:
 | ----- | ------- | --------- |
 | $x-b$ | $y$     | $x+y-b$   |
 | $b$   | $x-a+y$ | $a+x+y-b$ |
+
 By a union bound, with probability $1-4\eps$, the final two rows and the final two columns are "passing instances of the BLR test". That is, $f(x-a)+f(y)=f(x-a+y)$ and so on.
 Now, add up *all* entries in the square. 
 By viewing the sum in two different ways (i.e., using the fact that the last two columns and last two rows all sum to zero when you apply $f$ to them), we find:
@@ -38,7 +42,9 @@ $$\Pr_a[f(x-a)+f(a) = f(b)+f(x-b)]\ge 1-4\eps.$$
 Clearly this implies that $g(x)=f(b)+f(x-b)$, and then we have the desired result about $g$ agreeing with $f(x-a)+f(a)$ with good probability. 
 $\square$
 
+
 **Lemma 2**: $g$ is linear.
+
 Fix $x,y$. Sample $z,z'$ randomly.
 Consider the following table.
 
@@ -46,6 +52,7 @@ Consider the following table.
 | -------- | --------- | ------------- |
 | $f(z)$   | $f(z')$   | $f(z+z')$     |
 | $f(x-z)$ | $f(y-z')$ | $f(x+y-z-z')$ |
+
 With probability $1-14\eps>0$ we have that all columns sum to zero and the final two rows sum to zero. That is, 
 $$
 g(x)=f(z)+f(x-z), g(y)=f(z')+f(y-z'), g(x+y)=f(z+z')+f(x+y-z-z').
@@ -62,6 +69,7 @@ $$
 $\square$
 
 **Lemma 3:** $g$ is close to $f$. 
+
 **Proof:**
 By a union bound,
 $$
