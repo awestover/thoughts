@@ -126,7 +126,7 @@ By Markov's inequality:
 $$
 \Pr_{ab}[\lambda_{ab}>1/2]< 128\eps.
 $$
-Thus, ( #todo justify this; it is intuitive but not obvious) there exists $\psi_i$ such that 
+Thus, ( #todo justify this; it is intuitive but not obvious; we are passing from random function to deterministic function) there exists $\psi_i$ such that 
 $$
 \Pr_{a,b}[g_i(a,b_i)=\psi_i(a_i,b_i) \;\forall i]>1-128\eps.
 $$
