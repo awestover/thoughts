@@ -1,3 +1,6 @@
+$\newcommand{\F}{\mathbb{F}}$
+$\newcommand{\E}{\mathbb{E}}$
+$\newcommand{\eps}{\varepsilon}$
 In this note I summarize "Direct Sum Testing: The General Case", by Dinur and Golubev, in the **grid** setting, rather than the $k$-fold setting of [[direct-sum-testing-k-fold]]
 
 ## Direct Product Test
@@ -55,61 +58,94 @@ Let
 $$ 
 \eps_{ab}=\Pr_{x,y}[f(S_0(a,b)) + f(S_x(a,b))+ f(S_y(a,b))+f(S_{x+y}(a,b))\neq0].
 $$
-Suppose $f$ passes the test with probability "Square in Cube" test with probability $1-\eps$. Then, $\E_{ab} \eps_{ab}=\eps$.
-For each $a,b$, the BLR test implies the existence of $I_{ab}\subseteq [k],c_{ab}\in \set{0,1}$ such that
+Let $\eps_a = \E_b [\eps_{ab}]$.
+
+Suppose $f$ passes the test with probability "Square in Cube" test with probability $1-\eps$. Then, $\E_{ab} [\eps_{ab}]=\E_a [\eps_a] = \eps$.
+For each $a,b$, the BLR test implies the existence of $I_{ab}\subseteq [k],k_{ab}\in \set{0,1}$ such that
 $$
-\Pr_x[f(S_x(a,b))=\chi_{I_{ab}}(x)+c_{ab}]>1-\eps_{ab}.
+\Pr_x[f(S_x(a,b))=\chi_{I_{ab}}(x)+k_{ab}]>1-\eps_{ab}.
 $$
 
-Let $F_a(b)$ be the indicator vector for $I_{ab}$. Let $c_a(b) = c_{ab}$.
+Let $F_a(b)$ be the indicator vector for $I_{ab}$. Let $k_a(b) = k_{ab}$.
 
 > [!tip] Lemma 1
-$F_a(b)$ is close to a direct product (as a function of $b$) $(g_{1}(a,b_1),\dots,g_d(a,b_d))$, and $c_a(b)$ is a constant (as a function of $b$).
+> $F_a(b)$ is close to a direct product (as a function of $b$) $(g_{1}(a,b_1),\dots,g_d(a,b_d))$, and $k_a(b) = k(a)$ (i.e., is constant as a function of $b$).
 
-Sample $b,b'$ uniformly randomly, conditional on them differing in $1/4$ of their coordinates. 
-Let $x$ be $0$ on the coordinates where $b,b'$ differ, and $0$
-with chance $1/3$ on the coordinates where $b,b'$ agree. 
-Then, $x$ is uniformly randomly distributed. 
+Define distribution $b'\sim D_{ab}$ as follows: \
+Sample $b'$ uniformly randomly, conditional on having $b_i'= b_i$  hold for exactly $3d/4$ of $i\in [d]$. 
+
+Sample $x\sim X_{bb'}$ as follows:\
+- Let $x$ be $0$ on the coordinates where $b,b'$ differ
+- and $0$ with chance $1/3$ on the coordinates where $b,b'$ agree. 
+Then, $x$ is marginally uniformly randomly distributed. 
 
 By construction, $S_x(a,b) = S_x(a,b')$.
 By a union bound, we have that 
 $$
-\Pr_{b,b',x} [\chi_{F_a(b)}+c_a(b) = \chi_{F_a(b')}+c_a(b')] > 1-2\eps_{ab}.
-$$ 
-#todo This means that for most $b,b'$ we have that 
-$$ \Pr_{x} [\chi_{F_a(b)}(x)+c_a(b) = \chi_{F_a(b')}(x)+c_a(b')] $$ 
-is large, whereby we deduce that $F_a(b)\mid_{C_b\cap C_{b'}} = F_a(b')\mid_{C_b\cap C_{b'}}$. 
-
-Now we argue that $c_a(b)=c_a(b')$ for most $b,b'$.
-Thus, by the direct product test we conclude that $F_a(b)$ is close to a direct product. 
-
-So we get that for most $a,b$ #todo sus
-$$ \Pr_x \left[ f(S_x(a,b)) = c(a)+\sum_i g_i(a,b_i)x_i \right] > 1-100\epsilon.$$ 
-
-Observe: $S_{x}(a,b)=S_{\bar{x}}(b,a)$.
-#todo For most $a,b$, we have:
-$$\Pr_x \left[ \sum_{i}g_{i}(a,b_{i})x_{i}+c(a)= f(S_x(a,b))=f(S_{\bar{x}}(b,a))=\sum_{i}g_{i}(b,a_{i})\overline{x_{i}} +c(b) \right]>1-200\eps.$$
-It seems like this should imply the existence of functions $\psi_i$ such that
-For most $a,b$,
+\Pr_{b,b'\sim D_{ab},x\sim X_{bb'}} [\chi_{F_a(b)}+k_a(b) = \chi_{F_a(b')}+k_a(b')] > 1-2\eps_{a}.
 $$
-\Pr_x\left[ f(S_x(a,b))=c(a)+\sum_i \psi_i(a_i,b_i)x_i\right].
+Let 
+$$
+\delta_{abb'} =  \Pr_{x\sim X_{bb'}} [\chi_{F_a(b)}+k_a(b) \neq \chi_{F_a(b')}+k_a(b')].
+$$
+Then intuitively  --- and they have a lemma somewhere that formalizes this --- we have the following: 
+> If $\delta_{abb'}<1/3$ then $F_a(b)\mid_{C_b\cap C_b'}= F_a(b')\mid_{C_b\cap C_b'}$ and $k_a(b)=k_a(b')$.
+
+By Markov's Inequality we have that 
+$$
+\Pr_{b,b'\sim D_{ab}}[\delta_{abb'}>1/3] \le 3\E_{b,b'}[\delta_{abb'}] < 6\eps_a.
+$$
+From this we conclude
+$$
+\Pr_{b,b'\sim D_{ab}} [F_a(b)\mid_{C_b\cap C_b'}= F_a(b')\mid_{C_b\cap C_b'}] > 1-6\eps_a,
+$$
+and 
+$$
+\Pr_{b,b'\sim D_{ab}} [k_a(b)=k_a(b')] > 1-6\eps_a.
+$$
+By the direct product test we conclude that $F_a(b)$ is $6\eps_a$-close to a direct product $(g_1(a,b_1),\dots,g_d(a,b_d))$. \
+By a simple coupling argument ( #todo: spell out details) we deduce that $k_a(b)$ is $24\eps_a$-close to being a constant (when viewed as a function of $b$) $k(a)$. 
+Combining these facts we have that 
+$$ \Pr_{x,b} \left[ f(S_x(a,b)) = k(a)+\sum_i g_i(a,b_i)x_i \right] > 1-31\eps_a.$$ 
+
+Observe that $S_{x}(a,b)=S_{\bar{x}}(b,a)$. Thus,
+$$\Pr_{a,b,x} \left[ \sum_{i}g_{i}(a,b_{i})x_{i}+k(a)= f(S_x(a,b))=f(S_{\bar{x}}(b,a))=\sum_{i}g_{i}(b,a_{i})\overline{x_{i}} +k(b) \right]>1-62\eps.$$
+Define 
+$$
+\lambda_{ab}=1-\Pr_x\left[ \sum_i (g_i(a,b_i)+g_i(b,a_i))x_i=\sum_i g_i(b,a_i) + k(a)+k(b) \right].
+$$
+Clearly, if $\lambda_{ab}<1/2$  then we must have 
+$$
+g_i(a,b_i)=g_i(b,a_i)
+$$
+for all $i$, and also 
+$$
+\sum_i g_i(b,a_i)=k(a)+k(b).
+$$
+By Markov's inequality:
+$$
+\Pr_{ab}[\lambda_{ab}>1/2]< 128\eps.
+$$
+Thus, ( #todo justify this; it is intuitive but not obvious) there exists $\psi_i$ such that 
+$$
+\Pr_{a,b}[g_i(a,b_i)=\psi_i(a_i,b_i) \;\forall i]>1-128\eps.
+$$
+Therefore, by a union bound we have:
+$$
+\Pr_{a,b,x} \left[ f(S_x(a,b))=k(a)+\sum_i \psi_i(a_i, b_i)x_i \right] > 1-256\eps.
 $$
 
-#todo: magically show that $c$ is a direct sum. 
-Then, show that we actually get 
+#todo: Now we magically show that $k$ is a direct sum probably using the $\sum \psi_i(a_i,b_i) = k(a)+k(b)$ thing. 
+Then, #todo also invoking magic we show that we actually get 
 $$
-\Pr_x\left[ f(S_x(a,b))=\sum_i \phi_i(a_i)\overline{x_i}+\phi_i(b_i)x_i\right].
+\Pr_{a,b,x}\left[ f(S_x(a,b))=\sum_i \phi_i(a_i)\overline{x_i}+\phi_i(b_i)x_i\right]> 1-O(\eps).
 $$
 
-If we can show that, then we get, 
+If we can show that, then we get, ( #todo would we actually?) 
 $$
 \Pr_{a}\left[ f(a)=\sum_i \phi_i(a_i) \right]>1-200\eps.
 $$
 Which would be lovely. 
-
-
-> [!bug] 
-> All of these steps were highly sus. Please fix!
 
 
 ## A highly general agreement test thing
