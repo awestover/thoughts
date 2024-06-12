@@ -136,3 +136,6 @@ So we can get away with $1000/\eta$ tries of the algorithm.
 > [!bug] Q
 > They pull out some fancy coding theory here. Not sure what's going on. 
 
+They do some "Yao" thing. 
+
+Kai gave some really great perspective on the BLR test, and it does a really good job of explaining how this stuff works.  [[blr-perspective]]
