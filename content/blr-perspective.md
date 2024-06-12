@@ -112,6 +112,3 @@ Because if you take an inner product of a degree $d$ and a degree $m-d-1$ polyno
 Restrict function to a cube, check its degree. 
 Inner product with indicator function of a cube. 
 Note: indicator function of a dimension $d$ cube is a degree $m-d$ polynomial!
-
----
-#todo: turn back on my snippets library, once I can get it more under control.
