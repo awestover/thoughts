@@ -1,7 +1,13 @@
 Note: 
-These pages are some thoughts about [fun math problem](https://arxiv.org/abs/2405.11986).
-If you find this problem interesting and want to work on these problems please reach out to me at alekw dot mit dot edu. See [Alek Westover](https://awestover.github.io) for more about me. 
-Many of these ideas were thought of in collaboration with [Nathan](https://nathan-sheffield.github.io/jekyll/update/2024/02/24/lost-in-space-ii.html).
+These pages are some thoughts about [fun math problem](https://arxiv.org/abs/2405.11986) invented by Bill
+Kuszmaul. At some point, once we have some results that tell a
+nice story, we should publish this stuff. If you find this
+problem interesting and want to work on these problems please
+reach out to me at alekw dot mit dot edu. See [Alek Westover](https://awestover.github.io) for more about me. Many of
+these ideas were thought of in collaboration with
+[Nathan](https://nathan-sheffield.github.io/jekyll/update/2024/02/24/lost-in-space-ii.html).
+Conversations with Ruth, Tara Westover and Brandon Westover were
+also quite helpful. 
 
 ---
 Key: *"\*" = improving this is a big open question*
