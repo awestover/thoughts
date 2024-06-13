@@ -61,7 +61,7 @@ $$
 Let $\eps_a = \E_b [\eps_{ab}]$.
 
 Suppose $f$ passes the test with probability "Square in Cube" test with probability $1-\eps$. Then, $\E_{ab} [\eps_{ab}]=\E_a [\eps_a] = \eps$.
-For each $a,b$, the BLR test implies the existence of $I_{ab}\subseteq [k],k_{ab}\in \set{0,1}$ such that
+For each $a,b$, the BLR test implies the existence of $I_{ab}\subseteq [d],k_{ab}\in \set{0,1}$ such that
 $$
 \Pr_x[f(S_x(a,b))=\chi_{I_{ab}}(x)+k_{ab}]>1-\eps_{ab}.
 $$
@@ -82,11 +82,11 @@ Then, $x$ is marginally uniformly randomly distributed.
 By construction, $S_x(a,b) = S_x(a,b')$.
 By a union bound, we have that 
 $$
-\Pr_{b,b'\sim D_{ab},x\sim X_{bb'}} [\chi_{F_a(b)}+k_a(b) = \chi_{F_a(b')}+k_a(b')] > 1-2\eps_{a}.
+\Pr_{b,b'\sim D_{ab},x\sim X_{bb'}} [\chi_{F_a(b)}(x)+k_a(b) = \chi_{F_a(b')}(x)+k_a(b')] > 1-2\eps_{a}.
 $$
 Let 
 $$
-\delta_{abb'} =  \Pr_{x\sim X_{bb'}} [\chi_{F_a(b)}+k_a(b) \neq \chi_{F_a(b')}+k_a(b')].
+\delta_{abb'} =  \Pr_{x\sim X_{bb'}} [\chi_{F_a(b)}(x)+k_a(b) \neq \chi_{F_a(b')}(x)+k_a(b')].
 $$
 Then intuitively  --- and they have a lemma somewhere that formalizes this --- we have the following: 
 > If $\delta_{abb'}<1/3$ then $F_a(b)\mid_{C_b\cap C_b'}= F_a(b')\mid_{C_b\cap C_b'}$ and $k_a(b)=k_a(b')$.
@@ -135,18 +135,35 @@ $$
 \Pr_{a,b,x} \left[ f(S_x(a,b))=k(a)+\sum_i \psi_i(a_i, b_i)x_i \right] > 1-256\eps.
 $$
 
-#todo: Now we magically show that $k$ is a direct sum probably using the $\sum \psi_i(a_i,b_i) = k(a)+k(b)$ thing. 
-Then, #todo also invoking magic we show that we actually get 
+Now, we recall from earlier that 
+$$
+\Pr_{ab}\left[ k(a)=\sum_i g_i(b,a_i)+k(b) \right]>1-128\eps.
+$$
+Thus, there exists $\beta$ such that 
+$$
+\Pr_a\left[ k(a)=\sum_i g_i(\beta,a_i)+k(\beta) \right]>1-128\eps.
+$$
+Thus, there exists a direct sum $\phi(a)=\sum_i \phi_i(a_i)$ such that $k(a)$ is $128\eps$ close to $\phi.$
+Taking another union bound we have 
+$$
+\Pr_{abx}\left[ f(S_x(a,b))=\sum_i \phi_i(a_i) + \sum_i \psi_i(a_i,b_i)x_i \right] > 1-512\eps.
+$$
+Now, by pulling the $S_x(a,b)=S_{\bar{x}}(b,a)$ trick again we find that 
+$$
+\psi_i(a_i,b_i)=\phi_i(a_i)+\phi_i(b_i) \; \forall i
+$$
+with good probability.
+Therefore, 
 $$
 \Pr_{a,b,x}\left[ f(S_x(a,b))=\sum_i \phi_i(a_i)\overline{x_i}+\phi_i(b_i)x_i\right]> 1-O(\eps).
 $$
 
-If we can show that, then we get, ( #todo would we actually?) 
+Now, note that if $a,x,b$ are sampled randomly then $S_x(a,b)$ is a uniformly random point in the domain. 
+Hence, 
 $$
-\Pr_{a}\left[ f(a)=\sum_i \phi_i(a_i) \right]>1-O(\eps).
+\Pr_z \left[ f(z)=\sum_i \phi_i(z_i) \right]>1-O(\eps).
 $$
-Which would be lovely. 
-
+$\square$.
 
 ## A highly general agreement test thing
 
@@ -174,4 +191,23 @@ Then they compute the eigenvalues of some matrix to show that something is an HD
 - Can you analyze this test with Fourier analysis?
 - ~~Can reconstruct the function using the Shapka scheme?~~
 - Does this other test also works for direct-sum testing?
-- (Alek): higher order dependencies (i.e., not just a direct-sum, but maybe a sum of things that are allowed to depend on e.g., two terms at a time)
+- (Alek): higher order dependencies (i.e., not just a direct-sum, but maybe a sum of things that are allowed to depend on e.g., two terms at a time) 
+	- Kai: that sounds gross
+	- It's called Junta degree
+	- people think about it
+Low-Degree Testing Over Grids
+arXiv:2305.04983v1 [cs.CC] 8 May 2023
+Prashanth Amireddy*
+Srikanth Srinivasan†
+Madh
+Can you improve their analysis?
+best you could hope for
+reject with probability q\*distance
+sometimes can get this.
+optimal testing
+they don't really give any bound...
+
+---
+
+Maybe a way to analyze their test 8 if we repeat it twice?
+$\rho_{ab}(x)+\rho_{ab}(y)+\rho_{ab}(x+1)+\rho_{ab}(y+1) = \rho_{a'b'}(0)+\rho_{a'b'}(x')+\rho_{a'b'}(y')+\rho_{a'b'}(x'+y')$
