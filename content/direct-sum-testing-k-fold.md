@@ -1,3 +1,4 @@
+$\newcommand{\eps}{\varepsilon}$
 In this note I summarize a paper by Dinur et al on direct sum testing, in a different sense than in [[direct-sum-testing-grid]].
 
 # introduction 
@@ -27,11 +28,6 @@ $f(z) = \prod_{i=1}^k b_i(z_i).$
 > [!bug] 
 > In this paper they only are able to do tensor product testing in some restricted setting, namely $k=2$. 
 > Is tensor product testing exactly the problem that [[direct-sum-testing-grid]] resolves?
-
->[!bug] Q
-> What should we know about Haddamard code? 
->Reed-Muller code?
->[book about coding theory](https://www.sciencedirect.com/bookseries/north-holland-mathematical-library/vol/16)
 
 ---
 
@@ -64,14 +60,60 @@ Then we go back to original place and find that $f$ agrees with something on $3/
 
 Some how we replace the $x,y$ independence clause with the clause "Johnson / Kneser graph has nice expansion".
 
+# yet-another-analysis of BLR
+To prove their main result they modify the proof of a new analysis of the BLR linearity test.
 
+**Lemma 1:**\
+Suppose $f$ passes the BLR test with probability $1-\eps$. Then the closest linear function to $f$ is *either* at distance $O(\eps)$ or at distance $1/2\pm O(\eps)$.
+**Proof:**
+Write down some quadratic. It has two roots: one near $0$ and one near $1/2$.
 
+Next, we will rule out the case of $f$ being far from all linear functions via a neat inductive argument. Specifically, we will prove the following two claims, and then chain them together inductively to get the result:
+
+**Lemma 2:**\
+1 function n-1 --> 3 functions n-1
+
+**Lemma 3:**\
+3 functions n-1 --> 1 function n
+
+Note: it's kind of impressive that the errors don't blow up on them. 
+Like instead of going from $\eps$ to $2\eps$ and so on, they always boost back up to the same value. This is because of their earlier dichotomy theorem.
+
+**Proof of Lemma 2:** 
+Given $f_{1},f_{2},f_{3}$ satisfying $\Pr_{x,y}[f_{1}(x)+f_{2}(y)=f_{3}(x+y)]>1-\eps$ , 
+Let $g=f_{1}+f_{2}+f_{3}$.
+By union bound $g$ is $3\eps$ close to passing BLR. Thus, $g$ is (by inductive hypothesis) close to some linear function $\phi$. 
+Then, you can show 
+$$
+\Pr_{x,y} [f_{1}(x)+f_{2}(y)= \phi(x)+\phi(y)] > 1-\eps,
+$$ and this implies that $f_{1}+\phi$ is basically constant. And then you can show that at least one of $f_{1},f_{2},f_{3}$  must be linear. 
+
+**Proof of Lemma 3**
+Define $f_{1},f_{2},f_{3}$ by randomly the final coordinate. Then one of them is close to a linear function $\psi$.  So you can extend it to a linear function on $n$ bits that agrees with $f$ at least $3/4$ of the time.
+But, we earlier showed a near-far dichotomy. So you can't just be distance $3/4$. If you're this close, you're actually all the way close. 
+
+---
+
+# Theorem in the case of $\eps=0$
+
+They first prove the theorem in the case $\eps=0$. 
+It's fairly involved. But you can kind of see where you will need to plug in expansion properties of a graph. 
+
+**Lemma**: 
+Let $G_i$ be the graph on vertices $\{x\in L_{k}^n \mid x_i=1,x_{i+1}=0\}$, and edges between $x,y$ iff $x+y\in L_k^n$.
+$G_i$ is connected. 
+**proof**: in fact it has diameter $4$. There's a pretty simple way to construct paths between any two pairs of vertices by just looking at their overlap.
+
+And, the connectivity of $G_i$ basically lets you propagate some equalities and it's very nice. 
 ## open questions
 
-- Extending to low degree polynomials
+- **Extending to low degree polynomials**
 - reducing direct product testing to direct sum testing
 - tensor product
-- low acceptance probability regime (e.g., if you pass test with slightly non-trivial probability, what can we say?)
+- **low acceptance probability regime (e.g., if you pass test with slightly non-trivial probability, what can we say?) Note: 50% is not the threshold**
+	- wait does this already solve it? https://arxiv.org/abs/2402.05217
 - derandomized direct sum testing
-- one of them has been resolved https://arxiv.org/abs/2402.05217
 
+
+PS: I'm officially very interested in the two bolded open questions. Just because the techniques used in this paper seem pretty neat. 
+I'd *really* like to understand how the expansion stuff works and be able to use it in my own work!

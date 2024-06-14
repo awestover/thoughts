@@ -4,7 +4,8 @@ $\newcommand{\eps}{\varepsilon}$
 In this note I summarize "Direct Sum Testing: The General Case", by Dinur and Golubev, in the **grid** setting, rather than the $k$-fold setting of [[direct-sum-testing-k-fold]]
 
 ## Direct Product Test
-> [!bug] Q1: How to analyze the Direct Product Test?
+> [!bug] Q1: 
+> Is their an elementary (i.e., no fancy HDX tools allowed) analysis of their Direct Product Test?
 
 The direct product test works as follows:
 - Given $f: [n]^d\to \F_2^d$, we want to check whether $f$ is close to $x\mapsto (g_1(x_1),\ldots, g_d(x_d))$ for some $g_i$'s.
@@ -16,6 +17,8 @@ The direct product test works as follows:
 > I can prove something weaker than their statement, namely that if $g$ passes the direct product test with probability $1-\epsilon$ then
 > $\Pr[g_i(x)=g_i(y)\mid x_i = y_i]>1-4\epsilon.$
 > I can prove this with a very simple coupling argument. But getting the full theorem seems a *bit* tricky.
+
+Their direct product test follows from some more general theorem and showing that something is an HDX. [[some-HDX-definitions]]. The somehow computing the eigenvalues of some matrix helped them out. 
 
 ## Shapka Test
 This one is pretty clear. 
@@ -171,41 +174,17 @@ $$
 That is, $f$ is $O(\eps)$-close to the direct sum $a\mapsto f(\beta)+\sum_i g_i(\beta,a_i)$.
 $\square$
 
-## A highly general agreement test thing
-
->[!bug] I found this part quite confusing.
->I don't even think I know what the simplicial complex they defined is...
-
-**Theorem**: Suppose $S$ is a collection of subsets that are top faces of a $\lambda$-one-sided $k$-partite $1/k^3$-high dimensional  expander. 
-Then given a family of local functions which passes the agreement test with good probability, then, ...something...
-
-Some definitions: 
-Let $X$ be the set of edges in a hypergraph.
-- $X$ is a **Simplicial Complex** if it is downwards closed. (i.e., $A\subset B, B\in X \implies A\in X$.)
-- $X(\ell)$ refers to edges of size $\ell+1$.
-- Sometimes hyperedges are also called **faces**. 
-- A $d-1$ dimensional simplicial complex has largest hyper-edge size of $d$. 
-- The **top face** of a $(d-1)$-dimensional simplicial complex is $X(d-1)$.
-- **Link:** the collection of faces that are disjoint from $\sigma$ whose union belongs to $X$.
-- Ex: the *link* of a vertex is the set  of its neighbors. The link of an edge is the set of common neighbors of both vertices. 
-- Note that the link of a face is a simplicial complex of lower dimension.
-- A probability distribution on the top face induces a probability distribution on the vertices by selecting a top face and then passing to two random vertices in it. This gives a weighted graph called the **$1$-skeleton**.
-- A $(d-1)$-dimensional simplicial complex is a $\lambda$-one-sided HDX if for every face $\sigma\in X(t)$  $t\le d-3$, the $1$-skeleton of the link $X_\sigma$ is a $\lambda$-one-sided expander graph, meaning the normalized eigenvalues of the random walk on the skeleton are at most $\lambda$. 
-
-Then they compute the eigenvalues of some matrix to show that something is an HDX.
 ## open questions
 - Can you analyze this test with Fourier analysis?
 - ~~Can reconstruct the function using the Shapka scheme?~~
-- ~~Does this other test also works for direct-sum testing?~~
+- Does this other test also works for direct-sum testing? [[thoughts-on-test-8]]
 - (Alek): higher order dependencies (i.e., not just a direct-sum, but maybe a sum of things that are allowed to depend on e.g., two terms at a time) 
-	- Kai: that sounds gross
+	- Kai: that sounds gross?
 	- It's called Junta degree
 	- people think about it
 Low-Degree Testing Over Grids
-arXiv:2305.04983v1 [cs.CC] 8 May 2023
-Prashanth Amireddy*
-Srikanth Srinivasan†
-Madh
+arXiv:2305.04983v1 cs.CC 8 May 2023
+Prashanth Amireddy* Srikanth Srinivasan† Madh
 Can you improve their analysis?
 best you could hope for
 reject with probability q\*distance
@@ -213,8 +192,5 @@ sometimes can get this.
 optimal testing
 they don't really give any bound...
 
----
+- is the test self-correcting? [[square-in-cube-self-correcting]]
 
-Maybe a way to analyze their test 8 if we repeat it twice?
-$\rho_{ab}(x)+\rho_{ab}(y)+\rho_{ab}(x+1)+\rho_{ab}(y+1) = \rho_{a'b'}(0)+\rho_{a'b'}(x')+\rho_{a'b'}(y')+\rho_{a'b'}(x'+y')$
-doesn't seem promising to me: the $x,x+1$ stuff are too different.  
