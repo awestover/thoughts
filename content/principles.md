@@ -12,17 +12,17 @@ tags:
 
 **exercise**: when you wake up, and in the afternoon. As breaks from work. 
 
-**technology**: 
-check communications once per day (namely, at 9pm)
-state purpose verbally; no aimlessness
+**technology**: check communications once per day (namely, at 9pm). state purpose verbally; no aimlessness
 
-**social**
+**social**: talk to people 
 
 **food**: don't eat too much. wait till hungry to eat. avoid unhealthy food. 
 
 **water**: drink lots
 
 # mental health
+
+have a schedule of fun things to do
 
 go places
 
