@@ -1,10 +1,21 @@
 ---
-title: principles
+title: cache-principles
 tags:
+  - life
 ---
-> Q: How can I actually get better at life?
+> Q: How can I actually get better at life?\
 > A: Curate a list of common failure modes, and form habits to avoid common failure modes. 
 
+As a human my L1-cache is tiny. So here is the compressed list:
+
+> [[sleep]], water, talk, intention.
+
+#todo expand on this
+
+- sleep 10-6
+- [[food-water|more water, less food]]
+- talk to ppl
+- be intentional
 
 # health
 
@@ -33,6 +44,8 @@ go places
 "recovery strategies":
 - good: human interaction, going outside 
 - bad: anything involving media
+
+[[fun-activity-ideas]]
 # rationality
 
 stare into the abyss soon, but not when in poor condition.

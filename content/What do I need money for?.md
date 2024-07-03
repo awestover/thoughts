@@ -1,0 +1,3 @@
+- somewhere to live
+- food
+- paper, pens

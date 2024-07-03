@@ -1,6 +1,8 @@
 [[scheduling]]
 [[phi-cancel-width-zero]]
 
+$\newcommand{\alg}{\mathsf{ALG}}$
+
 >[!info] Definition:
 >A **cancelling** scheduler is allowed to take a task that was already started in parallel and switch it to run in serial.
 > 

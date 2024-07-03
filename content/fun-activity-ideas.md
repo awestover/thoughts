@@ -1,0 +1,16 @@
+- walk 
+	- to the beach (castle island, revere beach)
+	- around Boston
+	- to walden pond
+	- oak grove
+- cook fancy food
+- write a blog post
+- make a desert (banana bread)
+- hike
+- zumba
+- rock climbing
+- play a board game
+- do math
+- read math paper stuff
+- call someone
+- write a story
