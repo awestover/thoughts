@@ -5,10 +5,6 @@ Welcome to my blog / personal wiki. See also [my website](https://awestover.gith
 Note: at least atm this blog is *primarily not math related*. \
 If you want some math, come talk to me. 
 
-**If you have ideas for how to make the dates displayed in the
-blogs more accurate (i.e., not all be the date of the previous
-time when I compiled the website) please lmk!**
-
 [0stack/](0stack/):
 This is the blog-like part of skyspace3.0. Specifically, it is a collection of serialized posts. 
 
