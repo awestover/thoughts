@@ -11,7 +11,7 @@ This is the blog-like part of skyspace3.0. Specifically, it is a collection of s
 [[scheduling]]: 
 Some notes on a cool math problem.
 
-[[the-objective]]:
+[[the objective]]:
 Some *extremely not finished* thoughts about life.\
 This collection of posts explores some difficult and uncomfortable questions such as 
 1. What do I want / value?

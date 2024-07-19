@@ -17,7 +17,7 @@ Can this virus be contagious? Maybe. [[what influence do perceived expectations 
 The cure certainly can be contagious: it can be inspirational to see other people override this process. 
 In any case, neither of these are strict rules. I think if you develop the right mindset then actually being exposed to examples of other people being ruled by `avoid discomfort` can further repulse you from this habit. But you want to be careful with this [[is judging people a good idea?]]. 
 
-So, at this point it should be clear that it is often [[the-objective|desirable]] to override `avoid discomfort` signals.
+So, at this point it should be clear that it is often [[the objective|desirable]] to override `avoid discomfort` signals.
 But, they are nontrivial to override. I don't think there is really a `kill -9` for them. 
 [[press the button|I'm not even sure it'd actually be that good if there were a kill -9 button...]]
 [[How to deal with avoid discomfort signals?]]

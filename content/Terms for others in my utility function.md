@@ -3,7 +3,7 @@ Peter Singer and some EA's argue that ultimately all people should receive equal
 Some questions that this poses:
 
 - [[Is morality absolute?]]
-- Currently, what weights do people have in my [[the-objective|objective function]]?
+- Currently, what weights do people have in my [[the objective|objective function]]?
 - [[Can I change my objective function?]]
 - [[Should I change my objective function?]]
 
