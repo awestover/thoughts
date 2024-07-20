@@ -8,14 +8,13 @@ tags:
 
 As a human my L1-cache is tiny. So here is the compressed list:
 
-> [[sleep]], water, talk, intention.
+> [!tip] L1
+> math, [[intention]], [[sleep]], [[social]].
 
-#todo expand on this
-
-- sleep 10-6
-- [[food-water|more water, less food]]
-- talk to ppl
-- be intentional
+You might notice that if you made this into an acronym it would spell `misss`.
+You might think that if we are making an analogy to cache, then a better acronym would have been `hit`. Fortunately this is incorrect. This has something to do with cats, and I cannot elaborate for legal reasons. But anyways, how to prevent something from getting evicted from cache?
+Well, let's assume that your cache is managed by LRU. 
+Then just say `cache miss` out loud every 30 minutes. Yup pretty simple. 
 
 # health
 
@@ -48,11 +47,7 @@ go places
 [[fun-activity-ideas]]
 # rationality
 
-stare into the abyss soon, but not when in poor condition.
-
-pain is not the unit of effort
-
-sunk costs, inconvenience, halo, motivated reasoning etc don't necessarily mean you hold incorrect beliefs, but they should cause you to be more skeptical
-
-Do you want to X or to have X'ed?
-
+- stare into the abyss soon, but not when in poor condition.
+- pain is not the unit of effort
+- sunk costs, inconvenience, halo, motivated reasoning etc don't necessarily mean you hold incorrect beliefs, but they should cause you to be more skeptical
+- Do you want to X or to have X'ed?

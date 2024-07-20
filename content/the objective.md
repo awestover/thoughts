@@ -48,7 +48,6 @@ Furthermore, [[procrastinating choices]] is a choice, and often wrong.
 - are conducive to collaboration
 - some people (including me!), find *compelling* / important. problems that "push forward science"
 
-
 (2) I want to interact with other people by
 - sharing what I'm working on
 - listening deeply to others

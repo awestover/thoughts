@@ -11,8 +11,8 @@ Well, I think there's an argument to be made for it going wrong at any of 2, 3, 
 Let's talking about each of these, what's going wrong, and how to short circuit it. 
 
 There are a couple of flavors of (2). 
-Flavor 2.1: communications (messanges, email).
-Here the thought my brain is emitting is "oh! it'd be bad if you missed a message." Or maybe it's like "Remember the last time we checked messanges and got a cool messange from a friend? We had some dopamine then, you should try it again!"
+Flavor 2.1: communications (messages, email).
+Here the thought my brain is emitting is "oh! it'd be bad if you missed a message." Or maybe it's like "Remember the last time we checked messages and got a cool messange from a friend? We had some dopamine then, you should try it again!"
 As far as I understand this type of Pavlovian Conditioning is especially effective (i.e., addictive) because it's random: you don't get a reward every time you check your email, so you will learn that you need to check your email even more to get the sporadic rewards.
 
 Flavor 2.2: "news"
@@ -25,7 +25,7 @@ Flavor 2.3: "random thing you just remembered that feels important to google"
 Now, this is pretty subtle, because here's the thing. 
 Checking skyspace2.0 for new posts by Alek, it's not *fundamentally* a bad thing. 
 People reading skyspace2.0 developed substantially deeper relationships with Alek, and there is evidence that this is not simply a correlation but actually has causality. (My basis for this claim is that skyspace2.0 generated a lot of conversations and jokes and so on.)
-Checking messanges sometimes can be good. E.g., it's generally pretty good for me to check messanges before going to a meeting / tutoring appointment etc in case of [[flake|last minute changes of plan]]
+Checking messages sometimes can be good. E.g., it's generally pretty good for me to check messages before going to a meeting / tutoring appointment etc in case of [[flake|last minute changes of plan]]
 But, the question is not whether e.g., checking Alek's blog is good, it's whether it is **net good**.
 And, if it's causing you to fragment your attention when you're doing something important, then it's probably net bad. [[wrong exists]]
 

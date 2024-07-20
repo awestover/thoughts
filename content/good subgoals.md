@@ -1,0 +1,5 @@
+- small
+- tractable
+- specific
+- working towards a valuable larger goal
+- measurable / have some way of being able to tell whether it's done or not. 
