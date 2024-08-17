@@ -18,15 +18,46 @@ Well, it could be useful to keep track of things that worked in the past, and th
 - 0717: typed up a bunch of stuff for property testing project. was really good to solidify what we know. also permutation party!
 - 0718: null (forgot to record)
 - 0719: nice proof of affinity square in cube.
-- 0720:
-- 0721:
-- 0722:
-- 0723:
+- 0720: typed up some cycles. 
+- 0721: went to the beach. it was pretty good. 
+- 0722: had some fake scheduling idea, but was still fun to think about it and had good conversation about it. 
+- 0723: thought about direct product test. understood what is going on a bit better. 
 - 0724:
-- 0725:
+- 0725: idea to use induction for diamond test
 - 0726:
-- 0727:
-- 0728:
-- 0729:
-- 0730:
-- 0731:
+- 0727: realized that the induction diamond thing was wrong
+- 0728: "ok lol new idea: analyze a 4-function version of the diamond test"
+- 0729: grinded 4-function hypercontractivity. ~12 hours later it works
+- 0730: grinded diamond writeup 
+- 0731: read some DGA
+
+- 0801
+- 0802
+- 0803
+- 0804
+- 0805: made some good hash browns 
+- 0806: made some good pizza.
+- 0807: I think we found a $\phi$-competitive vanilla scheduler! (edit: it's not quite this good, but it's pretty close)
+- 0808: came up with some good notation for the scheduling paper :) 
+- 0809 zumba; good progress on scheduling paper.
+- 0810 zumba; good progress on scheduling paper
+- 0811 walked around castle island
+- 0812
+- 0813
+- 0814
+- 0815
+- 0816
+- 0817
+- 0818
+- 0819
+- 0820
+- 0821
+- 0822
+- 0823
+- 0824
+- 0825
+- 0826
+- 0827
+- 0828
+- 0829
+- 0830

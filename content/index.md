@@ -8,8 +8,8 @@ If you want some math, come talk to me.
 [0stack/](https://awestover.github.io/thoughts/0stack/):
 This is the blog-like part of skyspace3.0. Specifically, it is a collection of serialized posts. 
 
-[[scheduling]]: 
-Some notes on a cool math problem.
+[[cooking]]: 
+Hopefully coming soon: photo gallery of cooking adventures. 
 
 [[the objective]]:
 Some *extremely not finished* thoughts about life.\
