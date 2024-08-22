@@ -1,5 +1,5 @@
 > Q: What are the best things I've done?
-# "Best" by [taste](https://jzhao.xyz/posts/aesthetics-and-taste):
+# Best by [taste](https://jzhao.xyz/posts/aesthetics-and-taste):
 
 **scheduling, allocation, hashing, P3's vs C6's, pigeons**
 -  Beautiful aspects of these projects:

@@ -1,3 +1,4 @@
 > Q: what is evil?
 
-#todo
+examples:
+- waste is a pretty big evil

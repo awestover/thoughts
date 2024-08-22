@@ -4,9 +4,6 @@
 Suppose you have a length $n$ vector that is initialized to
 contain all zeros.
 
-Goal: is probably not going to result in me abandoning theory. 
-Instead I hope the positive results of my period of reflection will include: 
-- Regarding the "problem finding" part of doing research as important, and practicing the problem finding skill more
 Process a sequence of $O(n)$ increment and decrement operations to
 indices in the vector, which end with a single index being
 non-zero, and then report the index storing the non-zero value.
