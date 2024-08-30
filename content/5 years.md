@@ -21,4 +21,4 @@ Anyways, this reminds me of a quote from [the greatest literary work of 2024](ht
 To explain this quote I will just give a Brandon Sanderson quote:
 > Things only have the value we give to them. And likewise, actions can be worth whatever we decide them to be worth.
 
-Well, if we have one decade, or one week, or even just one day. Then I'd advocate for filling the day with conscious experience.  
+Well, if we have one decade, or one week, or even just one day. Then I'd advocate for filling the day with good conscious experiences in line with [[the objective]].  
