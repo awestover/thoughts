@@ -9,3 +9,16 @@
 However, the reality is, even if you didn't think this, you'd be a fool to assign Pr(yourself dying in the next 50 years) < 10\%.
 Heck, Pr(extinction) per year has probably been pretty high since the end of WW2. 
 [[nukes xrisk thoughts]]
+
+That is to say, this isn't a completely novel problem.
+
+> Q: Is that supposed to make it better somehow? \
+> A: no, although it is kind of saying that you can't blame the whole problem on just AI. 
+
+Anyways, this reminds me of a quote from [the greatest literary work of 2024](https://nathan-sheffield.github.io/jekyll/update/2024/04/23/faust-reconstructed.html)
+> "The proof is left to the reader as an exercise. The battle is worth it, Johann."
+
+To explain this quote I will just give a Brandon Sanderson quote:
+> Things only have the value we give to them. And likewise, actions can be worth whatever we decide them to be worth.
+
+Well, if we have one decade, or one week, or even just one day. Then I'd advocate for filling the day with conscious experience.  
