@@ -1,14 +1,16 @@
 Cooking is probably my favorite form of social interaction. Although [[walking]] is pretty good too.
 Hopefully I will figure out how to insert some kind of google photos album thing here soon.
 
-Insert pictures of food here.
-
+TODO: Insert pictures of food here.
 
 # my recipes
 Many people have asked "what's your secret ingredient."
 To quote kung fu panda "the secret ingredient is spinach"
 
 But really, what are my recipes. Here are the minimal versions. If you're feeling fancy, you can probably add anything you want to them. Especially spinach. 
+
+## A general recipe
+- just get some random stuff and put it all together, using some combination of boiling, cooking in pan and eating raw. 
 
 ## hash 1
 - shred potatoes
