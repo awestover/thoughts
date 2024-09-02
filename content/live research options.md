@@ -13,27 +13,23 @@ Some ideas:
  - distributed algorithms 
  **Plan** 
 - I already have a pretty good picture of what this option looks like, and I basically have the qualifications.
-- Would be good to do a UROP on distributed algorithms.
+- Do a UROP on distributed algorithms or data structures.
 - I would need to decide who I'd want to work with as a grad student. 
 ## alignment
 **What specifically would I do here?**
-I'm not sure yet. Plan is thus a plan for how to figure out.
+I'm not sure yet. I think it is somewhat infeasible for me to completely in vacuum come up with my own research agenda here. Instead I think the optimal approach is to learn some things, read some things, and then try to get some mentors who can propose some interesting projects for me to work on. Although, working on open problems from published papers is a reasonable thing to do as well. 
 **Plan**
-Figure out answers to the following questions:
-- What papers/resources to read?
-	- Arena
-	- ELK
-- What area would I want to work on? 
-	- ARC stuff seems the most interesting. 
-	- I think something theoretical is where I'd have the best chance of being helpful.
-- How to prove (or disprove) that I have potential?
-	- try a mech interp problem
-- Where to apply for jobs?
-
-## healthcare
+- Read more about current approaches. I'm most excited by ELK [ELK1](https://www.alignmentforum.org/posts/vwt3wKXWaCvqZyF74/mechanistic-anomaly-detection-and-elk) [ELK2](https://www.alignmentforum.org/posts/zjMKpSB2Xccn9qi5t/elk-prize-results) [ELK3](https://ai-alignment.com/mechanistic-anomaly-detection-and-elk-fb84f4c6d0dc) [ELK4](https://www.alignmentforum.org/posts/FwYMuD2sNcaEpE5on/finding-gliders-in-the-game-of-life)
+- Learn stuff. I'll take DL + RL at MIT. [Arena 2](https://arena3-chapter2-rl.streamlit.app/%5B2.1%5D_Intro_to_RL) [Arena 1](https://arena3-chapter1-transformer-interp.streamlit.app/[1.1]_Transformer_from_Scratch) [Arena 0](https://arena3-chapter0-fundamentals.streamlit.app/) also is a pretty good resource for getting some exposure. 
+- Do ML UROP. 
+- Would be good to get a summer job vaguely related to this. 
+	- MSR/google would be awesome. 
+	- Worth checking out places like redwood / CHAI / MATS / anthropic
+	
+## ~~healthcare /  AI for non-alignment-related impact~~
 **What specifically would I do here?**
 - Well, the great thing about not being in the field yet is that I have no attachments. 
 - So, all other things equal I'll ask around / research to see what path here seems the most helpful for increasing health / QoL. (i.e., optimizing point 1 of [[point of research]])
 **Plan**
-- do a urop
-- could also be worthwhile looking for summer opportunities in this vein.
+- Do a urop
+- Could also be worthwhile looking for summer opportunities in this vein.
