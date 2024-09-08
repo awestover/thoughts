@@ -1,15 +1,12 @@
 As per plan dictated in [[live research options]] (and fortunately also because I'm feeling intellectually interested) I am devoting some resources to learning about ML. In this post I'll explain the basics of RL. Will start with a bunch of definitions.
 
-Ref: Sutton Barto RL textbook 
-
-## chapter 1: intro
-
+**Ref: Sutton Barto RL textbook** 
+# part 1
 This book has two parts:
 - Part 1: tabular methods
 - Part 2: approximate solution methods
-
+## chapter 1: intro
 Tabular methods is for when the state space is relatively small (e.g., can fit reasonably in memory). o/w need approx methods.
-
 ## Chapter 2: bandits
 
 $k$-armed bandits is arguably the simplest possible setting for RL: there's just one state. 
@@ -262,8 +259,256 @@ I'll take a look sometime, but for now going to forge ahead.
 Honestly it's also possible that OPT looks suboptimal, but this is simply an artifact of how I'm estimating the value functions.
 Believing this will at the very least help me sleep at night.
 
-**chapter 4 --- to be continued**
+Note that if I wanted to check this it wouldn't be too hard. This is a small enough MDP that I can explicitly compute (by inverting some matrix) the value function.
+
+**asynchronous DP**
+You don't need to update in a fixed order. 
+- The most common application of this is you learn while playing
+- This is the whole "play against yourself / other agents" idea
+ - basically the reason why this is more computationally tractable is that you are exploring a much smaller portion of the state space, namely the states that tend to show up in a game (for example).
 ## chapter 5: monte carlo
+
+In this chapter we don't assume knowledge of how the transitions work. 
+We will just learn from experience. 
+
+For some reason not yet clear to me we are only going to look at rewards after a complete episode. I mean, this is fine. E.g., this models playing a game (reward of +1 for winning).
+
+A simple way of estimating the value function (for a policy): experience it and then average.
+- first-visit monte carlo: you play the game and observe the time discounted cumulative reward that you got. You then average these.
+- every-visit monte carlo: same but every time
+
+You can show that both of these converge to the right thing apparently. 
+
+Note MC method doesn't do any bootstrapping (i.e., updating value function at a state based on value function at other states). We will come up with some other method later that does bootstrap I'd guess. 
+
+Now, imagine that you knew $v_*$. This doesn't actually give you a **policy**! If you don't know how the transitions work. 
+So I guess in this case we'd rather know $q_*$.
+
+As a warm up, let's now talk about how to estimate $q_\pi$.
+Ok, it's just the same thing as before, you average over your experiences. 
+
+Concern:
+Many state-action pairs won't be explored. Like, you'll only be able to compute $q_\pi(s, \pi(s))$ (assuming a deterministic strategy).
+How do we encourage exploration?
+- "exploring starts"
+- just use a stochastic policy that assigns some non-zero probability to each action at each state. 
+- This is just the same as bandit. 
+- e.g., literally just do $\varepsilon$-greedy
+- I really advocate for decreasing $\varepsilon$ over time probably though, unless you suspect some kind of non-stationarity
+
+**Off policy prediction via importance sampling**
+- there are some reasons to think that maybe the $\varepsilon$-greedy strategy is pretty bad
+- one reason is that over the course of a long game, you're going to have some of these random moves triggered, and it could be the case that an agent that occasionally makes random moves does EXTREMELY poorly.
+- Anyways, so now we're going to have two policies: the **target policy** that we're learning about and trying to build, and the **behavior policy** which is how we actually generate data.
+- on-policy methods are simpler, but have these drawbacks discussed above. 
+- off-policy is way more powerful
+	- e.g., it lets you learn from human experts
+
+OK, so Q1
+> prediction. Let's suppose you want to evaluate policy $\pi$ (i.e., learn $q_\pi$), but all you have access to is some data from behavior policy $b$. What can you do?
+
+I mean so first we can give impossibility results. You can't do any estimation stuff here unless you have $b(a\mid s)>0$ whenever $\pi(a\mid s)>0$.
+So yeah the behavior thing needs to be exploratory.
+
+**Importance sampling**:
+Define 
+$$\rho(S_{1},A_{1},S_{2},A_{2},\ldots)= \prod\frac{\pi(A_k\mid S_k)}{b(A_k\mid S_k)}.$$
+It turns out (you do Bayes rule and some stuff cancels out) that this is the ratio of the probabilities of the trajectory under the bx policy and the target policy.
+
+The problem with off-policy learning is that it doesn't really make sense to average rewards along a trajectory. 
+You should normalize by the importance-sampling ratio.
+
+There are two approaches now.
+$$
+V(s) = \frac{\sum_{t\in T(s)} \rho_{t:T(t)-1} G_t}{|T(s)|}
+$$
+$$
+V(s) = \frac{\sum_{t\in T(s)} \rho_{t:T(t)-1} G_t}{\sum_{t\in T(s)}\rho_{t:T(t)-1}}
+$$
+Formula (1) is unbiased but has crummy variance.
+Formula (2) is biased, but the bias converges to zero, and its variance is much better. 
+
+There are some other methods for obtaining even better estimates. By which I mean lower variance. Apparently this is a big deal. I won't go into it right now though.
 ## chapter 6 temporal-difference learning
+Apparently this is a big deal. We're going to combine DP + monte carlo
+sum buzz words: q-learning, sarsa, TD.
+Hopefully by the end of this chapter I will understand what these things are. 
+
+ok, here's a comparison.
+
+Note that throughout the literature, $G_t$ is used to denote the **generalized-return** or **global-return** or **goal** or **gain** or whatever mnemonic you can come up with for $\sum_{t>0} \gamma ^{t} R_t$. 
+Ok, actually I've realized that the reason that "G" is used for this is because it sounds like "积" which is how you say accumulate in Chinese. Apparently chatgpt doesn't believe me, but whatever.
+
+| method      | How we estimate $v_\pi(s)$                                                                                                                                                                                                                                                                                                                                                        |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Monte Carlo | Sample a trajectory average the empirical gains $G_t$.<br>Mathematically you could say this is $\mathbb{E}[G_t\mid S_t=s]$                                                                                                                                                                                                                                                        |
+| DP          | Bootstrap using tabular estimates $V_\pi$ of the value function at neighboring states.<br><br>mathematically this looks like $\sum_{s',r} p(s',r\mid s,\pi(s))[r + \gamma V_\pi(s')].$                                                                                                                                                                                            |
+| TD(0)       | Mash DP and monte carlo together. <br>More formally, we look empirically at what state we transitioned to and what reward we got, but then we bootstrap the value function from the neighbor that we sampled. So it would look like $r+\gamma V_\pi(s')$<br><br>NB you just incrementally update towards this value, like you have a learning rate $\alpha$ and update like this. |
+|             |                                                                                                                                                                                                                                                                                                                                                                                   |
+
+Why is TD(0) good?
+- Well it's nice that we don't need to know the transition rules (We can just learn from experience).
+	- As a corollary of this, I'd say TD(0) is probably pretty not necessary if you do understand the transition rules.
+- Bootstrapping is just a good idea. Monte Carlo is silly for not bootstrapping / needing to wait until the end of an episode to get a reward.
+
+TD(0) is guaranteed to converge "if stuff is sufficiently nice" which it probably is.
+Empirically is much better than Monte Carlo.
+
+> Q: how to handle off-policy learning? 
+> A: importance sampling ratio.
+
+**SARSA: an on-policy TD control method**
+We're going to think about $q$ instead of $v$. fine.
+
+$$
+Q(S_t, A_t) \gets Q(S_t, A_t) + \alpha [R_{t+1}+\gamma Q(S_{t+1},A_{t+1})-Q(S_t,A_t)].
+$$
+**Q-learning: off-policy TD control!**
+
+$$
+Q(S_t, A_t) \gets Q(S_t,A_t) + \alpha [R_{t+1}+\gamma \max_a Q(S_{t+1},a)-Q(S_t,A_t)].
+$$
+
+OK, so this is actually kind of insane: 
+> **"The learned action-value function $Q$ directly approximates $q_*$, *regardless* of the policy being followed."**
+
+(Except, ofc your policy needs to have non-zero probability of exploring all trajectories. And there are some other technical assumptions to guarantee convergence. But anyways.)
+
+So, does this make sense? Yeah I think so. 
+
+**Expected Sarsa**:
+- Instead of taking one move and then bootstrapping, take all the moves.
+- This reduces the variance a bit at the expense of being somewhat more expensive to compute.
+
+**Maximization Bias and Double Learning**
+Here's a problem:
+Suppose you have two options: A = quit,  B = go to a new state, where you have a large number of actions available, and they each have $\mu=-.1,\sigma=1$.
+You might mistakenly start to think that B is a good idea because we are taking a max somewhere. 
+
+A solution is to learn $Q_{1}$ and $Q_{2}$ and then you can take an argmax on one of the Q's and evaluate it's value using the other Q to get an unbiased estimate. Apparently this does good things sometimes.
+
+**some optimizations to q learning stuff**
+
+"afterstates":
+suppose you are playing tic-tac-toe. 
+Suppose state, action pairs $(s_{1},a_1)$ and  $(s_{2},a_{2})$ result in the same final board configuration and the same reward. Then these should have the same state-action pairs should have the same value. With conventional q-learning we'd store these in two separate places. It'd be smarter not to. 
+
+## chapter 7: n step bootstrapping
+
+## chapter 8: xxx
+# PART 2
+
+**Idea**: when the state space is too huge we need to **approximate** functions (e.g., value function), rather than actually compute it.
+We will have some values for the value function, e.g., by playing the game a few times, and then we need to generalize to other states that we've never seen before. 
+
+This is now exactly a **supervised learning problem!** Neat. 
+I mean, there are some complications like non-stationarity, delayed targets, need to bootstrap.
+But we'll deal with it.
 ## chapter 9 on-policy prediction with approximation
 
+Objective: 
+minimize mean squared value error, which is defined  as
+$$
+VE(w) = \sum_s \mu(s) [v_\pi(s) - \hat{v}(s,w)]^{2}.
+$$
+Where $\mu(s)$ is the fraction of time spent at state $s$.
+We have some function $\hat{v}(s,w)$ that takes in a state $s$ and some weights, then it somehow  magically combines these into an approximation of $v_\pi(s)$.
+
+Note:
+- Earlier in the book lots of things had provable guarantees. Very comforting to me with my theoretician hat on. 
+- Now however we're doing highly non-convex optimization. So yeah good luck getting provable guarantees about obtaining global optima. Gradient descent is just a fancy way of randomly walking around in space. But sure we can get some local optima. And if you start in enough random places and have enough exploration then this is fine.
+
+**stochastic-gradient and semi-gradient methods**
+$$
+w_{t+1}= w_t - \frac{1}{2} \alpha \nabla [v_\pi(S_t)-\hat{v}(S_t,w_t)]^{2}.
+$$
+$$
+w_{t+1}= w_t + \alpha [v_\pi(S_t)-\hat{v}(S_t,w_t)] \nabla \hat{v}(S_t,w_t).
+$$
+There's some weird subtleties that happen because we don't actually know $v_\pi$, we just have estimates of it. I'm not following yet, doesn't seem too important.
+
+**Features**
+- You might need to think a bit about what features are relevant. 
+- but if you're a deep model then probably can learn p well from raw sensory input
+
+- linear models are super nice
+- if you're not actually linear then we can probably just add some more features and make you be linear (e.g., adding $x^{2},yx, y^{2}$ terms).
+
+Ok, I guess we're just going to talk about some random methods for making up features now. Fine.
+
+You could have a bunch of circles that cover your state space, and then have the feature vector be an indicator for whether you are contained in each of these circles. 
+ok sure why not. 
+
+you could also do tiling. 
+Like you have a bunch of kind of overlapping grids. 
+
+The motivation for having pretty coarse grids but then having some overlap is that you can generalize more, but still get good perf at a single point. 
+
+It's probably a good idea to randomly offset your tilings rather than just have them have some fixed offset.
+
+
+So I think basically the moral of the story is
+- If you don't have the money to make a super deep model then you can probably engineer features and save a bunch on compute
+- but still my impression is if you wanna learn some ridiculous function then if you throw a big enough model and enough compute at it then this can just work.
+- But I appreciate the cute hacks at engineering features. 
+
+ok a fun hack. 
+hash a bunch of features to a single location to save space. 
+- maybe the model can learn superposition
+- but even more likely not many of those states were super important. 
+lol
+
+sometimes people use Radial Basis functions, which is a continuous generalization of the tiling techniques just discussed. But they don't seem to perform substantially better. so probably not worth the extra cost.
+
+they go on a long rant about regularization. I guess you should use dropout.
+
+**to be continued: the rest of this chapter**
+# part 0: some experiments
+I'm going to try to build an "amnesiac maze solver". 
+The idea is, we have an agent, and it gets some environmental input from sensory data. 
+The agent is living in a maze and it wants to get out. (i.e., I give it a -1 point penalty for every time step that it stays in the maze).I'm going to try to build an "amnesiac maze solver". 
+The idea is, we have an agent, and it gets some environmental input from sensory data. 
+The agent is living in a maze and it wants to get out. (i.e., I give it a -1 point penalty for every time step that it stays in the maze).
+
+So obviously this is NON-Markovian. That's kind of weird. hmm. 
+But I think this is maybe workable. 
+
+Like, what would $v_\pi(s)$ mean in this scenario?
+
+The way I'd think about it is, 
+- randomly sample a maze from some distribution
+- randomly sample a starting position in the maze from some distribution
+- Suppose that you follow policy $\pi$ starting from this position in the maze. what's your expected return?
+- I can't quite tell if this is reasonable. But I'm interested in trying it out.
+
+So obviously this is NON-Markovian. That's kind of weird. hmm. 
+But I think this is maybe workable. 
+
+Like, what would $v_\pi(s)$ mean in this scenario?
+
+The way I'd think about it is, 
+- randomly sample a maze from some distribution
+- randomly sample a starting position in the maze from some distribution
+- Suppose that you follow policy $\pi$ starting from this position in the maze. what's your expected return?
+- I can't quite tell if this is reasonable. But I'm interested in trying it out.
+
+ok, I was about to try this out but I think I can prove impossibility results.
+Like, I think you're just not really supposed to do things like this. 
+
+ok, so fine. what if we augment the state by also passing in some kind of history. 
+now the problem is at least in principle solvable and I guess it's Markovian. 
+
+But it also means we're in the realm where it feels like we need some way of obtaining a compressed approximate description of the state space?
+or more formally where we just want to approximate the value function.
+
+## part 0.1 Mountain Car
+
+ok so I've decided against implementing the maze thing described above at least for now. 
+Instead I want to try implementing Mountain Car. 
+This is a classic RL exercise I think. 
+
+The basic premise is, you have a car on a mountain which has some position and velocity at each point in time (this is the sate). 
+The possible actions are accelerate right, accelerate left, and don't accelerate.
+
+The tricky thing is that we're going to assume that gravity is too strong for the car to get to the goal just by using gravity. 
+It has to first go up the opposite hill, and then fall down that hill to gain a bunch of speed.
