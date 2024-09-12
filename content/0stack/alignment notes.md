@@ -1,3 +1,51 @@
+Lots of relevant papers https://humancompatible.ai/bibliography
+# off switch, some variant
+https://arxiv.org/pdf/1611.08219
+
+Dylan et al have some kind of impossibility result about disincentivising off switch. 
+I'm not sure if I buy it. 
+
+Then they say something like "what if the agent doesn't know it's objective function"
+
+I guess this is so-called inverse RL?
+
+> Q1: does the idea of not knowing your objective function make any sense?
+> Q2: does it matter?
+
+my initial parrot concern is "not knowing your objective fn is outside of leading paradigm of AI dev, so however AGI arises it is unlikely to arise through this pathway, hence the alignment tax is too large, hence this is not workable. a sufficiently strong optimizer ust seems scary"
+
+concern 2:
+they have this thing where they are asking a human to evaluate the AI's move. 
+But what if the AI's move is way too complex to  be understood by the humans?
+
+**conclusion**
+overall I found the analysis in this paper not super compelling.
+
+But I wouldn't say that I have a strong understanding of what Inverse RL entails.
+
+# Inverse RL 
+https://ai.stanford.edu/~ang/papers/icml00-irl.pdf
+
+**problem specification:**
+Given: 
+- actions, states, possibly a model of environment
+- learn: reward function
+
+**capabilities motivation**:
+"reward function is a parsimonious description of optimal behavior"
+**alignment motivation**:
+maybe try to have robot imitate human / learn human value function
+
+Ng and Russel first, consider the simplest case where model, states and actions are known.
+Here I guess the Bellman equation gives you the answer. 
+
+However, there's a problem: there are a bunch of degenerate solutions. 
+This is too bad. So they made up some heuristic to break ties. 
+
+# AIXI
+maybe having a probabilistic turing machine helps with some problems
+
+# ELK
 [intro to ELK](https://ai-alignment.com/mechanistic-anomaly-detection-and-elk-fb84f4c6d0dc)
 One possible strategy for ELK is:
 1. Find the normal reason $\pi$ for diamond remains in vault
@@ -24,4 +72,33 @@ step 1:
 You train a model that maps initial state + robot actions to object color + weight
 Then you get a wildly out of distribution input where the robot is trying to tamper with sensors?
 can you tell?
+
+
+**ELK detecting gliders**
+more ELK notes
+
+One idea is to search for an argument that captures most of the phenomenon.
+then you can see  if it captures your cared about phenomenon.
+
+there's a distinction between an anomaly detector and a glider detector
+
+# decision theory
+[Towards Idealized Decision Theory](https://arxiv.org/pdf/1507.01986v1)
+One common problem with EDT: "managing the news"
+Somehow the issue is with causation vs correlation.
+
+Like the objection is basically that this causes you to 1-box in Newcomb's problem, which can't be right because rationalists should *win*.
+
+does causal DT do better?
+Soares argues that CDT fails if you play prisoner's dilemma against someone that's 99% likely to take the same action as you.
+Because in this case it seems better to cooperate, but CDT says that there are no causally downstream consequences of defection, and so you (both) defect. 
+
+
+----
+
+toread
+
+https://ai-alignment.com/alba-an-explicit-proposal-for-aligned-ai-17a55f60bbcf#.3jwpm81j8
+https://ai-alignment.com/policy-amplification-6a70cbee4f34#.31incu10a
+https://arxiv.org/pdf/1606.06565
 

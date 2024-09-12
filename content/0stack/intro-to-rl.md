@@ -68,7 +68,7 @@ So I guess this gives you an algorithm for improving a suboptimal policy:
 
 > Alek: "oh there's no way that doesn't just get stuck in a local optima really easily. I guess you can explore starting from a variety of different places..."\
 > JJ: "nope lol if policy improvement doesn't work then you have found a 'fixed/stable point' which is guaranteed to be the optimal policy".\
-> Alek: dang that's pretty op
+> Alek: dang that's pretty op\
 > JJ: Yeah, it turns out it gets even better. This process of repeatedly evaluating a policy (computing value functions) and then doing policy improvement with those is guaranteed to converge in a finite number of steps if your MDP stuff is finite, because it has to be a strict improvement until it starts becoming equality which is when you're optimal.
 
 Another note: 
