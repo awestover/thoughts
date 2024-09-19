@@ -37,6 +37,15 @@ I'll put reminder to check.
 - alkjash suggestion: meta-TAP `/root`
 - unfortunately I only have the RAM to install one TAP rn but I'll get to this one later
 
+______
+
+update re TAP1:
+I think this TAP was too ambitious but kind of worked.
+
+Currently the TAP has worked out more like, sit down at table --> think "I should talk to ppl".
+My rate of following through on this idea is maybe 70%. 
+But I think this has still substantially improved talking to people baseline.
+
 ---- 
 --- 
 I think another aspect of not taking life seriously is having predictable bugs. 

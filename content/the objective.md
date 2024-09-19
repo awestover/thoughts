@@ -43,16 +43,22 @@ Furthermore, [[procrastinating choices]] is a choice, and often wrong.
 
 # ok, so what is my current objective function?
 
-(1) I want to think about problems that 
-- require "epic battle plans"
-- are conducive to collaboration
-- some people (including me!), find *compelling* / important. problems that "push forward science"
+(1) Help solve interesting and important problems.
+- Good problems generally require "epic plans" and collaboration.
+- A good litmus test for whether a problem is good is whether I'd
+    care about it if someone else had researched it.
 
-(2) I want to interact with other people by
-- sharing what I'm working on
-- listening deeply to others
-- going on hikes
-- making food
-- being nice in small ways
+(2) Be happy and healthy.
+- A large part of this is social habits:
+  - sharing what I'm working on
+  - listening deeply to others
+  - going on hikes
+  - making food
+  - being nice in small ways
+- This also includes other habits:
+  - getting good sleep
+  - not getting distracted
+
+(3) Promote the happiness and healthiness of other people, now and in the future. 
 
 I have arrived at this list largely by a historical reflection on "what are the [[best things]]"

@@ -1,4 +1,16 @@
+# toread list:
+
+- [causal scrubbing](https://www.alignmentforum.org/posts/JvZhhzycHu2Yd57RN/causal-scrubbing-a-method-for-rigorously-testing)
+- https://ai-alignment.com/alba-an-explicit-proposal-for-aligned-ai-17a55f60bbcf#.3jwpm81j8
+- https://ai-alignment.com/policy-amplification-6a70cbee4f34#.31incu10a
+- https://arxiv.org/pdf/1606.06565
+
+-----
 Lots of relevant papers https://humancompatible.ai/bibliography
+
+### control
+https://www.lesswrong.com/s/PC3yJgdKvk8kzqZyA/p/Yu8jADLfptjPsR58E
+
 # off switch, some variant
 https://arxiv.org/pdf/1611.08219
 
@@ -92,13 +104,4 @@ Like the objection is basically that this causes you to 1-box in Newcomb's probl
 does causal DT do better?
 Soares argues that CDT fails if you play prisoner's dilemma against someone that's 99% likely to take the same action as you.
 Because in this case it seems better to cooperate, but CDT says that there are no causally downstream consequences of defection, and so you (both) defect. 
-
-
-----
-
-toread
-
-https://ai-alignment.com/alba-an-explicit-proposal-for-aligned-ai-17a55f60bbcf#.3jwpm81j8
-https://ai-alignment.com/policy-amplification-6a70cbee4f34#.31incu10a
-https://arxiv.org/pdf/1606.06565
 
