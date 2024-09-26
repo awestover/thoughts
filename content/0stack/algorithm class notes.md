@@ -1,6 +1,6 @@
 These are some notes on fine grained complexity theory, from Ryan + Virginia's class. 
 I am not actually taking the class, but am reading the notes. 
-These are now also notes from Ronitt's Sublinear time algorithms class. 
+These are now also notes from Ronitt's Sublinear time algorithms class. I actually am taking this class, but have chosen to digest the material mostly at my own pace. I enjoy  having occasional readings about cool algorithms and some occasional problems to work on, and an excuse to think about permutation avoidance again. 
 
 I will abbreviate fine grained to FG and sublinear time to SL. 
 
@@ -219,3 +219,103 @@ Anyways the proof is as follows:
 - run the greedy algorithm 
 - show that it fails with $1/n^{3}$ pr at each step 
 - union bound
+
+##  SL Lec 5
+
+In these notes VC will refer to vertex cover (a set of vertices that hits every edge).
+
+> Q: How to approximate min VC size in sublinear time?
+> A: We will give a distributed algorithm for computing a small vertex cover. 
+
+More precisely, after running the distributed algorithm, every vertex should raise a flag saying whether or not they wish to participate in the VC. 
+
+We work in the LOCAL model of distributed computation.
+
+We let $\Delta$ denote the max degree of the graph.
+
+> [!tip] Distributed Vertex Cover Algorithm
+> 
+```python
+for each edge e:
+	Initialize x[e] = 1/Delta
+for i = 1  ... log_{1+gamma}(Delta)	:
+	for each v that has sum_{edges e incident to v} x[e] >= 1/(1+gamma):
+		add v to the VC
+		for all e incident to v:
+			freeze e
+	for each unfrozen edge e: 
+		multiply x[e] by 1+gamma
+```
+
+**Claim 1:** This algorithm outputs a VC. 
+**pf**: Endpoints of frozen edges are added to VC. All edges are eventually frozen.
+
+**Claim 2**:
+We can interpret the final values of $x_e$ as a fractional matching. This just means that $\sum_{e\ni v} x_e \le 1$ for all $v$.
+This fractional matching will satisfy: 
+$$\text{size of our VC} \le 2(1+\gamma)\sum_e x_e.$$
+**Proof**
+We only increase edge weights if we're sure that it's safe to do so. 
+The fact that our VC size is not much larger than the fractional matching size can be seen as follows:
+- Suppose we form a sum $s$ by starting at $s=0$ and then adding $x_e$ to $s$ whenever we freeze an endpoint of $e$. 
+- Because we freeze every edge eventually, at the end  we will have $s = 2 \sum_e x_e$.
+- The amount that we increment $s$ by when we freeze edges incident to some vertex $v$ is at least $1/(1+\gamma)$ by design.
+- Thus, $2\sum_e x_e \le (1+\gamma)|VC|$.
+
+**Claim 3**: 
+The value of a fractional matching gives a lower bound on the size of the minimum vertex cover.
+**pf**
+This is super obvious for matchings. 
+For fractional matchings, assign each edge to an endpoint in the VC. Have each VC vertex aggregate its assigned edges weights.
+The total weight aggregated by the VC vertices is $\sum_e x_e$, and it is at most $1$ per vertex. QED.
+
+## SL Lec 6
+Last class I think we got a $2+\varepsilon$ approximation to min VC. 
+
+CAUTION: maximal $\neq$ maximum
+
+In this lecture we will talk about approximating the size of a maximal matching (?)
+Let $M$ be a maximal matching and let $V^*$ be a minimum Vertex Cover. 
+Observe: $|M| \le |V^{*}| \le 2|M|$.
+
+**Claim**: a maximal matching has size at least $m/(2\Delta)$
+**pf**: each edge you take eliminates fewer than $2\Delta$ edges as options. 
+
+Greedy Maximal matching alg: 
+- take edges until you can't take any more
+
+Now we have an interesting idea: 
+- Imagine we had an oracle that would tell us whether an edge was in the matching. 
+- Would that help?
+
+For estimation it totally would. 
+We would just sample some vertices to estimate the probability that a random vertex is an endpoint of an edge of the matching. 
+
+And we add a bit just to guard against terrible underestimates. 
+
+ok fine so this'd be great if we had such an oracle. 
+
+Intuitively: maybe we don't need to actually run greedy to figure out it's bx on an edge?
+
+Here's a weird (but useful) recursive way of writing out our greedy algorithm
+
+```python
+def matched(e):
+	for all edges e' adjacent to e that come before e in ordering:
+		if matched(e'):
+			return False (e not matched)
+	return True (e matched)
+```
+
+Let's try seeing how expensive this is if we do a random ordering. 
+
+Under a random ordering, the probability of going on some specific path of length $k$ is $1/k!$.
+The number of paths of length $k$ from an edge is at most $(2\Delta)^{k}$.
+Thus, the expected cost of the recursion is: 
+
+$$
+\sum_{k\ge 0} \frac{(2\Delta)^{k}}{k!} \le 2^{O(\Delta)}.
+$$
+So we can get a $2^{O(\Delta)}\varepsilon^{-O(1)}$ time algorithm for 2-approximate VC (i.e., for computing the size of some maximal matching). 
+
+Is this good? Well, I wouldn't use it unless $\Delta < o(\log n)$. But in that case, sure it's good. 
