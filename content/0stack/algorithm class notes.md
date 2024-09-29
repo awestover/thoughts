@@ -319,3 +319,129 @@ $$
 So we can get a $2^{O(\Delta)}\varepsilon^{-O(1)}$ time algorithm for 2-approximate VC (i.e., for computing the size of some maximal matching). 
 
 Is this good? Well, I wouldn't use it unless $\Delta < o(\log n)$. But in that case, sure it's good. 
+
+### FG 09-27
+
+Virginia showed us a neat trick in class today: breaking the problem up into lots of little parts. 
+Specifically, the problem was **dynamic reachability** and she wanted to give some combinatorial lower bounds based on triangle detection / BMM.
+And we could get a simple lower bound pretty easily, but chopping up the problem in a nice way let us get a lower bound even with arbitrary polynomial precomputation. 
+
+So that was nice.
+
+### SL 7
+
+Property testing for graphs:
+- "$\varepsilon$-far" will mean  "can edit $\varepsilon \Delta \cdot n$" edges to get in class; here $\Delta$ is max degree limit.
+
+**Kuratowski theorem**
+planar iff no K5 or K33 minors  
+minor = graph obtained by contracting edges
+
+**Def**
+$(\varepsilon,k)$-hyperfinite if can remove $\varepsilon n$ edges to get a graph where all connected components have size $\le k$.
+
+i.e., Remove few edges to break graph into tiny pieces.
+
+**Theorem**
+For all $\varepsilon,\Delta$, exists $c$ st
+planar graph of max degree $\Delta$
+is $(\varepsilon \Delta, c/\varepsilon^{2})$ hyperfinite.
+
+So we can use the following approach for testing planarity:
+1. Find a way to remove a small number of edges in order to split G into small CCs.
+2. If step (1) fails, we know we aren't planar.
+3. If step (1) succeeds, we can just check one of these little CCs for whether or not it's planar.
+
+Similar to what we did for matching last time, we're going to break the problem into two parts:
+making a "Partition Oracle" and using a Partition Oracle.
+
+**Partition Oracle**
+- input: vertex $v$
+- output: Name of the part of the partition that $v$ belongs to
+
+Require: partitions are small and connected.
+Also require: if $G$ is planar, then at most $\varepsilon \Delta n/4$ edges cross partition.
+
+It's pretty straightforward how to do testing once you have such an oracle.
+
+**Building the oracle**
+1. global partitioning strategy
+2. locally implement it
+
+$S$ is a $(\delta,k)$-isolated neighborhood of node $v$ if 
+- $v\in S$
+- $S$ is connected \
+- $|S|\le k$ 
+- edges connecting $S$, $\bar{S}$ are at most $\delta |S|$
+
+**Claim**: in a planar graph, in any decent partition *most* nodes have $(\varepsilon \Delta, c/\varepsilon^{2})$-isolated neighborhoods.
+I don't follow this yet, but let's keep going.
+
+**Global Partitioning algorithm** (note: I don't think we actually do this, this is just how you would in theory glue stuff together?)
+
+```python
+order vertices randomly
+partition = []
+for i in range(n):
+	if v_i still in graph:
+		if exists (delta,k)-isolated nbrhd of v_i in remaining graph:
+			S = this neighborhood
+		else:
+			S = {v_i} # hopefully this is unlikely
+	partition.append(S)
+	Remove S from graph
+```
+
+We want to show that this algorithm works reasonably well.
+**Lemma**:
+A $(1-\varepsilon)$-fraction of nodes enjoy $\varepsilon,\Delta\varepsilon^{-3}$ isolated nbrhoods.
+**Proof sketch**
+Using the hyperfiniteness theorem, we know that there is a partition such that if we rm $\varepsilon \Delta n$ edges, then every CC in the resulting graph has size at most $O(\varepsilon^{-2})$.
+
+For each vertex $v$, let $X_v$ be the number of edges that touch the CC that $v$ ends up in once we've cut the edges.
+Then, $\sum X_v \le \varepsilon \Delta n \cdot O(\varepsilon ^{-2})$.
+In other words, 
+$$
+\mathbb{E}[X_v] \le O(\Delta/\varepsilon).
+$$
+By Markov, 
+$$
+\Pr[X_v \ge \Delta \varepsilon ^{-3} \cdot \varepsilon] \le O(\Delta/\varepsilon) / (\Delta \varepsilon ^{-2}) < O(\varepsilon).
+$$
+
+So basically the global algorithm is pretty good.
+
+Now, this global algorithm is basically just greedy.
+So I'm hopeful that if we do the same random ordering trick that we did last time, maybe good things will happen. Like we can cut long range dependencies and just locally simulate the greedy thing.
+
+**Local Simulation of Partition Oracle**
+Yeah so the way we do it is indeed just like last time. (this is not to diminish the technique --- on the contrary, I think the broad-applicability of this technique is exciting!)
+But even having seen last time it took me a minute to see this so let me write it down.
+
+Here's a recursive version of the local oracle:
+
+```python
+# fix a random ordering of the vertices
+# input: vertex
+# output: a small neighborhood of v that has few edges to the outside world
+# note: these neighborhood things need to be **consistent** across calls to the oracle
+def oracle(v):
+	for each vertex w within distance k of v, where w has lower rank than v:
+		run oracle(w)
+	if some nearby w already claimed v:
+		output the part that claimed v
+	else:
+		just do a little BFS out of v (respecting the nearby guys who have their own thing going on) and decide on a neighborhood for v
+```
+
+Running time analysis is as follows:
+$$
+\sum_{i\ge 1} (\Delta ^{k})^{i}/i! = \exp(\Delta ^{k})
+$$
+for recursion-y stuff. 
+(Also, who thought that doubly exponential running time was a good idea?)
+(lol I guess think of $\Delta,\varepsilon$ as constants, then this is pretty good).
+
+Anyways, then we have to do the little BFS thing, but this is just small money in the total running time.
+
+Apparently you can do much better dependence on $\Delta, \varepsilon$. ok.
