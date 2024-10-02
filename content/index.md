@@ -1,29 +1,19 @@
 ---
 title: Thoughts
 ---
-Welcome to my personal blog. If you're interested in my research, then you are in the wrong place. Go to [my website](https://awestover.github.io).
+Welcome to my personal blog.  The main purpose of this blog is to serve as a location for me to clarify my thoughts[^1]. I think it's also a good way of connecting with my friends, and sharing ideas that I find important or helpful.
 
-[0stack/](https://awestover.github.io/thoughts/0stack/):
-This is the blog-like part of skyspace3.0. Specifically, it is a collection of serialized posts. 
+The posts approximately fall into three categories: 
+(1) [[tags/technical|technical notes]], (2) [[tags/life|life-optimization]], (3) [[tags/philosophy|philosophy]].
+Below I suggest "entry points" into exploring this blog.
 
-[[cooking]]: 
-Some of my favorite recipes. 
+[[0stack/]]:
+This is a collection of serialized posts. This is the best place to go to understand "what has Alek been thinking about lately", besides actually talking to me, which is a better method, and one that I [[taking social initiative|highly recommend]].
 
 [[the objective]]:
-Some *extremely not finished* thoughts about life.\
-This collection of posts explores some difficult and uncomfortable questions such as 
-1. What do I want / value?
-2. What should I want / value?
-3. How should I act?
-Alas, [nothing stops](https://jzhao.xyz/posts/nothing-stops). I must live, and I must blog. So here it is. \
-If you find these topics interesting let me know: I'd love to discuss them with you!
-Also, if there is some content here where
-- it is very unfinished and you'd like it to be finished
-- you think I have come to a false / harmful conclusion
-then I implore you to talk to me about this! This seems like a nice algorithm for improving the quality of this repository of thoughts. 
+What do I want? Not what should I want, what are "realistic" things for me to want, what would it be convenient for me to want -- but really, what do I want? This question is important for me to think about frequently, in order to calibrate my actions. In this collection of posts I explore what I want, and thoughts on how to get more of what I want.
 
-[[alignment]]
-I am pretty worried that highly capable AI is created by 2040. If this happens,
-it seems highly likely that it will result in all humans being dead. In this
-connected component of posts I discuss why I believe these two claims, and
-discuss the implications of these claims. 
+[[alignment]]:
+I think it's pretty likely that highly capable AI agents will be created by 2035. I think this poses a substantial existential risk to humans. In this collection of posts I explore questions such as (1) What should I do about this? (2) How should I feel about this? (3) How will the future play out?
+
+[^1]: Some of my opinions have very large diffs from a few weeks ago. Things dated more than 2 weeks ago may no longer be an accurate reflection of my current thoughts. I'm planning on updating content that I no longer agree with -- and hoping that my current opinions are more stable --  but just keep post dates in mind when reading things. In a similar vein, I will note that a lot of the posts here are incomplete or underdeveloped. I'm also  trying to fix this.

@@ -1,3 +1,7 @@
+---
+tags:
+  - technical
+---
 In this post I will write an explanation of [some work by ARC and other groups](https://www.alignment.org/blog/formal-verification-heuristic-explanations-and-surprise-accounting/) on provable guarantees for neural networks. My main goal in writing this is to personally understand what they are working on. But hopefully by the end I will have some comments and ideas for future work.
 
 ### Background:

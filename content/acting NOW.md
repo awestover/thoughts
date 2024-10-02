@@ -1,0 +1,3 @@
+- Don't over-think cheap things (e.g., talking to people).
+- Train yourself to not procrastinate important things.
+- Don't wait to start doing research.

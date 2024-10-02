@@ -1,3 +1,5 @@
+#philosophy
+
 > Q: To what extent should arguments of the following form influence policy updates?
 
 > Argument: If reality has property $X$, then performing action $Y$ yields infinite utility.\

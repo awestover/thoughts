@@ -45,7 +45,7 @@
 
 --- 
 
-Addendum it should be noted that advice from [[career advice from 80,000 hours]] is probably still worth considering. 
+Addendum it should be noted that advice from career advice from 80,000 hours is probably still worth considering. 
 In particular, I haven't ever really *tried* doing anything other than TCS research. 
 So of course I can't based on historical data conclude that doing radically breaking status quo things like
 - healthcare engineer / research

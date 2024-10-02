@@ -16,6 +16,5 @@ care about ppl ---> act nicely towards ppl.
 on the other hand, acting nicely towards ppl can help fuel caring about ppl. 
 acting nice here could look like e.g., learning someones name, saying hi, asking after something they care about, etc. 
 
-Anyways, this is kind of related to TAP1. 
-The relationship is, often good to prioritize being nic over "efficiency".
+Anyways, this is kind of related to TAP1, in that the principal underlying TAP1 is "prioritize being nice".
 
