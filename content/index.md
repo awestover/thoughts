@@ -8,12 +8,12 @@ The posts approximately fall into three categories:
 Below I suggest "entry points" into exploring this blog.
 
 [[0stack/]]:
-This is a collection of serialized posts. This is the best place to go to understand "what has Alek been thinking about lately", besides actually talking to me, which is a better method, and one that I [[taking social initiative|highly recommend]].
+This is a collection of serialized posts. This is the best place to go to understand "what has Alek been thinking about lately", besides actually talking to me, which is probably a [[taking social initiative|better method]].
 
 [[the objective]]:
 What do I want? Not what should I want, what are "realistic" things for me to want, what would it be convenient for me to want -- but really, what do I want? This question is important for me to think about frequently, in order to calibrate my actions. In this collection of posts I explore what I want, and thoughts on how to get more of what I want.
 
 [[alignment]]:
-I think it's pretty likely that highly capable AI agents will be created by 2035. I think this poses a substantial existential risk to humans. In this collection of posts I explore questions such as (1) What should I do about this? (2) How should I feel about this? (3) How will the future play out?
+I think it's pretty likely that highly capable AI agents will be exist and be widely deployed by 2040. I think this poses a substantial existential risk to humans -- i.e., is pretty likely to result in humans being dead or otherwise disempowered. In this collection of posts I explore questions such as (1) What should I do about this? (2) How should I feel about this? (3) How will the future play out?
 
 [^1]: Some of my opinions have very large diffs from a few weeks ago. Things dated more than 2 weeks ago may no longer be an accurate reflection of my current thoughts. I'm planning on updating content that I no longer agree with -- and hoping that my current opinions are more stable --  but just keep post dates in mind when reading things. In a similar vein, I will note that a lot of the posts here are incomplete or underdeveloped. I'm also  trying to fix this.
