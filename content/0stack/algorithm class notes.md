@@ -445,3 +445,35 @@ for recursion-y stuff.
 Anyways, then we have to do the little BFS thing, but this is just small money in the total running time.
 
 Apparently you can do much better dependence on $\Delta, \varepsilon$. ok.
+
+## property testing lower bounds
+
+**Problem:**
+Given $v\sim \{0,1\}^{n}$, find a vector $\hat{v}$ such that $||v-\hat{v}||_1 \le n/8$.
+Queries that you're allowed to make:
+You can choose any vector $w\in \mathbb{R}^{n}$ and ask for $\mathsf{sign}(v\cdot w)$.
+
+**Claim**:
+You can't solve this problem using fewer than $o(n/\log n)$ queries.
+**Proof**: 
+Suppose that you had some (potentially randomized) algorithm that could output a vector $\hat{v}$ such that $\Pr_i [v_i = \hat{v}_i] \ge 7/8$ in time $f(n)$. Then, we could by symmetry have a randomized algorithm with the property that for each $i$, $\Pr_{alg}[v_i = \hat{v}_i]\ge 7/8$.
+Then, if we ran this $10 \log n$ times and took a majority vote, we would have an estimate that is correct with probability $1-1/n^5$ for each coordinate of $v_i$.
+Taking a union bound, we have that with probability $1-1/n^4$ we have actually just recovered $v$.
+This is information theoretically impossible to do faster than $\Omega(n)$ -- we only get one output bit per query. 
+Thus we must have $f(n)\cdot 10\log n \ge \Omega(n)$. 
+So $f(n)\ge \Omega(n/\log n)$.
+
+**Remark**:
+I'm pretty sure that you actually need $\Omega(n)$ queries, but haven't thought about how to make the lower bound tighter.
+
+## FG -- matrices
+
+Solve LCA in $n^{2.5}$ assuming $\omega=2$.
+First, compute all of these guys:
+$$
+\left\lfloor  \frac{\max\{ j\mid A_{ij}=B_{jk} \}}{\sqrt{ n }}  \right\rfloor 
+$$
+Then just do something easy to get
+$$
+\max\{ j\mid A_{ij}=B_{jk} \} 
+$$

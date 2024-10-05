@@ -68,3 +68,50 @@ Alek: "ok, I guess you got me."
 
 JJ: "It could well be said that this conclusion was un*avoidable*."
 
+---
+---
+
+**Appendix**
+I've been thinking about how to make $3412$-av detection faster than $2^{O(\sqrt{ \log n })}$.
+It seems a bit tricky, but I think I was able to solve it if we assume that the *range* is small.
+
+Specifically, let's assume that the range is $[R]$ for some $R\ll n$.
+Then we can do $O(R^{3}\log n)$. 
+Here's how:
+
+Let's say that $y\in [R]$ is **good** if at least $\Omega(n/R)$ many disjoint $\pi$'s start at height $y$. 
+Note that there exists a good $y$.
+
+Now, fix such a $y$.
+Choose a random $x\in [n]$.
+There is like a $1/R$ chance that this $x$ does a nice job of splitting the $\pi$'s that started at $y$.
+
+Now, we look for ascending patterns which are "before $x$ and above $y$" and also ascending patterns which are "after $x$ and below $y$".
+
+Let $k$ be the number of points which are "before $x$ and above $y$".
+Then our "$\varepsilon$" for this is like $(n/R)/k$
+And the number of samples per real sample is like $n/k$.
+Overall, the avoidance testing should work in time $(k/(n/R)) \cdot n/k = R$.
+
+So, our overall time is 
+- $R$ for iterating over $y$'s
+- $R$ for trying $x$'s
+- $R\log n$ for the length-2 avoidance testing (because of epsilon deterioration / ER stuff).
+
+Overall it is $O(R^{3}\log n)$
+
+**Alek's Conjecture**
+Probably you can do $R\log n$.
+
+**Bigger picture thoughts:**
+- I think the idea of "repairing" things has potential for helping us beat  $2^{\sqrt{ \log n }}$ for $\pi=3412$
+- But sometimes you can't repair things. 
+- So it has to be a win-win analysis
+	- either we can repair things
+	- or we win for some other reason.
+- Note that the recurrence that we don't like is $T(n) = m + 2T(n/m)$.
+	- So actually it seems really hard to improve this recurrence. 
+	- So maybe we should just do completely different approach.
+	- Even though the simple splitting stuff that we were trying didn't work, maybe there's still something we can do.
+
+

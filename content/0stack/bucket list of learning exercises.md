@@ -1,0 +1,11 @@
+- fix transformer shortest path thing
+- investigate superposition a bit more -- some of my results in [[superposition]] were wacky
+- **code an SAE** (or maybe just do the ARENA stuff about this)
+- train a **probe** (e.g., something similar to Tegmark truth paper?)
+- ***see what activates neurons the most, e.g., in a CNN trained on MNIST***
+- implement the IRL thing by Dylan
+- code a VAE, do deformations in latent space and see what happens in actual space
+- implement ARC's heuristic formal verification paper
+- can you train a model to hide its internal state against probes?
+	- this question is a bit tricky -- if a model has a certain internal state, and you don't find it, then that may well just mean you didn't try hard enough? but there are probably gradations to this, so I bet it makes sense.
+- implement some kind of thing where you make adversarial examples
