@@ -216,9 +216,9 @@ plt.show()
 **Linear representation hypothesis**: \
 There are features, which might or might not be present.
 Hopefully they are often not present (**sparsity**).
-The features can have values, and the hypothesis is that the activation on a sample is basically something like  $$
-\sum \alpha_{i}  F_i.
-$$
+The features can have values, and the hypothesis is that the activation on a sample is basically something like  
+
+$$\sum \alpha_{i}  F_i.$$
 Where $F_i$ is a feature direction and $\alpha_i$ is the feature value.
 Whatever function gets us to this place is likely incredibly complicated. 
 There is some empirical support for the linear representation hypothesis. 

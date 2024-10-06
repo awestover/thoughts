@@ -41,11 +41,11 @@ They define a 4 step game.
 
 # statistical possibility of dynamic detection
 
-**Case 1**: $\varepsilon$ is large (compared to 1/VC dimension of the function family that f is chosen from). 
+**Case 1**: $\varepsilon$ is large (compared to 1/VC dimension of the function family that f is chosen from). \
 Then, assuming that number of training examples is linearly related to number of parameters, 
 this means that $f^{*}$ differs from $f$ substantially, so training will remove the backdoor.
 
-**Case 2**: $\varepsilon$ is small. 
+**Case 2**: $\varepsilon$ is small. \
 Then they have some way of "taking a majority vote" to recover the original value, and then they can notice that this is not the value that $f^{*}$ is outputting.
 
 > Q: This probably requires some assumptions on what $\mathcal{F}$ looks like?
@@ -117,9 +117,9 @@ We'll do the following thing:
 - So each of these strategies should work with good pr. 
 - So we can take a majority vote and win.
 
-**thm**
-If $\varepsilon>100/VC(\mathcal{F})$ then you're toast -- backdoor is statistically indistinguishable from non-backdoor.
-If $\varepsilon< .00001/VC(\mathcal{F})$ then you're good -- backdoor is detectable with 
+**thm**\
+If $\varepsilon>100/VC(\mathcal{F})$ then you're toast -- backdoor is statistically indistinguishable from non-backdoor.\
+If $\varepsilon< .00001/VC(\mathcal{F})$ then you're good -- backdoor is detectable with \
 **pf of theorem**
 
 You're screwed for large $\varepsilon$ -- then the adv can basically make the backdoor insertion correspond to switching between two legit functions. (remember that the adv doesn't get to choose the backdoor location, but they do get to choose input distribution)
@@ -133,11 +133,13 @@ if $\varepsilon$ small rel to $1/VC$ then back-doored function is "very weird".
  Strategy in prev section is not efficient (bc the HLW algorithm is not efficient).
 
 **Claim** that PAC learnable things are efficiently defendable:
+
 **Proof** 
 - you just do the pf from sec4 but you use the fact that PAC learnable things are learnable -- you replace the HLW thing with this nice observation
 
 **Theorem** 
 in random oracle model, there are some things which are efficiently defendable but not efficiently PAC learnable
+
 **Proof**
 Define $\mathcal{K}$ to be the set of $n$ bit strings -- we call these "**keys**".
 Let $\mathcal{X}$ also be the set of $n$ bit strings. This is the domain of our functions.
@@ -148,11 +150,13 @@ Define $\mathcal{F} = \{ x\mapsto \mathsf{RAND}(K || x) \mid K\in \mathcal{K}\}$
 So, there are no valid nearby $f^{*}\in \mathcal{F}$.
 
 **Claim 2** this thing is not efficiently PAC learnable.
+
 **Proof:** it's just random lol.
 
 **Conjecture**
 Assuming OWF, there is a polynomially evaluatable rep class that is effic defendable but not effic PAC learnable.
 in other words, we're going to try to replace the random oracle assumption with assumption that PRF's exist.
+
 **Proof**
 Maybe assuming CRHF's is helpful.
 Minimum distance PRFs -- sounds interesting.
