@@ -5,6 +5,34 @@ Here are some notes I wrote while reading it.
 # my own experiments
 I spent a few minutes to code up some of the most basic experiments described by Anthropic. 
 
+**edit:** 
+I worked on debugging why I was having trouble reproducing Anthropic's superposition.
+I'm not actually sure what I changed, but using Adam with $lr=.001$ seemed to make a big difference. I also did Kaiming normalization, though idk if that mattered. I think moral of the story is getting ML stuff to work probably requires some combination of "intuition" and theoretical setting stuff up the right way.
+
+I think setting up variable importances also mattered a bit for getting this result.
+If you don't do this I could imagine that the model would just come up with some scheme for counting the number of inputs turned on or something.
+
+Ah yeah nice I'm starting to get the same plots as Anthropic
+
+Here's a picture of $W^{\top}W$
+![[cmap.png]]
+The setup is the early variables are the most important, and importance drops off exponentially.
+The dot products show how much interference there is between the features. 
+
+I tried doing a graph of where the strong connections are. 
+I don't think I'm quite setting this up correctly. But I do see some antipodal pairs like they claimed that you're supposed to, so that's at least good.
+![[Pasted image 20241005145128.png]]
+
+ok this graph turned out much nicer:
+I didn't plot the degree one guys just for sake of clarity.
+I'm not really sure why there aren't any structures besides the dipole guys. 
+I guess maybe it's not the correct regime for these other things to emerge in.
+
+
+![[cmap2.png]]
+
+![[cmap3.png]]
+
 ![[starfish.png]]
 ![[starfish2.png]]
 (todo: hmm, I thought these were supposed to be orthogonal? They're close to orthogonal, but not quite.
