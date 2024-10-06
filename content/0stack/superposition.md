@@ -254,20 +254,25 @@ What about correlated features:
 	- antipodal good
 Sometimes, if features are highly correlated, a PCA-like strategy makes more sense.
 **OpenQ:** understand the tradeoff here. 
+
 **discussion of learning dynamics**
 - they study how the solutions evolve over time
 - find that it's "surprisingly discrete" / phase-changey
 - and that the model learns these things one thing at a time.
+
 **Adversarial Examples**
 - superposition seems to possibly play a role in causing lack of robustness
 - They say that the reason why is that the first col of $W^{T}W$ is $(1,\varepsilon,-\varepsilon,\varepsilon,\varepsilon,-\varepsilon,\dots)$ instead of $(1,0,0,\dots)$. Maybe the point is usually the $\varepsilon$'s are supposed to cancel out as noise, but an adversary could choose not to do this?
+
 **computing in superposition**
 - superposition isn't just for storing stuff
 - model can learn to do computations in superposition as well.
+
 **motivation**
 - ok, now I think they're going to talk about how mech interp is good for solving alignment
 - idea: if you can identify all the features in your model, and there is a "be evil" feature, then maybe you should be concerned if this activates?
 The basic idea is that solving superposition (which maybe SAEs do?) let's you break up activation space in nice ways.
+
 **Proposing some solutions**
 - Maybe there are models that don't exhibit superposition but are still competitive. Mixture of Experts was proposed. 
 	- apparently in mixture of experts you can have a bunch of neurons, but only a few experts activate on any given query. and then you can not expend FLOPs on the neurons that aren't activating. 
