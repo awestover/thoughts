@@ -1,3 +1,25 @@
+**ENM -- DIPOLES:**
+
+$\rho=\sum r_i q_i$
+$\mu = IA \hat{n}$
+
+$$
+U = - \rho \cdot E
+$$
+$$
+\tau=\rho \times E
+$$
+$$
+F=-\nabla U 
+$$
+$$
+U=-\mu \cdot B
+$$
+$$
+\tau=\mu \times B
+$$
+
+
 **Gauss's Law** 
 Note that this is not actually a law, it's just a corollary of Coulomb's Law.
 Electric flux through a closed surface is equal to enclosed charge over $\varepsilon_{0}$.

@@ -477,3 +477,153 @@ Then just do something easy to get
 $$
 \max\{ j\mid A_{ij}=B_{jk} \} 
 $$
+
+
+## SL SPANERS
+
+**Def**: $k$-spanner is a subgraph $H$ such that $d_H(u,v)\le k\cdot d_G(u,v)$
+
+Remark suppose $G$ is a $C_{4}$-free bipartite graph with about $n^{1.5}$ edges -- note that such graphs exist.
+Suppose we remove an edge from $G$. Then, there is no path of length $\le 3$ between the vertices that we just deleted an edge between. 
+
+This is a proof that $n^{1.5}$ edges are required to get a $3$-spanner. 
+
+Similar lower bounds for other $k$ assuming girth conjecture. 
+
+Today, we give an LCA algorithm for computing a $3$-spanner with $O(n^{1.5}\log n)$ edges.
+We will be able to make queries of the form "is *this* edge in the spanner graph?" in $n^{3/4}$ time.
+
+First idea: 
+We can delete an edge from every triangle.
+
+For today: 
+We assume max-degree $n^{3/4}$.
+ok, fine.
+
+First, how would you even do this globally?
+
+1. Pick random set $S$ of size $\sqrt{ n }\log n$
+2. Then, $S$ has neighbor to all high degree vertices. 
+3. Now we construct a graph as follows:
+4. Add all edges touching $S$
+5. Add all edges touching low degree vertices
+6. Add ONE edge from $v$  to all adjacent clusters
+
+This graph clearly has a very small number of edges.
+
+Suppose $(u,v)$ is an edge and both $u,v$ are high degree vertices. 
+If $u,v$ are in the same cluster, then if $w$ is the cluster center we have a length $2$ path $uwv$.
+If $u,v$ are in different clusters, then let $w$ be the cluster center of $v$'s cluster. We know that $vw$ is an edge, and that $u$ has an edge to some $w'$ which is in $v$'s cluster. 
+Overall, we deduce that $u,w',w,v$ is a path that exists.
+
+**side remark** -- I quite enjoy some algorithmic graph theory! brings back some good memories. anyways.
+
+other side remark: 
+in our model of the graph, we allow "degree probe" i.e., asking in constant time what the degree of a vertex is.
+
+Anyways, that was the global algorithm. Now, let me try to guess how I'd local-ify it. 
+
+So, in a LCA you have query access to some huge random string that is persistent.
+Like your algorithm is parameterized by this random string, and just has to work for most choices of this random string.
+
+So ok, each vertex picks whether it's a center or not. 
+So now it's pretty easy to pick out the edges touching low degree vertices, and also the edges touching centers. 
+Also, it's pretty easy for every vertex to choose it's cluster center that it wants to join -- just join the cluster who's cluster center has the lowest id amongst all clusters that you're connected to 
+
+And then each vertex chooses the lowest id neighbor in each cluster as it's connection in that cluster. By which I mean, iterate over your neighbors in order, maintain a list of clusters that you've already connected to, and take an edge whenever it goes to a new cluster -- and ofc at that point you mark that cluster as having been visited.
+Ah, but this is kind of expensive, because it already takes like ~$\sqrt{ n }$ time to even find the cluster center of a vertex... so this is probably not quite gonna cut it.
+
+
+Anyways, let's think about it.
+Type 2 query -- asking if an edge $uv$ should exist in virtue of $u$ being the lowest id neighbor of $v$ which is a center. 
+This should take about time $\sqrt{ n } \log n$ because you just go through neighbors of $v$ until find one, but you're very likely to find one after like $\sqrt{ n }$ tries.
+
+Type 3 query -- edge to adjacent cluster??
+
+---
+
+Anyways, that didn't quite work so we're changing things up a bit.
+
+Let $C_u$ denote the set of centers that are in the first $\sqrt{ n }$ indices of $u$'s neighbor list.
+Fact: if $u$ is high degree, it'll have between $1$ and $\log n$ many such centers.
+
+So, now we're going to connect $u$ to all of $C_u$. 
+This makes it really easy to check, given a cluster center $v$ whether $u$ is in $v$'s cluster  -- although this is because we have some kind of weird graph model where I'm allowed to ask for the index of $u$ in $v$'s adjacency class. 
+It still takes like $O(\sqrt{ n })$ time to find the cluster centers of a vertex, but checking mmembership is super easy now.
+
+now, here are the other edges that we add: 
+- For each edge $uv$
+- Let $S$ be the set of neighbors of $u$ which are lower id than $v$
+- For each $x\in S$, compute $C_x$ and cross off $C_x \cap C_v$  as "we've already met"
+- If by the end of this process there are some things in $C_v$ that haven't been crossed off, then we say that the $uv$ edge is **cool** and we add it. Else, we don't add it.
+
+This clearly works, but it's too slow still
+
+Now finally, here's the smarter method that's actually efficient.
+
+
+Yeah, so we were just being a little bit silly above. Here's how you can do it fast:
+
+1. For each edge $uv$
+2. Let $S$ be the set of neighbors of $u$ with lower id than $v$
+3. For each $x\in S$
+4. For each $w\in C_v$
+5. Check if $w$ is a cluster center of $x$ -- if so cross $w$ out
+6. Check whether any $w\in C_v$ didn't get crossed out. 
+
+This takes time $O(\Delta \log n)$.
+
+Maybe later we'll fix the issue about the max-degree being too large. 
+Oh lol actually we'll fix it on the homework!
+
+## maximal independent set -- local computation algorithm
+
+This one had some pretty neat techniques. 
+The main one I liked was, somehow breaking the problem into not-super-overlapping sub-parts. 
+
+First, we give a distributed algorithm for the problem.
+
+```python
+Each round:
+	Every vertex randomly tries to color itself with pr 1/(2 Delta)
+	Coloring "goes through" if no neighbors also try to color themselves
+	if coloring goes through:
+		kill the neighbors
+```
+
+We're going to run this algorithm for $\Delta \log  \Delta$ steps. At that point NOT EVERYONE will be handled.  
+Some ppl will be killed, some will be put in the MIS. But some are still undecided. The number of undecided guys is $n/\Delta^{c}$. 
+It turns out that these guys are "well spread out" , and that this is good.
+
+So our LCA algorithm for MIS is going to work as follows --
+First run Luby for $\Delta \log \Delta$. 
+Then do BFS to find $v$'s live CC. 
+Then brute force find lex first MIS of the live CC.
+
+We will show: 
+
+**Lemma**
+Size of CC is less than $\poly\log(\Delta) \cdot \log n.$
+This is actually pretty complicated and cool to show.
+
+Define $A_v$ to measure whether $v$ survives all rounds
+Define $\neg B_v$ to measure whether there is a round where $v$ tries to color its self and no neighbors try to.
+Note that $\neg B_v$ doesn't necc imply that $v$ is in the MIS bc $v$  is allowed to "try to color itself" after having already been killed. This was kind of  a weird notation choice but whatever.
+
+Then, if $v,w$ are distance at least $3$ apart, $B_v, B_w$ are independent rvs.
+
+**PLAN**
+- large CC --> many nodes at dist 3 apart
+- nodes at dist 3 apart --> unlikely to simultaneously survive
+
+Still a bit complicated.
+
+CC --> just only think about a spanning tree for the CCs.
+
+**CLAIM**
+For live CC $S$, there is a tree of size at least $|S|/\Delta^{2}$ in $G^3$ such that the $G$-dist of each pair of vertices in the tree is at least $3$.
+**Pf:**
+greedily construct the tree
+
+By a union bound, and the fact that there aren't too many possible trees on $\log n$ vertices, we get that it's unlikely that $G^{3}$ has any $\log n$ sized trees. So the live CCs in $G$ should be of size at most $\Delta^{2} \log n$.
+
