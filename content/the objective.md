@@ -2,21 +2,12 @@
 tags:
   - life
 ---
-**(1) Help solve interesting and important problems.**
-- Good problems generally require "epic plans" and collaboration.
-- A good litmus test for whether a problem is good is whether I'd care about it if someone else had researched it.
-- When facing a good problem, you don't hold any punches -- you just try to find a solution.
+**What determines the goodness of the universe?**\
+The goodness of the universe is determined by the quantity times quality of conscious experience. \
+People with hopes and dreams. \
+People who create art, connect with other humans and care about other humans and various projects. \
+People who experience and share joy and excitement.\
+People who rise to challenges, and become better people.\
+This is what makes the universe good.
 
-**(2) Be happy and healthy.**
-- [[social]] habits
-- [[sleep]] habits
-- [[intention]] habits
-
-**(3) Promote the happiness and healthiness of other people, now and in the future.** 
-
----
-
-Related posts:
-
-In [[existence of objective function]] I discuss what an objective function is.
-One exercise that helped me come up with this description of my objective function was thinking about what [[best things|past actions I've been the most satisfied with]].
+And I [[how I want to spend my life|desire to make the universe more good]].

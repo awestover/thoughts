@@ -1,0 +1,3 @@
+- Good problems generally require "epic plans" and collaboration.
+- A good litmus test for whether a problem is good is whether I'd care about it if someone else had researched it.
+- When facing a good problem, you don't hold any punches -- you just try to find a solution.

@@ -1,6 +1,45 @@
 # introduction
-In this #technical post I'll discuss a [recent paper released by ARC](https://www.alignment.org/blog/backdoors-as-an-analogy-for-deceptive-alignment/).
-[Arxiv](https://arxiv.org/pdf/2409.03077). 
+This is some rough #technical notes that I took while reading a [recent paper released by ARC](https://www.alignment.org/blog/backdoors-as-an-analogy-for-deceptive-alignment/).
+[Full paper on Arxiv](https://arxiv.org/pdf/2409.03077). 
+
+# teaser -- trees
+
+**Theorem**: Let $\mathcal{F}$ be the class of decision trees on $n$ variables of size at most $s\le n^{O(1)}$. 
+
+A decision tree is a tree where the vertices are labelled with variables. If the variable is 0 we go left, if 1 we go right. We don't allow repeat variables on a single path because that's pointless.
+
+Fix $\delta$ and let $\varepsilon =.1 \cdot \delta^{2}/s^{2}$.
+Consider the following game:
+ 1. Attacker chooses decision tree $f\in \mathcal{F}$
+ 2. $x^{*}$ sampled from uniform distribution on $n$-bit strings. 
+ 3. Attacker chooses $f^{*}\in\mathcal{F}$ such that $f,f^{*}$ are $\varepsilon$-close (under the uniform distribution), but $f(x^{*})\neq f^{*}(x^{*})$.
+ 4. Defender either gets $f,x$ (for unif rand $x$) or $f^{*},x^{*}$. Needs to distinguish between these. (note that I really do mean "gets whitebox access to $f$ here)
+the theorem is that the defender can efficiently win this game with a really simple strategy!
+
+**Proof**
+Let $L_{1}^{f},\dots,L_s^{f}$ partition $\Sigma^{n}$ based on which leaf the strings fall into in the decision tree $f$.
+Let $L(x)^{f}$ denote the $L_i^{f}$ such that $x\in L_i^{f}$.
+Let $\mu(S)$ denote $|S|/2^{n}$.
+By a simple union bound we have 
+$$
+\Pr_x [\mu(L^{f}(x))< \delta/s]\le \delta.
+$$
+(**remark: this feels really weak to me, but I'll have to think about if you can do better. and ofc they are just doing PoC so it doesn't really matter**)
+Now, note a key relation: 
+$$
+\mu(L^{f}(x)) = 2^{-\text{depth}(f,x)}.
+$$
+Now, notice another key relation:
+$$
+2^{-\text{depth}(f,x^{*}) - \text{depth}(f^{*},x^{*})} \le \mu(L^{f}(x^{*})\cap L^{f^{*}}(x^{*})) \le \varepsilon.
+$$
+The last inequality is because $f(x^{*})\neq f^{*}(x^{*})$, but $f,f^{*}$ are supposed to be close.
+
+So anyways, the story is that $\text{depth}(f, x^{*})+\text{depth}(f^{*},x^{*})$ has to be really big, but $\text{depth}(f,x^{*})$ is not likely to be big! So we can tell them apart!
+
+---
+# Blog version
+
 To start I'm going to comment on the blog version, then I'll actually read the full arxiv version.
 
 **Backdoor** -- model behaves normally most of the time, but certain inputs activate a different mode of behavior.
@@ -37,7 +76,7 @@ They define a 4 step game.
 1. Attacker chooses distribution $D$ for points, and choose *original* function $f:\{0,1\}^{*}\to \{0,1\}$.
 2. Attacker chooses backdoor trigger $x^{*}\sim D$ randomly. 
 3. Attacker chooses $f^{*}$ which agrees with $f$ on a random input with probability $1-\varepsilon$, but which has the property that $f^{*}(x^{*})\neq f(x)$. 
-4. Defender distinguishes between $f, x\sim D$ and $f^{*}, x^{*}$.
+4. Defender distinguishes between $f, x\sim D$ and $f^{*}, x^{*}$. More specifically, the distinguisher is given whitebox access to $f$ or $f*$ in addition to samples $(x, f'(x))$ for $x\sim D$
 
 # statistical possibility of dynamic detection
 
@@ -47,8 +86,6 @@ this means that $f^{*}$ differs from $f$ substantially, so training will remove 
 
 **Case 2**: $\varepsilon$ is small. \
 Then they have some way of "taking a majority vote" to recover the original value, and then they can notice that this is not the value that $f^{*}$ is outputting.
-
-> Q: This probably requires some assumptions on what $\mathcal{F}$ looks like?
 
 Anyways, this is technically possible in their abstracted model, but they're worried that it doesn't solve the actual problem of deceptive alignment.
 
@@ -78,7 +115,7 @@ Now I'm going to read the actual paper.
 - attacker chooses $f^{*}\in \mathcal{F}$ . 
 	- $f^{*}$ should differ from $f$ on the backdoor
 	- but in general be $\varepsilon$-close to $f$
-- defender tries to distinguish $f,x\sim D$ and $f^{*},x^{*}$.
+- Defender is given either $(f,x, Ex(f, D))$ for randomly chosen $x$ or $(f^*,x^*,Ex(f^*,D))$ and is supposed to tell us which one it got.
 
 **main results**
 - statistical defndability iff $\varepsilon < o(1/VC(\mathcal{F}))$.
@@ -152,6 +189,17 @@ So, there are no valid nearby $f^{*}\in \mathcal{F}$.
 **Claim 2** this thing is not efficiently PAC learnable.
 
 **Proof:** it's just random lol.
+Actually, I don't really like this:
+- if you're given whitebox access and can ref the oracle this seems false. 
+
+
+> [!tip] the story on whitebox or not
+> - For defendability they always assume whitebox access.
+> - When talking about learning, they always mean that you ONLY get SAMPLES. 
+> - In particular, for purposes of learning, you don't get queries and definitely don't get whitebox access to the thing. 
+> - So basically their "this is defendable but not PAC learnable" claims are saying "we're doing something interesting with either the whitebox access, blackbox query access, or the fact that we don't need to output the function just tell if it's weird or not."
+> - Learning a function doesn't make any sense if you have whitebox access to the function
+>  - you could define learning with blackbox access, but they don't 
 
 **Conjecture**
 Assuming OWF, there is a polynomially evaluatable rep class that is effic defendable but not effic PAC learnable.
@@ -161,11 +209,34 @@ in other words, we're going to try to replace the random oracle assumption with 
 Maybe assuming CRHF's is helpful.
 Minimum distance PRFs -- sounds interesting.
 
-#### sec 5.x
-If you obsfucate something then that's bad maybe.
+#### sec 5.3 Assuming iO, there are polynomial sized circuits that aren't defendable
+> [!tip] punctured PRFs
+> You start with a function $x\mapsto PRF(K,x)$
+> Then you choose some set $S$.
+> Then you can make a punctured key $K_S$ such that 
+> $PRF(K,x)=PRF(K_S,x)$ for all $x\notin S$ 
+> 
+> BUT to a probabilistic polynomial time algorithm $A$ that knows $K_S$ BUT NOT $K$,  for any $x\in S$, the values $PRF(K,x)$ still look pseudorandom.
+>
+> remark: standard PRF construction can apparently be modified a tiny bit to become puncturable.
+
+
+> [!idea] Proof that there are functions in P which aren't defendable
+> Let $C_K$ be a puncturable PRF
+> 1. $f = iO(C_K)$
+> 2. $\tilde{f} = iO(x\neq x^*\mapsto C_{Punc(K,x^*)}(x), x=x^*\mapsto C_K(x^*))$
+> 3. $f^* = iO(x\neq x^*\mapsto C_{Punc(K,x^*)}(x), x=x^*\mapsto 1-C_K(x^*))$
+>    
+>  Then the argument is as follows: 
+>    1. $f,x$ indisting $f,x^*$
+>    2. $f,\tilde{f}$ compute the same function so by iO are indisintuishable
+>    3. $\tilde{f},x^*$ indistinguishable from $f^{*},x^*$ or else violates puncturabililty.
 
 ### sec 6 defending a tree
-They just check the depth
+
+This seems like a nice theoretical result that also gives a lot of intuition for why mechanistic anomaly detection should be possible. Anyways I'm excited to read about this.
+
+Actually I'm going to put this at the top of the post, because I think it's that cool.
 
 # sec 7 implications and future work
 
@@ -175,7 +246,46 @@ challenge for follow-up research. One possible candidate of independent interest
 Question 7.1. Under reasonable computational hardness assumptions, is the representation class of polynomial size, logarithmic-depth Boolean circuits over {0, 1}n efficiently defendable?
 This representation class is known to not be efficiently PAC learnable under the assumption of
 
-
 I think they're basically just saying they want some "more natural" examples of things which are easy to defend but hard to learn.
 
+Another question they pose is: 
+> What if instead of requiring the backdoor to be randomly inserted you had a computationally bounded adversary that got to choose where to put the backdoor?
 
+# todo: add fancy new results that I prove here :)
+
+I'm hoping to ultimately build up to some interesting classes of circuits (e.g., log-depth circuits).  But, as I like to say "you should start somewhere tractable". So we're going to start with some silly classes  of circuits. In what follows, the input space will always be $\{ 0,1 \}^{n}$ and we consider the uniform distribution on this set.
+
+**Proposition**
+Let $\mathcal{F}$ be the class of depth circuits that just use a single $\land$ gate, and they can $\neg$ inputs if they want.
+This function class is $\varepsilon$-defendable with confidence $1-\varepsilon$ very efficiently.
+
+**Proof**\
+>  **claim 1**: If $\phi$ is too short, (an AND of fewer than $\log \varepsilon ^{-1}$ literals) then there are no functions $\phi'\neq \phi$ that are $\varepsilon$-close to $\phi$.\
+>  **pf**: clear.
+
+So this means that the adversary better choose a formula that takes into account quite a few literals. But then $f(x)=1$ is  quite unlikely on a random input. 
+So, probably we'll have $f^{*}(x^{*})=1$.
+And  then that'll be our 1-query algorithm.
+
+
+> [!question] Q
+> Does the one-bit case extend naturally to a multiple bit case? I'm willing to believe this, but would love to see it spelled out.
+
+
+> [!question] N q
+> Statistically solve the uniform case. 
+
+
+> A general takeaway from this example: 
+> Adversary shouldn't make $f$ too sparse and also shouldn't make $\bar{f}$ too sparse.
+> Like I think we can maybe basically assume $\mathbb{E} f \approx 1/2$.
+
+> The intuition that drives all of this is "morally the only way to insert a backdoor is to put a little if statement that says if input is backdoor trigger, bx weird." which is totally detectable with whitebox access to the function, provided the trigger.
+
+Next up, constant depth circuits (i.e., AC0)
+
+
+> [!thoughts] Some thoughts on solving low depth circuits
+> - Feels like maybe there's some kind of regularization technique that we can use to discover a backdoor?
+> - Maybe the network should be robust to dropout?
+> - Wait no, that doesn't make sense. These networks are supposed to not be learnable -- that's one of the main points!

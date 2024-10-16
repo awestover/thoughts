@@ -6,6 +6,7 @@ I will abbreviate fine grained to FG and sublinear time to SL.
 
 # FG lecture 1
 **Theorem**: SETH implies OV
+
 **Proof**
 Let $f$ be a SAT instance. 
 Break variables into two parts $A,B$ each of size $n/2$. 
@@ -15,6 +16,7 @@ You also have two bits at the front of the vector to indicate whether you are a 
 Then, if two vectors are orthogonal, it means that at every spot there is at least one $0$, i.e., one of the assignments satisfies the clause. 
 
 **Theorem** $3/2$-approximating diameter in $m^{2-\varepsilon}$ is impossible under SETH.
+
 **Proof**
 Three part graph. 
 Left: vertex for each vector $v_{1},\dots,v_n$
@@ -33,6 +35,7 @@ Then diameter is either 2 or 3. 3 iff orthogonal pair.
 # lecture 2 
 
 **Theorem** Dominating set in $n^{2k+\varepsilon}$ time for $k\ge 4, \varepsilon>0$.
+
 **Proof**:
 $A[S,i]$= can you get to $i$ in 0 or 1 step from $S$?
 $AA^{T}$ does meet in the middle. 
@@ -112,6 +115,7 @@ So if 3SAT were subexponential we would get way too fast of an algorithm for kSA
 ### ksum
 
 **Theorem**: if for all $\varepsilon>0$ there exists $k$ such that $k$-SUM on small numbers takes time $O(n^{\varepsilon k})$ then ETH is false.
+
 **proof**
 Let's just work with a sparse formula, by virtue of sparsification lemma.
 Turns out to be better to work with 1-in-3 SAT (exactly one var in each clause is satisfied to make the clause true). But this only costs us constant blowup to do so its fine.
@@ -183,12 +187,14 @@ Today we are going to talk about a sublinear (in $m$) time algorithm for $\Delta
 
 **Sparsification lemma**
 If you sample $100\log n$ colors from $\{1,\dots,\Delta+1\}$ that each vertex is allowed to use, then probably the graph is colorable using colors from these lists. 
+
 **proof:**
 We'll do it below. 
 
 **Claim:** 
 Once we've sparsified the color palettes, we can ignore edges $uv$ where $u,v$ have disjoint palettes. 
 Doing so leaves us with only $n\log ^{2} n$ edges on average (and even whp).
+
 **Proof**
 For each vertex $v$, let's count the number of times a neighbor has a color from $v$'s palette; note that if a neighbor shares multiple colors, we get points for each of these. 
 Let $k=\log n$ be the size of the color palettes.
@@ -213,7 +219,7 @@ $$
 Finally, do the greedy algorithm in this sparse graph. 
 
 
-**sparsification lemma**
+**sparsification lemma**\
 We don't actually prove the sparsification lemma. we prove something a bit weaker: we allow $2\Delta$ colors.
 Anyways the proof is as follows:
 - run the greedy algorithm 
@@ -254,6 +260,7 @@ for i = 1  ... log_{1+gamma}(Delta)	:
 We can interpret the final values of $x_e$ as a fractional matching. This just means that $\sum_{e\ni v} x_e \le 1$ for all $v$.
 This fractional matching will satisfy: 
 $$\text{size of our VC} \le 2(1+\gamma)\sum_e x_e.$$
+
 **Proof**
 We only increase edge weights if we're sure that it's safe to do so. 
 The fact that our VC size is not much larger than the fractional matching size can be seen as follows:
@@ -264,6 +271,7 @@ The fact that our VC size is not much larger than the fractional matching size c
 
 **Claim 3**: 
 The value of a fractional matching gives a lower bound on the size of the minimum vertex cover.
+
 **pf**
 This is super obvious for matchings. 
 For fractional matchings, assign each edge to an endpoint in the VC. Have each VC vertex aggregate its assigned edges weights.
@@ -279,6 +287,7 @@ Let $M$ be a maximal matching and let $V^*$ be a minimum Vertex Cover.
 Observe: $|M| \le |V^{*}| \le 2|M|$.
 
 **Claim**: a maximal matching has size at least $m/(2\Delta)$
+
 **pf**: each edge you take eliminates fewer than $2\Delta$ edges as options. 
 
 Greedy Maximal matching alg: 
@@ -395,6 +404,7 @@ for i in range(n):
 We want to show that this algorithm works reasonably well.
 **Lemma**:
 A $(1-\varepsilon)$-fraction of nodes enjoy $\varepsilon,\Delta\varepsilon^{-3}$ isolated nbrhoods.
+
 **Proof sketch**
 Using the hyperfiniteness theorem, we know that there is a partition such that if we rm $\varepsilon \Delta n$ edges, then every CC in the resulting graph has size at most $O(\varepsilon^{-2})$.
 
@@ -454,7 +464,9 @@ Queries that you're allowed to make:
 You can choose any vector $w\in \mathbb{R}^{n}$ and ask for $\mathsf{sign}(v\cdot w)$.
 
 **Claim**:
+
 You can't solve this problem using fewer than $o(n/\log n)$ queries.
+
 **Proof**: 
 Suppose that you had some (potentially randomized) algorithm that could output a vector $\hat{v}$ such that $\Pr_i [v_i = \hat{v}_i] \ge 7/8$ in time $f(n)$. Then, we could by symmetry have a randomized algorithm with the property that for each $i$, $\Pr_{alg}[v_i = \hat{v}_i]\ge 7/8$.
 Then, if we ran this $10 \log n$ times and took a majority vote, we would have an estimate that is correct with probability $1-1/n^5$ for each coordinate of $v_i$.
@@ -621,9 +633,27 @@ Still a bit complicated.
 CC --> just only think about a spanning tree for the CCs.
 
 **CLAIM**
+
 For live CC $S$, there is a tree of size at least $|S|/\Delta^{2}$ in $G^3$ such that the $G$-dist of each pair of vertices in the tree is at least $3$.
+
 **Pf:**
 greedily construct the tree
 
 By a union bound, and the fact that there aren't too many possible trees on $\log n$ vertices, we get that it's unlikely that $G^{3}$ has any $\log n$ sized trees. So the live CCs in $G$ should be of size at most $\Delta^{2} \log n$.
+
+#### degeneracy
+Nathan and I came up with a nice algorithm for approximating the degeneracy of a graph.
+Unfortunately the actual pset question was much less cool than this (it was about arboricity). 
+But anyways here's our ridiculous algorithm.
+
+First, define degeneracy of a graph to be the smallest number $D$ such that it's possible to repeatedly strip vertices of degree $D$ from the graph and by doing so end up with the empty graph.
+Note that this is one nice way of quantifying sparsity of a graph.
+
+**Observation 1**
+You can compute degeneracy in time $\widetilde{O}(m)$ easily. Just repeatedly strip all the vertices with degree less than $D$. (you can binary search to guess $D$)
+
+**Observation 2**
+Now we argue that subsampling edges doesn't mess with degeneracy too much.
+The argument is that, if we look at the vertex stripping order from before, then it's probably still a valid ordering. When you have lots of neighbors in a set, Chernoff says that this number shrinks predictably. And if not then we don't even care. 
+
 

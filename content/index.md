@@ -1,7 +1,7 @@
 ---
 title: Thoughts
 ---
-Welcome to my personal blog.  The main purpose of this blog is to serve as a location for me to clarify my thoughts[^1]. I think it's also a good way of connecting with my friends, and sharing ideas that I find important or helpful.
+Welcome to my personal blog.  The main purpose of this blog is to serve as a location for me to clarify my thoughts. I think it's also a good way of connecting with my friends, and sharing ideas that I find important or helpful.
 
 The posts approximately fall into three categories: 
 (1) [[tags/technical|technical notes]], (2) [[tags/life|life-optimization]], (3) [[tags/philosophy|philosophy]].
@@ -11,9 +11,10 @@ Below I suggest "entry points" into exploring this blog.
 This is a collection of serialized posts. This is the best place to go to understand "what has Alek been thinking about lately", besides actually talking to me, which is probably a [[taking social initiative|better method]].
 
 [[the objective]]:
-What do I want? Not what should I want, what are "realistic" things for me to want, what would it be convenient for me to want -- but really, what do I want? This question is important for me to think about frequently, in order to calibrate my actions. In this collection of posts I explore what I want, and thoughts on how to get more of what I want.
+What is goodness? What do I want my life, and the universe at large to look like?
 
-[[alignment]]:
-I think it's pretty likely that highly capable AI agents will be exist and be widely deployed by 2040. I think this poses a substantial existential risk to humans -- i.e., is pretty likely to result in humans being dead or otherwise disempowered. In this collection of posts I explore questions such as (1) What should I do about this? (2) How should I feel about this? (3) How will the future play out?
-
-[^1]: Some of my opinions have fairly large diffs from a few months ago. Things dated more than 2 months ago may no longer be an accurate reflection of my current thoughts. I'm planning on updating content that I no longer agree with -- and hoping that my current opinions are more stable --  but just keep post dates in mind when reading things. In a similar vein, I will note that a lot of the posts here are incomplete or underdeveloped. I'm also  trying to fix this.
+AI [[alignment]]:
+Over the last decade, machine learning has made immense progress on a wide array of tasks.
+What happens if this progress continues into the future? Many AI experts predict (and there are scaling models to back up this prediction) that we are only 5-10 years away from having AI agents that could, e.g., automate a substantial portion of all human labor.
+However, I don't think humanity is ready to create a new, more intelligent, species than ourselves.
+In particular, I think that the current trajectory of AI development poses an existential risk to humanity -- by default, in creating more powerful entities than ourselves, we relinquish our control over the future to the more powerful entities, and we don't have good techniques right now for ensuring that these entities care about making a [[the objective|good]] future. In this sequence of posts I'll write about some potential risks from advanced AI agents, and talk about some ideas for mitigating these risks.
