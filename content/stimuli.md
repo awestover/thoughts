@@ -1,5 +1,5 @@
 Consider the following situation. 
-1. You're trying to do something hard but in-line with [[the objective|your objective function]]. 
+1. You're trying to do something hard but in-line with [[goodness(universe)|your objective function]]. 
 2. Then your brain is like "oh, let's take a 5 minute break and check my email"
 3. Then you're like ok fine, I'll do that and then I'll be more focused afterward. After all, if I don't do that task my brain suggested I do right now, then the uncompleted task will probably distract me. 
 4. You do said task.

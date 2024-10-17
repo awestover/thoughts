@@ -1,4 +1,4 @@
-Let's condense the content of [[the objective]] to the following two principles: 
+Let's condense the content of [[goodness(universe)]] to the following two principles: 
 1. Do good work on cool important problems
 2. Interact meaningfully with other sentient lifeforms
 3. Be healthy (ok this is technically [[Goodhart's law|auxiliary]], but is worth listing anyways)

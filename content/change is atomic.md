@@ -1,5 +1,5 @@
 A pattern I've noticed in my #life:
-- I notice that I'm doing something unaligned with [[the objective|my values]].
+- I notice that I'm doing something unaligned with [[goodness(universe)|my values]].
 - I experience a large amount of cognitive dissonance.
 - I also experience decision paralysis due to thinking about sunk costs and any obstacles to changing my actions.
 - One day, I finally decide to actually change my actions.

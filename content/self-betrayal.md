@@ -1,6 +1,6 @@
 I think I first heard the phrase "Self betrayal" in "The Anatomy of peace" (which is an excellent book, fyi).
 
-Self betrayal means doing something that goes against your [[the objective|values]].
+Self betrayal means doing something that goes against your [[goodness(universe)|values]].
 Why do we engage in self betrayal? Probably part of it is we are running [[avoid_discomfort.cpp]].
 Some kind of bias towards not breaking the status quo.
 

@@ -4,7 +4,7 @@ Note: I'll phrase the #life advice here as advice to myself, but I suspect that 
 I should seek to fill my life with more quality-adjusted-seconds-spent-socializing.
 
 **Proof**:
-- This is literally part of [[the objective]] -- one of my terminal values.
+- This is literally part of [[goodness(universe)]] -- one of my terminal values.
 - It can lead to new opportunities.
 - It tends to increase my happiness.
 - It is helpful in clarifying ideas.

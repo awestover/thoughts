@@ -1,10 +1,12 @@
-In this post I try to give a concise explanation of why I believe the following things are more likely than not: 
+In this post I try to give a concise explanation of why I believe the following things are more likely than not:
 
 - **Claim 1** People will try (very hard) to create highly capable AI agents.
 - **Claim 2** Highly capable AI agents will be created and widely deployed soon (before 2040).
 - **Claim 3** Highly capable AI agents could, if it wanted to, kill or disempower all humans.
 - **Claim 4** Highly capable AI agents would have incentives to kill or disempower all humans.
 - **Claim 5** Highly capable AI agents would be likely to kill or disempower all humans.
+
+There are definitely things, even "easy" things, that humanity could do to reduce xrisk posed by AI. But it's going to be tricky and does not happen by default. One goal of this post is to make you an informed citizen who is amenable to acting to mitigate this risk. I'll discuss this more at the end.
 
 These are some pretty bold claims! I think it's pretty reasonable to have a strong prior against any argument with such a startling conclusion. But, I think that this argument does actually merit consideration. I strongly hope that you'll read this post with an open mind, and weigh the arguments yourself, rather than taking the easy route -- relinquishing [[responsibility]] for forming an opinion about this to the population at large, or the government, or anyone but yourself.
 
@@ -122,10 +124,12 @@ OK, well, what to do about it? I suggest researching the issue to form an opinio
 
 If you have are in any kind of political position / in a position where you can inform policy makers, then instituting an indefinite ban on training runs larger than $10^{20}$ FLOPs in your country of residence seems like actually a really good idea that could buy us a lot of time. This ban should be in place until we have an idea about how to align HCAI agents. I don't think this makes us 100% safe -- algorithmic improvements mean that the computation requirements required to get powerful systems go down over time. But I think this is a good start. Once you've passed this bill in your country of residence, start working on a global effort to get everyone to agree to a similar regulation.
 
-If you have some technical skills, then you could consider using your career to work on technical alignment problems. If you're interested in this, I'd be happy to talk to you about how to go about doing this -- find my contact info here: [awestover.github.io](awestover.github.io). 
+If you have some technical skills, then you could consider using your career to work on technical alignment problems. If you're interested in this, I'd be happy to talk to you about how to go about doing this -- find my contact info here: [awestover.github.io](https://awestover.github.io). 
 
-Confronting this issue seriously can be quite distressing. 
-I'll put some initial thoughts on how this should impact the way I live my life here: [[5 years]].
+Confronting this issue seriously can be quite distressing. I think talking about
+it can help, and am very willing to discuss this with you, especially if you
+disagree with my conclusions. I'll put some initial thoughts on how this should
+impact the way I live my life here: [[5 years]].
 
 ---
 #### further reading

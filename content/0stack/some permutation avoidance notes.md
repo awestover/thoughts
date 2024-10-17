@@ -1,6 +1,6 @@
 I've been thinking about this permutation avoidance question a bit lately. 
 I was pretty excited about it today, because a friend and I came up with a neat win-win analysis idea for a special case. The thing that made me excited was a feeling of getting a tiny bit of traction on the problem (maybe) and making a cool high-level plan for how to execute the plan. 
-As discussed [[the objective|elsewhere]] "making cool plans" is one of my terminal values. I guess I'm just writing this down as a reminder to myself as a reminder that there are lots of good and beautiful things in the world. And a reminder to strive to increase the number of good and beautiful things in the world. 
+As discussed [[goodness(universe)|elsewhere]] "making cool plans" is one of my terminal values. I guess I'm just writing this down as a reminder to myself as a reminder that there are lots of good and beautiful things in the world. And a reminder to strive to increase the number of good and beautiful things in the world. 
 
 This reminds me of an interesting vein of ethical(?) questions:
 > "Suppose you had a friend that wanted to work somewhere evil (e.g., TikTok). Is it right to dissuade them?"\

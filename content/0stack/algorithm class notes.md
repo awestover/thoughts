@@ -180,7 +180,6 @@ Kruskal's algorithm says that to find an MST you can do the following stuff:
 
 This allows us to relate MST estimation to estimating the size of some connected components defined by taking all edges with weight smaller than some threshold.
 
-#todo: add details
 # SL lec4
 
 Today we are going to talk about a sublinear (in $m$) time algorithm for $\Delta+1$ coloring a graph.

@@ -1,5 +1,5 @@
 you don't have to fail with abandon. 
-cite LW akjash
+cite LW user alkjash
 
 The algorithm to keep in mind here is:
 ```python

@@ -1,7 +1,8 @@
-> Q: What are the best things I've done?
-# Best by [taste](https://jzhao.xyz/posts/aesthetics-and-taste):
+> Q: What are the best [tasting](https://jzhao.xyz/posts/aesthetics-and-taste) things I've done as of 2023? 
 
-**scheduling, allocation, hashing, P3's vs C6's, pigeons**
+I think these activities constitute my main personal contribution to [[goodness(universe)]] to date. That said, I think there's a lot of room left to optimize how I contribute to [[goodness(universe)]]. In any case, I think it was a useful activity to reflect on some experiences that I've enjoyed in the past.
+
+**Scheduling, allocation, hashing, P3's vs C6's, pigeons**
 -  Beautiful aspects of these projects:
 	1. I choose to care about them. Nobody made me. 
 	2. There were many epic battle plans, and epic battles.
@@ -41,18 +42,3 @@
 - It had a big impact on me alone! I still read these notes. It wouldn't have happened without this app. 
 
 **Talking to random people**
-
-
---- 
-
-Addendum it should be noted that advice from career advice from 80,000 hours is probably still worth considering. 
-In particular, I haven't ever really *tried* doing anything other than TCS research. 
-So of course I can't based on historical data conclude that doing radically breaking status quo things like
-- healthcare engineer / research
-- pandemic prevention research / misc other "applying computery stuff to sciencey problems"
-- ML research / safety research
-wouldn't be better. 
-
-This is not hedging; it's an admission that [[wrong exists]].
-It's not [[procrastinating choices]], as I plan on rectifying this deficit of experience. 
-

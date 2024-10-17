@@ -1,5 +1,5 @@
 In this post I talk about the existence of my objective function.
-Some related and important questions include: [[Can I change my objective function?]] and [[Should I change my objective function?]] But it's impossible to measure diffs to my objective function without actually knowing what it's starting out as. 
+Some related and important questions include: [[Can I change my objective function? Should I?]] and [[Should I change my objective function?]] But it's impossible to measure diffs to my objective function without actually knowing what it's starting out as. 
 
 **Fact 1:** 
 Alek is an agent with preferences. Alek prefers some states to other states. 
@@ -35,4 +35,4 @@ Related to Fact 3:
 Furthermore, [[procrastinating choices]] is a choice, and often wrong. 
 
 
-**See** [[the objective]] for a description of what my objective function actually is.
+**See** [[goodness(universe)]] for a description of what my objective function actually is.

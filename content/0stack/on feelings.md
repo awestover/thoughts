@@ -8,7 +8,7 @@ The following message is highly prevalent in modern society:
 > You should do what you enjoy. -Society
 
 I think this message is actually kind of dangerous, and is missing some important considerations. 
-As a simple thought experiment, suppose you really enjoyed playing video games. Then, should you do that? Clearly not (imho). Basically, I think this advice is missing the consideration that you should also "[[the objective|try to make the world a better place]]".
+As a simple thought experiment, suppose you really enjoyed playing video games. Then, should you do that? Clearly not (imho). Basically, I think this advice is missing the consideration that you should also "[[goodness(universe)|try to make the world a better place]]".
 
 You should try to find a method for doing good that you are capable of enjoying, or else its not going to be very sustainable. But I think agonizing over "how much am I going to enjoy this" is not really the right approach -- it's not the primary thing to optimize for. 
 
@@ -33,7 +33,7 @@ I think another scenario where "feelings aren't very important"  / are misleadin
 I think my brain would often like to convince me that indulging in distractions is a necessary response to, e.g., stress. But this is silly. This is not a fact about the world. I can make systems, and thereby actually live with [[intention]].
 
 ### social
-As discussed in [[taking social initiative]], I still often flinch away from creating deep positive social experiences. But there is something [[the objective|intrinsically valuable]] about social interactions! So this aversion to creating positive social interactions is not something worth heeding.
+As discussed in [[taking social initiative]], I still often flinch away from creating deep positive social experiences. But there is something [[goodness(universe)|intrinsically valuable]] about social interactions! So this aversion to creating positive social interactions is not something worth heeding.
 
 One nice technique that I'd add to the list for "how to do this" is, if you know
 you're systematically biased towards under-doing social things, then just

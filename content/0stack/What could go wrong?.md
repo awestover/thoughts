@@ -2,7 +2,7 @@
 upon further contemplation I think the objection "SGD is not sufficient optimization pressure for something to go wrong with this" might be accurate. I'm not sure. Requires more thought. **
 
 
-Suppose you had an agent. And it's [[the objective|objective function]] was 
+Suppose you had an agent. And it's [[goodness(universe)|objective function]] was 
 $$
 J(\theta, X) = \frac{1}{N}\sum_i -y_i \log f_\theta(X_i) - (1-y_i)\log (1-f_\theta(X_i)) + ||X||^{2}.
 $$
