@@ -29,6 +29,6 @@ Sure fine.  EX: \
 
 (oh yeah, thanks for that btw.)
 
-Anyways, maybe above example is just evidence for the central claim of [[CBT]] (when you're feeling down, you tend to distort reality and underestimate the potential goodness of everything). 
+Anyways, maybe above example is just evidence for the central claim of [[cognitive distortion list|CBT]]: when you're feeling down, you tend to distort reality and underestimate the potential goodness of everything. 
 
 So I guess my message for today is, if you have reason to suspect that you systematically negatively distort reality, then be a freaking efficient market and *update your beliefs*!

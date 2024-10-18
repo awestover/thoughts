@@ -1,5 +1,4 @@
-**edit:
-upon further contemplation I think the objection "SGD is not sufficient optimization pressure for something to go wrong with this" might be accurate. I'm not sure. Requires more thought. **
+**edit: upon further contemplation I think the objection "SGD is not sufficient optimization pressure for something to go wrong with this" might be accurate. I'm not sure. Requires more thought.**
 
 
 Suppose you had an agent. And it's [[goodness(universe)|objective function]] was 

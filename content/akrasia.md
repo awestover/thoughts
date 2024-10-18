@@ -8,3 +8,5 @@ You have some project, and you think it's a really good idea to stay up really l
 It's probably better to [[sleep]] for multiple reasons, one of which is that lack of sufficient sleep probably leads to higher levels of akrasia tomorrow.
 
 **Remark**: Regulating things like [[food-water]], [[sleep]] are important for increasing strength.
+
+#life

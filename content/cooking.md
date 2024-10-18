@@ -1,8 +1,4 @@
 Cooking is probably my favorite form of social interaction. Although [[walking]] is pretty good too.
-Hopefully I will figure out how to insert some kind of google photos album thing here soon.
-
-TODO: Insert pictures of food here.
-
 # my recipes
 Many people have asked "what's your secret ingredient."
 To quote kung fu panda "the secret ingredient is spinach"
@@ -38,10 +34,9 @@ But really, what are my recipes. Here are the minimal versions. If you're feelin
 
 ## super fancy fire rice
 
-- sausage (optional)
 - onions
 - fire roasted tomatoes
-- vegetable / chicken broth (cook the rice in this)
+- vegetable broth (cook the rice in this)
 - rice
 - actually there are a lot of spices you are supposed to put in
 - something like Paprika, garlic. check the recipe. 
@@ -71,5 +66,14 @@ But really, what are my recipes. Here are the minimal versions. If you're feelin
 
 ---
 
-If you are aware of any other recipes plz let me know.
-especially if they're not too hard and preferably no meat involved --- in general minimizing the number of ingredients that need to be refrigerated / cannot be safely eaten raw / should not be in my backpack for > 5 hours is a plus.  but eggs are kind of ok. 
+If you are aware of any other recipes please let me know.
+Especially if they're not too hard and are vegetarian. In general minimizing the number of ingredients that need to be refrigerated / cannot be safely eaten raw / should not be in my backpack for > 5 hours is a plus. But eggs are kind of okay. 
+
+---
+# Gallery
+
+| ![[pizza.jpg]]  | ![[pizza2.jpg]] |                 |
+| --------------- | --------------- | --------------- |
+| ![[pizza4.jpg]] | ![[pizza5.jpg]] | ![[pizza3.jpg]] |
+| ![[pizza7.jpg]] | ![[pizza9.jpg]] | ![[pizza8.jpg]] |
+

@@ -10,7 +10,7 @@ I think it doesn't have to be this way!
 The alternative is [[acting NOW]].
 To be precise, I'm suggesting that I increase my reaction speed to cognitive dissonance.
 
-A word of *caution* -- [[CBT|cognitive distortions]] can feel similar to cognitive dissonance.
+A word of *caution* -- [[cognitive distortion list|cognitive distortions]] can feel similar to cognitive dissonance.
 So, a more precise formulation of my strategy is, 
 - When I notice some kind of persistent thought of "I'm doing something wrong"
 - Evaluate whether this thought is accurate.

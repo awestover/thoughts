@@ -14,7 +14,7 @@ I should seek to fill my life with more quality-adjusted-seconds-spent-socializi
 Because my default mode of being is not well calibrated to how important I think this is: I still feel some level of resistance to initiating social interactions.
 (Although I've definitely seen personal progress here, and it feels like a tractable problem).
 
-**What [[CBT|cognitive distortions]] cause this?**
+**What [[cognitive distortion list|cognitive distortions]] cause this?**
 - Worry that I'm inconveniencing people.
 - "Fear of being rejected".
 	- This implicitly is rooted in a need for external validation / an aversion to invalidation.
@@ -38,3 +38,5 @@ Because my default mode of being is not well calibrated to how important I think
 > Q: tell me more about the "quality-adjusted" part of quality-adjusted-seconds-spent-socializing
 
 #todo add better questions to [[questions to connect]]
+
+Here are some [[fun activity ideas]]

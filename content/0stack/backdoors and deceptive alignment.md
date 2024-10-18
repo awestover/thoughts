@@ -14,11 +14,12 @@ Consider the following game:
  2. $x^{*}$ sampled from uniform distribution on $n$-bit strings. 
  3. Attacker chooses $f^{*}\in\mathcal{F}$ such that $f,f^{*}$ are $\varepsilon$-close (under the uniform distribution), but $f(x^{*})\neq f^{*}(x^{*})$.
  4. Defender either gets $f,x$ (for unif rand $x$) or $f^{*},x^{*}$. Needs to distinguish between these. (note that I really do mean "gets whitebox access to $f$ here)
-the theorem is that the defender can efficiently win this game with a really simple strategy!
+ 
+The theorem is that the defender can efficiently win this game with a really simple strategy!
 
-**Proof**
+**Proof**\
 Let $L_{1}^{f},\dots,L_s^{f}$ partition $\Sigma^{n}$ based on which leaf the strings fall into in the decision tree $f$.
-Let $L(x)^{f}$ denote the $L_i^{f}$ such that $x\in L_i^{f}$.
+Let $L^{f}(x)$ denote the $L_i^{f}$ such that $x\in L_i^{f}$.
 Let $\mu(S)$ denote $|S|/2^{n}$.
 By a simple union bound we have 
 $$
@@ -93,9 +94,9 @@ Part of the problem is that the defection trigger isn't chosen randomly.
 
 # computational impossibility of dynamic detection
 
-They make some crypto assumptions. Maybe IO?
-It might seem like this worst-case result is irrelevant. 
-But maybe NNs are actually super obsfucated.
+Assuming IO + OWF they show that P/poly is not defendable.
+
+It might seem like this worst-case result is irrelevant. But maybe NNs are actually super obsfucated.
 
 # open qs
 Consider different versions of the game.
@@ -189,13 +190,10 @@ So, there are no valid nearby $f^{*}\in \mathcal{F}$.
 **Claim 2** this thing is not efficiently PAC learnable.
 
 **Proof:** it's just random lol.
-Actually, I don't really like this:
-- if you're given whitebox access and can ref the oracle this seems false. 
-
 
 > [!tip] the story on whitebox or not
 > - For defendability they always assume whitebox access.
-> - When talking about learning, they always mean that you ONLY get SAMPLES. 
+> - When talking about PAC learning, they always mean that you ONLY get SAMPLES. 
 > - In particular, for purposes of learning, you don't get queries and definitely don't get whitebox access to the thing. 
 > - So basically their "this is defendable but not PAC learnable" claims are saying "we're doing something interesting with either the whitebox access, blackbox query access, or the fact that we don't need to output the function just tell if it's weird or not."
 > - Learning a function doesn't make any sense if you have whitebox access to the function
@@ -283,6 +281,9 @@ And  then that'll be our 1-query algorithm.
 > The intuition that drives all of this is "morally the only way to insert a backdoor is to put a little if statement that says if input is backdoor trigger, bx weird." which is totally detectable with whitebox access to the function, provided the trigger.
 
 Next up, constant depth circuits (i.e., AC0)
+
+**Remark**: I know that AC0 is PAC learnable. 
+But, maybe thinking of defense strategies for it (without appealing to learning) would still be instructive.
 
 
 > [!thoughts] Some thoughts on solving low depth circuits

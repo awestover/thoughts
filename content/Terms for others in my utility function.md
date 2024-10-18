@@ -1,11 +1,12 @@
 Peter Singer and some EA's argue that ultimately all people should receive equal weight in your utility function. 
 
+I think tldr is, yes, the welfare of all people figures into [[goodness(universe)]].
+
 Some questions that this poses:
 
 - [[Is morality absolute?]]
 - Currently, what weights do people have in my [[goodness(universe)|objective function]]?
 - [[Can I change my objective function? Should I?]]
-- [[Should I change my objective function?]]
 
 An interesting point (made by EY): 
 It is rational to take [[akrasia]] into account. 

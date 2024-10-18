@@ -20,3 +20,5 @@ If we have one decade, or one week, or even just one day left. Then I'd advocate
 
 > "The proof is left to the reader as an exercise. The battle is worth it, Johann." - 
  [Nathan](https://nathan-sheffield.github.io/jekyll/update/2024/04/23/faust-reconstructed.html)
+
+#philosophy 

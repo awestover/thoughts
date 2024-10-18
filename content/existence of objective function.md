@@ -22,7 +22,7 @@ Factors contributing to the noise I must fight when trying to determine $J_A(\th
 - how much I [[sleep|slept]] last night
 - how much [[food-water|food and water]] I've been consuming
 - how I have responded to, and perceived, the events of the day
-- the set of [[CBT|cognitions]] that I've been letting be prominent in my mind
+- the set of [[cognitive distortion list|cognitions]] that I've been letting be prominent in my mind
 - the set of [[stimuli]] that I have exposed my brain to 
 
 But in some sense modelling my understanding of $J_A(\theta)$ as being "I get $J_A(\theta)+\mathcal{N}(0,\Sigma)$" is overly optimistic. A more realistic model might be that my brain runs processes like [[avoid_discomfort.cpp]] that are each allowed to shift mess with the output of my query to $J_A(\theta)$ and they may do so adversarially for their own nefarious purposes.

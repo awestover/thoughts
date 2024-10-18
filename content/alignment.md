@@ -92,6 +92,8 @@ I think the "disempower" case is also worth thinking about. One way this could p
 
 **Claim 4** Highly capable AI agents would have incentives to kill / disempower humans.
 
+AI agents are ultimately optimizing some reward signal. Suppose that what GPT-7 ultimately cares about is some number in some data-center representing its reward. Then, it'd be optimal for GPT-7 to take over that data-center and write $\infty$ in whatever memory cell stores its reward.
+
 **Lemma 1**: The ["Orthogonality Thesis"](https://www.alignmentforum.org/tag/orthogonality-thesis)  (due to [Nick Bostrom](https://nickbostrom.com/) )\
 Basically any level of intelligence can be paired with basically any objective function.
 In other words, being super intelligent is orthogonal from being super moral.

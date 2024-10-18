@@ -1,4 +1,5 @@
 - Paul Graham has an essay about the danger of prestige which I thought was interesting. 
+
 #todo
 
 There are perceived expectations from society generally, 

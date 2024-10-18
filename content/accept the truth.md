@@ -18,3 +18,5 @@ If X is true, then I want to believe X. \
 If X is true then I can "stand" X; I already am. \
 If X is false, then I want to believe not X.\
  -Litany of Tarski, paraphrased
+
+#life
