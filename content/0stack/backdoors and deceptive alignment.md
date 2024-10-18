@@ -1,3 +1,19 @@
+# some new thoughts on this
+> [!question] DFA
+> Can you defend DFAs in a computationally efficient manner?
+
+I'm not sure if DFAs are PAC-learnable -- there exists some literature on this, but I haven't figured out exactly what it does yet. 
+
+But my vague intuition is that $f^{*}(x^{*})$ should travel through a "weird path" in the DFA.
+I think it'd be pretty interesting to formalize this. 
+
+> [!TIP] Uniform Statistical Defendability
+> Here's a way of formulating what it means to be uniformly statistically defendable, with graphs.
+> 
+> You need to define functions $B:\mathcal{F}\times \{ 0,1 \}^{n}\to \{ 0,1 \}$ such that 
+> $\mu(\{ x\mid B(f,x) \}) < 1/10$ for every $f$,
+> and so that most of the time, if $f,f'$ are close but differ on some input $x$, then at least one of $f,f'$  should blacklist $x$.
+
 # introduction
 This is some rough #technical notes that I took while reading a [recent paper released by ARC](https://www.alignment.org/blog/backdoors-as-an-analogy-for-deceptive-alignment/).
 [Full paper on Arxiv](https://arxiv.org/pdf/2409.03077). 
@@ -25,7 +41,6 @@ By a simple union bound we have
 $$
 \Pr_x [\mu(L^{f}(x))< \delta/s]\le \delta.
 $$
-(**remark: this feels really weak to me, but I'll have to think about if you can do better. and ofc they are just doing PoC so it doesn't really matter**)
 Now, note a key relation: 
 $$
 \mu(L^{f}(x)) = 2^{-\text{depth}(f,x)}.
