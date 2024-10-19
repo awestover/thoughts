@@ -1,6 +1,23 @@
 # some new thoughts on this
+Some silly thoughts:
+
+> **Claim** Suppose that for all $f,f'$ which are $\varepsilon$-close, at least a $1000\varepsilon$-fraction of the functions which are $\varepsilon$-close to $f$ are also $\varepsilon$-close to $f'$. Then $\mathcal{F}$ is statistically defendable.
+> **Proof:** Then, you can use the following strategy: blacklist $x$ if at least a $100\varepsilon$-fraction of my neighborhood gave a different output from me on $x$.
+> There's at most like a $.01$ or whatever chance of this happening by Markov's inequality, so we aren't excessively blacklisting. 
+> But on the other hand we are sufficiently blacklisting. 
+
+> This is kind of silly, because intuitively we'd expect that if $f,f'$ are $\varepsilon$-far and $f',f''$ are $\varepsilon$-far then $f,f''$ are more likely than not $2\varepsilon$-far.
+> (there's no probability involved I'm just saying that intuitively, if $\varepsilon$ is small then errors should stack).
+
+
+
+
+
 > [!question] DFA
 > Can you defend DFAs in a computationally efficient manner?
+> 
+> What about branching programs?
+> What about layered DFAs?
 
 I'm not sure if DFAs are PAC-learnable -- there exists some literature on this, but I haven't figured out exactly what it does yet. 
 
