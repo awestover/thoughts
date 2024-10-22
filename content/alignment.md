@@ -135,6 +135,7 @@ impact the way I live my life here: [[5 years]].
 
 ---
 #### further reading
+- [Sam Altman's Blog post about why AGI is an xrisk](https://blog.samaltman.com/machine-intelligence-part-1)
 - [Richard Ngo on Alignment difficulties](https://arxiv.org/pdf/2209.00626)
 - [Here are some more resources on ML / alignment](https://course.aisafetyfundamentals.com/alignment)
 - [Some of Paul Christiano's thoughts on alignment difficulty](https://www.lesswrong.com/posts/CoZhXrhpQxpy9xw9y/where-i-agree-and-disagree-with-eliezer)
