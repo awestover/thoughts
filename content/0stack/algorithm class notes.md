@@ -655,4 +655,18 @@ You can compute degeneracy in time $\widetilde{O}(m)$ easily. Just repeatedly st
 Now we argue that subsampling edges doesn't mess with degeneracy too much.
 The argument is that, if we look at the vertex stripping order from before, then it's probably still a valid ordering. When you have lots of neighbors in a set, Chernoff says that this number shrinks predictably. And if not then we don't even care. 
 
+# cool FG problem 
 
+Someone told me this problem today, and I thought it was very nice. 
+
+> Q: Given a subquadratic algorithm for OV, show how to make a subquadratic algorithm for "all vectors OV" -- for every input vector you need to output a bit that tells you whether that vector is orthogonal to one of the other vectors.
+
+> A: 
+> - First, let's find all the vectors $u\in U$ such that there are more than $n^{\varepsilon}$ many $v\in V$ with $u \perp v$.  We can do this in time $n^{1-\varepsilon}\log n$ per $u$.
+> - Get rid of these vectors -- we output 1 for them.
+> - Now, partition $U,V$ into $n^{3/4}$ many pieces each, randomly which will be of size $n^{1/4}$.
+> - For each pair of pieces, check with our magical OV algorithm whether there is any orthogonal-ness that happens between the pairs. This takes time $n^{3/2+2(1/4-\varepsilon)}$ because of our fancy OV algorithm.
+> - For each $U$ piece, we find at most $n^{1/4+\varepsilon}$ many $V$ pieces that can be orthogonal to it.
+> - Now for each $u\in U$ we look at the $n^{1/2+\varepsilon}$ elements in the union of the $V$ pieces that we need to consider and see whether any of these are orthogonal to it.
+
+Neat!

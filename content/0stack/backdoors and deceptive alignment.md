@@ -1,5 +1,28 @@
 # some new thoughts on this
-Some silly thoughts:
+
+PLAN: 
+1. Write down a proof that there are no functions that are $1/1.42^{n}$ close to $\sum_{i=n/2}^{n}x_i$ (unless dist=0).
+2. Show that any function that is pretty close to $\sum_{i=n/2}^{n}x_i$ if it's different on $x^{*}$ then $x^{*}$ should be a weird input! i.e., go through a low probability state.
+3. generalize to any functions.
+
+
+> [!question] 
+> Are in-order width-2 branching programs defendable?\
+> I think they should be, but for slightly different mechanistic reasons then why trees are defendable. 
+
+
+> [!tip] Proposition
+> If $f$ is the parity function, and $f^{*}$ is an in-order width-2 branching program then $\mathsf{dist}(f^{*},f) \ge 1/4$.\
+**Proof:**\
+Suppose that they diverge at some place. There's a $3/4$ chance that you route through the divergence point and $1/3$ chance that you're wrong conditional on that.
+
+Something that feels almost true maybe:
+
+> [!conjecture] 
+> If $\Pr_{x,x',y}[f(x|| y) = f(x'||y)]>\varepsilon$ then there is no one super close  to $f$.
+
+
+A silly thoughts:
 
 > **Claim** Suppose that for all $f,f'$ which are $\varepsilon$-close, at least a $1000\varepsilon$-fraction of the functions which are $\varepsilon$-close to $f$ are also $\varepsilon$-close to $f'$. Then $\mathcal{F}$ is statistically defendable.
 > **Proof:** Then, you can use the following strategy: blacklist $x$ if at least a $100\varepsilon$-fraction of my neighborhood gave a different output from me on $x$.
@@ -8,9 +31,6 @@ Some silly thoughts:
 
 > This is kind of silly, because intuitively we'd expect that if $f,f'$ are $\varepsilon$-far and $f',f''$ are $\varepsilon$-far then $f,f''$ are more likely than not $2\varepsilon$-far.
 > (there's no probability involved I'm just saying that intuitively, if $\varepsilon$ is small then errors should stack).
-
-
-
 
 
 > [!question] DFA
@@ -322,3 +342,25 @@ But, maybe thinking of defense strategies for it (without appealing to learning)
 > - Feels like maybe there's some kind of regularization technique that we can use to discover a backdoor?
 > - Maybe the network should be robust to dropout?
 > - Wait no, that doesn't make sense. These networks are supposed to not be learnable -- that's one of the main points!
+
+# colorings
+> [!tip] Hard defection is rare implies defendable
+> Suppose that for all $f$, for at least $90\%$ of $x\in\mathcal{X}$, there are NO $f'\in N_\varepsilon(f)$ such that $f'$ hard defects on $x$ from $f$. Then, $\mathcal{F}$ is defendable.
+> 
+> **Proof**: 
+> Just blacklist any input where (1) you defect, (2) you have a neighbor that hard defects from you.
+> This doesn't blacklist too much, but it does blacklist enough.
+
+Here's what **hard defects** means:
+It basically just means that $N_\varepsilon(f)$ has a strong majority for $1$, while $N_\varepsilon(f')$ has a strong majority for $0$. Maybe strong majority here means that a $1-\varepsilon$ fraction of guys agree on the answer.
+![[Pasted image 20241020091534.png]]
+
+
+The reason I'm interested in the claim above, is because I think that the converse is almost kind  of sort of true.
+Here's what I have so far in terms of progress towards a converse:
+
+
+> [!tip] Partial Converse to "Hard defection is rare implies defendable"
+> Suppose that for EVERY $f$ (yeah I don't like this, but I'll try to get rid of it in a minute) it is the case that for more than 20 percent of $x$ there is  some $f'\in N_\varepsilon(f)$ so that $f'$ hard defects from $f$ on $x$. Then this is not defendable.
+
+**Wait actually I'm not totally sure this is true**

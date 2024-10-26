@@ -135,9 +135,10 @@ impact the way I live my life here: [[5 years]].
 
 ---
 #### further reading
+- [PauseAI statement on risks](https://pauseai.info/risks) This resource is very good! They have a very detailed taxonomy of risks posed.
 - [Sam Altman's Blog post about why AGI is an xrisk](https://blog.samaltman.com/machine-intelligence-part-1)
-- [Richard Ngo on Alignment difficulties](https://arxiv.org/pdf/2209.00626)
-- [Here are some more resources on ML / alignment](https://course.aisafetyfundamentals.com/alignment)
-- [Some of Paul Christiano's thoughts on alignment difficulty](https://www.lesswrong.com/posts/CoZhXrhpQxpy9xw9y/where-i-agree-and-disagree-with-eliezer)
-- [Deepmind thoughts on difficulty](https://www.lesswrong.com/posts/qJgz2YapqpFEDTLKn/deepmind-alignment-team-opinions-on-agi-ruin-arguments)
-- [Eliezer views on difficulty](https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities)
+- [Yoshua Bengio responses to arguments against taking AI xrisk seriously](https://yoshuabengio.org/2024/07/09/reasoning-through-arguments-against-taking-ai-safety-seriously/)
+- [Paul Christiano -- possible alignment failure story](https://www.alignmentforum.org/posts/HBxe6wdjxK239zajf/what-failure-looks-like)
+- [Max Tegmark on why people don't take xrisk seriously](https://time.com/6273743/thinking-that-could-doom-us-with-ai/)
+- [Eliezer Yudkowsky thoughts on alignment difficulty](https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities)
+- [Deepmind thoughts on alignment difficulty](https://www.lesswrong.com/posts/qJgz2YapqpFEDTLKn/deepmind-alignment-team-opinions-on-agi-ruin-arguments)
