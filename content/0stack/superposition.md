@@ -21,7 +21,7 @@ The dot products show how much interference there is between the features.
 
 I tried doing a graph of where the strong connections are. 
 I don't think I'm quite setting this up correctly. But I do see some antipodal pairs like they claimed that you're supposed to, so that's at least good.
-![[Pasted image 20241005145128.png]]
+![[superpos1.png]]
 
 ok this graph turned out much nicer:
 I didn't plot the degree one guys just for sake of clarity.

@@ -73,7 +73,7 @@ ETH: 3-sat requires $2^{\delta n}$ time for some $\delta$.
 
 **Example**:
 Encoding a 3SAT instance as an indepset instance.
-![[Pasted image 20240904120659.png]]
+![[seth.png]]
 
 Problem: this doesn't let us prove an exponential lower bound because we blew up the problem instance too much. 
 
@@ -670,3 +670,73 @@ Someone told me this problem today, and I thought it was very nice.
 > - Now for each $u\in U$ we look at the $n^{1/2+\varepsilon}$ elements in the union of the $V$ pieces that we need to consider and see whether any of these are orthogonal to it.
 
 Neat!
+
+### distribution testing
+
+**Claim:** 
+Suppose we take $T = 100n\varepsilon^{-2}$ samples from a distribution $p$ on $[n]$ and then form a vector $\hat{p}$ where $\hat{p}$ gives our empirical guesses to the Pr of each point.
+1. If $p=[1/n,\dots,1/n]$ (uniform) then $||p - \hat{p}||_1 < \varepsilon$ with Pr $\ge 3/4$.
+2. If $p$ is $\varepsilon$-far in $L_{1}$-norm from uniform, then $||p-\hat{p}||_1>\varepsilon$ with Pr $\ge 3/4$.
+
+**Proof**
+$$
+\mathbb{E} ||p-\hat{p}||_1 \le \sum_x \sqrt{\mathbb{E}(p_x-\hat{p}_x)^{2}} = \sum_x \sqrt{\mathsf{Var}(\hat{p}_x)}.
+$$
+$\hat{p}_x \sim \frac{1}{T}\mathsf{Binom}(T, p_x)$.
+So $\mathsf{Var}(\hat{p}_x) = \frac{1}{T}p_x (1-p_x)$.
+
+Hence, 
+$$
+\mathbb{E} ||p-\hat{p}||_1 \le \frac{1}{\sqrt{ T }}\sum_x \sqrt{ p_x } \le \sqrt{ n/T } \le \varepsilon/10.
+$$
+
+Hence Markov says Pr of deviation of more than $\varepsilon$ is at most $1/10$.
+
+Messing with the parameters a bit this should give us a tester between 
+- uniform distr
+- L1 Far from uniform distr
+
+---
+
+#### L2 distance. 
+
+Here's the strategy: 
+ - Let $s = 100\sqrt{ n }\varepsilon ^{-4}$.
+- We will take $s$ samples, and let $c_{ij}$ denote whether samples $i,j$ where for the same value.
+- We define $C = \frac{1}{\binom{s}{2}}\sum_{i<j}c_{ij}$.
+- By linearity of expectation: $\mathbb{E}[C] =||p||_2^{2}.$
+- We'll show that $\mathsf{Var}[C]$  is reasonable
+	- this will imply that setting $s$ large enough, we can get a good estimate of $||p||_2^{2}$ with good probability. This will suffice to distinguish uniform from L2-far from uniform.
+
+I think the main interesting part is bounding $\mathsf{Var}[C]$.
+**Solution:** 
+It's convenient to look at the centered versions of variables.
+
+If we let $b_{ij}  = c_{ij}-\mathbb{E} c_{ij}$, then the expression we're interested in is:
+$$
+\mathbb{E}\left[\left(\sum_{i<j} b_{ij}\right)^{2}\right].
+$$
+We can break this into 3 parts: 
+- If $i,j,k,l$ are all distinct then $\mathbb{E} b_{ij}b_{kl}=0$ 
+- You could also imagine $i=k,j=l$.
+- But the dominant term is $|\set{i,j,k,l}|=3$. 
+	- but it's manageable.
+
+
+Next, you can use this L2 tester to get an L1 tester. 	
+Specifically, multiplicatively approximating L2 norm can give additive approx on L1 norm.
+
+---
+
+To summarize, 
+We have this estimate $\hat{c}$ for $||p||_2^{2}$, with variance $O(||p||_2^{3}/s)$ using $s$ samples.
+
+$$
+\Pr[|\hat{c}-||p||_2^{2}|\ge \gamma] \le \frac{\mathsf{Var}[\hat{c}]}{\gamma^{2}} = O\left(\frac{||p||_2^{3}}{s\gamma^{2}}\right).
+$$
+
+If we want an additive $\varepsilon^{2}$ approximation, e.g., because we're trying to tell whether a distribution is L2-far from uniform, then we only need like $O(\varepsilon^{-4})$ queries. 
+
+If we want a $1+\varepsilon^{2}$ multiplicative approximation then we need more like $\sqrt{ n }\varepsilon ^{-4}$ queries. This can suffice for doing L1-far testing.
+
+

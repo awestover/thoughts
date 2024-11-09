@@ -183,7 +183,7 @@ Now I'm going to read the actual paper.
 - [HLW](https://www.let-all.com/blog/2024/06/06/one-inclusion-graphs-and-the-optimal-sample-complexity-of-pac-learning-part-1/)  one inclusion graph thing is important for this.
 - I mean, maybe you just need it as a black  box, but it seems like a nice result.
 
-![[Pasted image 20241006123458.png]]
+![[backdoor.png]]
 ### sec4 stat defend
 
 **prediction strategy**:

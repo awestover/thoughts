@@ -9,6 +9,14 @@ What I mean by "an explanation" in this case is maybe better described as "an ex
 
 For instance I was debugging some code today, and I thought something like "maybe my code's already right". This should be a red flag, because it's not really testable, and it points in the same direction as some motivated reasoning would.
 
+---
+Another anecdote: I had some code in a deep learning pset that I thought was supposed to show Nearest Neighbors under some latent representations learned with an autoencoder CNN for a synthetic dataset consisting of shapes of various colors, shapes and sizes.
+And I was staring at these NNs and trying to decide what features the encoder was grouping things by. I thought I figured it out and moved on. And then I realized that the autoencoder hand't been trained yet -- the encodings were just random.
+
+Note to self -- it is **so much better to be confused and notice, than to trick yourself into feeling like you understand!!**
+
+---
+
 I think the time when I see this the most probably is when tutoring.
 (No offense meant to my students -- I think that not noticing confusion is an evil habit that is instilled in children by society and schools).
 Anyways, I'll say math and then I'll say "does that make sense?" and then the

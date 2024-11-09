@@ -1,3 +1,25 @@
+**inductance**
+$L=\mu N^{2} A/l$
+
+$U=\frac{1}{2}CV^{2}$
+
+$u_E = \frac{1}{2}\varepsilon_0 E^{2}$
+
+$u_B=\frac{B^{2}}{2\mu_{0}}$
+
+$L=\Phi/I$
+$C=Q/V$
+
+$L=2U_B/I^{2}$.
+
+$u_B = \frac{1}{2\mu_{0}}B^{2}$
+
+$U_B  = \frac{1}{2}LI^{2}.$
+
+**LR circuits**
+
+voltage drop across an inductor: $L I'$
+
 **ENM -- DIPOLES:**
 
 $\rho=\sum r_i q_i$
