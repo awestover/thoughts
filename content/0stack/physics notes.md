@@ -8,6 +8,7 @@ $u_E = \frac{1}{2}\varepsilon_0 E^{2}$
 $u_B=\frac{B^{2}}{2\mu_{0}}$
 
 $L=\Phi/I$
+
 $C=Q/V$
 
 $L=2U_B/I^{2}$.

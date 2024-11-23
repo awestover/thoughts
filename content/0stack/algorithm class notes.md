@@ -671,8 +671,9 @@ Someone told me this problem today, and I thought it was very nice.
 
 Neat!
 
-### distribution testing
+# distribution testing
 
+### distribution testing part 1 -- L1/L2 norm
 **Claim:** 
 Suppose we take $T = 100n\varepsilon^{-2}$ samples from a distribution $p$ on $[n]$ and then form a vector $\hat{p}$ where $\hat{p}$ gives our empirical guesses to the Pr of each point.
 1. If $p=[1/n,\dots,1/n]$ (uniform) then $||p - \hat{p}||_1 < \varepsilon$ with Pr $\ge 3/4$.
@@ -739,4 +740,229 @@ If we want an additive $\varepsilon^{2}$ approximation, e.g., because we're tryi
 
 If we want a $1+\varepsilon^{2}$ multiplicative approximation then we need more like $\sqrt{ n }\varepsilon ^{-4}$ queries. This can suffice for doing L1-far testing.
 
+## distribution testing part 2 -- closeness testing
+
+Recall from last time -- we had a pretty nice estimator for $||p||_2^{2}$.
+In particular we could get an additive approx really fast, and a multiplicative approx somewhat fast.
+
+We used this to distinguish $p=U$ and $||p-U||_1>\varepsilon$.
+
+Now we generalize to the following question:
+
+> Suppose we know $q$, and get samples from $p$. Can we tell apart $q=p$ vs not?
+
+- best query complexity is $\Theta(\sqrt{ n })$.
+I think this was on the hw.
+
+Even trickier question:
+
+> You get samples from both $p,q$. Can you tell apart $p=q$ VS $||p-q||_1>\varepsilon$??
+
+- this one is $\Theta(n^{2/3})$. kind of surprising how much harder this is than if $q$ is known.
+
+Trickiest question: (tolerant testing)
+> $||p-q||_1<\varepsilon$ VS $||p-q||_1>2\varepsilon$??
+
+- apparently this one the answer is $\Theta(n/\log n)$. wow that's tough!
+
+Anyways, back to the non-tolerant testing setting.
+
+$$
+||p-q||_2^{2} = \sum p_i^{2} + \sum q_i^{2} - 2\sum p_iq_i
+$$
+We already know how to estimate $||p||_2^{2},||q||_2^{2}$.
+There's some similar technique that we can use to estimate the last term. 
+
+PROBLEM -- 
+- Suppose we take $m$ samples and let $x_i$ be the number of times we got element $i$. 
+- $x_i,x_j$ aren't independent! more of one means probably less of others.
+
+Solution -- 
+- Don't fix the number of samples. Instead, choose it randomly from Poisson distribution.
+
+Interesting Fact: The following two things are actually the same
+- Sampling $\hat{m}\sim Poi(m)$ and then taking $\hat{m}$ samples 
+- Sampling $x_i \sim Poi(m\cdot p_i)$ for each $i$ and then taking $x_i$ copies of $i$ and permuting things.
+
+
+I think this is because $Poi(\lambda_{1})+Poi(\lambda_{2}) = Poi(\lambda_{1}+\lambda_{2})$.
+
+Recall -- Poisson distribution is supposed to model something that happens with some rate over some interval, and the events are independent.
+
+
+**Reducing to the low L2-norm case**
+
+Recall -- we had some algorithm for estimating $||p||_2^{2}$.
+The variance was something like $O(||p||_2^{3}/s)$ where $s$ was number of samples.
+
+PROBLEM: \
+This looks bad if $||p||_2^{3}$ is large...
+
+SOLUTION: \
+We'll transform $p,q$ into $p',q'$ which have small L2 norms, and such that $p=q \iff p'=q'$and so that $p',q'$ are far if $p,q$ are far.
+
+**Flattening**
+
+Recall: if $||p||_2^{2}$ then our estimator for this quantity had small variance. 
+Now we give a procedure to flatten $p$.
+
+Procedure: 
+- $S = \mathsf{Poi}(m)$ samples from $p$.
+- $b_i =$ number of times $i$ appears in $S$.
+- Now make a new domain, with $b_i+1$ copies of $i$ for each $i$.
+
+- New distribution: choose random $i$, then choose random copy of $i$ to ouput.
+
+
+We're going to use one $S$, sampled from $p$, to transform BOTH $p,q$.
+Note that if $p=q$ this works goes pretty well for us. 
+On the other hand, if $||p-q||_1>\varepsilon$, then we'll show that this is still the case even after the transformation. 
+Yup it's true because we basically just split up some of their probability masses in the same way, so the total L1 distance is the same.
+
+**Claim**: $\mathbb{E}[||p'||_2^{2}] \le 1/m$
+
+**Proof**: It just turns out that this is how the Poisson distribution works.
+
+
+**Theorem**: given $b\ge \max(||p||_2, ||q||_2)$ samples, can tell apart $p=q$  vs far in $bn/\varepsilon^{2}$ samples.
+
+**Cor** only need $b\ge \min(||p||_2, ||q||_2)$, because if the L2 norms aren't similar then we'll just notice that. 
+
+
+**Full algorithm**, with running time $n^{2/3}\varepsilon ^{-4/3}$:
+- Flatten using $k$ samples.
+	- This results in L2 norm being $1/\sqrt{ k }$ whp
+- Run tester on flattened guys
+
+Cost:
+$$
+k + \frac{1}{\sqrt{ k }} n/\varepsilon^{2}
+$$
+nice.
+
+## distribution testing part 3 -- monotone
+
+- We say a distribution $p$ on $[n]$ is monotone if $p(i)\ge p(i+1)$ for all $i$.
+- Want to test: monotone VS L1 far from monotone.
+- Goal: $\Theta(\sqrt{ n })$ queries.
+
+**Birge Decomposition**: 
+Split $[n]$ into $\varepsilon ^{-1}\log n$ geometric intervals with lengths $\lfloor (1+\varepsilon) \rfloor, \lfloor(1+\varepsilon)^{2} \rfloor, \dots,$
+
+**Flattened distribution**: $\tilde{q}$
+- Pr of each guy is the average Pr of an element in that guys bucket 
+
+Birge's theorem:
+
+> If $q$ monotone, then $\tilde{q},q$ are L1 close.
+
+
+Idea for an algorithm:
+1. Let $q^*$ be an estimate of the Birge Flattened distribution $\tilde{q}$ of our distribution $q$
+2. If $q^*$ isn't close to monotone then REJECT.
+3. Else, check that $q,q^*$ are close. REJECT if not, ACCEPT if are.
+
+Analysis: 
+
+**Claim 1**: If $q$ is monotone, then tester passes whp.
+
+**Proof:**
+- $q$ monotone, then $\tilde{q}$ monotone, $\hat{w_j}$'s are close to $q(I_j)$'s, so $q^*\approx \tilde{q}$, so $q^*$ approx monotone.
+- Also, $q\approx q^*$ because $q^*\approx \tilde{q}\approx q$.
+- So we'll accept.
+
+**Claim 2**: If tester passes whp then $q$ is $\varepsilon$-close to monotone.
+
+**Proof**
+$q^*\approx \tilde{q}$ should just always be true by Chernoff. 
+So if the tester passes whp it must be the case that $\tilde{q}$ is close to monotone.
+
+ok, but we haven't even talked about how to do tolerant testing of whether $q\approx q^*$...
+Oh but we actually already know how to do this!
+This is just uniformity testing!
+Because the $\tilde{q}$'s are uniform.
+
+ok. neat.
+
+
+**Proof of Birge's theorem**
+0. no err on length 1 intervals
+1. If there are any intervals of length at most $1/\varepsilon$ then there are at least $1/\varepsilon$ size 1 intervals.
+2. Let $h_i$ denote the max pr on $i$-th interval, and $\ell_i$ denote length of $i$-th interval
+3. Then ERROR is at most $\sum (h_{i+1}-h_i)\ell_i \approx \sum h_i (\ell_{i+1}-\ell_i)\approx \varepsilon \sum h_i \ell_i \le \varepsilon$.  because of how we did the dyadic cuts. 
+## Property Testing on Dense Graphs
+
+I think there might be some ridiculous theorem that says something like "the properties which can be tested efficiently are exactly the hereditary properties" where I say ridiculous because it invokes Szemeredi Regularity Lemma. But I think even if this is true, it's still an interesting question "how good of a tester can I get?" This is just a preface to motivate why we're going to spend some time on testing bipartiteness even if this is a hereditary property. 
+Anyways today we're going to talk about bipartiteness.
+### Testing Bipartiteness
+$\varepsilon$-far from bipartite means must rm $\varepsilon n^{2}$  edges to make it bipartite.
+
+Plan: 
+1. Suppose our graph really is far from bipartite. Then, for any fixed partition, if we sample a couple of edges, it's quite likely that we'll find some edges that violate that partition -- an $\varepsilon$-fraction of edges violate the partition so something on the order of $\varepsilon ^{-\Theta(1)}$ gives us a good shot.
+2. However, union bounding over $2^{n}$ many partitions isn't going to fly with the above approach.
+3. So we find a much smaller set of vertex partitions, which are "**dense**" in the space of all vertex partitions.
+
+
+Here's our smaller set of vertex partitions: 
+
+- Choose a random set $U$ of size $100\varepsilon^{-1}\log \varepsilon^{-1}$. 
+- For every partition $U_{1},U_{2}$ of $U$ form a partition $Z_{1}\supset U_{1},Z_{2}\supset U_{2}$ of $G$ as follows:
+	- If $z$ has neighbors in both $U_{1}$ and $U_{2}$ then output "bad partition"
+	- If $z$ has neighbors in at most one of $U_{1},U_{2}$, then stick it on whichever side it doesn't have neighbors to. 
+
+In order for this to be good, I think we'd approximately need the following lemma:
+
+**Lemma that I'd want:** 
+If $G$ is bipartite, then it's pretty likely that for some partition $U_{1},U_{2}$ of the set $U$, the induced full partition $Z_{1},Z_{2}$ of the graph has at most $(\varepsilon/2) n^{2}$ violating edges.
+
+Why I want this Lemma: 
+We definitely have the following thing:
+
+**Fact:** 
+If $G$ is $\varepsilon$-far from bipartite, then for any partition $U_{1},U_{2}$ of the set $U$, the induced full partition $Z_{1},Z_{2}$ of the graph has at least $\varepsilon n^{2}$ violating edges.
+
+So if the Lemma that I wanted were true, then we just need to get a good approx for number of violating edges in each of these partitions. Which I think is pretty doable. 
+
+Here's why I think the lemma is true:
+- There are two types of vertices. 
+- Dumb vertices have degree at most $.75 \varepsilon n$. tbh we can just pretend these vertices don't exist because we're allowed to cut $\varepsilon n^{2}$ edges. 
+- The other type of vertex is the type of vertex where if you sample $100\varepsilon^{-1}\log \varepsilon ^{-1}$ random vertices from the graph, it's quite likely that one of those guys is connected to this vertex. Where quite likely probably means Pr 1-eps/100 here. 
+- So, we don't care about dumb vertices, and non-dumb vertices should be placed on the correct side. 
+
+And yup that's what Ronnitt did too. Very nice!
+
+## Triangle-freeness
+Today we're going to talk about testing for triangle-freeness.
+Will abbreviate szemeredi reg lemma to **SRL** here. 
+
+Recall: vertex sets $A,B$ are called $\varepsilon$-regular if for all $A'\subseteq A,B' \subseteq B$ with $|A'|\ge \varepsilon|A|,|B'|\ge \varepsilon|B|$, 
+$|d(A',B')-d(A,B)|\le \varepsilon$ where $d(X,Y) = e(X,Y)/(|X||Y|)$.
+
+**Lemma**:
+If all pairs in $A,B,C$ are $\gamma$-regular, and have density at least $2\gamma$ between them, then you get $|A||B||C|\gamma^{3}/2$ triangles.
+**Proof**: do some cleaning, it's basically just true.
+
+**SRL**:
+Equipartition into $k$ parts, and at most $\varepsilon\binom{k}{2}$ pairs are not $\varepsilon$-regular.
+
+
+Now the property testing question:
+- Distinguish between $G$ triangle free and $G$ must remove $\varepsilon n^{2}$ edges to kill all triangles.
+
+How we do it:
+
+**Triangle Removal Lemma**
+$\forall \varepsilon,\exists \delta$ such that $G$ $\varepsilon$-far from triangle free implies $G$ has $\delta\binom{n}{3}$ triangles.
+
+This means that the simple tester of just choosing some random triples and checking if they make a triangle works!
+
+ok, **proof**?
+
+1. We do a regularity equipartition into $5/\varepsilon$ parts.
+2. CLEAN  we remove a small number of edges:
+	1. Delete edges within parts
+	2. Delete edges between irregular parts
+	3. Delete edges between low density parts
+3. If $G$ was far from $\triangle$-free then must still have a triangle. 
+4. But now, one triangle implies cubicaly many triangles!
 
