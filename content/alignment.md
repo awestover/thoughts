@@ -1,6 +1,16 @@
 **EDIT:** I no longer think that the below model is quite right. I'll try to post an updated threat model asap.
 
+#todo
+
 Here's the tl;dr of my update:
+
+- I've changed from thinking 
+	- "AI xrisk is some complicated argument, for subtle hard to understand reasons we're screwed"
+- to thinking something more like
+	- "It seems almost inevitable that AI poses xrisk, this seems like the most risky thing ever, there are only a couple of really long-shot arguments/approaches for why we might be okay"
+- somehow my discussions about this always get mired in some minutia "maybe deep learning is hitting a wall, maybe the fact that GPT is going from incoherent to high school level to college student level in the span of years doesn't imply that the trend will continue and it'll soon replace a large fraction of cognitive labor"
+ ![[hittingwall.jpeg]]
+
 - claim 1 still seems inevitable
 - claim 2 -- I wasn't very quantitative about this, I could've done a lot better job at actually collecting data on what compute increases seem likely, and how these translate into capabilities. but it's still my intuition that, e.g., SWE can probably be mostly automated before 2030
 - claim 3 -- I think I made a mistake in trying to factor out "dangers from misuse" to "dangers from misaligned AI". I think these end up being pretty similar in some ways, and feeding off of each other. For instance, I think that a lot of the danger from the AI situation might come from US viewing this as a race, and then in the interest of winning the race, recklessly proceed forward at a speed such that we can't rigorously do safety testing, and with no procedures in place to "stop if these things seem like they're about to get really generally intelligent and dangerous". One way these feed off of each other is, e.g., spies can help a model exfiltrate itself. if a "rogue AI" approaches a government that is behind in the "AI race" and says "hey if you give me some compute I'll build you really good AIs", this sounds like maybe the rogue AI's best chance at getting access to a huge amount of compute. I think the "ASI will be super capable" is actually not super controversial in most circles so maybe the thrust of claim 3 is "there are lots of ways in which you could plausibly wipe humans out -- e.g., war, bioterrorism"

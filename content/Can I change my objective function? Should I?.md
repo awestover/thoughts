@@ -10,7 +10,7 @@ So, I can choose things -- nice.
 
 At this point I think the question of "can I change my objective function" becomes a bit confusing; luckily [[taboo]] resolves the confusion:
 
-I *definitely can* try to expose myself to new data / world perspectives and be [[accept the truth|open]] to updating [[how I want to spend my life]]. For instance, maybe I [[questions to connect|ask]] a friend "what's one of your best habits?" And they respond "I don't eat things with [[food-water|high sugar content]]." Then, if I decide that being healthy is valuable to me, this might cause me to update my "how I live my life" to avoid eating bad foods.
+I *definitely can* try to expose myself to new data / world perspectives and be [[accept the truth|open]] to updating [[how I want to spend my life]]. For instance, maybe I ask a friend "what's one of your best habits?" And they respond "I don't eat things with [[food-water|high sugar content]]." Then, if I decide that being healthy is valuable to me, this might cause me to update my "how I live my life" to avoid eating bad foods.
 
 Of course, you could argue that this doesn't really constitute a fundamental change in [[how I want to spend my life]], but rather it represents a change in policies to better reflect [[how I want to spend my life]] based on an increased amount of data. 
 

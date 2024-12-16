@@ -6,10 +6,10 @@ Some kind of bias towards not breaking the status quo.
 
 Example:
 - Have inclination "I should do nice thing"
-- Subconcciously, something like [[avoid_discomfort.cpp]] starts running
+- Sub-concsiously, something like [[avoid_discomfort.cpp]] starts running
 - If you are weak / unpracticed at noticing this and countering it or whatever:
 	- Have secondary analytical thought, i.e., [[justification]]
-	- e.g., "Oh, but that would be akward for reason X."
+	- e.g., "Oh, but that would be awkward for reason X."
 	- or, "I couldn't really do that, because reason X"
 	- tldr: [[excuses]]
 

@@ -8,7 +8,7 @@ Now it makes sense why this exists. This drives humans to [[food-water|obtain fo
 Here are some examples of times when ignoring the `avoid discomfort` messages have been helpful:
 
 - Not eating food for a bit. Can increase concentration and just generally feels good sometimes.
-- Ignoring messages wrt social anxiety. E.g., just overriding `avoid discomfort` and running my `what are nice things to say to help someone feel cared about, and to be supportive and nice` software. See [[talking-to-people]]
+- Ignoring messages wrt social anxiety. E.g., just overriding `avoid discomfort` and running my `what are nice things to say to help someone feel cared about, and to be supportive and nice` software. See [[talking to people]]
 - Overriding "go back to bed" tired brain message and just getting out of bed and running around. 
 - Overriding "this is hard" message wrt math and trying some more anyways. 
 
