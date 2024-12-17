@@ -9,7 +9,7 @@ Eliezer Yudkowsky uses the phrase "the [Fallacy of Gray](https://www.lesswrong.c
 - "You can't be sure of ..."
 - "No one's perfect."
 
-Fallacy of Gray reasoning can lead to complacently [[maintaining the status quo]] and [[not fail with abandon|failing with abandon]].
+Fallacy of Gray reasoning can lead to complacently maintaining the status quo and [[not fail with abandon|failing with abandon]].
 
 For instance, 
 - Suppose you were on a diet. And then you broke it. Then you might say "well, I guess I broke my diet there is no more point in eating healthily any more". (still bad)

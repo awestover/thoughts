@@ -8,7 +8,7 @@ He gives the example:
 Related: 
 - [[point of research]]
 -  [[what influence do perceived expectations have on me?]]
-- [[motivated thinking]]
+- [[motivated reasoning]]
 - [[quest for truth]]
 
 

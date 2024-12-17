@@ -17,5 +17,5 @@ I'll write down the TAPs that I've installed / am installing and reflect a bit o
 Tentative plans for future TAPs -- can't add them yet bc I haven't mastered the above TAPs:
 - If noticed sitting for quite a while, get up and move around.
 - eyes
-- pomo + meticulously log activities 
+- pomo + **meticulously log activities** 
 + get up early, run around

@@ -1,6 +1,6 @@
 **EDIT:** I no longer think that the below model is quite right. I'll try to post an updated threat model asap.
 
-#todo
+#todo #priority 
 
 Here's the tl;dr of my update:
 

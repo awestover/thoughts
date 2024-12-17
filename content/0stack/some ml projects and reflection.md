@@ -1,13 +1,97 @@
 # reflection
-blah blah
-#todo
+This semester I took some empirical ML classes -- NLP + DL. I think DL was kind of good, but honestly I didn't really feel like there was much content in either of the classes. ML is a science, and I don't think you can teach science in class. Maybe you can't teach anything in class. You have to go do stuff to learn about it. 
+
+I tried to do some empirical ML projects. I found this pretty challenging, and consider myself to have mostly failed. However, one thing that I've been doing that is working well, is I'm using LLMs for lots of stuff. This is helping me get intuition for what LLMs can and can't do right now and seems helpful for building threat models and progress models. I'd highly reccomend that you spend more time using LLMs. I'd also reccomend you be extremely cautious about making an argument against xrisk by pointing to some task and saying "AIs can't do this". Unless you're willing to write down somewhere public a bet that AIs won't be able to do said thing for 5 years I'm not interested in your claim.
+
+Anyways, after doing some empirical ML stuff and thinking about [[alignment]] a question on my mind is, what should I do to help the AI situation be less bad?
+
+I'd really love to do work on this from a theoretical angle. ARC is the only place that I'm aware of that does theory research that seems impactful -- although it's possible that there are other orgs I'm missing and I'm not too familiar with things like SLT and ofc MIRI is non-publishing so maybe they do good stuff idk. 
+
+Anyways, my main-line strategy is to try to work at ARC. I'm pretty optimistic about this working out, but it's worth considering the conditional question, "what will I do if ARC doesn't work out"  (e.g., because they feel its a bad fit, or they decide heuristic arguments are impossible and shutdown)?
+
+I still haven't decided. If you have thoughts, I'd be interested in discussing this. #todo
+
+At a first gloss my thoughts are: 
+- I'm not "cracked" at empirical work, and don't think I'd enjoy it. 
+- I could possibly do some policy thing (e.g., [RAND](https://www.rand.org/)), although I know very little about this.
+- I could try to make some money and donate to charity
+- I could live a "normal" life and try to help out by communicating about these issues on the side and being a responsible citizen.
+
+My current plan is to try my best to do theoretical alignment work, and if it doesn't pan out to do math -- but to also be open to opportunities to make the world a better place. I'll talk a bit more about this here: [[Can I enjoy arbitrary things?]]
+
+Anyways, even though I didn't really do as much empirical stuff as I might've liked to, I did a bit, and I'll post some of the various projects that I worked on or at least planned out here. 
+Looks like there are three: 
+1. shortest paths -- actually completed
+2. steganography -- just planned it and have some broken code
+3. llama hacker (out of context learning) -- kind of got this working, but decided that my work wouldn't be an improvement over what Owain Evans already did, and the steganography project sounded more interesting, so I just did that. 
 
 # transformer shortest paths
-https://awestover.github.io/transformer-shortest-paths/
+> In the future, humans are likely to trust AIs with performing important and complex tasks. For some of these tasks it will be infeasible for humans to audit the answers – either because human labor is too expensive, or because the AIs are too competent, so humans aren’t skilled enough to perform an audit (for example, an amateur chess player might have a hard time telling apart a good chess move and a bad chess move). However, there will be some simpler tasks where we can audit the AI’s and reward truthful answers. So, it’s plausible that models trained to be truthful in some simple domains will learn truthfulness as a general lesson.
+> In this project me and some friends investigated transformer generalization on the "shortest paths" problem. Read about it here. 
+
+[https://awestover.github.io/transformer-shortest-paths/](https://awestover.github.io/transformer-shortest-paths/)
+
+# steganography
+
+**GOAL:** 
+- try to elicit steganography capabilities in somewhat small
+    models (William suggested I try llama-70B, I was just
+    planning on trying llama-7B, but maybe I'll think about
+    trying some different scales once I start getting things
+    working).
+- William also suggested an interesting phenomenon to
+    investigate:
+    steganography is a red-team / blue-team game -- red-team wins
+    if they transmit secret message without getting caught,
+    blue-team wins if they catch red-team or prevent from passing
+    information.
+    So there should be some curve "if red-team is X powerful and
+    blue-team is Y powerful, how much info can red-team
+    transmit". It'd be kind of interesting to know in this
+    scenario how dumb of a trusted model can reasonably oversee a
+    smart untrusted model.
+
+**RELATED WORK:** 
+- redwood research did something very similar (see paper Gabe
+    sent). The difference is that they had
+    humans design prompts to get the model to do steganography.
+    I'm proposing seeing if I can get it to naturaly arise via
+    some RL / DPO type thing. (note that I'm moderately worried
+    that this is just going to be too tricky -- but I don't have
+    a good sense of whether or not that's true, and want to try
+    the project in part to learn whether this is super hard or
+    not and to just gain ML skills).
+
+ **PROJECT ROUGH PLAN:**
+1. get some simple coding prompts whose solutions have some test cases. e.g., MBPP dataset on huggingface
+2. interleave the following three things: 
+
+a. supervised training of a decoder to extract the secret message
+    - maybe this can just be a really simple FNN?
+    - maybe this should instead be fine tuned LLM?
+
+b. supervised tuning (?) of steg discriminator network 
+
+c. DPO tuning of the steg network LLM guy
+  - good example: I got the information through and didn't get
+      caught
+  - bad example: I failed to get the information through, or got
+      caught
+
+**REQUESTED RESOURCES**
+I think having runpod time on an RTX 4090 (24GB VRAM) would be
+work -- although maybe I need something a bit bigger.
+Do you have advice?
+I've been using the "unsloth" library which does some
+quantization tricks to make LLMs much smaller, so I've been able
+to do some stuff on a T4 (google colab, ~16GB VRAM).
 
 # llama hacker
-
 I've working on a project trying to see if I can get really cheap LLMs (~3B params for now :'( ) to do things that seem really dangerous. 
+
+Namely, zero-shot out-of-context vulnerability exploitation.
+This means, you train an LLM on the internet, which contains linux kernel code base. 
+The LLM finds and remembers some vulnerabilities in the code base, and can exploit them without loading the code into its context window.
 
 The main LLMs I'll be talking to are Zephyr, llama and Mistral.
 I'll be posting here some outputs of these LLMs that I found funny. 

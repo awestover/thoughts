@@ -13,8 +13,12 @@ This is a collection of serialized posts. This is the best place to go to unders
 [[goodness(universe)]]:
 What is goodness? What do I want my life, and the universe at large to look like?
 
-Some examples of [[tags/technical|technical notes]]: \
-[[backdoors and deceptive alignment]], [[algorithm class notes]]
+[[talking to people]]: 
+Talking to people is a fundamental problem with many applications. In this post I outline an algorithm for talking to people, and argue that my algorithm is $O(1)$-competitive with the optimal strategy for talking to people.
+
+
+**EDIT** -- please don't read [[alignment]] right now, it needs to be rewritten.
+I also need to rewrite [[cached TAPs]].
 
 AI [[alignment]]:
 Over the last decade, machine learning has made immense progress on a wide array of tasks.
