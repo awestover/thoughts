@@ -3,7 +3,8 @@ In this post I'll explain why I believe the following claim:
 > [!tip] Claim X
 > There is at least a $10\%$ chance that advances in AI will lead to a catastrophically bad outcome by 2029.
 
-==Important note: **it does not matter if the US develops AI first, or someone else. There is a huge amount of danger even if people with good intentions build powerful AI systems.**== If you share this message I implore you to not encourage an "AI race" -- there are no winners in an AI race, we all lose together.
+==Important note: **it does not matter if the US develops AI first, or someone else.** There is a huge amount of danger even if people with good intentions build powerful AI systems.== 
+If you share this message I implore you to not encourage an "AI race" -- there are no winners in an AI race, we all lose together.
 
 This is a view that isn't main-stream yet, which makes it easy to dismiss without consideration. In fact it's worse than this -- many people view this claim as "too sci-fi", and will ridicule you for taking it seriously [^2]. So, why should you treat this post more seriously than you would some random conspiracy theory? Here are four reasons:
 - Many credible ML experts believe Claim X. For instance Geoffrey Hinton (recent Nobel Prize winner) and [Yoshua Bengio](https://yoshuabengio.org/2024/07/09/reasoning-through-arguments-against-taking-ai-safety-seriously/) (Turing Award Winner) who pioneered many AI advances have become vocal advocates about the risks from AI. 
@@ -204,7 +205,6 @@ you can reach me at
 ---
 #todo finish this post. integrate comments from below into it
 
-<p style="color:white">
 # OLD STUFF
 Here's the tl;dr of my update:
 
@@ -375,7 +375,7 @@ Confronting this issue seriously can be quite distressing. I think talking about
 it can help, and am very willing to discuss this with you, especially if you
 disagree with my conclusions. I'll put some initial thoughts on how this should
 impact the way I live my life here: [[5 years]].
-</p>
+
 ---
 
 [^1]: U.S.-China Economic and Security Review Commission. _2024 Report to Congress_. Washington, D.C., November 2024. Available at: [uscc.gov](https://www.uscc.gov/sites/default/files/2024-11/2024_Executive_Summary.pdf)
