@@ -256,11 +256,13 @@ Most goals that an AI could have are not human compatible. For most goals, it's 
 ## What to do About it
 
 **Step 1: Form your own opinion**
+
 To start, I'd recommend reading some stuff and evaluating whether these people give reasonable arguments are not. It's also worth trying to find a good "debate" about AI  [Here's a good one](https://www.youtube.com/watch?v=144uOfr4SYA) [Here's another one](https://www.youtube.com/watch?v=6yQEA18C-XI). The thing that initially sold me on the case for AI risk before I thought about it myself is that I read/listened to conversations between concerned people and not concerned people and the not concerned people (e.g., Yan LeCunn) seemed to have terrible arguments.
 Here are some links for some stuff that could be interesting to read / listen to, [an interview with Paul](https://www.youtube.com/watch?v=GyFkWb903aU), [Eliezer Yudkowsky TIME article](https://time.com/6266923/ai-eliezer-yudkowsky-open-letter-not-enough/),   [PauseAI Risk statement](https://pauseai.info/risks).
 Then, write your own opinions.
 
 **Step 2**: **Make some plans.** 
+
 Some things that could be good to do about this:
 - **policy work** -- see, e.g., https://emergingtechpolicy.org
 - communication -- note important caveats that it is negative value to communicate if you (even accidentally) encourage race dynamics (as you might if all you get across is "AI BIG SOON")
@@ -332,6 +334,7 @@ But I'd estimate that there are <1000 FTE's working on this stuff, so still coul
 ---
 
 **Postscript:**
+
 Sorry this post is less coherent/crisp than I'd like. I think it's all correct, but could be presented better. Hopefully I'll fix this at some point, but I'm going to prioritize other things besides blogging for a bit.
 
 ---
