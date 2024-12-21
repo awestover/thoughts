@@ -205,6 +205,7 @@ An ASI might want to kill humans:
 <p style="color:red">
 Read [Alignment Faking](https://www.anthropic.com/research/alignment-faking) and then come back here. 
 </p>
+
 - suppose it [crystallizes](https://www.anthropic.com/research/alignment-faking) on some weird goals 
 	- there's compelling theoretical and empirical reasons to believe that such crystallization might happen
 		- see alignment faking paper -- deception can be selected for!
@@ -259,6 +260,7 @@ Some things that would be really bad to do about this:
 If you're at all interested in doing something about this, or are skeptical but want to talk about it, or want to talk about how to emotionally cope with this, please please please reach out. It can be daunting to figure out what to do and what to believe. I can give you some connections and pipe you directly to some places where you can have an impact (especially if you are a college senior, or employed but willing to switch jobs).
 you can reach me at
 ![[Pasted image 20241220175901.png]]
+
 **My general thoughts on what should happen**
 I highlighted 4 reasons that I could see for why catastrophe could be averted. One of these was basically "we just get lucky", and isn't super actionable. The other 3 correspond to interventions that we can take to increase the probability of a good outcome. Specifically, here's what I'd like:
 
