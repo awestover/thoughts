@@ -16,12 +16,6 @@ What is goodness? What do I want my life, and the universe at large to look like
 [[talking to people]]: 
 Talking to people is a fundamental problem with many applications. In this post I outline an algorithm for talking to people, and argue that my algorithm is $O(1)$-competitive with the optimal strategy for talking to people.
 
-
-**EDIT** -- please don't read [[AI xrisk]] right now, it needs to be rewritten.
-I also need to rewrite [[cached TAPs]].
-
 [[AI xrisk]]:
-Over the last decade, machine learning has made immense progress on a wide array of tasks.
-What happens if this progress continues into the future? Many AI experts predict (and there are scaling models to back up this prediction) that we are only 5-10 years away from having AI agents that could, e.g., automate a substantial portion of all human labor.
-However, I don't think humanity is ready to create a new, more intelligent, species than ourselves.
-In particular, I think that the current trajectory of AI development poses an existential risk to humanity -- by default, in creating more powerful entities than ourselves, we relinquish our control over the future to the more powerful entities, and we don't have good techniques right now for ensuring that these entities care about making a [[goodness(universe)|good]] future. In this sequence of posts I'll write about some potential risks from advanced AI agents, and talk about some ideas for mitigating these risks.
+Over the last decade, machine learning has made immense progress on a wide array of tasks. What happens if this progress continues into the future? Many AI experts predict (and there are scaling models to back up this prediction) that we are only 5 years away from having AI agents that could, e.g., automate a substantial portion of all human labor.
+Humanity is not ready to create a new, more intelligent, species than ourselves. In particular, the current trajectory of AI development poses an existential risk to humanity -- by default, in creating more powerful entities than ourselves, we relinquish our control over the future to the more powerful entities, and we don't have good techniques right now for ensuring that these entities care about making a [[goodness(universe)|good]] future. In this post I discuss why AI poses an existential threat, and talk about what we should do about it.
