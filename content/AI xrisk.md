@@ -3,7 +3,7 @@ In this post I'll explain why I believe the following claim:
 > [!tip] Claim X
 > There is at least a $10\%$ chance that advances in AI will lead to a catastrophically bad outcome by 2029.
 
-==Important note: **it does not matter if the US develops AI first, or someone else.** There is a huge amount of danger even if people with good intentions build powerful AI systems.== 
+==Important note: it does not matter if the US develops AI first, or someone else. There is a huge amount of danger even if people with good intentions build powerful AI systems.== 
 If you share this message I implore you to not encourage an "AI race" -- there are no winners in an AI race, we all lose together.
 
 This is a view that isn't main-stream yet, which makes it easy to dismiss without consideration. In fact it's worse than this -- many people view this claim as "too sci-fi", and will ridicule you for taking it seriously [^2]. So, why should you treat this post more seriously than you would some random conspiracy theory? Here are four reasons:
@@ -36,10 +36,10 @@ To get some basic intuition for this, it helped me to think about the cold war. 
 
 In this post, I discuss ways that AI progress could lead to catastrophically bad outcomes.
 In a moment, I'll define what I mean by that, but I'd first like to emphasize an important point:
-==**AI poses large risks *regardless* of who makes it.**== This is a big difference between AI and nukes. 
+==AI poses large risks regardless of who makes it.== This is a big difference between AI and nukes. 
 
 It's relatively easy to understand AI as analogous to a "weapon", and thereby reason that it's important for good actors to develop powerful AI before bad actors. This line of thought leads actors to develop AI in a **race** (e.g., racing on AI progress was suggested to congress in [^1]).
-However, ==**racing to develop very powerful AI is extremely dangerous**==. There are major challenges (which I'll discuss in a bit) to verifying that an AI agent is *safe*, and race pressures deprive actors of the time necessary for good evaluations, making it more likely that we'll be comforted by misleading indicators of safety.
+However, ==racing to develop very powerful AI is extremely dangerous==. There are major challenges (which I'll discuss in a bit) to verifying that an AI agent is *safe*, and race pressures deprive actors of the time necessary for good evaluations, making it more likely that we'll be comforted by misleading indicators of safety.
 
 I request that when you communicate about risks from AI, you focus on the fact that powerful AI is dangerous regardless of who builds it -- I worry that spreading the simplified message "AI is dangerous" can be [net-negative](https://forum.effectivealtruism.org/posts/CcJsh4JcxEqYDaSte/spreading-messages-to-help-with-the-most-important-century) by encouraging race dynamics.
 
