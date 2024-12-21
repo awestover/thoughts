@@ -1,39 +1,6 @@
-**EDIT:** I no longer think that the below model is quite right. I'll try to post an updated threat model asap.
+Here is the old version of [[AI xrisk]]. In most cases I trust version control to keep track of old files and actually expect revisions of files to be strict improvements, so I never dig through version history to find old files. 
 
-#todo #priority 
-
-Here's the tl;dr of my update:
-
-- I've changed from thinking 
-	- "AI xrisk is some complicated argument, for subtle hard to understand reasons we're screwed"
-- to thinking something more like
-	- "It seems almost inevitable that AI poses xrisk, this seems like the most risky thing ever, there are only a couple of really long-shot arguments/approaches for why we might be okay"
-- somehow my discussions about this always get mired in some minutia "maybe deep learning is hitting a wall, maybe the fact that GPT is going from incoherent to high school level to college student level in the span of years doesn't imply that the trend will continue and it'll soon replace a large fraction of cognitive labor"
- ![[hittingwall.jpeg]]
-
-- claim 1 still seems inevitable
-- claim 2 -- I wasn't very quantitative about this, I could've done a lot better job at actually collecting data on what compute increases seem likely, and how these translate into capabilities. but it's still my intuition that, e.g., SWE can probably be mostly automated before 2030
-- claim 3 -- I think I made a mistake in trying to factor out "dangers from misuse" to "dangers from misaligned AI". I think these end up being pretty similar in some ways, and feeding off of each other. For instance, I think that a lot of the danger from the AI situation might come from US viewing this as a race, and then in the interest of winning the race, recklessly proceed forward at a speed such that we can't rigorously do safety testing, and with no procedures in place to "stop if these things seem like they're about to get really generally intelligent and dangerous". One way these feed off of each other is, e.g., spies can help a model exfiltrate itself. if a "rogue AI" approaches a government that is behind in the "AI race" and says "hey if you give me some compute I'll build you really good AIs", this sounds like maybe the rogue AI's best chance at getting access to a huge amount of compute. I think the "ASI will be super capable" is actually not super controversial in most circles so maybe the thrust of claim 3 is "there are lots of ways in which you could plausibly wipe humans out -- e.g., war, bioterrorism"
-  I think it's also worth talking about how AI control works, and then predictably fails at scale.
-- claim 4 -- my reasons here were not super good. I now think the answer to "why would AI's want to kill/disempower humans" is more like this -- I think AI's are likely to end up caring about some weird things that humans would really rather were not optimized very hard for. Q:"why won't this be trained out of them" A: "because models will realize that they need to hide their objectives to avoid having the objectives changed". I also think that I didn't do a great job of explaining the "humans gradually lose control" scenario. I think Paul Christiano gives a good picture of this in linked post. I need to think about this more. 
-- claim 5 was supposed to be an obvious corollary of claims 1-4. Like, if people try hard to build strong AI, and this is sufficient to cause strong AI to exist, and strong AI would be capable and motivated to disempower humans, then a corollary of this would be that humans lose control over the future. put another way "superhuman intelligences aren't going to stay humans slaves for long"
-
-where do people tend to disagree with this?
-- re claim 2 -- some people think that we're still really far away from strong AI. I think people come to this conclusion by finding some things that current AI systems can't do and being like "ha! this proves AI won't get good". I think such people could benefit from trying to imagine how surprised people would be in 2020 to see gpt4 do things like solving really tricky coding problems / generally looking into historical trends of how people have said that AI's won't be able to do X and then a few years later they could
-- re claim 3 -- I think most people are actually pretty able to see that there's a large danger from misuse of powerful AI's. I think ppl tend to underestimate how fragile humanity is. and also to have just not thought about how bad a war involving powerful AIs would look. but I think ppl generally understand this if you talk about it a bit.
-- re claim 4 -- people tend to be very unhappy when I talk about "AI's developing their own goals" -- I could do a much better job of discussing this. 
-  maybe the best remedy to this is finding model organisms work that people have done to demonstrate that models will scheme, or trying to cook up some demo myself of this capability. 
-- re claim 5 -- I should just say "this follows by the union bound"
-- general -- maybe there should be some reading about "motivated reasoning" that is a prerequisite before reading this blog post. 
-
-re the rest of the post: 
-I could've been a lot more clear about my "asks". 
-I think my main ask really should've been something like "I think it'd be really great if you thought about this really seriously and did some research"
-
-I think I had said something about "maybe you should spread awareness". I'm much less convinced that this is a good idea now. I might've also said "you should lobby policy makers". maybe this is better? not sure. 
-anyways, atm I don't have any prescriptive advice for you besides the following two things:
-- Please think about this more and try to form an accurate opinion about this -- and help me figure out where I'm wrong about this!
-- Please don't contribute towards making generally capable AI's
+I'm keeping this one up because I'm interested in the trajectory of my thoughts about this, so could be interested in comparing the two posts. Also maybe by seeing where I refined my ideas I can update even closer to being correct. 
 
 ---
 
@@ -181,3 +148,4 @@ impact the way I live my life here: [[5 years]].
 - [Max Tegmark on why people don't take xrisk seriously](https://time.com/6273743/thinking-that-could-doom-us-with-ai/)
 - [Eliezer Yudkowsky thoughts on alignment difficulty](https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities)
 - [Deepmind thoughts on alignment difficulty](https://www.lesswrong.com/posts/qJgz2YapqpFEDTLKn/deepmind-alignment-team-opinions-on-agi-ruin-arguments)
+

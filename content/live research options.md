@@ -47,6 +47,6 @@ Maybe something worth noting is that the people at the positions that sound the 
 
 **Concerns**
 - Feels like this is hedging "half the impact, half the fun". 
-- But really if the claims of [[alignment]] are correct then it's really not so much impact.
+- But really if the claims of [[AI xrisk]] are correct then it's really not so much impact.
 - This is like running the dishwasher when the house is on fire: sure, mom will be happy that I did the dishes, but not actually because the house is just going to burn down. 
 - Maybe this is all just a way of saying, "this feels less live"

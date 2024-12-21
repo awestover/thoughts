@@ -1,6 +1,6 @@
 > Q: How would [[how I want to spend my life]] change if I estimated that Pr(humans are extinct before 2030) is large?
 
-(I'm specifically thinking about this because I've recently become concerned about x-risk posed by failure to [[alignment|align]] superhuman AI agents, although x-risk is not a [[nukes xrisk thoughts|novel problem]]).
+(I'm specifically thinking about this because I've recently become concerned about x-risk posed by failure to [[AI xrisk|align]] superhuman AI agents, although x-risk is not a [[nukes xrisk thoughts|novel problem]]).
 
 > For simplicity, let's just suppose you were certain that humanity would be extinct by 2030. For the record I don't think this is certain, but I think it's an interesting extreme case to think about.
 

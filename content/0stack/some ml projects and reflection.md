@@ -3,21 +3,21 @@ This semester I took some empirical ML classes -- NLP + DL. I think DL was kind 
 
 I tried to do some empirical ML projects. I found this pretty challenging, and consider myself to have mostly failed. However, one thing that I've been doing that is working well, is I'm using LLMs for lots of stuff. This is helping me get intuition for what LLMs can and can't do right now and seems helpful for building threat models and progress models. I'd highly reccomend that you spend more time using LLMs. I'd also reccomend you be extremely cautious about making an argument against xrisk by pointing to some task and saying "AIs can't do this". Unless you're willing to write down somewhere public a bet that AIs won't be able to do said thing for 5 years I'm not interested in your claim.
 
-Anyways, after doing some empirical ML stuff and thinking about [[alignment]] a question on my mind is, what should I do to help the AI situation be less bad?
+Anyways, after doing some empirical ML stuff and thinking about [[AI xrisk]] a question on my mind is, what should I do to help the AI situation be less bad?
 
 I'd really love to do work on this from a theoretical angle. ARC is the only place that I'm aware of that does theory research that seems impactful -- although it's possible that there are other orgs I'm missing and I'm not too familiar with things like SLT and ofc MIRI is non-publishing so maybe they do good stuff idk. 
 
 Anyways, my main-line strategy is to try to work at ARC. I'm pretty optimistic about this working out, but it's worth considering the conditional question, "what will I do if ARC doesn't work out"  (e.g., because they feel its a bad fit, or they decide heuristic arguments are impossible and shutdown)?
 
-I still haven't decided. If you have thoughts, I'd be interested in discussing this. #todo
+I still haven't decided. If you have thoughts, I'd be interested in discussing this. 
 
 At a first gloss my thoughts are: 
-- I'm not "cracked" at empirical work, and don't think I'd enjoy it. 
-- I could possibly do some policy thing (e.g., [RAND](https://www.rand.org/)), although I know very little about this.
-- I could try to make some money and donate to charity
+- I could do an MENG at MIT to get empirical skillz, plus do some internship programs (e.g., MATS, global AI fellowship, anthropic has something). I don't think I'm cracked at empirical stuff, but GPT can handle the coding, and I could learn to do good experiments and ask good questions.
+- I could possibly do some policy thing (e.g., [RAND](https://www.rand.org/)), although I know very little about this. 
+- I think there's actually a bunch of opportunities to do stuff, I'm sure I could find something.
 - I could live a "normal" life and try to help out by communicating about these issues on the side and being a responsible citizen.
 
-My current plan is to try my best to do theoretical alignment work, and if it doesn't pan out to do math -- but to also be open to opportunities to make the world a better place. I'll talk a bit more about this here: [[Can I enjoy arbitrary things?]]
+My current plan is to try my best to do theoretical alignment work, and if it doesn't pan out to figure out something else good to do. I'll talk a bit more about this here: [[Can I enjoy arbitrary things?]]
 
 Anyways, even though I didn't really do as much empirical stuff as I might've liked to, I did a bit, and I'll post some of the various projects that I worked on or at least planned out here. 
 Looks like there are three: 

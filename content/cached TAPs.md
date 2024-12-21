@@ -19,3 +19,5 @@ Tentative plans for future TAPs -- can't add them yet bc I haven't mastered the 
 - eyes
 - pomo + **meticulously log activities** 
 + get up early, run around
+
+**Being more concsious about how I spend my time seems like the most important habit that I will ever make.** 

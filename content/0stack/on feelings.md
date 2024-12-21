@@ -46,6 +46,6 @@ Sometimes I'll have bad feelings, e.g., anger or jealousy. But, since feelings t
 ### alignment
 One last place where it'd be good for me to remember that "feelings are a fact about the mind, not the world" is how I approach thinking about xrisk.
 
-I'm pretty bought on the arguments that there are some [[alignment|risks]], and I'd like to do something about them. Understanding viscerally and realistically that the situation is dire is important for making sure that I take appropriate actions, to actually try to change things, rather than to just change the way I feel about them -- e.g., make myself feel better. I care about doing things much more than the *feeling* of doing things.
+I'm pretty bought on the arguments that there are some [[AI xrisk|risks]], and I'd like to do something about them. Understanding viscerally and realistically that the situation is dire is important for making sure that I take appropriate actions, to actually try to change things, rather than to just change the way I feel about them -- e.g., make myself feel better. I care about doing things much more than the *feeling* of doing things.
 
 But also, if feelings are a fact about my mind and not about the world. Then this means that I should try to cultivate helpful feelings. 
