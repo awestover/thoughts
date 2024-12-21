@@ -150,7 +150,7 @@ People like to talk about how LLMs are unreliable, and hallucinate a lot. I hope
 - Having agents that utilize test-time compute to reason is the current paradigm for progress.
 
 > [!tip] Claim 2
-People will try really hard to make ASI.
+> People will try really hard to make ASI.
 
 > First, suppose there are no "small" AI catastrophes that scare people.
 
@@ -176,7 +176,7 @@ In summary, there are a lot of clear signals that push for the development of AI
 > [!tip] Claim 3
 > An ASI would be capable of killing all humans:
 
-Before considering whether HCAI agents *would* kill/disempower humans, let's think about whether they *could* if, e.g., someone gave them this as a goal. Obviously someone giving an ASI such a goal counts as misuse not as the ASI independently posing a risk without bad actors -- but we'll get to why you might not need to have people explicitly give ASI such a goal in order for the agent to pursue this goal later.
+Before considering whether ASI agents *would* kill/disempower humans, let's think about whether they *could* if, e.g., someone gave them this as a goal. Obviously someone giving an ASI such a goal counts as misuse not as the ASI independently posing a risk without bad actors -- but we'll get to why you might not need to have people explicitly give ASI such a goal in order for the agent to pursue this goal later.
 
 > Q: What are some really dangerous things that AI could do? A:
 
@@ -190,9 +190,13 @@ Note that these aren't super far-fetched applications of AI. AI is already widel
 The "disempower" case is also worth thinking about. One way this could play out is that we become highly reliant on AI systems, the world changes rapidly and becomes extremely complicated, so that we don't have any real hopes of understanding it anymore. Maybe we end up only being able to interface with the world through AI's and thereby lose our agency.
 Paul Christiano does a good job of explaining this [here](https://www.alignmentforum.org/posts/HBxe6wdjxK239zajf/what-failure-looks-like).
 
+Honestly, this feels kind of tautological. If humans wanted to kill all the chickens in the world, then they'd have no recourse. If Stockfish wants to beat the world champion at Chess, then I know who will win (although of course I don't know *how* it'll win). If we get in a fight with an alien race that is vastly smarter than us... It doesn't end well, even if I can't tell you exactly how.
+
+So basically what I'm saying is, yes we should invest resources into protecting against obvious threat-models like synthbio where it's clear that an unaligned agent could do harm. But we shouldn't feel too good about ourselves for preventing an AI from taking over using the methods that humans would try. We shouldn't feel confident at all that an ASI couldn't come up with some strategy that we didn't think of and exploits it. AI's do the unexpected all the time.
+
 
 > [!tip] Claim 4
-An ASI might want to kill humans:
+> An ASI might want to kill humans:
 
 In ML, we **don't get to choose what the AI cares about.** Instead, we observe the input/output behavior of the AI, and reinforce or discourage the mechanisms that lead to this behavior.
 The distinction is, there are multiple *mechanisms* that can result in the same behavior. 
