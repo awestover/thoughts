@@ -1,11 +1,4 @@
-Note: this whole post still needs to be edited quite a bit. And the reasons for Claim 4 -- arguably the most confusing and important part -- aren't spelled out yet. Sorry about that. It might be a second before I get to this. I hope the current version of this document is still enough to be helpful to you, and is at least better than me not putting out anything. 
-
----
-
-Epistemic Status: 
-I've thought about this extensively for about 4 months. I'm confident in the main claim of this post. 
-
----
+Epistemic Status: I've thought about this extensively for about 4 months. I'm confident in the main claim of this post. 
 
 In this post I'll explain why I believe the following claim:
 
@@ -201,17 +194,33 @@ Paul Christiano does a good job of explaining this [here](https://www.alignmentf
 > [!tip] Claim 4
 An ASI might want to kill humans:
 
-#todo
-<p style="color:red">
-Read [Alignment Faking](https://www.anthropic.com/research/alignment-faking) and then come back here. 
-</p>
+In ML, we **don't get to choose what the AI cares about.** Instead, we observe the input/output behavior of the AI, and reinforce or discourage the mechanisms that lead to this behavior.
+The distinction is, there are multiple *mechanisms* that can result in the same behavior. 
+This phenomenon is known as **deceptive alignment**, and is a large part of why I'm worried about AI.
 
-- suppose it [crystallizes](https://www.anthropic.com/research/alignment-faking) on some weird goals 
-	- there's compelling theoretical and empirical reasons to believe that such crystallization might happen
-		- see alignment faking paper -- deception can be selected for!
-	- conditional on such crystallization, a large class of goals incentivize dis-empowering humans
-		- e.g., goal preservation
-	- key point -- we don't get to directly choose what the AI cares about, discussed more here: [[The Inner Alignment Problem]].
+The idea is as follows. Suppose you're interviewing for a job and you don't really care about the job. You might still pretend to care, because you want the job. With an AI it's the same way. Once an AI is "situationally aware", i.e., it understands that it is an AI that is being trained, we need to worry that the AI will do whatever actions it knows we want it to do, not because it wants to do them, but because it knows that we'll change it's values if it doesn't act this way. You might even predict that alignment fakers are selected for because they do better on tasks. If an AI "crystallizes" on some weird values, and then defends these values, then its behavior will look identical to an agent that cares about what we want it to care about during training. However, if it gets a chance to pursue it's true goals in deployment, it may take it. 
+
+Most people I talked to about this were fairly skeptical. Here's an explanation of the plausibility of this that I wrote: [[The Inner Alignment Problem]] (sorry it's kind of bad because it's an essay for school, so I was optimizing for a weird objective). 
+
+Fortunately you no longer have to rely on theory for this. Ryan Greenblatt's [Alignment Faking](https://www.anthropic.com/research/alignment-faking) paper empirically demonstrates that current LLMs will naturally come up with alignment faking as a strategy for avoiding value modification (e.g., read some transcripts [here](https://redwoodresearch.github.io/alignment_faking_examples/)).
+
+Some interesting notes: 
+- Giving a model space and time to reason before responding seems to increase scheming.
+	- Also it increases coherence and stuff, so this is what all the labs are doing
+- But this can also happen in a forward pass.
+- Obviously, if a model schemes in its "hidden scratchpad" that humans are looking at, it's going to get caught. 
+- Situtationally aware models will realize this and not do it or at least only do it if they can somehow cipher their reasoning to make it human non-understandable or to deceive humans.
+
+Anyways the bottom line is that it seems fairly probable that an AI will stumble upon an approximation of the goal that we care about early in training, and then aggressively defend this goal from being modified by the training process. 
+
+Most goals that an AI could have are not human compatible. For most goals, it's optimal for you to have power and resources to achieve your goals, rather than being at the mercy of human whims. Being smarter doesn't necessarily make an AI more moral.
+
+
+> [!tip] Summary
+> Clearly, if ASI will be developed soon, will be capable of causing extreme harm, and will have motive/desire to cause extreme harm, then this would be extremely bad.
+> 
+> For the reasons listed above, I find it quite likely that ASI will be developed soon, will be capable of causing extreme harm, and will have motive to cause such harm.
+
 
 > [!tip] Responses to Common Objections
 
@@ -250,15 +259,38 @@ Then, write your own opinions.
 **Step 2**: **Make some plans.** 
 Some things that could be good to do about this:
 - **policy work** -- see, e.g., https://emergingtechpolicy.org
-- communication
+- communication -- note important caveats that it is negative value to communicate if you (even accidentally) encourage race dynamics (as you might if all you get across is "AI BIG SOON")
 - technical alignment work
 
 Some things that would be really bad to do about this: 
 - Contribute in any way to work on developing more capable AI systems
 - Encourage race dynamics
+- Nothing
 
-If you're at all interested in doing something about this, or are skeptical but want to talk about it, or want to talk about how to emotionally cope with this, please please please reach out. It can be daunting to figure out what to do and what to believe. I can give you some connections and pipe you directly to some places where you can have an impact (especially if you are a college senior, or employed but willing to switch jobs).
-you can reach me at
+**A common question**:
+> Do I recommend you quit your job and pivot to policy/communication/technical work?
+
+It depends. 
+-  First, consider whether or not your current job already puts you in a good place to do some of this work. 
+	- For example, if you're a professor or some respected figure for another reason, you might already be in a good spot to do communication work. You'd want to do some things differently, e.g., have some plan for how you're going to talk and influence decision makers in industry or the government. But probably don't quit. 
+- If you're doing some kind of software job (especially ML adjacent):
+	- Yeah, this would be a great time to get into working on technical safety research.
+	- There are programs like [MATS](https://www.matsprogram.org/), [constellation](https://www.constellation.org/programs/astra-fellowship) for helping people transition into doing this. 
+	- I'll list more resources here later. Just talk to me for now.
+	- Just apply to some places, but don't quit your current job until you have an offer from somewhere else. 
+- If you're doing something policy related. 
+	- Yes please we need policy people so badly.
+- If you're doing something else. 
+	- Definitely worth considering putting that on hold for a bit and working on this -- it's pretty urgent.  
+
+**Another question**
+> What kind of communication is helpful?
+
+I'm really not sure. Creating new "Moderately Worried People" that can tell you AI is an Important Social Issue. This doesn't seem helpful. If you have a friend that is on the job market (or could be) and has some skills that would be useful for technical or policy work, then talking to them could be super high impact. If you're super sold on the risk case, then there's a really good chance that you're better off doing object-level useful work [^3] on the problem than the more meta-level work of communication. The bar for a communication being useful is quite high, so even though it might seem super helpful to multiply the number of people working on the problem, my experience is that most people aren't too receptive to this.
+
+[^3]: Object-level work directly addresses a specific, tangible problem or task, producing practical and measurable results, as opposed to meta-level work which focuses on broader strategies, frameworks, or tools that could help others solve problems rather than solving a particular problem itself. 
+
+If you're at all interested in doing something about this, or are skeptical but want to talk about it, or want to talk about how to emotionally cope with this, please please please reach out. It can be daunting to figure out what to do and what to believe. I can give you some connections and pipe you directly to some places where you can have an impact (especially if you are a college senior, or employed but willing to switch jobs). You can reach me at
 ![[Pasted image 20241220175901.png]]
 
 **My general thoughts on what should happen**
@@ -278,6 +310,25 @@ I highlighted 4 reasons that I could see for why catastrophe could be averted. O
 	- A pause is possible -- training frontier AI models is extremely expensive and resource intensive, so we can just make sure that no one is using a ton of GPUs.
 	- We also need policy work that says "if capabilities are like this, then it's unacceptable to deploy."
 	- If we can't pause, at least creating an international group that works on AI rather than having private companies do this would be beneficial, because this also eliminates race dynamics and makes it possible to take better safety measures.
+
+> Where do people work on this stuff?
+
+- Redwood Research (e.g., Buck, Ryan)
+- US AISI (e.g., Paul) + UK AISI
+- METR (e.g., Beth)
+- ARC (e.g., Jacob)
+- Anthropic (e.g., Evan)
+- Deepmind (e.g., Neel)
+- GovAI
+- RAND
+
+I'm sure there are some other places where people work on this. 
+But I'd estimate that there are <1000 FTE's working on this stuff, so still could use more people.
+
+---
+
+**Postscript:**
+Sorry this post is less coherent/crisp than I'd like. I think it's all correct, but could be presented better. Hopefully I'll fix this at some point, but I'm going to prioritize other things besides blogging for a bit.
 
 ---
 
