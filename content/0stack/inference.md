@@ -184,8 +184,10 @@ $$
 x_i \perp x_j \iff \Lambda_{ij}=0.
 $$
 $$
-x_i \perp x_j \mid x_{rest}\iff J_{ij}=0.
-$$info matrix gives easy way to make graphical models. 
+x_i \perp x_j \mid x_{\text{rest}}\iff J_{ij}=0.
+$$
+
+info matrix gives easy way to make graphical models. 
 - undirected model: add edge whenever $J_{ij}\neq 0$
 - directed model: idk
 
