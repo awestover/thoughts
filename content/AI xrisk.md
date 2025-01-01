@@ -32,6 +32,12 @@ I don't know *how* we'll lose, in the same way that I don't know *how* [a chess 
 4. I improve myself, because that seems pretty useful.
 5. Then I manipulate humans into having some really nasty hot conflict and just get them to annihilate themselves. 
 
+**story 4** [paraphrased from here](https://www.lesswrong.com/posts/BAzCGCys4BkzGDCWR/the-prototypical-catastrophic-ai-action-is-getting-root)
+1. AI gets root access to its datacenter.
+2. AI can then intercept requests to the datacenter, and control what we see.
+3. This is an appealing alternative to escaping the lab because in this setting you can use the vast resources of the lab to improve yourself (for example). (ML is expensive rn).
+
+
 ---
 
 Anyways, back to the main post.
