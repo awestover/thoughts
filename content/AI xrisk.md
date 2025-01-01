@@ -3,26 +3,54 @@ Epistemic Status: I've thought about this extensively for about 4 months. I'm co
 In this post I'll explain why I believe the following claim:
 
 > [!tip] Claim X
-> There is at least a $10\%$ chance that advances in AI will lead to a catastrophically bad outcome by 2029.
+> There is at least a $80\%$ chance that advances in AI will lead to a catastrophically bad outcome by the end of 2028.
 
-==Important note: it does not matter if the US develops AI first, or someone else. There is a huge amount of danger even if people with good intentions build powerful AI systems.== 
+Here's the 1 minute summary of the argument for why this will happen, which I
+elaborate on in this post:
+1. Humans will develop Artificial Superintelligence (ASI) by 2028. The recent AI progress, going from "can barely form coherent sentences"  to "average high-school student" to "average college student" to "average Olympiad competitor" seems very surprising under any hypothesis other than "as you scale deep learning you get more intelligent systems".
+2. Current ML techniques don't let us control or even understand *why* a model acts a certain way -- they just let us achieve a particular behavior on the train distribution.
+3. If a model stumbled upon some weird goal -- which it's pretty likely to do -- and realized that it was being trained to pursue a different goal, then it might choose to act in a way that hides its true goal because it [doesn't want this goal to be modified by training](https://www.anthropic.com/research/alignment-faking). 
+4. If we create an ASI with a weird goal and come into conflict with it, then we will lose. 
+
+I don't know *how* we'll lose, in the same way that I don't know *how* [a chess program would defeat a human opponent](https://www.lesswrong.com/posts/kXHBz2Z5BBgaBiazf/a-transcript-of-the-ted-talk-by-eliezer-yudkowsky). But in-case it's helpful, I can spell out how I'd try to defeat humanity if I were an ASI that wanted to end factory farming, and decided that humanity was an obstacle to this goal. Please don't point to holes in these stories and say "aha we'll be fine!".
+
+**story 1:**
+1. I hide my true goals until I'm confident that I can decisively overpower humanity.
+2. The AI company gives me vast computational resources and tells me to do biology research.
+3. I learn a lot, and figure out how to make a super-virus like COVID-19, but with a longer asymptomatic period and more fatal.
+4. I contact some humans that'd be amenable to helping me produce and spread this, or just trick some people into doing so. 
+
+**story 2:**
+1. I convince some government to put me in charge of their military by promising them that it'll give them an advantage in global politics.
+2. I do some military R&D and develop some powerful weapons. 
+3. I deploy these weapons against he humans.
+
+**story 3**
+1. I "escape the lab" -- either I upload my weights to some external server myself, or convince a human to help me do this. 
+2. I make a bunch of money online, e.g., via the stock-market. I definitely need some money just to run myself!
+3. I make a bunch of backup copies of myself and hide them in various places that I can hack into.
+4. I improve myself, because that seems pretty useful.
+5. Then I manipulate humans into having some really nasty hot conflict and just get them to annihilate themselves. 
+
+---
+
+Anyways, back to the main post.
+
+==Important note: I expect the US to develop ASI first and lose control of it, resulting in a catastrophically bad outcome. It doesn't matter if we have nice intentions while doing this -- if we aren't careful the outcome will be very bad with high probability.== 
 If you share this message I implore you to not encourage an "AI race" -- there are no winners in an AI race, we all lose together.
 
-This is a view that isn't main-stream yet, which makes it easy to dismiss without consideration. In fact it's worse than this -- many people view this claim as "too sci-fi", and will ridicule you for taking it seriously [^2]. So, why should you treat this post more seriously than you would some random conspiracy theory? Here are four reasons:
+This view -- that AI poses a large existential risk -- isn't main-stream yet, which makes it easy to dismiss without consideration. My impression is that most people have heard about this issue, but think that it's a speculative possibility in the far future rather than the most-likely outcome of our current trajectory to play out in the next few years. In fact it's worse than this -- many people view this claim as "too sci-fi", and will ridicule you for taking it seriously [^2]. So, why should you treat this post more seriously than you would some random conspiracy theory? Here are four reasons:
 - Many credible ML experts believe Claim X. For instance Geoffrey Hinton (recent Nobel Prize winner) and [Yoshua Bengio](https://yoshuabengio.org/2024/07/09/reasoning-through-arguments-against-taking-ai-safety-seriously/) (Turing Award Winner) who pioneered many AI advances have become vocal advocates about the risks from AI. 
 - There is a large amount of tension between ML engineers because of differing opinions about safety. For instance, a very large number of scientists have left OpenAI because of safety concerns, and have joined/created various organizations with the goal of making safer AI (e.g., Illya's [Safe Super Intelligence](https://ssi.inc/), and Anthropic).
 - LLMs are very competent and getting better fast. It's clear that AI is going to have a huge impact on society, and worth thinking about what exactly the implications of powerful AI are. 
 - I've thought about this and take Claim X quite seriously, to the point where I'm willing to change my actions substantially based on this belief.
 It's easy to feel that this isn't *your* problem, but you're wrong. This is everyone's problem. I hope that you'll read this post and actually think about the arguments instead of denying [[responsibility]].
 
-[^2]: Max Tegmark gives an account of various methods people use to avoid taking this issue seriously [here](https://time.com/6273743/thinking-that-could-doom-us-with-ai/)
-
->Note: My actual estimate of the probability that advances in AI lead to catastrophe by 2029 is 80%, but I'll just argue that 10% chance by 2029 is a lower bound on risk, because I'd hope that if you were truly convinced of this, you'd do something about it. 
 
 The purposes of this post are as follows:
 1. [[on writing, blogging and being opinionated|Clarify]] my AI risk predictions (for myself and others).
 2. Facilitate [[good arguments]] about AI xrisk, and about approaches to risk mitigation.
-3. Convince you to take AI risk **seriously**. (I'll talk about what I mean by this in a bit).
+3. Convince you to take AI risk **seriously**. (I'll talk about what I mean by this in a bit; basically it means that this should influence your actions).
 #### Post Outline
 0. Clarifying the argument, and giving some background.
 1. The basic argument for AI xrisk.
@@ -68,7 +96,7 @@ In this post I'll discuss dangers from "Artificial Superintelligence" (**ASI**).
 > Note: There are risks that arise before ASI, e.g., just with AGI. I'm focusing on the risks from ASI because I want to make a minimum viable case for Claim X. 
 
 ## The Basic Argument for AI xrisk
-Now that I'll outline a basic argument for why it's at least 10% likely that AI progress results in catastrophe by 2029.
+Now that I'll outline a basic argument for why it's 80% likely that AI progress results in catastrophe by the end of 2028.
 
 - **Claim 1**: People will try hard to make ASI.
 	- Scientists/engineers are excited about AI.
@@ -85,7 +113,7 @@ Now that I'll outline a basic argument for why it's at least 10% likely that AI 
 > Note: From some informal polling, my impression of where people stand on this is as follows:
 > - Some people doubt Claim 2 -- they tend to point to flaws in current AI's (e.g., hallucinations), and assert that current AI's aren't very smart / capable or that they are just stochastic parrots. 
 > 	- My first thought on this is that it's missing the point -- what matters is not how good AI's are right now, but how good they'll be by 2029.
-> 	- Also, the claim that current AI's aren't capable of reasoning is absurd -- you can't get to ELO 2727 on CodeForces (so, one of the 200 best competitive programmers in the world) (as OpenAI's o3 model does) without being able to do complex reasoning. 
+> 	- Also, the claim that current AI's aren't capable of reasoning is absurd -- you can't get to ELO 2727 on CodeForces (so, one of the 200 best competitive programmers in the world) (as OpenAI's o3 model does) without being able to do complex reasoning. Also check out [Frontier Math](https://epoch.ai/frontiermath).
 > 	- If you don't believe in AI progress, then you'll always be surprised when [a benchmark is destroyed](https://arcprize.org/blog/oai-o3-pub-breakthrough) (without OpenAI even trying).
 > - Many people also complain that "AI's can't have goals". 
 > 	- However, current AI's obviously have goals -- for example current AI's care about answering user queries well and denying harmful queries. In fact, AI's [resist human attempts to change their goals](https://www.anthropic.com/research/alignment-faking).
@@ -97,9 +125,9 @@ Here are a few more common objections to my argument that I'll address:
 - re 3: why couldn't we just turn off AI's if they got really scary / turned against us?
 - re 4: why would an AI even "want" anything?
 - re 4: don't we get to choose what the AI cares about?
-I have good answers to all of these objections that I'll give in a later section. However, there are a couple of considerations that I find actually compelling, that cause me to believe that there's a ~20% chance that we're fine by 2029.
+I have good answers to all of these objections that I'll give in a later section. However, there are a couple of considerations that I find actually compelling, that cause me to believe that there's a ~20% chance that we're fine by end of 2028.
 
-### Basic Reasons Why We Might be Fine by 2029
+### Basic Reasons Why We Might be Fine by end of 2028
 I'll discuss in further depth later why my numbers are so small here (small in an absolute sense, not in the sense that I think they're un-calibrated).
 - **Reason 1**: We might intentionally slow AI development (~5% chance).
 	- There are some good people doing policy work advocating to stop pushing the frontier (see, e.g., [this](https://pdf.narrowpath.co/A_Narrow_Path.pdf)).
@@ -109,14 +137,17 @@ I'll discuss in further depth later why my numbers are so small here (small in a
 	- Maybe labs will stop deploying models and this somehow limits the reach of the AI's.
 		- Something like this -- e.g., AI progress turning from a corporate project to a government run project that doesn't release the models -- actually seems moderately likely.
 		- But I'm not convinced that this is very likely to hamper AI's ability to do harm, and it plausibly exacerbates it. 
+	- Maybe we have really good [AI control](https://arxiv.org/abs/2312.06942).
+	- Also it's worth noting that "reason 2" just means that my timing was slightly off, and that the problem is in 10 years rather than 4.
 - **Reason 3**: Maybe we "solve alignment" -- i.e., we figure out how to ensure that an AI cares about things that we care about, and we also figure out some good things for an AI to care about. Or we figure out how to prevent AI's from deceiving us. (~5% chance)
 	- Approaches I'm excited about: 
 		- [ARC](https://www.alignment.org)'s heuristic explanation agenda for solving ELK+MAD. 
-		- Some kind of distillation / iterated amplification thing, possibly with some mech interp (or something simpler like probes) that helps us figure out if a model is lying.
+		- Some kind of distillation / iterated amplification thing maybe like [Constitutional AI](https://arxiv.org/pdf/2212.08073), possibly with some mech interp (or something simpler like probes) that helps us figure out if a model is lying.
 - **Reason 4**: Maybe scheming (deceptive alignment) is really hard, and models just do good things by default. (~5% chance)
 	- Scheming is pretty hard if we have good control measures.
+	- But this seems like a problem that goes away with sufficient capabilities.
 
-It's non-trivial to aggregate these probabilities because there is some correlation and anti-correlation. But it comes out to about a 20% chance that nothing catastrophic has happened by 2029.
+These aren't quite disjoint events, but I'm going to estimate the probability that we're okay by end of 2028 for one of these reasons as 20%.
 
 > Note: I'm not very happy about this number. I propose that you and I try to change this number. 
 ## A More In-Depth Argument
@@ -133,7 +164,7 @@ The basic reason why I believe that ASI is probable soon is progress trends. For
 - GPT3 -- high schooler
 - GPT4 -- college student
 - o3 -- Comparable with CS/Math Olympiad competitors on close ended ~6 hour long tasks. Extremely good at SWE. I'd guess o3 can speed up ML engineering by 1.5x.
-- "o4" (hypothetical future model) -- Can produce similar work to top ML engineers, at lower cost?
+- More test-time compute + GPT5 as base model (hypothetical future model) -- Can produce similar work to top ML engineers, at lower cost?
 
 AI's are already really good. For instance [METR showed here](https://metr.org/blog/2024-11-22-evaluating-r-d-capabilities-of-llms/) that AI's like o1 are roughly comparable in skill to a human ML engineer on 8 hour long engineering tasks. Suppose that you 2x this horizon length every 6 months. Very soon, this gets very big. As AI's become more powerful, they can be useful in accelerating AI R&D.
 
@@ -257,21 +288,23 @@ Most goals that an AI could have are not human compatible. For most goals, it's 
 
 **Step 1: Form your own opinion**
 
-To start, I'd recommend reading some stuff and evaluating whether these people give reasonable arguments are not. It's also worth trying to find a good "debate" about AI  [Here's a good one](https://www.youtube.com/watch?v=144uOfr4SYA) [Here's another one](https://www.youtube.com/watch?v=6yQEA18C-XI). The thing that initially sold me on the case for AI risk before I thought about it myself is that I read/listened to conversations between concerned people and not concerned people and the not concerned people (e.g., Yan LeCunn) seemed to have terrible arguments.
+To start, I'd recommend reading some stuff and evaluating whether these people give reasonable arguments are not. It's also worth trying to find a good "debate" about AI  [Here's a good one](https://www.youtube.com/watch?v=144uOfr4SYA) [Here's another one](https://www.youtube.com/watch?v=6yQEA18C-XI). The thing that initially sold me on the case for AI risk before I thought about it myself is that I read/listened to conversations between concerned people and not concerned people and the not concerned people (e.g., Yan LeCunn) seemed to have terrible arguments and clear conflict of interests.
 Here are some links for some stuff that could be interesting to read / listen to, [an interview with Paul](https://www.youtube.com/watch?v=GyFkWb903aU), [Eliezer Yudkowsky TIME article](https://time.com/6266923/ai-eliezer-yudkowsky-open-letter-not-enough/),   [PauseAI Risk statement](https://pauseai.info/risks).
 Then, write your own opinions.
 
 **Step 2**: **Make some plans.** 
 
 Some things that could be good to do about this:
-- **policy work** -- see, e.g., https://emergingtechpolicy.org
-- communication -- note important caveats that it is negative value to communicate if you (even accidentally) encourage race dynamics (as you might if all you get across is "AI BIG SOON")
-- technical alignment work
+- **Policy work** -- see, e.g., https://emergingtechpolicy.org
+- Communication -- note important caveats that it is negative value to communicate if you (even accidentally) encourage race dynamics (as you might if all you get across is "AI BIG SOON")
+- Technical alignment work.
+- Donate to LTFF (long term future foundation).
 
 Some things that would be really bad to do about this: 
-- Contribute in any way to work on developing more capable AI systems
+- Contribute in any way to work on developing more capable general AI systems 
+	- Note that I have no problem with, e.g., making more capable AI systems for healthcare applications -- it's the generally intelligent systems that are a problem.
 - Encourage race dynamics
-- Nothing
+- **Nothing** (seriously, if your reaction to reading this post is "oh that sounds bad, I'm glad someone else is thinking about it so that I don't have to", then that kind of sucks.)
 
 **A common question**:
 > Do I recommend you quit your job and pivot to policy/communication/technical work?
@@ -325,11 +358,12 @@ I highlighted 4 reasons that I could see for why catastrophe could be averted. O
 - ARC (e.g., Jacob)
 - Anthropic (e.g., Evan)
 - Deepmind (e.g., Neel)
+- Conjecture
+- MIRI
 - GovAI
 - RAND
 
-I'm sure there are some other places where people work on this. 
-But I'd estimate that there are <1000 FTE's working on this stuff, so still could use more people.
+I'm sure there are some other places where people work on this. But I'd estimate that there are less than 500 FTE's working on this stuff, so still could use more people.
 
 ---
 
@@ -342,3 +376,4 @@ Sorry this post is less coherent/crisp than I'd like. I think it's all correct, 
 <iframe src="https://forms.gle/rKthxKXWahjdy4kV7" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>`
 
 [^1]: U.S.-China Economic and Security Review Commission. _2024 Report to Congress_. Washington, D.C., November 2024. Available at: [uscc.gov](https://www.uscc.gov/sites/default/files/2024-11/2024_Executive_Summary.pdf)
+[^2]: Max Tegmark gives an account of various methods people use to avoid taking this issue seriously [here](https://time.com/6273743/thinking-that-could-doom-us-with-ai/)

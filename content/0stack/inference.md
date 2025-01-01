@@ -224,3 +224,133 @@ I think it'd be semi-helpful to know about them, but expect to gain more utility
 So I'm planning to skip ahead for now to lectures 16,17,18,19 about loopy BP and VI some fancy markov chain stuff, lec 20-24 (end) also seems interesting
 
 could also just try some psets
+
+
+date xxx: 
+I skimmed all of the notes. 
+Most of the algorithms were not super interesting, they were just pretty obvious DPs.
+
+this is on hiatus for a minute
+
+----
+
+# complexity theory
+I decided to also learn some complexity theory -- i.e., read the Arora Barak book.
+I'm fairly happy with this decision -- it seems like some cool stuff. 
+Here's what I've learned so far. 
+
+==interactive pfs==
+
+Main neat idea here was "how to get rid of the need for private coins".
+The basic idea was conveyed to me previously by N (he asked me this question [[some problems from my friends|earlier]]).
+
+Here's the idea for graph non-isomorphism (GNI):
+Suppose we have two graphs $G,H$ that we want to test for GNI.
+Let $S = \{(F,\pi): F\cong G \lor F\cong H \quad\pi\text{ is an automorphism of }F\}$.
+
+Observe:
+- If $G\cong H$ then $|S| = n!$.
+- If $G\not\cong H$ then $|S|=2n!$.
+
+Let $K=4n!$.
+It's pretty easy to write down a hash function $h: S\to [K]$ which is approximately pair-wise independent. For instance, $h_{a,b}(x) =ax+b\mod p\mod K$ for prime $p>\max(S)$ works.
+
+okay the approximately thing is kind of annoying. 
+You can solve this by instead choosing $K$ to be a power of two, then using hash functions on $\mathbb{F}_{2^{k}}$, and then trimming extra bits somewhere. 
+Whatever, let's just assume we have a pairwise independent hash function $h:S\to [K]$.
+
+It turns out that this gives us a neat guarantee: 
+
+> [!tip] Theorem
+> Let $\rho=|S|/K$. For any $z\in [K]$
+> $$
+\rho-\rho^{2}/2 \le \Pr[\exists x\in S \mid h(x)=z] \le \rho.
+> $$
+
+**Proof**
+The upper bound  is just a union bound.
+The lower bound follows by PIE: 
+$$
+\Pr[\exists x \in S\mid h(x)=z] \ge \sum_{x\in S}\Pr[h(x)=z] - \frac{1}{2}\sum_{(x,y)\in S, x\neq y}\Pr[h(x)=h(y)=z] \ge |S|/K - \frac{1}{2}|S|^2/K^{2}
+$$
+**Corollary**
+There is a gap of $1/8$ between the probability that $x$ exists in the cases $|S|=2n!$ and $|S|=n!$.
+
+**proof**: $3/8> 1/4$
+
+Apparently you can get perfect completeness iyw, I haven't figured out how yet though.
+
+
+==basic stuff about circuits==
+
+==decision trees==
+
+You can get some pretty strong lower bounds against DTs. 
+Because they're pretty simple.
+
+One thing that I found pretty interesting was the discussion of $D(f)$ vs $C(f)$. 
+- $D(f) =$ depth of DT required to compute $f$
+- $C(f) =$ certificate size required to verify $f$
+
+Let's define a certificate. 
+Fix $f:\{0,1\}^{n}\to \{0,1\}.$
+We say that $S \subseteq[n]$ is an $x$-certificate, if 
+$f(x)$ is determined by $x\mid_S$
+That is, for all $x'$ with $x'\mid_S = x\mid_S$, $f(x')=f(x)$.
+
+For instance, if the problem is checking graph connectivity on an $n$-vertex graph, this requires $\binom{n}{2}$ depth DT because for any order (even adaptive) of looking at the edges, it always could be the case that what you've seen could be extended to either a connected graph or a non-connected one, until you've looked at every last edge. 
+
+However, there's a much shorter certificate that a graph is connected -- namely, you could just reveal the edges of a spanning tree. 
+On the other hand, proving that a graph isn't connected is harder -- it requires demonstrating a cut, which could require looking at $n^{2}/4$ edges, although this does always suffice. 
+
+Anyways the result that I thought was kind of neat is: 
+
+> [!tip] Theorem
+> $$
+C(t) \le D(t)\le C(t)^{2}.
+> $$
+
+**Proof**
+The left inequality is obvious.
+
+The right inequality follows bc every positive certificate must intersect every negative certificate, or else a string could have both a positive and a negative certificate!
+
+That is, if we let $S(x)$ denote the certificate for $x$ then $S(x)\not\perp S(y)$ if $f(x)\neq f(y)$.
+And this property is preserved even if we look at some of the bits. 
+
+
+==Circuit lower bounds==
+
+**Hastad's Switching Lemma**
+Morally speaking this lemma says that for any constants $k,s\ge 2$, if you have a $k$-DNF on $n$ vars and you randomly restrict $n-\sqrt{ n }$ of the vars, then with probability something like $1-O(n^{-s/4})$ probably get an $s$-CNF. The lemma is also true if you swap CNF and DNF.
+
+I don't have intuition for this result yet, but haven't read the proof. 
+
+The switching lemma is used to prove that $\mathsf{Parity}\notin \mathsf{AC}^{0}$ as follows:
+1. Clean the circuit -- make it a tree, alternate AND/OR, some other things
+2. Repeatedly restrict $n_i-\sqrt{ n_i }$ vars, where $n_i$ is number of remaining vars. This let's you switch the bottom two layers from AND OR to OR AND (or other way) and then you can do a merge operation which results in the circuit being 1 level less deep. 
+3. Eventually you end up with a situation where you can satisfy the circuit by just setting a couple variables. 
+4. This is of course ridiculous because PARITY depends on all the bits. 
+
+I got some more intuition for the Hastad Lemma -- it's actually quite likely that a restriction will result in your guy becoming constant . but it's not $1-1/n^{c}$ likely  for whatever $c$ you want. although i suspect it is at least like $1-1/\sqrt{ n }$. but anyways the Hastad thing is p useful if you care about this more high probability thing. 
+
+There was a neat bound on power of monotone circuits -- you need exponentially large ones to compute clique!
+
+I spent quite a bit of time reading the proof that you can't do PARITY even with MOD3 gates. 
+
+The proof has two parts: 
+1. Anything in ACC0(MOD3) is well approximated by a degree $\sqrt{ n }$ polynomial.
+2.  PARITY is not well approximated by a degree $\sqrt{ n }$ polynomial.
+
+Proof (1):
+We go by induction. 
+- not gates: $1+f$. no degree increase or approx decay
+- MOD3 gates: $(\sum_{i\in S} f_i)^{2}$. degree times 2. no approx decay
+- AND/OR: let's just do AND. if you wanna do it exactly it requires a v large increase in your degree. you can approx it pretty well without boosting degree too much though.
+
+Proof (2):
+omitted. but I thought it was nice.  
+
+**Communication complexity**
+**Average case hardness**
+**Proof complexity**
