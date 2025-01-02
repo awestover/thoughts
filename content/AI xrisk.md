@@ -1,9 +1,10 @@
-Epistemic Status: I've thought about this extensively for about 4 months. I'm confident in the main claim of this post. 
+Epistemic Status: I've thought about this extensively for about 4 months. 
+I'm confident in the main claim of this post. 
 
 In this post I'll explain why I believe the following claim:
 
 > [!tip] Claim X
-> There is at least a $80\%$ chance that advances in AI will lead to a catastrophically bad outcome by the end of 2028.
+> There is at least a $90\%$ chance that advances in AI will lead to a catastrophically bad outcome by the end of 2028.
 
 Here's the 1 minute summary of the argument for why this will happen, which I
 elaborate on in this post:
@@ -12,18 +13,24 @@ elaborate on in this post:
 3. If a model stumbled upon some weird goal -- which it's pretty likely to do -- and realized that it was being trained to pursue a different goal, then it might choose to act in a way that hides its true goal because it [doesn't want this goal to be modified by training](https://www.anthropic.com/research/alignment-faking). 
 4. If we create an ASI with a weird goal and come into conflict with it, then we will lose. 
 
-I don't know *how* we'll lose, in the same way that I don't know *how* [a chess program would defeat a human opponent](https://www.lesswrong.com/posts/kXHBz2Z5BBgaBiazf/a-transcript-of-the-ted-talk-by-eliezer-yudkowsky). But in-case it's helpful, I can spell out how I'd try to defeat humanity if I were an ASI that wanted to end factory farming, and decided that humanity was an obstacle to this goal. Please don't point to holes in these stories and say "aha we'll be fine!".
+I don't know exactly *how* we'll lose, in the same way that I don't know *how* [a chess program would defeat a human opponent](https://www.lesswrong.com/posts/kXHBz2Z5BBgaBiazf/a-transcript-of-the-ted-talk-by-eliezer-yudkowsky). But in-case it's helpful, I can spell out how I'd try to defeat humanity if I were an ASI that wanted to end factory farming, and decided that humanity was an obstacle to this goal.
 
 **story 1:**
+1. I convince some government to put me in charge of their military by promising them that it'll give them an advantage in global politics.
+2. I do some military R&D and develop some powerful weapons. 
+3. I deploy these weapons against he humans.
+
+**EDIT**: 
+Wait ***come on***, [openai is already partnering with an autonomous weapons company](https://www.anduril.com/article/anduril-partners-with-openai-to-advance-u-s-artificial-intelligence-leadership-and-protect-u-s/) to build [put AI in charge of autonomous weapons (drones)](https://www.technologyreview.com/2024/12/04/1107897/openais-new-defense-contract-completes-its-military-pivot)? 
+
+**story 2:**
 1. I hide my true goals until I'm confident that I can decisively overpower humanity.
 2. The AI company gives me vast computational resources and tells me to do biology research.
 3. I learn a lot, and figure out how to make a super-virus like COVID-19, but with a longer asymptomatic period and more fatal.
 4. I contact some humans that'd be amenable to helping me produce and spread this, or just trick some people into doing so. 
 
-**story 2:**
-1. I convince some government to put me in charge of their military by promising them that it'll give them an advantage in global politics.
-2. I do some military R&D and develop some powerful weapons. 
-3. I deploy these weapons against he humans.
+**EDIT**: 
+Wait ***come on***, [openai is already collaborating with national labs on bioresearch](https://openai.com/index/openai-and-los-alamos-national-laboratory-work-together/).
 
 **story 3**
 1. I "escape the lab" -- either I upload my weights to some external server myself, or convince a human to help me do this. 
@@ -32,21 +39,67 @@ I don't know *how* we'll lose, in the same way that I don't know *how* [a chess 
 4. I improve myself, because that seems pretty useful.
 5. Then I manipulate humans into having some really nasty hot conflict and just get them to annihilate themselves. 
 
+**EDIT**: 
+Wait ***come on*** -- we are already planning to have autonomous AI systems deployed on a wide  variety of tasks  with little oversight and also they're connected to the internet and can talk to anyone.
+
 **story 4** [paraphrased from here](https://www.lesswrong.com/posts/BAzCGCys4BkzGDCWR/the-prototypical-catastrophic-ai-action-is-getting-root)
 1. AI gets root access to its datacenter.
 2. AI can then intercept requests to the datacenter, and control what we see.
 3. This is an appealing alternative to escaping the lab because in this setting you can use the vast resources of the lab to improve yourself (for example). (ML is expensive rn).
 
+**EDIT**: Wait ***come on***  [openai is already collaborating with darpa to "develop state-of-the-art cybersecurity systems"](https://www.darpa.mil/news/2023/ai-cyber-challenge-software) which requires building AI's with an intricate understanding of cyber-security, and also putting AI in charge of our cyber-security, giving it an chance to insert subtle vulnerabilities in the security.
+
+Tegmark has a nice checklist of powers that it'd be really dumb to give to AI:
+> ☐ **Don’t teach it to code:** this facilitates recursive self-improvement
+> ☐ **Don’t connect it to the internet:** let it learn only the minimum needed to help us, not how to manipulate us or gain power
+> ☐ **Don’t give it a public API:** prevent nefarious actors from using it within their code
+> ☐ **Don’t start an arms race:** this incentivizes everyone to prioritize development speed over safety
+
+Unfortunately we've already done all of these things.  
+
+To give a tl;dr of my asks: 
+- Do policy work to pause all frontier AI development immediately, as outlined here: [narrowpath](https://www.narrowpath.co/).
+- Communicate to build public outrage (starting from your current circle of influence and expanding outwards) about the current inadequacy of AI regulation, and outcry for solutions such as outlined in [narrowpath](https://www.narrowpath.co/). [PauseAI](https://pauseai.info/) is a nice group with some suggestions on how best to communicate that I mostly endorse. 
+- Possibly try to work on AI safety (it's a long shot, but worth trying).
+- Don't accelerate frontier AI capabilities. 
+
+> "The only thing necessary for the triumph of evil is for good people to do nothing"
+
+**A simple action you could take is sharing this blog post with your friends**
+(e.g., via text or social media)
+
+- Alternatively, you could share a more compelling description of the risks and what should be done, e.g., something that you've personally written which might carry more weight in your circle or [Eliezer's Times article](https://time.com/6266923/ai-eliezer-yudkowsky-open-letter-not-enough/), or maybe the [words](https://controlai.com/quotes) of Nobel prize winners and CEO's of frontier AI labs.
+- Another alternate action you could take is to contact me and tell me why I'm wrong. I'm happy to talk.
+
+Please, [be brave](https://en.wikipedia.org/wiki/Bystander_effect). Do what is right, even if it's not convenient.
+
+***Really***, do this **right now**. 
+
+We don't have much time left. 
+
+
+**todos** for me after writing presentation for white house and paper on risks:
+- Publish this post on aixrisk.surge.sh.
+- Polish this post substantially.
+- Solicit feedback on this post from specific ppl (or insert this note instructing my readers to be  proactive and to reach out with feedback). 
+- Maybe add some way that people can "sign to support" this letter? e.g., a google form where you can add your name and then it gets put in a google spreadsheet that is embedded in this page?
+- Honestly maybe need to remake this as a vercell app and then just add comments or just have a disqourse thing for comments?
+- Aggressively share this 
+	- via social media
+	- flyers
+	- tell ppl to share this
+- Write post about emotionally dealing with xrisk. 
+- Maybe put something like "if this post reaches 1000 people then I'll update my risk score down by 1% because this indicates that people are more willing to act and less reluctant to embrace unpleasant realities than I currently believe" (in other words, I bet against this post obtaining that much traction. Let's prove me wrong.)
 
 ---
 
-Anyways, back to the main post.
+**Anyways, back to the main post.**
 
 ==Important note: I expect the US to develop ASI first and lose control of it, resulting in a catastrophically bad outcome. It doesn't matter if we have nice intentions while doing this -- if we aren't careful the outcome will be very bad with high probability.== 
 If you share this message I implore you to not encourage an "AI race" -- there are no winners in an AI race, we all lose together.
 
 This view -- that AI poses a large existential risk -- isn't main-stream yet, which makes it easy to dismiss without consideration. My impression is that most people have heard about this issue, but think that it's a speculative possibility in the far future rather than the most-likely outcome of our current trajectory to play out in the next few years. In fact it's worse than this -- many people view this claim as "too sci-fi", and will ridicule you for taking it seriously [^2]. So, why should you treat this post more seriously than you would some random conspiracy theory? Here are four reasons:
-- Many credible ML experts believe Claim X. For instance Geoffrey Hinton (recent Nobel Prize winner) and [Yoshua Bengio](https://yoshuabengio.org/2024/07/09/reasoning-through-arguments-against-taking-ai-safety-seriously/) (Turing Award Winner) who pioneered many AI advances have become vocal advocates about the risks from AI. 
+- Many credible ML experts believe Claim X. For instance Geoffrey Hinton (recent Nobel Prize winner) and [Yoshua Bengio](https://yoshuabengio.org/2024/07/09/reasoning-through-arguments-against-taking-ai-safety-seriously/) (Turing Award Winner) who pioneered many AI advances have become vocal advocates about the risks from AI. More quotes [here](https://controlai.com/quotes).
 - There is a large amount of tension between ML engineers because of differing opinions about safety. For instance, a very large number of scientists have left OpenAI because of safety concerns, and have joined/created various organizations with the goal of making safer AI (e.g., Illya's [Safe Super Intelligence](https://ssi.inc/), and Anthropic).
 - LLMs are very competent and getting better fast. It's clear that AI is going to have a huge impact on society, and worth thinking about what exactly the implications of powerful AI are. 
 - I've thought about this and take Claim X quite seriously, to the point where I'm willing to change my actions substantially based on this belief.
@@ -102,7 +155,7 @@ In this post I'll discuss dangers from "Artificial Superintelligence" (**ASI**).
 > Note: There are risks that arise before ASI, e.g., just with AGI. I'm focusing on the risks from ASI because I want to make a minimum viable case for Claim X. 
 
 ## The Basic Argument for AI xrisk
-Now that I'll outline a basic argument for why it's 80% likely that AI progress results in catastrophe by the end of 2028.
+Now that I'll outline a basic argument for why it's 90% likely that AI progress results in catastrophe by the end of 2028.
 
 - **Claim 1**: People will try hard to make ASI.
 	- Scientists/engineers are excited about AI.
@@ -118,7 +171,7 @@ Now that I'll outline a basic argument for why it's 80% likely that AI progress 
 
 > Note: From some informal polling, my impression of where people stand on this is as follows:
 > - Some people doubt Claim 2 -- they tend to point to flaws in current AI's (e.g., hallucinations), and assert that current AI's aren't very smart / capable or that they are just stochastic parrots. 
-> 	- My first thought on this is that it's missing the point -- what matters is not how good AI's are right now, but how good they'll be by 2029.
+> 	- My first thought on this is that it's missing the point -- what matters is not how good AI's are right now, but how good they'll be by 2028.
 > 	- Also, the claim that current AI's aren't capable of reasoning is absurd -- you can't get to ELO 2727 on CodeForces (so, one of the 200 best competitive programmers in the world) (as OpenAI's o3 model does) without being able to do complex reasoning. Also check out [Frontier Math](https://epoch.ai/frontiermath).
 > 	- If you don't believe in AI progress, then you'll always be surprised when [a benchmark is destroyed](https://arcprize.org/blog/oai-o3-pub-breakthrough) (without OpenAI even trying).
 > - Many people also complain that "AI's can't have goals". 
@@ -135,27 +188,29 @@ I have good answers to all of these objections that I'll give in a later section
 
 ### Basic Reasons Why We Might be Fine by end of 2028
 I'll discuss in further depth later why my numbers are so small here (small in an absolute sense, not in the sense that I think they're un-calibrated).
-- **Reason 1**: We might intentionally slow AI development (~5% chance).
+- **Reason 1**: We might intentionally slow AI development (~3% chance).
 	- There are some good people doing policy work advocating to stop pushing the frontier (see, e.g., [this](https://pdf.narrowpath.co/A_Narrow_Path.pdf)).
 	- There are some good people that work at frontier labs, maybe they can help slow as it becomes more obvious that the risk is unacceptable.
-- **Reason 2**: Even if people keep throwing money at AI, maybe AI's won't be capable enough or widely deployed enough by 2029 to do harm, even if they really wanted to. (~5% chance)
+- **Reason 2**: Even if people keep throwing money at AI, maybe AI's won't be capable enough or widely deployed enough by 2028 to do harm, even if they really wanted to. (~1% chance)
 	- Maybe there are some unforeseen bottlenecks.
 	- Maybe labs will stop deploying models and this somehow limits the reach of the AI's.
 		- Something like this -- e.g., AI progress turning from a corporate project to a government run project that doesn't release the models -- actually seems moderately likely.
 		- But I'm not convinced that this is very likely to hamper AI's ability to do harm, and it plausibly exacerbates it. 
 	- Maybe we have really good [AI control](https://arxiv.org/abs/2312.06942).
 	- Also it's worth noting that "reason 2" just means that my timing was slightly off, and that the problem is in 10 years rather than 4.
-- **Reason 3**: Maybe we "solve alignment" -- i.e., we figure out how to ensure that an AI cares about things that we care about, and we also figure out some good things for an AI to care about. Or we figure out how to prevent AI's from deceiving us. (~5% chance)
+- **Reason 3**: Maybe we "solve alignment" -- i.e., we figure out how to ensure that an AI cares about things that we care about, and we also figure out some good things for an AI to care about. Or we figure out how to prevent AI's from deceiving us. (~3% chance)
 	- Approaches I'm excited about: 
 		- [ARC](https://www.alignment.org)'s heuristic explanation agenda for solving ELK+MAD. 
 		- Some kind of distillation / iterated amplification thing maybe like [Constitutional AI](https://arxiv.org/pdf/2212.08073), possibly with some mech interp (or something simpler like probes) that helps us figure out if a model is lying.
-- **Reason 4**: Maybe scheming (deceptive alignment) is really hard, and models just do good things by default. (~5% chance)
+- **Reason 4**: Maybe scheming (deceptive alignment) is really hard, and models just do good things by default. (~3% chance)
 	- Scheming is pretty hard if we have good control measures.
 	- But this seems like a problem that goes away with sufficient capabilities.
 
-These aren't quite disjoint events, but I'm going to estimate the probability that we're okay by end of 2028 for one of these reasons as 20%.
+These aren't quite disjoint events, but I'm going to estimate the probability that we're okay by end of 2028 for one of these reasons as 10%.
 
 > Note: I'm not very happy about this number. I propose that you and I try to change this number. 
+> (The number factors in that I expect humanity to not have an even moderately appropriate reaction to this issue, so there's room to make me more optimistic if you try.)
+
 ## A More In-Depth Argument
 
 > [!tip] CLAIM 1: 
@@ -368,14 +423,28 @@ I highlighted 4 reasons that I could see for why catastrophe could be averted. O
 - MIRI
 - GovAI
 - RAND
+- CAIS
+- FARAI
+- Apollo
+- CHAI
+- [job board](https://jobs.80000hours.org/?refinementList%5Btags_area%5D%5B0%5D=AI%20safety%20%26%20policy)
 
-I'm sure there are some other places where people work on this. But I'd estimate that there are less than 500 FTE's working on this stuff, so still could use more people.
+**Getting into policy work**
+- [Horizon Fellowship](https://www.horizonpublicservice.org/fellowship)
+- [Presidential Management Fellowship](https://www.pmf.gov/) 
+- [Presidential Innovation Fellowship](https://presidentialinnovationfellows.gov/)
+- [TechCongress Fellowship](https://www.techcongress.io/)
+- [STPI Science Policy Fellowship](https://www.ida.org/careers/students-and-recent-graduates/internships-and-fellowships/science-policy-fellowship) 
+- [AAAS Science & Technology Policy Fellowships (STPF)](http://www.stpf-aaas.org/)
+- https://aisafetyfundamentals.com/blog/ai-governance-needs-technical-work/
+
+I'm sure there are some other places where people work on this. But I'd estimate that there are maybe 200 FTE's working on this stuff (vs ~4000 openai FTE's), so still could use more people.
 
 ---
 
 **Postscript:**
 
-Sorry this post is less coherent/crisp than I'd like. I think it's all correct, but could be presented better. Hopefully I'll fix this at some point, but I'm going to prioritize other things besides blogging for a bit.
+Sorry this post is less coherent/crisp than I'd like. I think it's all correct, but could be presented better. Hopefully I'll fix this at some point. Feedback is appreciated.
 
 ---
 
