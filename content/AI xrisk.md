@@ -1,6 +1,13 @@
 Epistemic Status: I've thought about this extensively for about 4 months. 
 I'm confident in the main claim of this post. 
 
+> EDIT --- it's worth reconsidering how much control fixes this problem, and how much control measures I expect to be adopted. 
+
+> EDIT --- I have a large amount of uncertainty about whether my proposed *actions* (e.g., advocating for a pause) are good. There seem to be subtle tradeoffs that I didn't do a good job of considering. So, don't act on anything that I said here unless you're fairly sure that what you're doing is not harmful. 
+
+>  [Sam Altman](https://blog.samaltman.com/machine-intelligence-part-1) [CEO of OpenAI](https://blog.samaltman.com/machine-intelligence-part-2)
+> “Development of superhuman machine intelligence (SMI) is probably the greatest threat to the continued existence of humanity.” - Feb 2015
+
 In this post I'll explain why I believe the following claim:
 
 > [!tip] Claim X
