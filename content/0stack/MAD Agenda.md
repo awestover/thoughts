@@ -21,7 +21,6 @@ $$\newcommand{\G}{\mathbb{G}}$$
 $$\newcommand{\E}{\mathbb{E}}$$
 $$\newcommand{\L}{\mathcal{L}}$$
 # TODOs from this document
-
 1. Think about whether probes are useful for MAD
 2. Patch this document to clarify that the problem is not off distribution inputs, its inputs where the model behaves weirdly. 
 3. Think about CS stuff:
@@ -38,9 +37,22 @@ I'll discuss later why I think explanations will be helpful for solving MAD.
 
 remark: Explanations might also be relevant for [[LPE Agenda]] --- I'll consider thinking about this more over there.
 
+> [!bug] Concern 7
+> I think the mechanism distinction examples from Paul below aren't quite what I want for MAD?
+> 
+> At a high level Paul was thinking about something like this below:
+> $f(x) = A(x) \lor B(x)$
+> $D$: dist where $A(x)$ sometimes, but never $B(x)$.
+> Goal, get explanation $E$ such that $E$ explains $f$'s behavior on $D$, but not on some weird input where $B(x)\land \neg A(x)$.
+> 
+> I think a better example would be 
+> $f(x) = x=2^{17} \bigvee \left(\sum x_i \equiv  0 \mod 7\right)$.
+> Where $x\sim [2^{20}]$.
+> Here it's obvious that $2^{17}$ is not an "off distribution" input, but it is an input where the activations of the model should look quite **abnormal** and so $f(x)=1$ is a mechanistic anomaly here.
+
 Here are some [simple examples of mechanism distinction from Paul](https://www.alignment.org/blog/mechanistic-anomaly-detection-and-elk/):
 
-> A more organic task is to take natural models that can produce a given behavior X via multiple different mechanisms, and then try to assess whether a given approach to anomaly detection can distinguish those mechanisms. That is, given a large dataset of cases where X is due to mechanism A, we’d like to distinguish new cases where X is due to A from cases where X is due to a novel mechanism B. This can both give us an opportunity to improve techniques, and help provide empirical evidence about when mechanistic anomaly detection is possible.
+> A more organic task is to take natural models that can produce a given behavior X via multiple different mechanisms, and then try to assess whether a given approach to anomaly detection can distinguish those mechanisms. *That is, given a large dataset of cases where X is due to mechanism A, we’d like to distinguish new cases where X is due to A from cases where X is due to a novel mechanism B*. This can both give us an opportunity to improve techniques, and help provide empirical evidence about when mechanistic anomaly detection is possible.
 Some examples of (X,A,B) for a language model:
 > - X= “A character in a story answers a factual question incorrectly.”  
     A= “the model does not know the answer.”  
