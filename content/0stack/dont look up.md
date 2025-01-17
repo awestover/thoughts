@@ -1,4 +1,4 @@
-I recently watched the movie "Don't look up". The movie has a couple main messages, all of which are great. Max Tegmark has a nice Times article about why this movie is similar to the AI situation. I'll say some different stuff here though.
+I recently watched the movie "Don't look up". The movie has a couple main messages, all of which are great (although also some boring parts which I recommend 4x speeding). Max Tegmark has a nice Times article about why this movie is similar to the AI situation. I'll say some different stuff here though.
 
 1. Bad incentives cloud judgement. The guys in the movie got really excited about the money in the asteroid. This was not good. 
 

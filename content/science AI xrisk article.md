@@ -45,15 +45,12 @@ I don't think that this is enough, but it's better than the current situation (m
 
 I loved this section. Here are some favorite quotes. 
 
-> "We urgently need national institutions and international governance to enforce standards that prevent recklessness and misuse."
-
-> "The key is policies that automatically trigger when AI hits certain capability milestones"
-
-> "Rapid, unpredictable progress also means that risk-reduction efforts must be proactive."
+> **"Rapid, unpredictable progress also means that risk-reduction efforts must be proactive."**
+> **"The key is policies that automatically trigger when AI hits certain capability milestones"**
 
 > "To address international race dynamics, they need the affordance to facilitate international agreements and partnerships"
 
-> "The most pressing scrutiny should be on AI systems at the frontier: the few most powerful systems, trained on billiondollar supercomputers, that will have the most hazardous and unpredictable capabilities."
+> "The most pressing scrutiny should be on AI systems at the frontier: the few most powerful systems, trained on billion dollar supercomputers, that will have the most hazardous and unpredictable capabilities."
 
 > **"Regulators can and should require that frontier AI developers grant external auditors on-site, comprehensive (“white-box”), and fine-tuning access from the start of model development"**
 
@@ -62,15 +59,13 @@ For real --- the whole idea of making a super powerful super evil thing and then
 The proposal to un-handicap external evaluators (who don't currently get white box access or ability to fine tune, and only get to do stuff at the end and only for very short amount of time) seems pretty good.
 
 
-> **Safety cases** Despite evaluations, we cannot consider coming powerful frontier AI systems “safe unless proven unsafe.” With present testing methodologies, issues can easily be missed. Additionally, it is unclear whether governments can quickly build the immense expertise needed for reliable technical evaluations of AI capabilities and societal-scale risks. Given this, developers of frontier AI should carry the burden of proof to demonstrate that their plans keep risks within acceptable limits. By doing so, they would follow best practices for risk management from industries, such as aviation, medical devices, and defense software, in which companies make safety cases ([_14_](https://www.science.org/stoken/author-tokens/ST-1870/full#core-R14), [_15_](https://www.science.org/stoken/author-tokens/ST-1870/full#core-R15)): structured arguments with falsifiable claims supported by evidence that identify potential hazards, describe mitigations, show that systems will not cross certain red lines, and model possible outcomes to assess risk.
+> **Safety cases Despite evaluations, we cannot consider coming powerful frontier AI systems “safe unless proven unsafe.” With present testing methodologies, issues can easily be missed. Additionally, it is unclear whether governments can quickly build the immense expertise needed for reliable technical evaluations of AI capabilities and societal-scale risks. Given this, developers of frontier AI should carry the burden of proof to demonstrate that their plans keep risks within acceptable limits. By doing so, they would follow best practices for risk management from industries, such as aviation, medical devices, and defense software, in which companies make safety cases ([_16_](https://www.science.org/stoken/author-tokens/ST-1870/full#core-R14), [_15_](https://www.science.org/stoken/author-tokens/ST-1870/full#core-R15)): structured arguments with falsifiable claims supported by evidence that identify potential hazards, describe mitigations, show that systems will not cross certain red lines, and model possible outcomes to assess risk.**
 
 
 We're pretty excited about this tech, there are lots of examples of governments regulating stuff too hard and that being bad. I get it. But hopefully it's clear that this isn't a case where it's reasonable to put burden of proof anywhere but the companies developing this tech. If you don't think the tech is dangerous then you shouldn't oppose this policy --- just go write a solid safety case and then all the concerned people will have to shut up. 
-
 
 > Regulators should clarify legal responsibilities that arise from existing liability frameworks and hold frontier AI developers and owners legally accountable for harms from their models that can be reasonably foreseen and prevented, including harms that foreseeably arise from deploying powerful AI systems whose behavior they cannot predict
 
 For real! If you open-weight your model and someone fine tunes it to remove safety, or does something else nefarious. Then well this should just be illegal but also you should be liable.
 
-
-**To steer AI toward positive outcomes and away from catastrophe, we need to reorient. There is a responsible path—if we have the wisdom to take it.**
+> To steer AI toward positive outcomes and away from catastrophe, we need to reorient. There is a responsible path—if we have the wisdom to take it.

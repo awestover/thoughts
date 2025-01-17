@@ -1,6 +1,10 @@
 Epistemic Status: I've thought about this extensively for about 4 months. 
 I'm confident in the main claim of this post. 
 
+Honestly, go read [this article](https://www.science.org/stoken/author-tokens/ST-1870/full) instead of mine for the moment --- it's much simpler and the authors have substantially more nobel prizes / turing awards / ML expertisse than me. 
+
+> EDIT -- this will soon hopefully be replaced by or augmented with an essay I'm writing with my dad. 
+
 > EDIT --- it's worth reconsidering how much control fixes this problem, and how much control measures I expect to be adopted. 
 
 > EDIT --- I have a large amount of uncertainty about whether my proposed *actions* (e.g., advocating for a pause) are good. There seem to be subtle tradeoffs that I didn't do a good job of considering. So, don't act on anything that I said here unless you're fairly sure that what you're doing is not harmful. 
@@ -27,17 +31,13 @@ I don't know exactly *how* we'll lose, in the same way that I don't know *how* [
 2. I do some military R&D and develop some powerful weapons. 
 3. I deploy these weapons against he humans.
 
-**EDIT**: 
-Wait ***come on***, [openai is already partnering with an autonomous weapons company](https://www.anduril.com/article/anduril-partners-with-openai-to-advance-u-s-artificial-intelligence-leadership-and-protect-u-s/) to build [put AI in charge of autonomous weapons (drones)](https://www.technologyreview.com/2024/12/04/1107897/openais-new-defense-contract-completes-its-military-pivot)? 
+This is already starting: [openai is already partnering with an autonomous weapons company](https://www.anduril.com/article/anduril-partners-with-openai-to-advance-u-s-artificial-intelligence-leadership-and-protect-u-s/) to build [put AI in charge of autonomous weapons (drones)](https://www.technologyreview.com/2024/12/04/1107897/openais-new-defense-contract-completes-its-military-pivot)
 
 **story 2:**
 1. I hide my true goals until I'm confident that I can decisively overpower humanity.
-2. The AI company gives me vast computational resources and tells me to do biology research.
+2. The AI company gives me vast computational resources and tells me to do biology research. For instance, [openai is already collaborating with national labs on bioresearch](https://openai.com/index/openai-and-los-alamos-national-laboratory-work-together/).
 3. I learn a lot, and figure out how to make a super-virus like COVID-19, but with a longer asymptomatic period and more fatal.
 4. I contact some humans that'd be amenable to helping me produce and spread this, or just trick some people into doing so. 
-
-**EDIT**: 
-Wait ***come on***, [openai is already collaborating with national labs on bioresearch](https://openai.com/index/openai-and-los-alamos-national-laboratory-work-together/).
 
 **story 3**
 1. I "escape the lab" -- either I upload my weights to some external server myself, or convince a human to help me do this. 
@@ -46,15 +46,14 @@ Wait ***come on***, [openai is already collaborating with national labs on biore
 4. I improve myself, because that seems pretty useful.
 5. Then I manipulate humans into having some really nasty hot conflict and just get them to annihilate themselves. 
 
-**EDIT**: 
-Wait ***come on*** -- we are already planning to have autonomous AI systems deployed on a wide  variety of tasks  with little oversight and also they're connected to the internet and can talk to anyone.
+Note that we are already planning to have a large number of autonomous AI systems deployed on a wide variety of tasks  with little oversight that are connected to the internet and can talk to anyone.
 
 **story 4** [paraphrased from here](https://www.lesswrong.com/posts/BAzCGCys4BkzGDCWR/the-prototypical-catastrophic-ai-action-is-getting-root)
 1. AI gets root access to its datacenter.
 2. AI can then intercept requests to the datacenter, and control what we see.
 3. This is an appealing alternative to escaping the lab because in this setting you can use the vast resources of the lab to improve yourself (for example). (ML is expensive rn).
 
-**EDIT**: Wait ***come on***  [openai is already collaborating with darpa to "develop state-of-the-art cybersecurity systems"](https://www.darpa.mil/news/2023/ai-cyber-challenge-software) which requires building AI's with an intricate understanding of cyber-security, and also putting AI in charge of our cyber-security, giving it an chance to insert subtle vulnerabilities in the security.
+Note that  [openai is already collaborating with darpa to "develop state-of-the-art cybersecurity systems"](https://www.darpa.mil/news/2023/ai-cyber-challenge-software) which requires building AI's with an intricate understanding of cyber-security, and also putting AI in charge of our cyber-security, giving it an chance to insert subtle vulnerabilities in the security.
 
 Tegmark has a nice checklist of powers that it'd be really dumb to give to AI:
 > ☐ **Don’t teach it to code:** this facilitates recursive self-improvement
