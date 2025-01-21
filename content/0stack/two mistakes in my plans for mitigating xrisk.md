@@ -4,7 +4,7 @@ In this post I'll discuss two things that I've been doing incorrectly wrt mitiga
 
 It'd be great to have more smart passionate people that care about [[goodness(universe)|making the universe a good place]] aware of this issue, and trying to do stuff to improve our odds. I can do more. Being more vocal about this is good in part because that gives others "permission" to feel less crazy about taking this seriously -- it's not just nobel prize winners and the CEO's of openai / anthropic that take xrisk seriously -- even the author of skyspace3 thinks that this is a not good situation!
 
-See [[good arguments]] for suggestions on how to discuss this issue. To be clear, this is usually not an argument, it's ususally something that the other party has never thought about. But the techniques transfer, because people have natural skepticism. 
+See [[good arguments]] for suggestions on how to discuss this issue. To be clear, this is usually not an argument, it's usually something that the other party has never thought about. But the techniques transfer, because people have natural skepticism. 
 
 **Mistake 1** -- optimizing for "feeling helpful" rather than solving the problem.
 

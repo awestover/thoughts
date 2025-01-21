@@ -3,6 +3,16 @@ title: Thoughts
 ---
 Welcome to my personal blog.  The main purpose of this blog is to serve as a location for me to clarify my thoughts. I think it's also a good way of connecting with my friends, and sharing ideas that I find important or helpful.
 
+(ANTHONY: 
+I'm assuming my RSS feed (and time stamps for posts) gets updated
+whenever I modify them, even if it's just to fix a typo. 
+Do you have any ideas how to make it so that this only happens
+when I make a substantial edit?
+Alternatively, how to make time stamps reference creation date,
+and just not update time stamp or RSS feed when I update things?
+Or maybe I just have to learn to not update tiny things as much :)
+)
+
 The posts approximately fall into three categories: 
 (1) [[tags/technical|technical notes]], (2) [[tags/life|life-optimization]], (3) [[tags/philosophy|philosophy]].
 Below I suggest "entry points" into exploring this blog.

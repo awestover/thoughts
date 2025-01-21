@@ -280,9 +280,9 @@ The basic idea is that solving superposition (which maybe SAEs do?) let's you br
 
 #technical
 
-
 # SAEs
 Now I'm going to take a look at another seminal paper -- about SAEs.
 https://transformer-circuits.pub/2023/monosemantic-features/index.html
 
 Features split when you let more of them exist.
+(although we don't know how to make this happen hierarchically yet)
