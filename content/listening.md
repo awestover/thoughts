@@ -1,4 +1,4 @@
 > Q: How should you listen to people?
 
-#todo
-
+- maintain eye contact
+- ask questions (when appropriate)

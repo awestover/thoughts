@@ -1,7 +1,3 @@
-Sorry I've been polluting `0stack` with notes. 
-This is probably not good for my whole "picking up a reading base again thing".
-Anyways, I said last week that I'd do a weekly post and I put it on my calendar so I guess here is this weeks post.
-
 Recently someone was explaining a board game to me. 
 And the guy explaining it was like "this board game does not have the Markov property".
 Like, there are some pieces where you have to remember some amount of history for the piece that isn't recorded on the board anywhere. 

@@ -1,5 +1,6 @@
 **Claim**: Suppose you actually want something to happen.
-Then you should either do that thing right now, or put it on your calendar. \
+Then you should either do that thing right now, or put it on your calendar.
+
 **Proof**: Otherwise it's just very unlikely to happen.
 
 Some **corollaries** of this:

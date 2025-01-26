@@ -1,8 +1,8 @@
-(As always, for this to make sense you must have read [[AI xrisk]].)
-
 Here's a simple alignment proposal:
 
 > Bargain with the first moderately superintelligent AI that we'll give it 50% of the universe if it protects us. 
+
+I think it's worth someone investing more research into this -- but I won't.
 
 Here are some reasons why this might be reasonable:
 - It feels like we will at some point in time have some power over some pretty buff AIs. 
@@ -13,6 +13,7 @@ The morality of such threats / bargaining aside, is this a good idea?
 
 There are a couple of problems that I see with this:
 1. Humans aren't trustworthy -- so the AI shouldn't take the trade.
+	1. This feels like a fixable problem though.
 2. Not clear how to get an AI to commit to this, unless you can somehow verify that it's edited its preferences to terminally value keeping this promise, in which case we should just be able to solve alignment. 
 3. Most humans don't think that we're at [[AI xrisk|risk]], so wouldn't be down for such a trade.
 

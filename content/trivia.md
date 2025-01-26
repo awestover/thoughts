@@ -1,0 +1,36 @@
+These questions may be an acquired taste. 
+I quite enjoy interesting conversations.
+
+- What would constitute a "perfect" day for you?
+- For what in your life do you feel most grateful?
+- What is something you're proud of yourself for?
+- What in life do you get truly excited about?
+- What’s one thing you can't live without?
+- What are the chapters of your life?
+- How does the way you see yourself differ from the way other people see you
+	- For example, are there places where other people would make really bad predictions about your actions? your preferences?
+	- Who is your best next-token predictor?
+- Give me some good advice
+- What's some good advice you've received?
+- Do you have any really good systems?
+- How do you avoid freaking out about scary things?
+- What is fun worth?
+- What are the best emotions? The worst?
+- What would you do if I gave you 20 dollars and you had to spend it today?
+- What do you think are some big societal problems?
+- Who are some of the best people you know, in terms of:
+	- altruism
+	- health
+	- habits
+	- giving advice
+	- being nice to be around
+ - Is doing good likely to lead to happiness?
+- What is a fun tradition that you have, or want to create (with yourself, or with a friend)?
+ - Who looks up to you?
+ - What is a dream you've let go of?
+- Are you lying to yourself about anything?
+- What lesson took you the longest to unlearn?
+- What is something you wouldn't want to change about yourself?
+- What question are you trying to answer most in your life right now?
+- In what areas are you currently trying to improve?
+- What do you value in friendships? What are the best ways they add to your life?

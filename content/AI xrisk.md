@@ -1,21 +1,15 @@
-Epistemic Status: I've thought about this extensively for about 4 months. 
-I'm confident in the main claim of this post. 
-
-Honestly, go read [this article](https://www.science.org/stoken/author-tokens/ST-1870/full) instead of mine for the moment --- it's much simpler and the authors have substantially more nobel prizes / turing awards / ML expertisse than me. 
-
-> EDIT -- this will soon hopefully be replaced by or augmented with an essay I'm writing with my dad. 
-
-> EDIT --- it's worth reconsidering how much control fixes this problem, and how much control measures I expect to be adopted. 
-
-> EDIT --- I have a large amount of uncertainty about whether my proposed *actions* (e.g., advocating for a pause) are good. There seem to be subtle tradeoffs that I didn't do a good job of considering. So, don't act on anything that I said here unless you're fairly sure that what you're doing is not harmful. 
-
->  [Sam Altman](https://blog.samaltman.com/machine-intelligence-part-1) [CEO of OpenAI](https://blog.samaltman.com/machine-intelligence-part-2)
-> “Development of superhuman machine intelligence (SMI) is probably the greatest threat to the continued existence of humanity.” - Feb 2015
-
 In this post I'll explain why I believe the following claim:
 
 > [!tip] Claim X
-> There is at least a $90\%$ chance that advances in AI will lead to a catastrophically bad outcome by the end of 2028.
+> There is at least a $90\%$ that AIs will **kill all humans** by the end of 2028.
+
+Epistemic Status: I've thought about this every day since ~August 1st 2024. 
+I'm confident in the main claim of this post, but implore you to make me wrong. 
+
+This argument is a bit long and possibly not the optimal introduction to the topic -- but maybe it's helpful (would love feedback about this!). Here are some places you can go to get similar arguments: [Hinton Science Article](https://www.science.org/stoken/author-tokens/ST-1870/full), [[Risks from AI -- elevator pitch|draft of a paper I'm writing with my dad on the subjects]].
+
+>  [Sam Altman](https://blog.samaltman.com/machine-intelligence-part-1) [CEO of OpenAI](https://blog.samaltman.com/machine-intelligence-part-2)
+> “Development of superhuman machine intelligence (SMI) is probably the greatest threat to the continued existence of humanity.” - Feb 2015
 
 Here's the 1 minute summary of the argument for why this will happen, which I
 elaborate on in this post:
@@ -83,19 +77,16 @@ Please, [be brave](https://en.wikipedia.org/wiki/Bystander_effect). Do what is r
 
 We don't have much time left. 
 
-
-**todos** for me after writing presentation for white house and paper on risks:
-- Publish this post on aixrisk.surge.sh.
-- Polish this post substantially.
-- Solicit feedback on this post from specific ppl (or insert this note instructing my readers to be  proactive and to reach out with feedback). 
-- Maybe add some way that people can "sign to support" this letter? e.g., a google form where you can add your name and then it gets put in a google spreadsheet that is embedded in this page?
-- Honestly maybe need to remake this as a vercell app and then just add comments or just have a disqourse thing for comments?
+---
+**todos** for me:
+- Publish a polished version of this note to aixrisk.surge.sh.
+	- Maybe add some way that people can "sign to support" this letter? e.g., a google form where you can add your name and then it gets put in a google spreadsheet that is embedded in this page? Or just add a discourse comments section?
 - Aggressively share this 
 	- via social media
 	- flyers
 	- tell ppl to share this
 - Write post about emotionally dealing with xrisk. 
-- Maybe put something like "if this post reaches 1000 people then I'll update my risk score down by 1% because this indicates that people are more willing to act and less reluctant to embrace unpleasant realities than I currently believe" (in other words, I bet against this post obtaining that much traction. Let's prove me wrong.)
+- Make some goal about how many people I want the post to reach
 
 ---
 
@@ -392,7 +383,7 @@ It depends.
 **Another question**
 > What kind of communication is helpful?
 
-I'm really not sure. Creating new "Moderately Worried People" that can tell you AI is an Important Social Issue. This doesn't seem helpful. If you have a friend that is on the job market (or could be) and has some skills that would be useful for technical or policy work, then talking to them could be super high impact. If you're super sold on the risk case, then there's a really good chance that you're better off doing object-level useful work [^3] on the problem than the more meta-level work of communication. The bar for a communication being useful is quite high, so even though it might seem super helpful to multiply the number of people working on the problem, my experience is that most people aren't too receptive to this.
+I'm really not sure. Creating new "Moderately Worried People" that can tell you AI is an Important Social Issue doesn't seem helpful. If you have a friend that is on the job market (or could be) and has some skills that would be useful for technical or policy work, then talking to them could be super high impact. If you're super sold on the risk case, then there's a really good chance that you're better off doing object-level useful work [^3] on the problem than the more meta-level work of communication. The bar for a communication being useful is quite high, so even though it might seem super helpful to multiply the number of people working on the problem, my experience is that most people aren't too receptive to this.
 
 [^3]: Object-level work directly addresses a specific, tangible problem or task, producing practical and measurable results, as opposed to meta-level work which focuses on broader strategies, frameworks, or tools that could help others solve problems rather than solving a particular problem itself. 
 

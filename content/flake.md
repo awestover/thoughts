@@ -1,8 +1,8 @@
-#todo
+**Def** flaking --- backing out of something last minute.
 
 Not all last minute changes of plan are flakiness.
 It's best to not commit the fundamental attribution error. 
-It's also best to avoid flaking yourself. 
+It's also best to avoid flaking yourself, and also to avoid being late. 
 
 If you get flaked on a lot it's probably best to do these things in this order:
 1. just be chill about it 

@@ -1,10 +1,12 @@
 Peter Singer and some EA's argue that ultimately all people should receive equal weight in your utility function. 
 
 I think tldr is, yes, the welfare of all people figures into [[goodness(universe)]].
+Including future people, and also things which aren't actually people.
+Anything strives for goals and wishes not to die deserves some moral consideration.
 
 Some questions that this poses:
 
-- [[Is morality absolute?]]
+- Is morality absolute?
 - Currently, what weights do people have in my [[goodness(universe)|objective function]]?
 - [[Can I change my objective function? Should I?]]
 

@@ -37,6 +37,6 @@ Because my default mode of being is not well calibrated to how important I think
 
 > Q: tell me more about the "quality-adjusted" part of quality-adjusted-seconds-spent-socializing
 
-#todo add better questions to [[questions to connect]]
+See [[talking to people]]
 
 Here are some [[fun activity ideas]]

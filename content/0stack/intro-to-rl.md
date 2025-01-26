@@ -248,9 +248,9 @@ plt.show()
 > chatgpt being sassy: 
 > "The function name `propogate_value` should be `propagate_value` (correct spelling) unless you intentionally named it this way."
 
-![](images/gamble60.png)
-![](images/gamble50.png)
-![](images/gamble40.png)
+![](gamble60.png)
+![](gamble50.png)
+![](gamble40.png)
 So you might be concerned about the fact that the curve labelled "OPT", trained by my RL agent isn't consistently outperforming this random baseline that I came up with. 
 So I think I accidentally came up with a pretty reasonable baseline (for the case $p<.5$ at least).
 I'm pretty happy that my RL agent at least approximately converges to this. 

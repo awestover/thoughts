@@ -10,7 +10,7 @@ think with practice, one can learn to flinch away from falsehoods.
 
 EY has some nice writings on this topic. 
 
-One thing that EY points out is that *questioning* your beliefs is not intrinsically good. Questioning your beliefs is useless if you question because you think that it's good to introspect, but don't plan to do anything based on your investigation -- if you've already "written your [bottom line](https://www.lesswrong.com/posts/34XxbRFe54FycoCDw/the-bottom-line)".  What's useful is to [[want to X or want to have X'd|want to actually arrive at the right answer]]. 
+One thing that EY points out is that *questioning* your beliefs is not intrinsically good. Questioning your beliefs is useless if you question because you think that it's good to introspect, but don't plan to do anything based on your investigation -- if you've already "written your [bottom line](https://www.lesswrong.com/posts/34XxbRFe54FycoCDw/the-bottom-line)".  What's useful is to [[Want to X or want to have X'd|want to actually arrive at the right answer]]. 
 
 > What's true is already so. \
 Admitting that won't make it any worse. \

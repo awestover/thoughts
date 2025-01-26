@@ -19,7 +19,7 @@ When your prior has large mass on the "other ppl are my allies" branch, it can c
 Now please, don't take this too far. 
 The universe does not care about you *at all*. 
 Sufficiently large faceless organizations maybe also don't super care about you, or at least have to overcome a really large amount of inertia to care about you or something. 
-Really, please don't interpret this post as advocating you to do something other than [[quest for truth|seek the truth]]. 
+Really, please don't interpret this post as advocating you to do something other than seek the truth. 
 But I'm noticing that a personal failing of mine is to underestimate how much other people are willing / happy to help me out. 
 
 > Q: ok Alek, that's really vague. Do you have an example?

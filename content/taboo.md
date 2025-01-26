@@ -1,4 +1,11 @@
-If you want to understand a concept, then you must explain it / discuss it without referencing that concept. 
+Taboo is one of my favorite techniques. I find taboo extremely useful at resolving confusing problems.
+
+The idea of taboo is as follows:
+- Often, two people discussing concept X will have some disagreements.
+- Both parties might say seemingly reasonable things about X, which are contradictory.
+- Often, the source of confusion is that the two parties were actually using X to point to distinct concepts Y, Z!
+- In order to resolve such issues, it often suffices to explain what the two people *actually mean* by X, without referencing X.
+- This often results in realizing that what was really being discussed was Y, Z.
 
 For instance, suppose you were discussing **judgement**.
 
@@ -12,3 +19,4 @@ Resolution
 > ST: Oh I see. And what I meant was actually that it's useful to appraise people's actions and learn -- personally and for others -- what actions to seek and avoid. \
 > JJ: I'm glad we used taboo to see that we actually didn't have differing viewpoints, we just were talking about different things. It would've been rather confusing if we had instead tried to convince the other person that we were right without being on the same page about the concept we were discussing. 
 
+#philosophy

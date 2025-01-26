@@ -1,0 +1,68 @@
+1.24.3-6 alignment philosophy with N
+
+week goals:
+- **track time** use at hour level granularity
+	- goal (G) cannot be set afterwords
+	- actual (A) can only be set immediately after the hour 
+	- score: 
+		- $2$ points for every unset G, A
+		- $1$ point for if A was egregious
+	- objective: obtain score less than 10 
+	- things I'd like to avoid (this week in particular). (note that I don't think these things are generally bad, but they are not how I want to allocate my time this week for various reasons). (these should generally be classified as egregious).
+		- looking at the news
+		- reading other people's thoughts
+		- writing blog posts about things other than technical alignment and math
+- **make progress on a fun math problem**
+	- candidates:
+		- dsipp, or n's v
+		- my backdoors q, or victors
+		- PDSG?
+	- measure -- a blog post
+- **propose an interesting math question based on alignment philosophizing**
+	- measure -- a blog post
+
+- 1.26.7
+	- G --    
+	- A --    
+- 1.26.8
+	- G --     
+	- A --   
+- 1.26.9
+	- G --     
+	- A --   
+- 1.26.10
+	- G --     
+	- A --   
+- 1.26.11
+	- G --     
+	- A --   
+- 1.26.12
+	- G --     
+	- A --   
+- 1.26.1
+	- G --     
+	- A --   
+- 1.26.2
+	- G --     
+	- A --   
+- 1.26.3
+	- G --     
+	- A --   
+- 1.26.4
+	- G --     
+	- A --   
+- 1.26.5
+	- G --     
+	- A --   
+- 1.26.6
+	- G --     
+	- A --   
+- 1.26.7
+	- G --     
+	- A --   
+- 1.26.8
+	- G --     
+	- A --   
+- 1.26.9
+	- G --     
+	- A --   

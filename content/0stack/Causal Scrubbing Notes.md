@@ -55,6 +55,6 @@ In general, if you pick up some slack somewhere like this, then it's possible to
 I didn't get their example, but I feel like the vibes are that you could have an
 explanation that is very good for dumb reasons. Like you could just go compute the answer yourself or something?
 
-update: I've explained this in [[MAD Agenda]] now.
+See [[MAD Agenda]] for further discussion.
 
 #technical 

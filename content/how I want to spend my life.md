@@ -1,7 +1,7 @@
 **[[on feelings|The things that I want]] to spend my life doing are:**
 
 **(1) Making the [[goodness(universe)|universe a better place]].** \
-**(2) Solving [[good problems|interesting and important problems]].**\
+**(2) Solving [[good problems|interesting and useful problems]].**\
 **(3) Socially [[taking social initiative|connecting]] with other people**.
 
 ---

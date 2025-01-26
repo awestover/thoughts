@@ -1,5 +1,9 @@
 #outdated
 
+This document is now mostly a historical relic. I have decided to do AI safety research -- although I'm open to switching to policy / comms if it seems like a good idea.
+
+---
+
 I'm confident that I want to pursue a life of research. 
 But what field do I want to do research in? There are a couple of somewhat closely related, but also fairly different, fields that I'm interested in exploring in 2024-2025 before choosing one and running with it. Of course there is the possibility of changing later, but after a point the EV of choosing one field randomly to dive into becomes higher than the EV of being on the fence.
 

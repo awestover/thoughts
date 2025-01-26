@@ -11,7 +11,7 @@ Example:
 	- Have secondary analytical thought, i.e., [[justification]]
 	- e.g., "Oh, but that would be awkward for reason X."
 	- or, "I couldn't really do that, because reason X"
-	- tldr: [[excuses]]
+	- tldr: avoiding [[responsibility]]
 
 What are the consequences of self-betrayal?
 Extremely bad.
