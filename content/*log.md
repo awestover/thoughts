@@ -23,9 +23,9 @@ week goals:
 
 - 1.26.7
 	- G --    
-	- A --    
+	- A --    breakfast
 - 1.26.8
-	- G --     
+	- G --     write [[Solving AI Safety from 1st principles]] 
 	- A --   
 - 1.26.9
 	- G --     
