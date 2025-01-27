@@ -1,3 +1,12 @@
+
+REVISED VERSION available here: [ai-xrisk.surge.sh](ai-xrisk.surge.sh)
+
+Planning to try to share the revised version widely pretty soon. 
+Like probably tmw. I think it's correct and at the point where it will spark a good discussion. 
+but still please send feedback!!!
+
+----
+
 If we don't communicate to policy makers a need to make AI development safer I expect AI to **annihilate humanity**. 
 
 It's reasonable to be skeptical of claims with such big implications -- they're often false. However,  remember that human extinction isn't impossible -- for instance, we could annihilate ourselves via nuclear war. I ask that you read my explanation of why AI development poses a large risk to humanity, and that you help spread the cry for caution.

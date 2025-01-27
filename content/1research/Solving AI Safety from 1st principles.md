@@ -78,6 +78,9 @@ as stated there, the main reason i think this is because i feel that humans are 
 
 if we had some strategy for building a nice ai, that was competitive, and we thought was likely to be adopted, then i think this'd increase our chances. 
 
+One big concern about working on AI stuff is that it'll accelerate the rate of dev of dangerous tech, and so even if we don't get wiped by AI, we'll get wiped by something else. Under this view, we should focus solely on achieving global coordination. [Paul discusses here why he thinks alignment is still important](https://ai-alignment.com/handling-destructive-technology-85800a12d99#.7q9gvxl0p) despite this consideration.
+
+
 **nice**:\
 a nice AI is one that tries to make the future good. 
 
@@ -122,8 +125,11 @@ some reasons to be optimistic about this:
 >    
 > I'd be excited to see ppl try to remove this assumption. I may as well in the future.
 
+> [!caution] Assumption 2
+> The first ASI's will look like some kind of transformer / RL thing -- discussed here [Prosaic alignment](https://ai-alignment.com/prosaic-ai-control-b959644d79c2).
+> This seems extremely likely to me, and is what I care to focus on. 
 
-ok this is kind of a big / tricky / confusing problem. 
+okay so this is kind of a big / tricky / confusing problem. 
 
 let's make some assumptions and flesh out some details to get crisp easier problems!
 
@@ -137,6 +143,8 @@ as a side note, i wonder if i could somehow "go viral" in china by talking about
 
 anyways, is seems like there's a pretty low chance of this being a viable solution irl. 
 so we can't relax usefulness.
+
+[this is discussed a bit more here](https://ai-alignment.com/prosaic-ai-control-b959644d79c2)
 
 ## 3 relaxing efficiency
 
@@ -168,3 +176,22 @@ here, you probably want something like [[MAD Agenda|MAD]]?
 - in high stakes setting, what we care about is that no particular action causes something really bad
 - considering bad things that happen as a result of many small steps is out of scope
 
+Paul gives some definition of high stakes alignment [here](https://ai-alignment.com/learning-with-catastrophes-59387b55cc30):
+
+> Agent + environment --> get a transcript $\tau$ and reward $r$.
+> You have access to an (expensive) catastrophe detector $C$.
+> If $C(\tau)$ is ever true in the real world, then you lose. 
+> It's okay if it happens on synthetic inputs during training.
+> 
+> things to care about: Pr(ever have catastrophe), and $\mathbb{E}[\text{reward}\mid \text{no catastrophe}]$.
+
+# Some problems to keep in mind
+
+Here is a list of some problems that I expect we will need to face at some point. 
+They'll get incorporated into the appropriate sections as needed. 
+
+- Dealing with the fact that train and deploy distributions can be **really different**.
+- deceptive alignment
+- Q: 
+
+---
