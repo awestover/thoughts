@@ -60,6 +60,9 @@ Things to care about:
 - Pr(ever have catastrophe)
 - $\mathbb{E}[\text{reward}\mid \text{no catastrophe}]$.
 
+more precisely, we want an AI that is competitive in terms of reward with the
+best never-catastrophic AI  
+
 > [!tip] remark
 > How can we implement a catastrophe detector?
 > Paul suggests using a trusted AI along with a human, and giving them lots of time and advantages. Eventually, we'd need some sort of amplification scheme.

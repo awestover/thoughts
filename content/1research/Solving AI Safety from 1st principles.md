@@ -271,6 +271,10 @@ We should be skeptical of approaches that don't address these issues, and of sim
 - how to do oversight? i.e., dealing with the problem of "things which look good to humans superficially might not actually be good"
 - dealing with Goodhart
 
+- isn't it kind of a problem if the reward signal is just evil?
+	- like take maximize profit. 
+	- this is just a really evil goal
+- i feel like if we have some boundary for what a "catastrohpe" / acceptible bx is, the AI might just toe the line?
 
 - ELK 
 	- I'm not currently sure how to precisely define ELK 
