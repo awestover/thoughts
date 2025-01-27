@@ -70,16 +70,20 @@ second goal -- do some good math
 	- A --    thought about it a bit
 - 1.27.11
 	- G --     expand tree of [[Solving AI Safety from 1st principles]] -- actually decided i  need to read some more of paul's thinking about the problem first
-	- A --  
+	- A --  read Pauls stuff
 - 1.27.12
 	- G --     lunch + discuss [[MAD Agenda]] or something with a friend
-	- A --   
+	- A --   discussed high stakes alignment at whiteboard
 - 1.27.1
 	- G --     math problem
-	- A --   
+	- A --   discussed high stakes alignment
 - 1.27.2
 	- G --     math problem
-	- A --   
+	- A --     reading [[iterated amplification]]
+
+cool thing that happened ----
+i was planning to just keep reading IDA, stuff but based on this log decided that I'd like to prioritize learning exactly how the amplificaition stuff works. 
+
 - 1.27.3
 	- G --     **make a good question from [[Solving AI Safety from 1st principles]]**
 	- A --   

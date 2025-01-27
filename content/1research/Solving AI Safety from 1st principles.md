@@ -45,7 +45,7 @@ some kind of iterative procedure.
 it feels like it might be important to understand how this training process works. 
 I guess SLT is the community that talks about this? 
 Maybe we could come up with our own way of talking about training.
-Potentially [[online convex optimization notes]] could be relevant.
+Potentially [[online convex optimization]] could be relevant.
 I think our plan for now is to ignore this until it becomes very obvious that we need to assume something about the training process.
 
 **neural networks**\
@@ -197,12 +197,60 @@ Paul gives some definition of high stakes alignment [here](https://ai-alignment.
 
 ### 3.2.1 discussion with Duru
 
+talked through the high stakes setting. 
+
+we identified 3 key difficulties. 
+
+1. How do you define the cat detector ?
+2. how do you efficiently do the learning ? 
+3. how do we talk about train vs deploy difference ?
+
+**choice 1:** 
+- do we want to have $\forall x, \neg C(M,x)$  or $\Pr_x[C(M,x)] < 1/n^{\omega(1)}$?
+
+> [!example] obs1
+> If $C$ is really complicated (e.g., random) then we're screwed. 
+
+> [!example] obs2
+> If $C$ is a total black box, and we don't have nice assumptions about it, then we're screwed. 
+> 
+> By which I mean, that even in a really optimistic setup the best we could hope for is to get pr catastrophe $1/\text{train set size}$ which is not acceptably low.
+
+**"pf":**
+We thought about the following scenario. 
+
+Suppose $C$ is determined by a decision tree with $n$ nodes. It's a black box that we can run during training but not during deployment. 
+
+Suppose that we will train for like $n^{3}$ examples. 
+
+And our goal is to learn a decision tree $f$ from the class $F$ of decision trees with $n^{2}$ nodes. 
+
+then we're just toast -- obviously.
+
+like if you have $n^{3}$ samples then you can learn a shallow decision tree that
+agrees with $C$ on a $1-1/n^{2}$ fraction of inputs.
+
+but that's not very good!
+
 [defining C? via amplification](https://ai-alignment.com/informed-oversight-18fcb5d3d1e1)
 
+> [!caution] assumption
+> our goal in high stakes alignment is to find a function which is competitive with the best function that never acts catastrophically. 
+> 
+> but... what if there's a large gap between the performance of the best algorithm that never acts catastrophically and other algorithms... then we have a really really bad political problem
+> anyways, seems like there's a lot of plausible empirical situations that could result in needing to have our house in order. i'll keep working on comms
+> 
+> Paul's intuition for why this is possible:
+> 
+> Paul has a very **narrow** definition of not acting catastrophically. 
+> it literally only counts as catastrophic if the model **intentionally** does something **super evil**.
+> ok so maybe that's possible to avoid without large performance loss.
 
 ----
 
 # Some problems to keep in mind
+
+> Side remark --- it might be interesting sometimes to just choose some problems from this list and see if it's possible to solve them.
 
 Here is a list of some problems that I expect we will need to face at some point. 
 They'll get incorporated into the appropriate sections as needed. 
@@ -214,12 +262,23 @@ We should be skeptical of approaches that don't address these issues, and of sim
 - "generalization"
 - multiple things fit the data
 - defining in what sense we expect "goodness" to be "simple" 
-- dealing with the fact that 
 - handling the possibility that evilness is simple (evan's example)
 
+- adversarial robustness
+	- sometimes your animal classifier can behave really weirdly if you add some adversarial noise
+
+- dealing with the possibility of sensor tampering
+- how to do oversight? i.e., dealing with the problem of "things which look good to humans superficially might not actually be good"
+- dealing with Goodhart
+
+
+- ELK 
+	- I'm not currently sure how to precisely define ELK 
+	- but it seems really central to how Paul is thinking about alignment
 
 ----
 
-## Some things I'd like to read
+## Some things I'd like to read some more of
 
 - https://www.lesswrong.com/s/EmDuGeRw749sD3GKd
+

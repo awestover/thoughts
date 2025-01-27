@@ -21,9 +21,6 @@ This is where I'll store documents about research that I'm doing, such as thinki
 [[2notes/]]:
 When reading / learning new things, writing notes/summaries/intuitions is important for me to get something from the reading. I'll store these here. 
 
-[[*log]]
-This is where I will record my research goals and accomplishments. 
-
 [[addictive technologies are harmful]]:
 Do you wish you wasted less time with tech? How much waste does tech cause? How bad is this?
 I think about some of these questions here.

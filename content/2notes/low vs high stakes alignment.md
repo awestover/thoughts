@@ -1,3 +1,5 @@
+This branches out of [[Solving AI Safety from 1st principles]].
+
 Paul has a decomposition of alignment that I find quite useful. 
 
 The two settings are **low stakes** and **high stakes**
@@ -40,7 +42,7 @@ Basically what he does is he shows that our regret is related to something like
 $$
 \sum_t U[t](y^*[t]) - U[t](y[t]).
 $$
-I'm not going to define these things -- go read his post. But the vibes are that the regret is how much worse we are than the best model in hindsight on each step. And in that case [[online convex optimization notes|OCO]] kicks in.
+I'm not going to define these things -- go read his post. But the vibes are that the regret is how much worse we are than the best model in hindsight on each step. And in that case [[online convex optimization|OCO]] kicks in.
 
 He gives some reasons why he thinks it's not a big deal that this isn't actually true.
 
@@ -156,3 +158,5 @@ This is a good way to think about theory of change for a catastrophe detector.
 
 But the second point only works if we have good global coordination / aren't racing.
 
+
+#technical
