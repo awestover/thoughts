@@ -51,7 +51,6 @@ post mortem on the day:
 - I also did end up reading some blog posts. they were related to what i was working on (my philosophy of alignment post) but I still think that i overall got distracted. 
 - overall, im excited to see substantially better performance tmw
 
-
 ---
 
 biggest goal -- extract a good question out of [[Solving AI Safety from 1st principles]] (or [[MAD Agenda]])
@@ -62,15 +61,15 @@ second goal -- do some good math
 	- A --    breakfast + wentto kendall
 - 1.27.8
 	- G --     read Paul's posts on low vs high stakes alignment --> summarize in [[Solving AI Safety from 1st principles]]
-	- A --     started by posting xrisk facebook post. 
+	- A --     started by posting xrisk facebook post. then worked on [[low vs high stakes alignment]]
 - 1.27.9
 	- G --    expand the tree of [[Solving AI Safety from 1st principles]]
-	- A --    
+	- A --    finished up [[low vs high stakes alignment]]
 - 1.27.10
 	- G --    expand tree of [[Solving AI Safety from 1st principles]]
-	- A --    
+	- A --    thought about it a bit
 - 1.27.11
-	- G --     expand tree of [[Solving AI Safety from 1st principles]]
+	- G --     expand tree of [[Solving AI Safety from 1st principles]] -- actually decided i  need to read some more of paul's thinking about the problem first
 	- A --  
 - 1.27.12
 	- G --     lunch + discuss [[MAD Agenda]] or something with a friend

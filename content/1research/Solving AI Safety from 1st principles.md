@@ -141,57 +141,85 @@ I think having an effective global pause (while also pausing hardware and algori
 
 as a side note, i wonder if i could somehow "go viral" in china by talking about xrisk -- or in the us. 
 
-anyways, is seems like there's a pretty low chance of this being a viable solution irl. 
+anyways, is seems like there's a pretty low chance of this being a viable solution. 
 so we can't relax usefulness.
 
 [this is discussed a bit more here](https://ai-alignment.com/prosaic-ai-control-b959644d79c2)
 
-## 3 relaxing efficiency
+## 3 relaxing efficiency vNathan
 
 seems like the first thing to do is relax efficiency
 
 do we have some way in theory of pointing to what a nice + useful NN is?
 
-we'll break into two cases -- suggested in a Paul blog post
+quick summary of discussion with N about this. 
+i think i waited too long to write it down so its fairly distorted. 
+will improve after thinking about it more and next discussion
+
+#### 3.0 what is goodness?
+
+we had two ways of cashing out goodness:
+- something "verifiable" -- i.e., assume existence of a "catastrophe detector" (altho we can't filter all model outputs using this due to cost I guess)
+- assume goodness is "simple" / has "small description" / is "smooth"
+
+#### 3.1 suppose goodness was simple
+
+we have some class $F$ of functions that we care about.
+we assert the existence of a nice + useful NN $f\in F$, and we expect $f$ to be "simple".
+we'll aim to learn $g\approx f$ from some training data $D$ consisting of some $(x, f(x))$ pairs.
+
+i think we were assuming that we can't craft synthetic inputs but instead that we just have some data lying around.
+
+the way that we intuitively were thinking of this is that $f$ is going to be an LLM, and it gets as input a user query, and it's catastrophic if it ever responds with instructions for building a supervirus.
+
+anyways, 
+
+> Suppose that there is some set $F'$ of functions which fit the training data. 
+> Suppose that among these, the one with the smallest circuit is the one that generalizes to being nice off distribution or whatever. 
+> Then we could look for the smallest circuit that fits the data and win. 
+
+> you could do something similar if you thought that good NNs were likely the best fit to data. 
+
+## 4 Paul's decomposition of the problem
+
+We'll break into two cases -- suggested in a Paul blog post.
 ### 3.1 low stakes setting
 
-the low stakes setup is roughly speaking as follows:
+> **low stakes setting**: any particular action can only cause a small amount of harm. so it's okay to train on bad stuff that happens and then update the model.
 
-- you have $T$ time to train your model
-- must deploy for $D$ time
-- model can only cause $1$ unit of harm per time step. Causing $C$ total harm is unacceptable.
-- $T\ll C \ll D$.
-
-the vibes are that by analogy to [[online convex optimization notes|OCO]], as long as we had a good way of measuring model performance, we'd be set in this case. 
-
-
+I took some notes on the low stakes setting [[low vs high stakes alignment|here]].
 ### 3.2 high stakes setting
 
-> **high stakes setting**: the AI can cause a catastrophe with a small number of actions
+> **high stakes setting**: the AI can cause a catastrophe with a small number of actions (e.g., 1).
 
-here, you probably want something like [[MAD Agenda|MAD]]?
+Paul gives some definition of high stakes alignment [here](https://ai-alignment.com/learning-with-catastrophes-59387b55cc30), which I took notes on [[low vs high stakes alignment|here]].
 
-- at first, this might seem like a strictly harder problem than the low stakes setting. 
-- i think that's not the case. 
-- in high stakes setting, what we care about is that no particular action causes something really bad
-- considering bad things that happen as a result of many small steps is out of scope
 
-Paul gives some definition of high stakes alignment [here](https://ai-alignment.com/learning-with-catastrophes-59387b55cc30):
+### 3.2.1 discussion with Duru
 
-> Agent + environment --> get a transcript $\tau$ and reward $r$.
-> You have access to an (expensive) catastrophe detector $C$.
-> If $C(\tau)$ is ever true in the real world, then you lose. 
-> It's okay if it happens on synthetic inputs during training.
-> 
-> things to care about: Pr(ever have catastrophe), and $\mathbb{E}[\text{reward}\mid \text{no catastrophe}]$.
+[defining C? via amplification](https://ai-alignment.com/informed-oversight-18fcb5d3d1e1)
+
+
+----
 
 # Some problems to keep in mind
 
 Here is a list of some problems that I expect we will need to face at some point. 
 They'll get incorporated into the appropriate sections as needed. 
 
+We should be skeptical of approaches that don't address these issues, and of simplifying assumptions that get rid of these issues. 
+
 - Dealing with the fact that train and deploy distributions can be **really different**.
 - deceptive alignment
-- Q: 
+- "generalization"
+- multiple things fit the data
+- defining in what sense we expect "goodness" to be "simple" 
+- dealing with the fact that 
+- handling the possibility that evilness is simple (evan's example)
 
----
+
+----
+
+## Some things I'd like to read
+
+- https://www.lesswrong.com/s/EmDuGeRw749sD3GKd
