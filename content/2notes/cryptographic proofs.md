@@ -3,7 +3,7 @@ In this note I'll do a literature review of proofs, including the following topi
 - AM/MA (public coins)
 - ZK-proofs (zero knowledge)
 - NIZK, Fiat-Shamir (Can we remove interaction?)
-- Doubly-efficient proofs
+- Doubly-efficient proofs / delegating computation
 - Philosophy of how these relate to NCP (?)
 
 ---

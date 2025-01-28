@@ -75,33 +75,55 @@ second goal -- do some good math
 	- G --     lunch + discuss [[MAD Agenda]] or something with a friend
 	- A --   discussed high stakes alignment at whiteboard
 - 1.27.1
-	- G --     math problem
-	- A --   discussed high stakes alignment
+	- G --   math problem
+	- A --   discussed high stakes alignment w a friend
 - 1.27.2
 	- G --     math problem
 	- A --     reading [[iterated amplification]]
-
-cool thing that happened ----
-i was planning to just keep reading IDA, stuff but based on this log decided that I'd like to prioritize learning exactly how the amplificaition stuff works. 
-
 - 1.27.3
 	- G --     **make a good question from [[Solving AI Safety from 1st principles]]**
-	- A --   
+	- A --   probably was just reading IDA stuff
 - 1.27.4
 	- G --     make some progress on above question
-	- A --   
+	- A --   tried to make up a question about high stakes alignment wasntquite crisp.
 - 1.27.5
 	- G --     dinner + discuss health or productivity or altruism or [[trivia]]
-	- A --   
+	- A --   dinna + explaining why AI is good and will get better soon
 - 1.27.6
 	- G --     zumba?
-	- A --   
+	- A --   more dinner, short zumba
 - 1.27.7
 	- G --     write up [[MAD Agenda]] better OR do math
-	- A --   
+	- A --   alignment with N -- talked thru some stuff -- had a nice problem -- a way of formalizing distilation
 - 1.27.8
 	- G --     try to make a [[MAD Agenda]] problem OR do math
-	- A --   
+	- A --   thoguht about distilation problem
 - 1.27.9
 	- G --     CAIP questionare thingy
-	- A --   
+	- A --   distillation thing doesnt work
+
+post mortem on the day:
+
+it was pretty good overall!
+still quite a bit of reading. 
+will plan to not read so much tmw.
+
+i did an okay job of logging and it helped me keep track of time better. 
+
+**Tuesday goals**:
+- **do some math** (eg 4 hours) (i suspect that even tho im impatient wrt math, if i dont do it i wont have good maths intuitions. and it really has been a while since ive done a ton of serious math)
+	- p2p?
+	- arc qs?
+	- backdoor q?
+	- dsipp?
+	- pdsg?
+- **make a good alignment question**
+	- formalize my simple high stakes alignment question
+	- is there some version of N's distillation q that can be interesting?
+	- is there some sense in which we can prove amplification is possible?
+- **only at the later end of the day start reading.**
+	- read ELK. try to come up with reasons why it's impossible.
+	- or, fix up [[MAD Agenda]] and try to come up with legit math qs modelling this
+- **comms**
+	- manage fb
+	- caip thing?
