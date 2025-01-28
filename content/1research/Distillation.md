@@ -36,7 +36,9 @@ But, something pretty similar is actually possible -- it's called "GKR"
 more formal statement, and a proof that it's impossible.
 
 $\newcommand{\ckt}{\mathsf{CKT}}$
-For all $\phi\in \ckt(n^{10})$  which are log-space uniform,
+
+We'd like for there to be a $B\in \ckt(n^{2})$ such that:
+for all $\phi\in \ckt(n^{10})$ which are described by a constant size Turing machine,
 - If $\phi\equiv 0$ then there exists $A\in \ckt(n^{3})$ such that $B(A(x),x)$ for all $x$.
 - If $\phi\not\equiv 0$ then for any $A\in \ckt(n^{3})$, and any $x$ with $\phi(x)=1$, $\neg B(A(x))$.
 
