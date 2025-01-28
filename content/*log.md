@@ -143,12 +143,12 @@ minor goal: think about comms more
 
 - 1.28.9
     - G --    N distillation
-    - A --    
+    - A --    typed up summary of what we discussed
 - 1.28.10
     - G --    MK -- alg fairness
-    - A --    
+    - A --    MK -- alg fairness
 - 1.28.11
-    - G --     N distillation
+    - G --     N distillation --- also can we refute NCP ??
     - A --  
 - 1.28.12
     - G --    model high stakes alignment?
