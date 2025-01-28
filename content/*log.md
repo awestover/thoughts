@@ -127,3 +127,56 @@ i did an okay job of logging and it helped me keep track of time better.
 - **comms**
 	- manage fb
 	- caip thing?
+
+
+plan for today: context in :thread:
+
+major goal: make an interesting mathematical model of some alignment question
+- "high stakes alignment" --> math question (possibly involves trying to define RAT or MAD and working on my writeups about these)
+- Is there some version of N's distillation q that can be interesting?
+- Make "amplification" into a math question.
+
+minor goal: think about comms more
+- follow up on my facebook post about ai risk (https://ai-xrisk.surge.sh/) -- does it seem like anyone understood what I was saying? 
+- does it feel like i contributed to race dynamics or made it more likely that useful coordination / governance happens?
+- brainstorming what are actually effective ways to communicate (current thoughts: https://pauseai.info/ suggests cold emailing "influential ppl" eg professors or **political ppl** and expressing concern about the risks and offering to chat) + then do one of these ways
+
+- 1.28.9
+    - G --    N distillation
+    - A --    
+- 1.28.10
+    - G --    MK -- alg fairness
+    - A --    
+- 1.28.11
+    - G --     N distillation
+    - A --  
+- 1.28.12
+    - G --    model high stakes alignment?
+    - A --   
+- 1.28.1
+    - G --   model high stakes alignment?
+    - A --   
+- 1.28.2
+    - G --     model amp
+    - A --     
+- 1.28.3
+    - G --     model amp
+    - A --   
+- 1.28.4
+    - G --     mathq
+    - A --   
+- 1.28.5
+    - G --     dinna
+    - A --   
+- 1.28.6
+    - G --     mathq
+    - A --   
+- 1.28.7
+    - G --     comms p1
+    - A --   
+- 1.28.8
+    - G --     comms p2
+    - A --   
+- 1.28.9
+    - G --     stanley
+    - A --

@@ -194,6 +194,9 @@ I took some notes on the low stakes setting [[low vs high stakes alignment|here]
 
 Paul gives some definition of high stakes alignment [here](https://ai-alignment.com/learning-with-catastrophes-59387b55cc30), which I took notes on [[low vs high stakes alignment|here]].
 
+Part of Paul's plan for the high stakes setting is you need an "aligned overseer" to serve as the cat detector. I think [[iterated amplification|IDA]] is maybe a reasonable idea to achieve this. 
+
+Some thoughts about distillation here: [[distillation]]
 
 ### 3.2.1 discussion with Duru
 
