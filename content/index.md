@@ -19,7 +19,7 @@ Humanity is not ready to create a new, more intelligent, species than ourselves.
 This is where I'll store documents about research that I'm doing, such as thinking through what the right questions to ask are. It will mostly be AI safety related, although a bit of pure math may sneak in occasionally, and I'm planning to mainly take a theoretical point of view on AI safety.
 
 [[2notes/]]:
-When reading / learning new things, writing notes/summaries/intuitions is important for me to get something from the reading. I'll store these here. 
+When reading / learning new things, writing notes/summaries/intuitions is important for me to get something from the reading. I'll store these here. This will also contain notes about fun math problems that I work on! 
 
 [[addictive technologies are harmful]]:
 Do you wish you wasted less time with tech? How much waste does tech cause? How bad is this?

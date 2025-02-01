@@ -24,6 +24,7 @@ Takes:
 - I'm pretty worried about people justifying doing bad things because they think they're the good guys. 
 	- For instance, Anthropic and OpenAI racing towards AGI under the banner of being the safe guys -- or at least "better than" OpenAI and China respectively -- seems really unfortunate.
 	- If you are at Anthropic or OpenAI --- please work harder at begging the government to stop the race to see who can annihilate humanity first. 
+	- I'm not really suggesting you unilaterally pause. But you could work towards getting a multi-lateral pause. I guess this is part of Antrhopic's stated strategy but they are crying for race.
 
 It feels like there's some general lesson here:
 **I don't care what words you attach to a thing, I care about the content of a thing**.

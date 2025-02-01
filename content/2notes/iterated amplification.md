@@ -68,3 +68,9 @@ What would need to be true in order for IDA to be a viable alignment approach?
 - distill must preserve alignment
 - amplify must preserve alignment
 
+---
+
+**remark**:
+N views this as "a way to get powerful AI systems without doing RL, bc RL is scary."
+
+like there's some sense in which supervised learning only learns to imitate human patterns. so you need something else to go beyond human level. and RL is pretty cursed, so maybe this method is better. 
