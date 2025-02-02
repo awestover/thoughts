@@ -1,6 +1,19 @@
-These questions may be an acquired taste. 
-I quite enjoy interesting conversations.
+These questions may be an acquired taste. I quite enjoy interesting conversations. Hopefully, these questions can elicit a *story* from conversation partner.
 
+Current favorite questions:
+> Suppose you had to (or got to, depending on your perspective) make a binding commitment to do one thing for an hour per day (e.g., "go running") -- what would you commit to?
+
+> Who are you most similar to? How are you different from them?
+
+>What is an under-cared about large societal problem? (bonus points if I don't currently know/care about it, but you convince me that I should). 
+
+- Tell me about your name.
+- Favorite book? Favorite character?
+- Do you think people (generally, or you or I) "rise to challenges" or "crumple under pressure"? / do high stakes elicit high performance?
+- What's your favorite piece of clothing? / favorite material possession?
+- How are you similar and different to your parents?
+- What's something you're worried about?
+- What's something good that you've done lately -- by more than 2SD's?
 - What would constitute a "perfect" day for you?
 - For what in your life do you feel most grateful?
 - What is something you're proud of yourself for?
