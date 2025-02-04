@@ -132,3 +132,38 @@ Two key ideas:
 we will use a concentration inequality on pr that a random induced subgraph satisfies some graph property for all graph properties :O
 
 
+![[Pasted image 20250202143759.png]]
+
+This seems like the kind of thing where you might be able to union bound over all graph properties if you choose $Nt>n^{2}$? It sounded like that wasn't their plan (should think of $N\approx n^{1.1}$) , so I guess we'll see what happens.
+
+
+### shrinking reduction plan
+
+1. we start with alg with slight advantage in binomial-$k$ setting
+2. amplify to exponential advantage in fixed-$k$ setting
+3. then get exp advantage in adversarial-$k$ setting
+
+
+1 --> 2
+
+wlog, suppose that the alg1 is a graph property.
+to amplify the success pr, we run alg1 on random induced subgraphs, and check what fraction of answers we got that were good, vs what fraction we'd expect in $G(n,1/2)$.
+
+analysis:
+let $\mu_{0},\mu_{1}$ be fraction of graphs in $G(n,1/2)$ and $\tilde{G}(n,1/2,k)$  with the property. 
+by assumption $|\mu_{0}-\mu_{1}|\gg k^{2}/n$.
+let $\mu_1'$ be the $\mu_{1}$ analog for the induced subgraph thing.
+$\mu_{1}\approx \mu_{1}' \not\approx \mu_{0}$.
+so we win.
+
+> Next they have some simple trick to show adversarial $k$ vs fixed $k$ are the same in low-error regime
+
+#todo
+
+### embedding reduction plan
+
+1. start with recovery alg with $n^{-100}$ success pr.
+2. amplify to recovery alg with $1/2$ success pr.
+
+#todo
+

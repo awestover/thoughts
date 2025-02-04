@@ -64,3 +64,25 @@ todo flesh out details.
 
 > Q: Can you "recurse" this strategy?
 
+
+---
+
+Here's an obstacle to "Recursing": 
+
+Locally this kind of random graph is a tree. For instance, if you take the $\sqrt{ N }/\log ^{2} N$ vertices closest to some vertex, then the induced subgraph on this set of vertices is a tree!
+
+---
+
+**remark**
+Nathan had a fun somewhat similar question -- 
+You have some cars on the hypercube $\{0,1\}^{n}$, they all want to drive somewhere (distinct), 
+Give a locally-computable strategy that achieves $\mathsf{poly}(n)$ congestion and takes $\mathsf{poly}(n)$ time for the drivers. The solution is quite nice:
+- If destinations were random, then just flipping 1 bit at a time suffices.
+- If destinations are adversarial, then first route people to random locations.
+
+---
+
+**remark**
+- You can't exchange messages efficiently on a tree :)
+- This indicates that thinking about the problem "locally" isn't a great idea. 
+
