@@ -7,6 +7,11 @@ The posts approximately fall into three categories:
 (1) [[tags/technical|technical notes]], (2) [[tags/life|life-optimization]], (3) [[tags/philosophy|philosophy]].
 Below I suggest "entry points" into exploring this blog.
 
+
+# Anthony -- My deploys are breaking for some reason. Thoughts?
+copilot recommended rewriting the deploy.yaml thing. I don't
+think it worked though.
+
 [[0stack/]]:
 This is a collection of serialized posts. This is the best place to go to understand "what has Alek been thinking about lately", besides actually talking to me, which is probably a [[taking social initiative|better method]].
 
