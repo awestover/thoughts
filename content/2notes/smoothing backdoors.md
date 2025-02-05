@@ -89,4 +89,3 @@ We use [[Goldreich-Levin Theorem]] to recover those frr coeffs.
 Then we estimate the value of these frr coeffs.
 Output a function based on the values of these heavy frr coeffs.
 
-
