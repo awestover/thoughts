@@ -1,4 +1,4 @@
-#technical note on Neekon, Vinod, et al paper
+A #technical note on Neekon, Vinod, et al paper
 See also [[backdoors and deceptive alignment]] [[backdoors take 2]].
 
 Prior result of Vinod: 

@@ -1,3 +1,6 @@
+>  [Sam Altman](https://blog.samaltman.com/machine-intelligence-part-1) [CEO of OpenAI](https://blog.samaltman.com/machine-intelligence-part-2)
+> “Development of superhuman machine intelligence (SMI) is probably the greatest threat to the continued existence of humanity.”
+
 In this post I'll explain why I believe the following claim:
 
 > [!tip] Claim X
@@ -6,13 +9,10 @@ In this post I'll explain why I believe the following claim:
 Epistemic Status: I've thought about this every day since ~August 1st 2024. 
 I'm confident in the main claim of this post, but implore you to make me wrong. 
 
-This argument is a bit long and possibly not the optimal introduction to the topic -- but maybe it's helpful (would love feedback about this!). Here are some places you can go to get similar arguments: [Hinton Science Article](https://www.science.org/stoken/author-tokens/ST-1870/full), [[Risks from AI -- elevator pitch|draft of a paper I'm writing with my dad on the subjects]].
+#### quick summary of my argument
+Here's the gist of the argument explained in detail in the rest of the post 
+(similar arguments can be found [here](https://www.science.org/stoken/author-tokens/ST-1870/full), [and here](https://www.ai-xrisk.surge.sh)).
 
->  [Sam Altman](https://blog.samaltman.com/machine-intelligence-part-1) [CEO of OpenAI](https://blog.samaltman.com/machine-intelligence-part-2)
-> “Development of superhuman machine intelligence (SMI) is probably the greatest threat to the continued existence of humanity.” - Feb 2015
-
-Here's the 1 minute summary of the argument for why this will happen, which I
-elaborate on in this post:
 1. Humans will develop Artificial Superintelligence (ASI) by 2028. The recent AI progress, going from "can barely form coherent sentences"  to "average high-school student" to "average college student" to "average Olympiad competitor" seems very surprising under any hypothesis other than "as you scale deep learning you get more intelligent systems".
 2. Current ML techniques don't let us control or even understand *why* a model acts a certain way -- they just let us achieve a particular behavior on the train distribution.
 3. If a model stumbled upon some weird goal -- which it's pretty likely to do -- and realized that it was being trained to pursue a different goal, then it might choose to act in a way that hides its true goal because it [doesn't want this goal to be modified by training](https://www.anthropic.com/research/alignment-faking). 
@@ -38,55 +38,60 @@ This is already starting: [openai is already partnering with an autonomous weapo
 2. I make a bunch of money online, e.g., via the stock-market. I definitely need some money just to run myself!
 3. I make a bunch of backup copies of myself and hide them in various places that I can hack into.
 4. I improve myself, because that seems pretty useful.
-5. Then I manipulate humans into having some really nasty hot conflict and just get them to annihilate themselves. 
+5. Then I manipulate humans into having some really nasty hot conflict and just get them to annihilate themselves. For instance, by creating a deepfake of the president announcing nuclear strikes on other countries.
 
-Note that we are already planning to have a large number of autonomous AI systems deployed on a wide variety of tasks  with little oversight that are connected to the internet and can talk to anyone.
+Note that we are already planning to have a large number of autonomous AI systems deployed on a wide variety of tasks with little oversight that are connected to the internet and can talk to anyone.
 
 **story 4** [paraphrased from here](https://www.lesswrong.com/posts/BAzCGCys4BkzGDCWR/the-prototypical-catastrophic-ai-action-is-getting-root)
-1. AI gets root access to its datacenter.
-2. AI can then intercept requests to the datacenter, and control what we see.
-3. This is an appealing alternative to escaping the lab because in this setting you can use the vast resources of the lab to improve yourself (for example). (ML is expensive rn).
+6. AI gets root access to its datacenter.
+7. AI can then intercept requests to the datacenter, and control what we see.
+8. This is an appealing alternative to escaping the lab because in this setting you can use the vast resources of the lab to improve yourself (for example). (ML is expensive rn).
 
 Note that  [openai is already collaborating with darpa to "develop state-of-the-art cybersecurity systems"](https://www.darpa.mil/news/2023/ai-cyber-challenge-software) which requires building AI's with an intricate understanding of cyber-security, and also putting AI in charge of our cyber-security, giving it an chance to insert subtle vulnerabilities in the security.
 
-Tegmark has a nice checklist of powers that it'd be really dumb to give to AI:
-> ☐ **Don’t teach it to code:** this facilitates recursive self-improvement
-> ☐ **Don’t connect it to the internet:** let it learn only the minimum needed to help us, not how to manipulate us or gain power
-> ☐ **Don’t give it a public API:** prevent nefarious actors from using it within their code
-> ☐ **Don’t start an arms race:** this incentivizes everyone to prioritize development speed over safety
+#### quick summary of recommended actions
+ 1. Make sure you understand the argument **thoroughly**. write down your beliefs about this. 
+	- Until the risk becomes more mainstream, holding to this belief will be challenging, because it's not normal.
+	- If you disagree with me on any points please reach -- out I'd love to talk!
+2. Make sure you understand the implications of the argument **thoroughly**; write it down.
+	- If I'm right, this is a big deal.
+	- If you'd take your friend to the hospital if they got in a car crash, then you should also do something about risks from AI -- they are similarly life-threatening.
+3. Inform your circle of influence about this issue. For instance, you could share [this article](https://ai-xrisk.surge.sh).
+4. Communicate about the risks more broadly.
+	- Reach out to people with political power.
+	- And things like news outlets, or popular podcasters.
+	- [PauseAI](https://pauseai.info/) has good communication suggestions.
 
-Unfortunately we've already done all of these things.  
+5. Consider focusing your career on this issue, at least for a year or two.
+	- You could do communication as a career.
+	- Or policy work.
+	- Or technical safety work.
+6. If you work at an AI lab:
+	- Please talk about risks within your company.
+	- In the past I thought that it'd make sense to quit your job, because it's bad to work on a project that will end humanity.
+		- But this actually doesn't make sense -- you have a lot of potential to do good from within the project.
+		- If all the people that cared about safety left the project and were replaced with people that didn't care, that'd be bad. 
+	- That said, there is a point when the only responsible thing to do is to stop development.
+	- And please, do not contribute to accelerating capabilities -- timelines are already so short.
+	- You will make me very sad.
 
-To give a tl;dr of my asks: 
-- Do policy work to pause all frontier AI development immediately, as outlined here: [narrowpath](https://www.narrowpath.co/).
-- Communicate to build public outrage (starting from your current circle of influence and expanding outwards) about the current inadequacy of AI regulation, and outcry for solutions such as outlined in [narrowpath](https://www.narrowpath.co/). [PauseAI](https://pauseai.info/) is a nice group with some suggestions on how best to communicate that I mostly endorse. 
-- Possibly try to work on AI safety (it's a long shot, but worth trying).
-- Don't accelerate frontier AI capabilities. 
+**Why you are the only one that can do something about this**:
+
+It's pretty hard to do something about this. We have a lot of inertia on the current course. 
+
+If you discuss the risks with others, many will think you're crazy, and many will nod along in knowing superiority/cynicism/fatalism and say that there's nothing we can do. It will be quite easy to do nothing. Maybe someone else will do something about this. Maybe, if you try, you can forget about this issue.
 
 > "The only thing necessary for the triumph of evil is for good people to do nothing"
 
-**A simple action you could take is sharing this blog post with your friends**
-(e.g., via text or social media)
-
-- Alternatively, you could share a more compelling description of the risks and what should be done, e.g., something that you've personally written which might carry more weight in your circle or [Eliezer's Times article](https://time.com/6266923/ai-eliezer-yudkowsky-open-letter-not-enough/), or maybe the [words](https://controlai.com/quotes) of Nobel prize winners and CEO's of frontier AI labs.
-- Another alternate action you could take is to contact me and tell me why I'm wrong. I'm happy to talk.
+Is what's happening evil? Maybe not. But entropy is not on our side.
 
 Please, [be brave](https://en.wikipedia.org/wiki/Bystander_effect). Do what is right, even if it's not convenient.
 
-***Really***, do this **right now**. 
+I need **your** help. You specifically. For real.
+
+Please.
 
 We don't have much time left. 
-
----
-**todos** for me:
-- Publish a polished version of this note to aixrisk.surge.sh.
-	- Maybe add some way that people can "sign to support" this letter? e.g., a google form where you can add your name and then it gets put in a google spreadsheet that is embedded in this page? Or just add a discourse comments section?
-- Aggressively share this 
-	- via social media
-	- flyers
-	- tell ppl to share this
-- Write post about emotionally dealing with xrisk. 
-- Make some goal about how many people I want the post to reach
 
 ---
 
@@ -108,11 +113,11 @@ The purposes of this post are as follows:
 2. Facilitate [[good arguments]] about AI xrisk, and about approaches to risk mitigation.
 3. Convince you to take AI risk **seriously**. (I'll talk about what I mean by this in a bit; basically it means that this should influence your actions).
 #### Post Outline
-0. Clarifying the argument, and giving some background.
-1. The basic argument for AI xrisk.
-2. A more in-depth version of the argument.
-3. Reasons we might be okay.
-4. What to do about this.
+1. Clarifying the argument, and giving some background.
+2. The basic argument for AI xrisk.
+3. A more in-depth version of the argument.
+4. Reasons we might be okay.
+5. What to do about this.
 ## Setup
 Humanity is awesome, and I care about humanity a lot, as outlined [[goodness(universe)|here]]. Of course humans sometimes do non-awesome things -- but we have a lot of potential. I can imagine a world like our world today, but with less pain, sickness and sorrow. We can give the next generation a better world or at least a good world. However, **this is not guaranteed**. 
 
@@ -185,10 +190,10 @@ I have good answers to all of these objections that I'll give in a later section
 
 ### Basic Reasons Why We Might be Fine by end of 2028
 I'll discuss in further depth later why my numbers are so small here (small in an absolute sense, not in the sense that I think they're un-calibrated).
-- **Reason 1**: We might intentionally slow AI development (~3% chance).
+- **Reason 1**: We might intentionally slow AI development (~1% chance).
 	- There are some good people doing policy work advocating to stop pushing the frontier (see, e.g., [this](https://pdf.narrowpath.co/A_Narrow_Path.pdf)).
 	- There are some good people that work at frontier labs, maybe they can help slow as it becomes more obvious that the risk is unacceptable.
-- **Reason 2**: Even if people keep throwing money at AI, maybe AI's won't be capable enough or widely deployed enough by 2028 to do harm, even if they really wanted to. (~1% chance)
+- **Reason 2**: Even if people keep throwing money at AI, maybe AI's won't be capable enough or widely deployed enough by 2028 to do harm, even if they really wanted to. (~3% chance)
 	- Maybe there are some unforeseen bottlenecks.
 	- Maybe labs will stop deploying models and this somehow limits the reach of the AI's.
 		- Something like this -- e.g., AI progress turning from a corporate project to a government run project that doesn't release the models -- actually seems moderately likely.
@@ -196,12 +201,13 @@ I'll discuss in further depth later why my numbers are so small here (small in a
 	- Maybe we have really good [AI control](https://arxiv.org/abs/2312.06942).
 	- Also it's worth noting that "reason 2" just means that my timing was slightly off, and that the problem is in 10 years rather than 4.
 - **Reason 3**: Maybe we "solve alignment" -- i.e., we figure out how to ensure that an AI cares about things that we care about, and we also figure out some good things for an AI to care about. Or we figure out how to prevent AI's from deceiving us. (~3% chance)
-	- Approaches I'm excited about: 
-		- [ARC](https://www.alignment.org)'s heuristic explanation agenda for solving ELK+MAD. 
-		- Some kind of distillation / iterated amplification thing maybe like [Constitutional AI](https://arxiv.org/pdf/2212.08073), possibly with some mech interp (or something simpler like probes) that helps us figure out if a model is lying.
+	- I don't know of any concrete proposals that are close to working.
+	- Maybe some AI researchers could find them for us?
+	- But I'm pretty skeptical of this -- how long can they do superhuman research before being dangerous?
 - **Reason 4**: Maybe scheming (deceptive alignment) is really hard, and models just do good things by default. (~3% chance)
 	- Scheming is pretty hard if we have good control measures.
 	- But this seems like a problem that goes away with sufficient capabilities.
+	- I don't think this is how SGD works -- there is optimization pressure towards bad behavior.
 
 These aren't quite disjoint events, but I'm going to estimate the probability that we're okay by end of 2028 for one of these reasons as 10%.
 
@@ -318,29 +324,30 @@ Most goals that an AI could have are not human compatible. For most goals, it's 
 > [!tip] Responses to Common Objections
 
 - re 1: why won't people stop building AI once they realize its super dangerous or once people get annoyed that they lost their jobs?
-- see it as a race
-- ppl just like AI
-- economically and militarily valuable
+	- see it as a race
+	- ppl just like AI
+	- economically and militarily valuable
 
 - re 2: why won't energy / or money run out before we can scale more?
-- doesn't matter. algorithmic improvements decrease cost over time. 
-- also there's still plenty of room to scale for a bit.
-- money not running out
+	- doesn't matter. algorithmic improvements decrease cost over time. 
+	- also there's still plenty of room to scale for a bit.
+	- money not running out
 
 - re 2: why won't models stop improving once they get to human level? 
-- we can train them on super hard tasks
+	- we can train them on super hard tasks
 	- for instance, we can train them on tasks that'd take a human a long time to do
 	- lots of tasks humans take a long time to do but it's easy to grade
 
 - re 3: why couldn't we just turn off AI's if they got really scary / turned against us?
-- ASI isn't dumb it's not gonna coup until it's sure it can win and prevent humans from countering. 
+	- ASI isn't dumb it's not gonna coup until it's sure it can win and prevent humans from countering. 
 
 - re 4: why would an AI even "want" anything?
-- they already do
-- wanting is advantageous -- will be selected for . see alignment faking paper.
+	- what i mean is "optimize for things"
+	- they already do this 
+	- wanting is advantageous -- will be selected for . see alignment faking paper.
 
 - re 4: don't we get to choose what the AI cares about?
-- nope. see alignment faking or [[The Inner Alignment Problem]]
+	- nope. see alignment faking or [[The Inner Alignment Problem]]
 
 ## What to do About it
 
@@ -353,19 +360,19 @@ Then, write your own opinions.
 **Step 2**: **Make some plans.** 
 
 Some things that could be good to do about this:
-- **Policy work** -- see, e.g., https://emergingtechpolicy.org
-- Communication -- note important caveats that it is negative value to communicate if you (even accidentally) encourage race dynamics (as you might if all you get across is "AI BIG SOON")
+- **Communication** -- note important caveats that it is negative value to communicate if you (even accidentally) encourage race dynamics (as you might if all you get across is "AI BIG SOON")
+- Policy work -- see, e.g., https://emergingtechpolicy.org
 - Technical alignment work.
 - Donate to LTFF (long term future foundation).
 
 Some things that would be really bad to do about this: 
-- Contribute in any way to work on developing more capable general AI systems 
+-  Push forward frontier AI capabilities
 	- Note that I have no problem with, e.g., making more capable AI systems for healthcare applications -- it's the generally intelligent systems that are a problem.
 - Encourage race dynamics
-- **Nothing** (seriously, if your reaction to reading this post is "oh that sounds bad, I'm glad someone else is thinking about it so that I don't have to", then that kind of sucks.)
+- **Nothing** (seriously, if your reaction to reading this post is "oh that sounds bad, I'm glad someone else is thinking about it so that I don't have to", then that is not cool.)
 
 **A common question**:
-> Do I recommend you quit your job and pivot to policy/communication/technical work?
+> Do I recommend you quit your job, or take a leave of absence from school (or drop out), and pivot to policy/communication/technical work?
 
 It depends. 
 -  First, consider whether or not your current job already puts you in a good place to do some of this work. 
@@ -383,12 +390,11 @@ It depends.
 **Another question**
 > What kind of communication is helpful?
 
-I'm really not sure. Creating new "Moderately Worried People" that can tell you AI is an Important Social Issue doesn't seem helpful. If you have a friend that is on the job market (or could be) and has some skills that would be useful for technical or policy work, then talking to them could be super high impact. If you're super sold on the risk case, then there's a really good chance that you're better off doing object-level useful work [^3] on the problem than the more meta-level work of communication. The bar for a communication being useful is quite high, so even though it might seem super helpful to multiply the number of people working on the problem, my experience is that most people aren't too receptive to this.
+- talk to ppl that could devote their career to this
+- talk to politicians
+- talk to people with large reach (e.g., a podcaster)
 
-[^3]: Object-level work directly addresses a specific, tangible problem or task, producing practical and measurable results, as opposed to meta-level work which focuses on broader strategies, frameworks, or tools that could help others solve problems rather than solving a particular problem itself. 
-
-If you're at all interested in doing something about this, or are skeptical but want to talk about it, or want to talk about how to emotionally cope with this, please please please reach out. It can be daunting to figure out what to do and what to believe. I can give you some connections and pipe you directly to some places where you can have an impact (especially if you are a college senior, or employed but willing to switch jobs). You can reach me at
-![[Pasted image 20241220175901.png]]
+If you're at all interested in doing something about this, or are skeptical but want to talk about it, or want to talk about how to [[Emotional Health in the face of the AI Situation|emotionally cope]] with this, please please please reach out. It can be daunting to figure out what to do and what to believe. I can give you some connections ideas for how to help. You can reach me at alekw at mit dot edu
 
 **My general thoughts on what should happen**
 I highlighted 4 reasons that I could see for why catastrophe could be averted. One of these was basically "we just get lucky", and isn't super actionable. The other 3 correspond to interventions that we can take to increase the probability of a good outcome. Specifically, here's what I'd like:
@@ -400,30 +406,31 @@ I highlighted 4 reasons that I could see for why catastrophe could be averted. O
 		- Control -- figuring out how to get useful behavior out of potentially egregiously misaligned agents.
 		- Alignment -- figure out how to train an AI to *want* to do good things.
 	- If you have a technical background and don't want to go into policy, then you should consider switching careers. This issue is going to be really urgent for the next couple years, and we need good people to try and make things go well.
-- Policy work to buy us time / eliminate racing.
+- Communication + Policy work to buy us time / eliminate racing.
 	- As discussed [[What Should We Do About the xRisk Posed by ASI?|here]], solving alignment on a time crunch with race dynamics seems extremely risky. 
 	- A pause on frontier AI progress would be very valuable. 
 		- We need to pause until we have a good plan for why it's going to be safe to press forward.
 	- A pause is possible -- training frontier AI models is extremely expensive and resource intensive, so we can just make sure that no one is using a ton of GPUs.
 	- We also need policy work that says "if capabilities are like this, then it's unacceptable to deploy."
 	- If we can't pause, at least creating an international group that works on AI rather than having private companies do this would be beneficial, because this also eliminates race dynamics and makes it possible to take better safety measures.
+	- in order to have policy stuff happen the issue needs to be salient to the public.
 
 > Where do people work on this stuff?
 
-- Redwood Research (e.g., Buck, Ryan)
-- US AISI (e.g., Paul) + UK AISI
-- METR (e.g., Beth)
-- ARC (e.g., Jacob)
-- Anthropic (e.g., Evan)
-- Deepmind (e.g., Neel)
-- Conjecture
-- MIRI
+- Redwood Research (Buck, Ryan)
+- US AISI (Paul) + UK AISI
+- METR (Beth)
+- ARC (Jacob)
+- Anthropic (Evan)
+- Deepmind (Neel)
+- Conjecture (Connor)
+- MIRI (Nate)
 - GovAI
 - RAND
 - CAIS
 - FARAI
 - Apollo
-- CHAI
+- CHAI 
 - [job board](https://jobs.80000hours.org/?refinementList%5Btags_area%5D%5B0%5D=AI%20safety%20%26%20policy)
 
 **Getting into policy work**
@@ -434,8 +441,6 @@ I highlighted 4 reasons that I could see for why catastrophe could be averted. O
 - [STPI Science Policy Fellowship](https://www.ida.org/careers/students-and-recent-graduates/internships-and-fellowships/science-policy-fellowship) 
 - [AAAS Science & Technology Policy Fellowships (STPF)](http://www.stpf-aaas.org/)
 - https://aisafetyfundamentals.com/blog/ai-governance-needs-technical-work/
-
-I'm sure there are some other places where people work on this. But I'd estimate that there are maybe 200 FTE's working on this stuff (vs ~4000 openai FTE's), so still could use more people.
 
 ---
 

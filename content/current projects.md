@@ -11,34 +11,36 @@
 	- it was frikkin hard but good!
 	- we need more of that!
 - keep writing about big picture strategies
-
 ## 1.1 Research ideas
 - activation modelling?
 - formalize "if statements / low pr" defection problems
 - separate out "goodness is simple" and "performance is complex"
 
 ---
-## 2. AI comms
-- reach out to ppl and try to communicate about AI risk
-- need a system for this
+# 2 
 
----
 I'll budget some time for practicing TCS research. 
 I'll allocate this between the following projects:
-## 3.1 project with N
+
+**2.1 project with N**
 ideas:
 - dsIPPs + friends
 - cuckoo hashing
-- neekon backdoors?
+- neekon backdoors? Ankur ML stuff?
 - catalytic stuff? 
 
-## 3.2 PDSG
+**2.2 PDSG**
 Start by reading the literature.
 Then come up with some great problems and try them out.
 
-## 3.3 Misc CS Problems (not research, just for fun)
+**2.3 Misc CS Problems (not research, just for fun)**
 - P2P problem
 - Triangles
 - memory reallocation
 - hashing
 - Can you make a PRF with the property that for any two distinct keys, $f_k,f_{k'}$ are decently far apart?
+- Madeline's questions
+
+---
+### 3 AI comms
+- reach out to ppl and try to communicate about AI risk
