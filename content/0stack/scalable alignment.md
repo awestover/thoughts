@@ -24,9 +24,9 @@ But here's some potential motivation for thinking about scalable alignment now:
 anyways, I'm not advocating for too much AI safety researchers to be allocated to 
 scalable alignment
 
-although if all the mathematicians in the world decided to give a stab (or even a concerted effort) at solving  scalable alignment I wouldnt complain :P (assuming they didnt accidentally boost capabilities... which is a pretty strong assumption. but i digress)
+although if all the mathematicians in the world decided to give a stab (or even a concerted effort) at solving scalable alignment I wouldn't complain :P (assuming they didn't accidentally boost capabilities... which is a pretty strong assumption. but i digress)
 
-but i think its a good option for me and there arent any easy better options.
+but i think its a good option for me and there aren't any easy better options.
 so ill stick to it for now and re-evaluate  at some unspecified future point in time :P
 
 but for real I'd like some ppl allocated to thinking about a longer term stable solution.

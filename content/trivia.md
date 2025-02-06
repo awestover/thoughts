@@ -7,6 +7,17 @@ Current favorite questions:
 
 >What is an under-cared about large societal problem? (bonus points if I don't currently know/care about it, but you convince me that I should). 
 
+> What percentile do you/I fall in for "being social"? for "being happy", for "being nice", "conformist", etc. Basically, the q is, pick some interesting "character" dimensions and ask where person falls.
+> Often elicits good stories -- e.g., a "proof" that I'm "super social" or Fermi estimations.
+> Good to discuss positive and negative aspects of the characteristic, whichever side of the mean it falls on.
+
+> Suppose the world was about to end, or your friend was about to die. 
+> Do you have a responsibility to try to stop this?
+
+> What are your top priorities?
+
+> Talk about AI.
+
 - Tell me about your name.
 - Favorite book? Favorite character?
 - Do you think people (generally, or you or I) "rise to challenges" or "crumple under pressure"? / do high stakes elicit high performance?
