@@ -84,7 +84,7 @@ anyways ill store some ideas for working in these focus areas below
 
 - Read ARC's analytic VAE thing and stuff about claims modelling --> capture cats!
 - Keep writing about big picture strategies / edit existing doc about this + making qs!
-- can ask maia ppl or friends for help with research ideation
+- Can ask maia ppl or friends for help with research ideation
 
 - Activation modelling?
 - Formalize "if statements / low pr" defection problems.

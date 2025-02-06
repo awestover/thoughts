@@ -77,8 +77,8 @@ Locally this kind of random graph is a tree. For instance, if you take the $\sqr
 Nathan had a fun somewhat similar question -- 
 You have some cars on the hypercube $\{0,1\}^{n}$, they all want to drive somewhere (distinct), 
 Give a locally-computable strategy that achieves $\mathsf{poly}(n)$ congestion and takes $\mathsf{poly}(n)$ time for the drivers. The solution is quite nice:
-- If destinations were random, then just flipping 1 bit at a time suffices.
-- If destinations are adversarial, then first route people to random locations.
+- If destinations were random, then just flipping 1 bit at a time in order suffices.
+- If destinations are adversarial, then first route people to random locations!
 
 ---
 
