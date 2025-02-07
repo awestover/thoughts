@@ -19,6 +19,7 @@ Current favorite questions:
 > Talk about AI.
 
 - Tell me about your name.
+- What's your favorite thing about yourself?
 - Favorite book? Favorite character?
 - Do you think people (generally, or you or I) "rise to challenges" or "crumple under pressure"? / do high stakes elicit high performance?
 - What's your favorite piece of clothing? / favorite material possession?
