@@ -5,62 +5,41 @@ My social plan is pretty simple and well-documented in other places on my blog. 
 
 As discussed in [[AI xrisk]], the main bottleneck to "the future being good" is the possibility that the advent of ASI results in the end of humanity.
 
-I'm taking a two pronged approach to preventing this:
-1. safety research
-2. comms
+My main plan for fixing this issue is doing safety research.
+I'll also continue to do some communication about the risks---but this is mostly just part of being a good community member, not the main focus.
 
-**First, comms:**
+**thoughts on comms:**
 - Things I've done in the past:
 	- wrote paper with dad
 	- fb post
 	- shared ai paper / blog posts with friends
 	- in person discussions
 	- made demo for caip demo day
-- What I think would be good:
-	- talking to policy ppl 
-	- eg the senator 
-	- ask ppl to introduce me to ppl so that i can talk to them about risks
-- I'm going to brainstorm and implement ideas on Saturday, will report back after that.
-- Remark: if possible, I need to talk about AI risk more!
-	- especially with ppl who've actually thought about the issue
-	- I still feel not confident communicating about this
-	- eg sometimes is hard to articulate my intuitions about threats
-- But I shouldn't force myself to discuss when sad / tired. 
+- Things I'd like to do in the future:
+	- talking to policy ppl (e.g., the senator)
+	- ask ppl to introduce me to ppl that work in govt so i can discuss risks
+	- talking to ppl who are concerned about risks --- to help them strategize and refine opinions.
 
-> Q: how tractable are comms?
+> Q: how leveraged/tractable are comms?
 
-one thing im worried about is that i seem to have a very low rate of changing ppls actions.
-
-another thing im worried about is that i seem to have a fairly low rate of convincing ppl that the risks are real.
-
-do i have actual data on this?
-
-hmm i guess the problem is that there aren't quite cleanly separated categories. 
-
-another problem is that idk what ppl believe and i also dont know what actions they take if they dont tell me
-
-> Q: how leveraged are comms?
-
-eg if geoff hinton is already speaking about risks from ai, what do i have to add?
+eg if Geoff Hinton is already speaking about risks from ai, what do i have to add?
 
 two things:
 1. I'm more correct than Geoff Hinton. He claims to be not too worried -- only has p(doom) 15 percent. my suspicion is that this is just bc he doesnt want to sound crazy. 
 2. i can do 1v1 interactions.
 
-its plausibly pretty helpful to actually be able to talk to a real person about the risks. 
-just like $\mathsf{IP}$ is probably more powerful than $\mathsf{NP}$.
-also this is just thinking about how beliefs change socially -- you need to see lots of ppl adopt a belief before you adopt it as a society.
-
+It's plausibly pretty helpful to actually be able to talk to a real person about the risks. 
+just like $\mathsf{IP}$ is probably more powerful than $\mathsf{NP}$. also this is just thinking about how beliefs change socially -- you need to see lots of ppl adopt a belief before you adopt it as a society.
 
 i feel like with comms i have a vague sense of what it would look like to succeed:
 1. you get ppl to be like "oh, nuclear proliferation would be bad. maybe deving AI in a race incentivizing ppl to cut corners on safety poses a threat to the world."
 2. then you implement some policies. 
-3. i've thought of some good ones that mitigate the risk somewhat
+3. I've thought of some good ones that mitigate the risk somewhat
 
 I dont think this is a permanent solution. the idea is mainly to buy time for alignment research.
 
 
-**Next, safety research.**
+**thoughts on safety research.**
 
 I've discussed this in [[scalable alignment]], but I'm kind of an impatient guy, so working on a tricky technical problem when it feels like the house is on fire feels like a mistake sometimes. 
 but as discussed, there are some reasons why this is a good thing to work on. 
@@ -80,7 +59,7 @@ it's going to be hard.
 anyways ill store some ideas for working in these focus areas below
 
 ---
-# 1. AI Safety Research
+# AI Safety Research Plans
 
 - Read ARC's analytic VAE thing and stuff about claims modelling --> capture cats!
 - Keep writing about big picture strategies / edit existing doc about this + making qs!
@@ -91,29 +70,21 @@ anyways ill store some ideas for working in these focus areas below
 - Separate out "goodness is simple" and "performance is complex".
 - Delegation of computation, e.g., [this](https://drops.dagstuhl.de/storage/00lipics/lipics-vol185-itcs2021/LIPIcs.ITCS.2021.41/LIPIcs.ITCS.2021.41.pdf) ?
 
-## 1.1 Upskilling
-#### 1.1.1 ML Theory
+## Upskilling
+#### Theoretical ML
 - Read some of Murphy's book
-	- VAE's (21.2)
 	- PAC-Bayes
 	- Generalization, 17 + 17.4
-	- sufficient statistics + exponential distributions 2.4.5
 
-#### 1.1.2 ML Empirics 
+#### Empirical ML 
 - ARENA
 - what are transcoders? understand SAEs more
 - read papers
-
 #### 1.1.3 TCS Research
 
-==MAIN: project with N==
-ideas:
-- dsIPPs + friends
-- cuckoo hashing
-- neekon backdoors?
-- catalytic stuff? 
+==MAIN: IQPs (collab with N)==
 
-**PDSG**
+**PDSG** (collab w Peter + Ant)
 Start by reading the literature.
 Then come up with some great problems and try them out.
 
@@ -124,7 +95,6 @@ Then come up with some great problems and try them out.
 - hashing
 - Can you make a PRF with the property that for any two distinct keys, $f_k,f_{k'}$ are decently far apart?
 - Madeline's questions
-
----
-### 2 AI comms
-- reach out to ppl and communicate about AI risk
+- cuckoo hashing
+- neekon backdoors?
+- catalytic stuff? 

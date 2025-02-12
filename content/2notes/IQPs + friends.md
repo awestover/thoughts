@@ -1,3 +1,154 @@
+# current SotA
+$\newcommand{\iqp}{\mathsf{IQP}}$ $\newcommand{\dsiqp}{\mathsf{dsIQP}}$ $\newcommand{\csiqp}{\mathsf{csIQP}}$$\newcommand{\maq}{\mathsf{MAQ}}$
+communication is measured in words
+ie sending 1 index is 1 communication cost
+(and $\log n$ bits)
+
+modifications:
+- adaptive query prover (the default)
+- random sampling prover (evil prover can do whatever) 
+
+IQP (interactive query proof)
+- now we call comm and queries separate things 
+- but we'll always have them be the same
+
+IQP(q,c) = queries, communication
+
+$\iqp(n^.1, n^.1)$
+
+MAQ (MA query):
+- the prover sends their claim for the entire string
+$\maq = \iqp(n^{.1},n)$.
+
+$\dsiqp$
+- prover queries, 
+- verifier queries
+- comms
+$\dsiqp(pq, vq, c)$
+
+
+Def CSIQP
+Exists $V,P$, $P$ fast, such that $P$ always convinces you on yes instances
+but for any even moderately fast $P^{*}$, $\Pr[\text{convince you on random no instance}]<\mathsf{negl}(n)$
+
+$\csiqp(\text{honest prover queries}, \text{evil pq}, vq, c)$
+
+
+"local reductions" -- ykwim
+
+
+Main results
+
+prop1:
+If honest prover samples (a small number) of uniform random things and sends you
+a subset of of those, and you just look at those and nothing else, then such a
+protocol has an IQP because it's basically just "count 1s".
+
+prop1.2:
+There exists a problem
+which is teh following problem:
+write down index $i$ a lot of times and write down a smiley face at location $i$
+if it's a YES instance, and smiley face at other location if NO instance.
+
+claim:
+exists sampling csiqp verifier $1$ honest prover $\sqrt{n}$ evil prover $o(n)$
+but not $\maq(o(\sqrt{n}))$.
+
+this is kind of open we should check
+my argument was "do some matching between yes and no instances"
+
+the vibes are like
+have to XOR $\sqrt{n}$ indices to get the location of easter egg.
+TODO fix this and do it formally
+
+prop2:
+a couple of things are equivalent to "HAS1" under local reductions.
+
+prop3:
+problem:
+YES $1$ after first $\sqrt{n}$ indices
+NO: $1$ before first $\sqrt{n}$ indices
+
+prop4:
+In $\iqp(\sqrt{n},0)$ (i.e., a tester)
+exists $\iqp(1, 1)$
+but not in $\dsiqp(o(n),o(\sqrt{n}),n)$
+
+theorem5:
+for any const $a\in (0,1)$
+There exists a problem in 
+$\csiqp(n^{a}, o(n), 1, 1) \setminus \maq(o(n^{a})).$
+
+pf: pointer chasing
+
+q0:
+non promise problems:
+Any problem with a CSIQP also has an IQP.
+
+q1:
+property testing also
+CSIQP --> IQP
+
+q2:
+Suppose you have a deterministic verifier, 
+the honest prover samples non-adaptively but maybe with a weird pr distribution
+and then they can send you any indices not just the ones they queried.
+
+suppose you had a CSIQP with such a prover and verifier. 
+can this be turned into an IQP?
+
+q3:
+is levin search thing legit?
+
+q4:
+tester, IPP, but no dsIPP
+
+q5:
+one prover wants you to say yes, 
+one wants you to say no.
+they talk for some rounds and try to convince you.
+
+question is, for example, is CSIQP contained in the IQP-hierarchy
+
+some fun questions in the hierarchy:
+"every one is followed by a 2" or something
+
+
+
+
+
+
+
+
+
+
+
+
+---
+# OLD
+
+update: we have changed the names of this thing because we're mostly not thinking about property testing. 
+
+IQP (interactive query proof)
+- we care about reads = comms + queries
+- can do adaptive or random prover
+
+MAQ (MA query):
+- the prover sends their claim for the entire string
+
+CSIQP, dsIQP -- just what you think they are.
+
+
+- Can still be interested in property testing ones
+- or non-promise ones
+- iyw
+
+---
+The "paths" example is quite good for the CSIPPs
+
+a q from N -- what else has a CSIPP
+
+---
 There are a couple of questions about IPPs that I think are pretty interesting. 
 
 Some context:
@@ -172,4 +323,34 @@ The prover just has to say which index of the random oracles $\sqrt{ n }$ sized 
 
 todo: can we generalize this beyond 1 query things?
 can we get rid of the word "non-adaptive" ?
+
+
+---
+
+Interesting turn of events: 
+
+- my above thing can easily be generalized to a dude that just samples some stuff and spits out a longer certificate
+
+
+- but the story for adaptive is different!
+
+In particular consider the following problem: 
+
+You have a two pointer chains of length $n^{1/4}$.
+One starts from the beginning of array, one starts from some random location.
+
+In the YES instances, the chain starting from the beginning of the array ends in a smiley face, the other does not.
+
+In the NO instance, the chain starting from the end of the array ends in a smiley face, the other does not.
+
+If a $n^{1/4}$ bounded prover finds a smiley face and points to it, you can instantly be confident that it is a YES instacnce. 
+
+But, an unbounded prover can say nothing to convince a verifier unless the verifier is willing to just read the whole chain herself.
+
+---
+
+a couple of open qs: 
+(more in picture)
+
+- can we find some other interesting problems with CSIQPs but no MAQs or whatever?
 
