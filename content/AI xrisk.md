@@ -1,6 +1,11 @@
 >  [Sam Altman](https://blog.samaltman.com/machine-intelligence-part-1) [CEO of OpenAI](https://blog.samaltman.com/machine-intelligence-part-2)
 > “Development of superhuman machine intelligence (SMI) is probably the greatest threat to the continued existence of humanity.”
 
+> JD Vance (VP of the US) 
+> “I’m not here this morning to talk about AI safety, which was the title of the conference a couple of years ago,” Vance said. “I’m here to talk about AI opportunity.”
+> “The AI future is not going to be won by hand-wringing about safety,”
+
+
 In this post I'll explain why I believe the following claim:
 
 > [!tip] Claim X
