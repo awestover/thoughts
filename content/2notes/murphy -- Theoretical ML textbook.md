@@ -1,5 +1,3 @@
-Theoretical ML textbook
-
 I'm honestly not a huge fan of the book -- I think it's pretty
 confusing. But I don't know of a better book and it does seem
 quite comprehensive. 
