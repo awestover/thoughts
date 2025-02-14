@@ -46,20 +46,18 @@ protocol has an IQP because it's basically just "count 1s".
 
 prop1.2:
 There exists a problem
-which is teh following problem:
-write down index $i$ a lot of times and write down a smiley face at location $i$
-if it's a YES instance, and smiley face at other location if NO instance.
+which is the following problem:
+write down $\sqrt{ n }$ indices $x_i$. 
+Put an easter egg at location $\bigoplus x_i$ in the YES instance, somewhere else in the NO instance.
 
 claim:
 exists sampling csiqp verifier $1$ honest prover $\sqrt{n}$ evil prover $o(n)$
 but not $\maq(o(\sqrt{n}))$.
 
-this is kind of open we should check
-my argument was "do some matching between yes and no instances"
-
-the vibes are like
-have to XOR $\sqrt{n}$ indices to get the location of easter egg.
-TODO fix this and do it formally
+pf:
+if ver always accepts yes instances
+evil prover can modify string in very small number of locations to make it look like yes instance
+so ver prolly accepts the no instance too
 
 prop2:
 a couple of things are equivalent to "HAS1" under local reductions.
@@ -79,7 +77,19 @@ for any const $a\in (0,1)$
 There exists a problem in 
 $\csiqp(n^{a}, o(n), 1, 1) \setminus \maq(o(n^{a})).$
 
+HOWEVER the pointer chasing problem is in the IQP-hierarchy
+and so is the XOR question.
+
+you just split up the path and ask for checkpoints.
+
+for XOR you chunk the thing
+
+
 pf: pointer chasing
+
+
+prop6:
+ckt evaluation is in the IQP hierarchy
 
 q0:
 non promise problems:
@@ -113,15 +123,44 @@ question is, for example, is CSIQP contained in the IQP-hierarchy
 some fun questions in the hierarchy:
 "every one is followed by a 2" or something
 
+MAQ hierarchy -- not interesting. 
+IQP hierachy -- very interesting
+IQP hierarchy = IQP with logn rounds of dudes talking
+
+q6: 
+Is a random problem in the IQP hierarchy?
+
+q7: find something outside of the hierarchy
+
+q8: 
+if P=NP does the IQP hierarchy collapse?
+
+q9:
+is all of IQP equiv to ckt evaluation
 
 
+remark:
+If $|Y|< n^{O(1)}$
+then this is contained in PH-IQP.
+**Proof:** 
+say which one it is, then say if they're lying
+
+Thought:
+maybe we can make a "PRG" a language that's not actually random but has enough properties to make it still not in the PH-IQP like we believe RAND to be.
+
+**Def of pseudorandom:** 
+Let $R$ be any subset of the hypercube obtained by restricting $n/100$ coordinates.
+We require that between $[.499,.501]$ many of the strings in $R$  are yes instances.
+and we require non promise problem, ie yes + no = all.
+
+**Claim**
+this is not testable
+proof: 
+yao, do some stuff ???
+seems pretty believable
 
 
-
-
-
-
-
+hope: maybe this is not anywhere in the IQP hierarchy!
 
 
 ---
