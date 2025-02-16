@@ -285,7 +285,7 @@ This kind of feels similar to the following approach:
 Then, it seems like either the AI's would need to figure out how to collude, or one of them would need to be really sneaky. 
 
 A similar idea is "smoothing": you have an NN, which maybe behaves really weirdly on certain inputs, and you want to "smooth" the NN so that it doesn't do this anymore.
-Neekon Vafa has a paper that talks about this idea. ( #todo -- read Neekon's paper. )
+Neekon Vafa has a paper that talks about this idea. 
 
 Anyways, I don't have anything particularly specific to say here.
 
@@ -373,7 +373,6 @@ I guess that's kind of a not nice property maybe.
 Unfortunately this example didn't really give me any great insights. 
 
 Well, I'll just have to think about this later I guess. 
-
 
 > [!question] q9
 > Suppose $X$ can be defended using blacklists of size $1\%$.

@@ -38,3 +38,31 @@ Well, it could be useful to keep track of things that worked in the past, and th
 - 0809 zumba; good progress on scheduling paper.
 - 0810 zumba; good progress on scheduling paper
 - 0811 walked around castle island
+
+----
+
+I think this was a fun idea from the past. 
+might restart keeping a log of good happy things that happen here. 
+
+0216
+I came up with some research questions!
+This has been my main goal for it feels like a while now. 
+I'm very happy to have them written down.
+I guess I had a lot of ideas scattered around. 
+but some are hard so its hard to commit to them. 
+
+Luckily I think i'm actually pretty good at optimizing for deliverables. 
+By which I mean now that I have these ideas written down I can 
+- commit to work on one for a bit
+- have a goal of publishing a professional blog post about it 
+- go do it
+- potentially find team-mates to join
+	- there are so many smart ppl around mit that want to do something to save humanity!
+	- the following ppl might be down to join a project based on recent conversations: 
+		- DL, SZ, B, CZ, D, probably lots of other ppl too, espec lots of empirical dudes.
+
+Anyways, hyped I am!
+
+Okay I mostly resolved one of the research questions. It seems kind of interesting and nice. There are at least 2 major obstacles for it being useful, but I'm glad I wrote about it, and am excited to try to publish a polished version of this in a bit (eg tmw). 
+
+I'm pretty excited to think more about myopia. I think starting with some smaller projects that can be completed in like a week seems like an exciting way to gain traction at which point I can start attacking some more tricky questions.

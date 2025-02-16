@@ -2,7 +2,7 @@ I'm very interested in alignment research focused on **reasoning** models. This 
 
 Our goal is to learn a (parameterized) policy $\pi_\theta$ maximizing our expected reward.
 $$
-J(\pi_\theta) = \mathbb{E}_{\tau\sim \pi_\theta}[R(\tau)] = \mathbb{E}_{\tau\sim \pi_\theta}\left[ \sum_{t=0}^{T} r_{t+1}(s_t, a_t, s_{t+1})\right].
+J(\pi_\theta) = \mathbb{E}_{\tau\sim \pi_\theta}[R(\tau)] = \mathbb{E}_{\tau\sim \pi_\theta}\left[ \sum_{t=0}^{T} r_{t+1}(s_t, a_t)\right].
 $$
 
 **Policy gradient methods**: directly modify $\pi_\theta$ based on $\nabla_\theta J(\pi_\theta)$. 
@@ -51,4 +51,21 @@ $$
 - We'll do this by adding a term $(V_{\theta_0}(s_t)+\widehat{A}_{\theta_{0}}(s_t,a_t)-V_\theta(s_t))^{2}$ to the loss.
 - We'll also add some term that measures the entropy of $\pi$ to encourage exploration
 	- we damp this term over time.
+
+
+----
+
+Random aside: apparently there is a way to do RL with transformers. 
+It's called **decision transformers**.
+
+Here's the idea. Suppose you have some task, like finding a certain vertex in a graph.
+Suppose you got some samples of trajectories. Specifically, you saw some data of the form $s,a,R,s,a,R,\dots$.
+Suppose that you built a good auto-regressive model of this sequence.
+
+What I'd probably do with this: 
+- Try each action, see which one model thinks is the best (ie predicts highest reward for). 
+
+I think what DT's do is: 
+- Find most likely action conditional on getting high reward. 
+
 

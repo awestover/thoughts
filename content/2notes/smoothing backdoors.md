@@ -172,6 +172,10 @@ How, if at all, is this relevant to AI alignment?
 - you could hope that $C\circ f$ is really simple.
 
 - remark -- an alignment strategy which requires doing an extra forward pass is probably an unacceptably high alignment tax. rip.
+	- wait actually this is not obvious. bc progress is exponential
+	- so if you are at the head of the race maybe your models are 10x faster than other guys
+	- you can afford to lose a factor of 2
+	- maybe
 
 hmm. 
 

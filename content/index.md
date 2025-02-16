@@ -11,8 +11,8 @@ Below I suggest "entry points" into exploring this blog.
 This is a collection of serialized posts. This is the best place to go to understand "what has Alek been thinking about lately", besides actually talking to me, which is probably a [[taking social initiative|better method]].
 
 
+[my current favorite ai risk story](https://x.com/joshua_clymer/article/1887905375082656117) (Note: this is not written by me; I highly recommend it!)
 
-[my current favorite ai risk story](https://x.com/joshua_clymer/article/1887905375082656117)
 [[AI xrisk]]:
 (Note: it's pretty important to have read this post to understand the rest of this blog. Shorter version [here](https://ai-xrisk.surge.sh))
 Over the last decade, machine learning has made immense progress on a wide array of tasks. What happens if this progress continues into the future? Many AI experts predict (and there are scaling models to back up this prediction) that we are only 5 years away from having AI agents that could, e.g., automate a substantial portion of all human labor.

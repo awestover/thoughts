@@ -116,7 +116,6 @@ Planted clique:
 magically having a random clique is quite unlikely. 
 but there's an obvious structure you can point to to prove existence of planted clique. 
 
-
 Suppose I have some function $W:\{0,1\}^{n}\to \{0,1\}$ with
 $\mathbb{E}[W(x)] =  .01/n$ and $\mathsf{Var}[W(x)] \approx .01/n$.
 If $W(x)$ were Gaussian with this mean and variance, then the
