@@ -7,7 +7,7 @@ I'm copying some that seem interesting to me here.
 [CODE HERE](https://github.com/awestover/FDT)
 
 <video width="640" height="360" controls>
-  <source src="https://github.com/awestover/FDT/blob/main/agent_journey.mp4" type="video/mp4">
+  <source src="agent.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
