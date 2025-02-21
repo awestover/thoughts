@@ -1,3 +1,16 @@
+EDIT: I've decided that the main argument of this post is basically False. 
+
+Consequentially I'm more excited about: 
+1. Less ambitious "little hacks" that don't solve the whole problem but could plausibly be helpful.
+	1. I'd put most control things in this category.
+	2. There could also be some theory stuff in here.
+
+It's more important to start running than to run in precisely the right direction. 
+But all else equal it's preferable to run in the correct direction.
+
+---
+---
+
 I'm planning to focus on scalable alignment
 
 I think of this as basically "solving alignment in the limit"

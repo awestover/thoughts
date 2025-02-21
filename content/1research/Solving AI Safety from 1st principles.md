@@ -196,7 +196,7 @@ Paul gives some definition of high stakes alignment [here](https://ai-alignment.
 
 Part of Paul's plan for the high stakes setting is you need an "aligned overseer" to serve as the cat detector. I think [[iterated amplification|IDA]] is maybe a reasonable idea to achieve this. 
 
-Some thoughts about distillation here: [[safe distillation]]
+Some thoughts about distillation here: [[safe distillation FAILED]]
 
 ### 3.2.1 discussion with Duru
 
