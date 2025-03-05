@@ -68,4 +68,10 @@ What I'd probably do with this:
 I think what DT's do is: 
 - Find most likely action conditional on getting high reward. 
 
+---
 
+# An obvious remark about RL
+
+An RL agent cannot read your mind --- it does not know what the reward function is. If there is some state that it has never been in, and that state has really high reward, the RL agent might just not know. Local optima are attractor basins. You can try to escape by incentivizing exploration. But if the agent has no probability of a correct action, it's never seen anything like it then tough luck -- you can't reinforce what doesn't exist. 
+
+So anyways, hopefully the reward signal has a simple explanation.

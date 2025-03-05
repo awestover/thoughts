@@ -1,6 +1,9 @@
 These questions may be an acquired taste. I quite enjoy interesting conversations. Hopefully, these questions can elicit a *story* from conversation partner.
 
 Current favorite questions:
+
+> What do you regret? What do you not regret?
+
 > Suppose you had to (or got to, depending on your perspective) make a binding commitment to do one thing for an hour per day (e.g., "go running") -- what would you commit to?
 
 > Who are you most similar to? How are you different from them?

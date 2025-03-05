@@ -4,6 +4,11 @@ I'm copying some that seem interesting to me here.
 ---
 # idea1 -- weird FDT stuff
 
+Updates on this project:
+- I tried to build a DQN agent to solve a maze
+- I did not succeed so far
+- maybe i need a simpler setting
+
 [CODE HERE](https://github.com/awestover/FDT)
 
 <video width="640" height="360" controls>
@@ -113,3 +118,9 @@ near term systems aren't "always" thinking about deception. but it can crystaliz
 ---
 
 kaivu -- multi-agent systems could be v bad?
+
+----
+
+other ideas for future projects:
+- control
+- kaivu flavored chain of thought faithfulness stuff?
