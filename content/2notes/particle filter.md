@@ -5,7 +5,7 @@ Let's say there is a sequence of hidden states $h_t$ and we get a sequence of ob
 There are some simple update rules governing the evolution of our pr dist on $h_t$ ---
 
 $$
-p(h_{t+1}\mid v_{1:t + 1}) \propto p(o_{t+1}\mid h_{t+1}) \int_{h_t}p(h_{t+1}\mid h_t) p(h_t\mid v_{1:t})
+p(h_{t+1}\mid v_{1:t + 1}) \propto p(v_{t+1}\mid h_{t+1}) \int_{h_t}p(h_{t+1}\mid h_t) p(h_t\mid v_{1:t})
 $$
 We're going to maintain $N$ **particles** $h_{t}[1],\dots, h_t[N]$ and **weights** $w_t[i]$ (which sum to $1$) such that 
 $$

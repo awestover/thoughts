@@ -101,7 +101,7 @@ $$
 $$
 \mathsf{Covar}(\mathbf{x} | \mathbf{y} = y_{0}) = \Sigma_{xx} - \Sigma_{xy} \Sigma_{yy}^{-1} \Sigma_{yx}.
 $$
-The fact that conditioning, marginalizing, and adding jointly gaussian rvs gives gaussian rvs is very  nice. 
+The fact that conditioning, marginalizing, and adding jointly Gaussian rvs gives Gaussian rvs is very  nice. 
 
 
 **Markov Blanket** of a vertex $v$ is the set of nodes whose value you must fix in order to make the value of $v$ independent of all the other values. 
@@ -300,6 +300,60 @@ Sometimes the ML estimate happens to be "efficient" -- ie make the cramer rao bo
 note that you can generally find the ML estimator by finding which $x$ makes $\frac{d}{dx} \ln p(y;x) = 0$.
 
 note: "ML estimate commutes with invertible maps".
+
+---
+
+**Sufficient statistics**
+- We say $t(y)$ is  a sufficient statistic if $p(y\mid t; x_{1}) = p(y\mid t; x_{2})$ for any $x_{1},x_{2}.$
+- equivalently, the condition is $L_y(x) \propto L_{t(y)}(x)$ where $L_y(x) = p(y;x)$
+
+Neyman Factorization Theorem: $t$ is suffic statistic iff exists functions $a,b$ such that 
+$$
+p_y(y;x) = a(t(y),x)b(y).
+$$
+
+- Example: $y_{1},y_{2}$ iid dist as $N(x,1)$, then $\frac{y_{1}+y_{2}}{2}$ is suffic statistic.
+- Example: $t(y)$ is suffic statistic for $p(y;x) = \exp(\lambda(x) \cdot t(y)-\alpha(x)+\beta(y)).$
+- Example: if $x$ is in finite set then listing $p(y;x)$ for all possible $x$ is a suffic stat.
+
+minimal suffic statistic: 
+- a suffic stat $t$ is minimal, if for any suffic stat $s$, there exists a function $g$ such $g(s)=t$.
+
+ex: likelihood ratio is minimal suffic stat
+
+**Bayesian setting**
+
+- $p(y|t,x) = p(y|t).$
+- $p(x \mid y)=p(x\mid t)$
+- $p(y\mid x) = p(t\mid x) p(y\mid t)$.
+- $x \perp y \mid t$
+- $t(y_{1})=t(y_{2})\implies L_{y_{1}}(x) \propto L_{y_{2}}(x).$
+
+minimal suffic  statistic: 
+- $L_{y_{1}}(x) \propto L_{y_{2}}(x) \implies t(y_{1})=t(y_{2}).$
+
+If $Y$ is finite, clear that minimal suffic stat exists. 
+Can find by normalizing the likelihood functions, and then sorting the likelihood functions into buckets based on which ones are the same
+
+
+ppl don't know how to check whether a suffic stat is minimal efficiently.
+But, 
+
+a suffic stat is **complete** if for any $\phi:t(Y)\to \mathbb{R}$ with $\E[\phi(t(y))]=0$ for all $x$ has $\phi(t(y)) = 0$.
+(not necc condition)
+
+**Theorem**: Complete suffic stats are minimal.
+
+- you can use this to show that $t(y)$ for exp fam is suffic stat
+
+remark: 
+- completeness is saying that $L_{t=1},\dots,L_{t=M}$ are all lin indep
+
+- a suffic stat is minimal iff for each distinct $t_{1},t_{2}$ we have $L_{t_{1}},L_{t_{2}}$ are lin indep
+
+
+**EM Algorithm**
+
 
 # Networks 
 - Measure "importance" of a vertex as "average importance of neighbors".
