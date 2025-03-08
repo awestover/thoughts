@@ -8,11 +8,21 @@
 
 In this post I'll explain why I believe the following claim:
 
+**EDIT**: 
+> I now find longer timelines somewhat more plausible, and think that there might be more options besides extinction on the table -- like there could be some spectrum of how bad things are. I still think that extinction is pretty likely, but haven't had time to carefully reason through this yet.
+
+> As a first approximation, I'll say that my predictions are now as follows:
+> 70% extinction, 20% some other very bad outcome, 10% good?
+> These are the long term probabilities. 
+> I'll spread my 70% extinction probability mass as follows:
+> maybe like 35% in (now, 2029) 35% in (2029, 2035)
+
+> Sorry, this is pretty complicated -- these are my best guesses for the time being.
+
 > [!tip] Claim X
 > There is at least a $90\%$ that AIs will **kill all humans** by the end of 2028.
 
-Epistemic Status: I've thought about this every day since ~August 1st 2024. 
-I'm confident in the main claim of this post, but implore you to make me wrong. 
+Epistemic Status: I've thought about this every day since ~August 1st 2024. I have a large amount of uncertainty about the specifics of how things will go, but feel pretty confident that I'm correct to think that it's highly probable that AI will not go well for humans. By which I mean extinction or "something similarly bad".
 
 #### quick summary of my argument
 Here's the gist of the argument explained in detail in the rest of the post 

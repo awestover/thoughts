@@ -352,8 +352,7 @@ remark:
 - a suffic stat is minimal iff for each distinct $t_{1},t_{2}$ we have $L_{t_{1}},L_{t_{2}}$ are lin indep
 
 
-**EM Algorithm**
-
+[[EM reprise]]
 
 # Networks 
 - Measure "importance" of a vertex as "average importance of neighbors".
@@ -363,14 +362,3 @@ remark:
 
 #todo -- figure out what else is happening in networks
 
-
-### Quantum
-
-example of **mixed state**: 
-$\frac{1}{\sqrt{ 2 }}(|01\rangle + |10\rangle)$
-"non-separable state"
-
----
-
-pr, CIM, quantum -- so far are completely fake classes
-fortunately they are approx zero work.
