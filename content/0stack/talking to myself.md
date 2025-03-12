@@ -21,3 +21,5 @@ p.sort_stats('cumulative').print_stats(10)
 When your loss is a frowny face :'(
 
 - don't maximize for peak hardware utilization in humans 
+
+- re-frame "i suck at coding" as "oh-no exploding gradients encountered in alek's coding abilities"

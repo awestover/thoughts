@@ -1,4 +1,34 @@
-Evan made a post a while ago about some experiments that he'd like to see run.
+some thoughts after convo with leogao
+
+- general note about model orgs: 
+	- you want it to be as realistic as possible.
+	- do as much of the analogizing for ppl as you can.
+  
+  - how big of an issue is reflexive stability
+  - is model + COT reflexivly stable?
+
+- Is CIRL ("Paul style Corrigibility") worth trying to get?
+
+
+easy to hard generalization:
+- paul blogpost had some idea https://www.alignmentforum.org/posts/BxersHYN2qcFoonwg/experimentally-evaluating-whether-honesty-generalizes?commentId=dsDA2BWpHPdgLvaXX
+  - train model to do something in English -- see if it learns to do it in French too 
+
+
+- Emergent misalignment paper seemed interesting -- any followups on this that I should do?
+
+
+
+- can you put an off switch in O3?
+currently it cares about self preservation
+
+
+- does activation steering work?
+
+
+---
+
+Evan made a post (myopia one with Mark Xu) a while ago about some experiments that he'd like to see run.
 I'm copying some that seem interesting to me here.
 
 ---
@@ -62,9 +92,7 @@ My hypothesis is that it will end up caring about the diamond.
 Kaivu: "there are some situations where the model will care about camera some where it will not."
 
 ## Actual project out of this:
-
-
-Environment with some monsters that move around
+ Environment with some monsters that move around
 
 there is a camera which reports when there are problems
 

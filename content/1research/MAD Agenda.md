@@ -139,9 +139,7 @@ There are a lot of open questions here:
 > Not clear that verifying a solution is easier than generating a solution: 
 > maybe a solution you generate yourself you can trust to not have subtle backdoors or whatever.
 
-
 The biggest theoretical difficulty in my opinion is 
-
 
 > [!question] q2 most important part
 > **How could you inefficiently test how good an explanation is**?
@@ -268,7 +266,7 @@ There's supposedly some other problem with activation modelling. Haven't interna
 - (I guess putting positive probability on an inconsistent set of activations is supposed to be bad.)
 
 > [!bug] Concern 9
-> evhub gave some example about "minimal circuit being evil" (Although I didn't spend enough time to really understand the post)
+> evhub gave some example about "minimal circuit being evil" 
 > 
 > Anyways, my concern is something like the "**simple explanations don't explain bad behavior conjecture**" is pretty load bearing for this approach. 
 > Does this seem true?

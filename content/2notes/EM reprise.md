@@ -1,7 +1,7 @@
 > In this post I once again remind myself what EM is.
 > It seems like a really cool idea, but it hasn't totally stuck yet. 
 
-A simple example:
+A simple example:  $\newcommand{\E}{\mathbb{E}}$
 - Suppose we have some labelled data $(u, v)$, $u$ is a feature vector $v\in \pm 1$ is a class.
 - We might try logistic regression. 
 - This means, finding $x$ which minimizes the following expression:
@@ -68,3 +68,4 @@ Gaussian mixture model:
 $p(y;\theta) = \sum \pi_k N(y;\mu_k, \Lambda_k)$.
 
 ok i dont really have time to read this rn read till page 10/14
+could be fun to go to OH or talk to Kevin + Anthony about this more

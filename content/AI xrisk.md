@@ -12,10 +12,10 @@ In this post I'll explain why I believe the following claim:
 > I now find longer timelines somewhat more plausible, and think that there might be more options besides extinction on the table -- like there could be some spectrum of how bad things are. I still think that extinction is pretty likely, but haven't had time to carefully reason through this yet.
 
 > As a first approximation, I'll say that my predictions are now as follows:
-> 70% extinction, 20% some other very bad outcome, 10% good?
+> 85% extinction, 5% some other very bad outcome, 10% good?
 > These are the long term probabilities. 
-> I'll spread my 70% extinction probability mass as follows:
-> maybe like 35% in (now, 2029) 35% in (2029, 2035)
+> I'll spread my 85% extinction probability mass as follows:
+> maybe like 50% in (now, 2029) 35% in (2029, 2035)
 
 > Sorry, this is pretty complicated -- these are my best guesses for the time being.
 
