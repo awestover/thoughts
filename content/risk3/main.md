@@ -107,7 +107,9 @@ But, the fight for the future is not over yet.
 
 I don’t even think we’re past the point of no return. 
 
-Please don’t despair or go make the situation worse by working on AI capabilities. 
+Please don’t despair.
+
+Please don't make the situation worse by working on AI capabilities. 
 
 Please try to make the situation better. 
 
