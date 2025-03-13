@@ -10,10 +10,9 @@ Below I suggest "entry points" into exploring this blog.
 [[0stack/]]:
 This is a collection of serialized posts. This is the best place to go to understand "what has Alek been thinking about lately", besides actually talking to me, which is probably a [[taking social initiative|better method]].
 
+[My current favorite AI xrisk story](https://x.com/joshua_clymer/article/1887905375082656117) (Note: this is not written by me, but I highly recommend it!)
 
-[my current favorite ai risk story](https://x.com/joshua_clymer/article/1887905375082656117) (Note: this is not written by me; I highly recommend it!)
-
-[[AI xrisk]]:
+[[main|AI risk3.0]]:
 (Note: it's pretty important to have read this post to understand the rest of this blog. Shorter version [here](https://ai-xrisk.surge.sh))
 Over the last decade, machine learning has made immense progress on a wide array of tasks. What happens if this progress continues into the future? Many AI experts predict (and there are scaling models to back up this prediction) that we are only 5 years away from having AI agents that could, e.g., automate a substantial portion of all human labor.
 Humanity is not ready to create a new, more intelligent, species than ourselves. In particular, the current trajectory of AI development poses an existential risk to humanity -- by default, in creating more powerful entities than ourselves, we relinquish our control over the future to the more powerful entities, and we don't have good techniques right now for ensuring that these entities care about making a [[goodness(universe)|good]] future. In this post I discuss why AI poses an existential threat, and talk about what we should do about it.

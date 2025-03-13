@@ -1,3 +1,6 @@
+[[main|Updated version of this post here]]
+
+
 I've spent some time, e.g., [[AI xrisk|here]] writing about the risks posed by AI, and what to do about it. 
 
 [Here's an article](https://www.science.org/stoken/author-tokens/ST-1870/full#body-ref-R3-1) that does an awesome job of discussing this. 
