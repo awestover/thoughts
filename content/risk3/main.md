@@ -1,8 +1,15 @@
 This collection of documents represents my latest iteration at articulating my opinions about the danger posed by AI. My views haven't changed too much since the last few iterations of doing this (see [[AI xrisk]]). 
 
 The change is best described as follows:
-> I am now **more** confident that the trajectory of AI will lead to human extinction (~95%), but slightly less confident that it'll happen by end of 2028. 
-> My prmass for when we get destroyed is now slightly more evenly spread out over the next 10 years. I still think it's quite plausible by 2028 but wouldn't be shocked if it took till 2033.
+> I am still about ~90% confident that human extinction will occur fairly soon, but am less confident that it'll happen by end of 2028. 
+> My pr mass for when we get destroyed is now slightly more evenly spread out over the next 10 years. I still think it's quite plausible by 2028 but wouldn't be shocked if it took till 2033.
+
+**TODO:** 
+> I discussed this with Brendan and he gave actually a pretty compelling argument that some kind of "mutually assured destruction" regime (https://www.nationalsecurity.ai/) (MAIM) is semi-plausible.
+> I haven't thought about it extensively yet, but it seems potentially promising.
+> This is the great part of sharing your ideas frequently! 
+> If you're wrong, then hopefully someone will point it out!
+> Please still send me even more arguments for how we can win --- I don't think that MAIM is a guaranteed win. But it does genuinely sound like possibly something that could happen.
 
 This document is poorly written in places. I may at some point polish it and use it as a tool to communicate with people /  try to build consensus on the issues, or identify experiments that could resolve disagreements. I feel like this post does an okay job of listing a lot of considerations that people have for why risks might not be too bad, and giving rebuttals them.
 
