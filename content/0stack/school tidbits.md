@@ -354,6 +354,41 @@ remark:
 
 [[EM reprise]]
 
+----
+
+**information geometry:**
+
+im sick atm so these notes will not be high quality sorry about that 
+
+it seemed like some pretty neat stuff though
+
+- **linear family**: the set of distributions $p$ that satisfy $\E_{y\sim p} [t_i(y)] = \mu_i$ for some set of $t_i,\mu_i$
+	- We write $L_t(p)$ to be the linear family of distributions which agree with $p$ on the mean things.
+- **exponential family**: we've already defined these, but we'll specifically define
+	- $E_t(p)$ as the set of distributions $q$ which can be written as 
+$$
+q(y)= p(y) \exp(x\cdot t(y) - \alpha(x) )
+$$
+for some parameters $x$.
+
+Interestingly, these types of families turn out to be an "orthogonal basis" for the information geometry.
+
+Define the I-projection as follows:
+$$
+\mathsf{argmin}_{p\in \mathcal{P}} D(p||q).
+$$
+
+It turns out that in general we have
+$$
+D(p||q) \ge D(p||p^{*})+D(p^{*}||q).
+$$
+
+And if $\mathcal{P}$ is linear family then this becomes an **equality**
+and if you're interested in which things have I-projection onto $\mathcal{L}_t(p^{*})$  equal to $p^{*}$ it turns out that it's exactly $E_t(p^{*})$.
+
+As a cherry on top, if you look at things locally the info geometry behaves like euclidean space.
+
+
 # Networks 
 - Measure "importance" of a vertex as "average importance of neighbors".
 	- Can interpret these as steady-state probabilities if it's a Markov Chain.

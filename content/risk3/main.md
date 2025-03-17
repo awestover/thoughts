@@ -11,6 +11,11 @@ The change is best described as follows:
 > If you're wrong, then hopefully someone will point it out!
 > Please still send me even more arguments for how we can win --- I don't think that MAIM is a guaranteed win. But it does genuinely sound like possibly something that could happen.
 
+**TODO**:
+> I've recently read through some of Paul's thoughts on why alignment is easy. I think my main disagreement with Paul is on how responsible I expect humanity to be in reacting to the problem. But Paul could be correct their too anyways.
+
+> Anyways, this is a current snapshot of my views. Hopefully it is good enough to help me make decisions. I also hope it is of use to some readers.
+
 This document is poorly written in places. I may at some point polish it and use it as a tool to communicate with people /  try to build consensus on the issues, or identify experiments that could resolve disagreements. I feel like this post does an okay job of listing a lot of considerations that people have for why risks might not be too bad, and giving rebuttals them.
 
 Acknowledgements: 
