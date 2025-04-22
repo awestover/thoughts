@@ -1,4 +1,6 @@
-Here are some random project ideas that I'd be pretty excited to see done well, and some other random thoughts:
+Here are some random project ideas that I'd be pretty excited to see done well, and some other random thoughts.
+
+Prompted by listening to a few mins of Bengio's recent Simons Institute talk and reading some of Daniel's LW posts.
 
 1. Bengio mentioned setting up "public risk evals" things for AI companies --- apparently a similar concept exists in insurance or whatever. This is a method for incentivizing companies to spend money on safety.
 	1. If done well the company would get points for
@@ -16,21 +18,34 @@ Here are some random project ideas that I'd be pretty excited to see done well, 
 3. Field building things:
 	1. Someone should conduct a survey or something of how people decided to care about AI safety
 		1. For instance -- Bengio was convinced to care bc GPT3 came out and he was spending time with his grandson and he was like "will he even have a life?" and then he decided that he had to do something about this.
-			1. He specifically said something like "I had heard all the arguments for AI risk for years, and had vaguely been following the field but this logic never really moved me" he further noted that "working on capabilities was fun and I thought it would be really good and humans have cognitive biases to shy away from uncomfortable ideas.
+			1. He specifically said something like "I had heard all the arguments for AI risk for years, and had vaguely been following the field but this logic never really moved me" he further noted that "working on capabilities was fun and I thought it would be really good and humans have cognitive biases to shy away from uncomfortable ideas."
 	2. I'd love to clarify the role that logic plays in convincing ppl. 
-		1. My current guess is that logic is only helpful for making quantitative adjustments to your beliefs (not qualitative ones) and is only impactful when you are open to making these adjustments either because you've decided to be or because you respect the person making the argument.
-		2. If I've had any impact at raising awareness about risks from AI then I'd guess that it's mainly due to signaling.
-			1. Note that engaging in arguments and looking like you know what you're talking about and have responses to all objections and saying things that people can verify is a form of signalling.
-		3. I revise my earlier claims. There is a certain type of person, I guess it's called a rationalist, although being a mathematician/scientist might be close enough in some cases, that likes logic.
-		4. Also --- emotional appeals are probably fragile. 
-		5. So maybe the ideal method is some combo strat. 
-			1. I like how Bengio did this --- a 3 minute emotional appeal personal story about why he cares about risks from AI
-			2. followed by logic (talking about instrumental convergence or whatever).
-				1. At the end of his talk, there were clearly some ppl that did not understand instrumental convergence at all. in fact I know ppl that have been exposed to aI risk arguments a lot and don't understand this. 
-				2. But the questioners were at least pretty respectful so i guess that's good.
+		1. My current best guess is that the ideal strategy is: 
+			1. Start with ethos --- e.g., read the CAIS statement on risk
+			2. Next go for pathos --- tell an emotional story about why you care about mitigating risk, or just be like crumb it'd actually be quite bad if humanity ended in the next couple years. 
+			3. Then go for logos. Explain risks from first principles, sprinkling in some empirical demos like alignment faking / apollo scheming reasoning evals / reward hacking demos.
+				1. the vast majority of ppl will have the following misconceptions:
+					1. AI can't get superhuman
+						1. Counter with Chess
+					2. Causing extinction is hard
+						1. Counter by talking about pandemics / mirror bacteria / nuclear war
+					3. Current AI's are nice
+						1. Counter with current empirical demos of AI's doing pretty concerning stuff
+					4. AI's won't have convergent instrumental subgoals
+						1. Counter by saying that they will
+					5. Society will respond responsibly
+						1. Counter by saying "um doesn't look like we're being that responsible atm"
+		2. I think very few ppl are convinced purely by logic.
+			1. But it'd be interesting to have data for or against this hypothesis.
+			2. Note that engaging in arguments and looking like you know what you're talking about and have responses to all objections and saying things that people can verify is a form of signalling --- which is a type of ethos I guess.
+		3. OTOH emotional appeals are probably pretty fragile.
 
 4. How can we keep epistemically alive in a world with super-persuasive AIs?
 	1. obvious solution --- don't talk to super-persuasive AIs.
 		1. unfortunately this is probably not possible
 		2. also, if humans get really good args from super-persuasive AIs and then talk to you, what're you going to do...
 	2. tbh this seems pretty cursed --- just have to hope that we can build an aligned successor system more powerful than us before this is a big deal.
+
+5. How to prevent nuclear war?
+	1. It turns out that nuclear war would actually be ~game over.
+	2. maybe we should not do that. 
