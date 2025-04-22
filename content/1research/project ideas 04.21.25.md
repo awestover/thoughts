@@ -47,5 +47,5 @@ Prompted by listening to a few mins of Bengio's recent Simons Institute talk and
 	2. tbh this seems pretty cursed --- just have to hope that we can build an aligned successor system more powerful than us before this is a big deal.
 
 5. How to prevent nuclear war?
-	1. It turns out that nuclear war would actually be ~game over.
+	1. It turns out that nuclear war would actually be ~[game over](https://www.sciencefriday.com/wp-content/uploads/2023/11/SaganParade-Nuclear-Winter-1983.pdf).
 	2. maybe we should not do that. 
