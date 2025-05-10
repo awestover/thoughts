@@ -43,3 +43,4 @@ What is goodness? What do I want my life, and the universe at large to look like
 [[talking to people]]: 
 Talking to people is a fundamental problem with many applications. In this post I outline an algorithm for talking to people, and argue that my algorithm is $O(1)$-competitive with the optimal strategy for talking to people. I also maintain some interesting conversation starters here: [[trivia]].
 
+Here is a list of [[questions]] --- some topic ideas for future blog posts. Please send me questions if you have any!

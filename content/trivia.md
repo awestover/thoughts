@@ -1,21 +1,10 @@
 These questions may be an acquired taste. I quite enjoy interesting conversations. Hopefully, these questions can elicit a *story* from conversation partner.
 
-Interested in discussing this: 
-- https://www.lesswrong.com/s/qXZLFGqpD7aeEgXGL
-- I'm pretty confused about the intellectual arg shard
-- To what extent is Richard right?
-	- What action implications does this have?
-- thoughts on cultivating excitement
-- are you more driven by excitement or fear?
-- clear or unclear bids -- good / bad?
-
-- what is your identity ? are there parts of identity that you'd like to excise? new identities that you want to add?
-
-Paul on desire / cesire akrasia etc --- is he suprisingly right or deeply misguided?
-
-----
-
 Current favorite questions:
+
+> How does **trust** work?
+
+> Suppose I think someone is doing something which imposes large negative externalities on other people. What should I do about that?
 
 > What do you regret? What do you not regret?
 
@@ -77,3 +66,16 @@ Current favorite questions:
 - What question are you trying to answer most in your life right now?
 - In what areas are you currently trying to improve?
 - What do you value in friendships? What are the best ways they add to your life?
+
+Interested in discussing this: 
+- https://www.lesswrong.com/s/qXZLFGqpD7aeEgXGL
+- I'm pretty confused about the intellectual arg shard
+- To what extent is Richard right?
+	- What action implications does this have?
+- thoughts on cultivating excitement
+- are you more driven by excitement or fear?
+- clear or unclear bids -- good / bad?
+
+- what is your identity ? are there parts of identity that you'd like to excise? new identities that you want to add?
+
+Paul on desire / cesire akrasia etc --- is he surprisingly right or deeply misguided?
