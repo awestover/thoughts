@@ -1,7 +1,5 @@
 These questions may be an acquired taste. I quite enjoy interesting conversations. Hopefully, these questions can elicit a *story* from conversation partner.
 
-Current favorite questions:
-
 > How does **trust** work?
 
 > Suppose I think someone is doing something which imposes large negative externalities on other people. What should I do about that?
@@ -12,19 +10,14 @@ Current favorite questions:
 
 > Who are you most similar to? How are you different from them?
 
->What is an under-cared about large societal problem? (bonus points if I don't currently know/care about it, but you convince me that I should). 
-
 > What percentile do you/I fall in for "being social"? for "being happy", for "being nice", "conformist", etc. Basically, the q is, pick some interesting "character" dimensions and ask where person falls.
 > Often elicits good stories -- e.g., a "proof" that I'm "super social" or Fermi estimations.
 > Good to discuss positive and negative aspects of the characteristic, whichever side of the mean it falls on.
 
-> Suppose the world was about to end, or your friend was about to die. 
-> Do you have a responsibility to try to stop this?
-
-> What are your top priorities?
-
-> Talk about AI.
-
+- What is an under-cared about large societal problem? (bonus points if I don't currently know/care about it, but you convince me that I should). 
+- Suppose the world was about to end, or your friend was about to die. Do you have a responsibility to try to stop this?
+- What are your top priorities?
+- What are your thoughts on AI.
 - Tell me about your name.
 - What's your favorite thing about yourself?
 - Favorite book? Favorite character?
@@ -66,16 +59,4 @@ Current favorite questions:
 - What question are you trying to answer most in your life right now?
 - In what areas are you currently trying to improve?
 - What do you value in friendships? What are the best ways they add to your life?
-
-Interested in discussing this: 
-- https://www.lesswrong.com/s/qXZLFGqpD7aeEgXGL
-- I'm pretty confused about the intellectual arg shard
-- To what extent is Richard right?
-	- What action implications does this have?
-- thoughts on cultivating excitement
-- are you more driven by excitement or fear?
-- clear or unclear bids -- good / bad?
-
 - what is your identity ? are there parts of identity that you'd like to excise? new identities that you want to add?
-
-Paul on desire / cesire akrasia etc --- is he surprisingly right or deeply misguided?
