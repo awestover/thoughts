@@ -1,0 +1,4 @@
+- This is a process-based criteria, not outcomes-based criteria (outcomes are quite important, but they fall under "make the universe better" instead of this category).
+- It means something like: being diligent, organized, and strategic.
+- Talking a lot with people about your work, having a vision for it.
+- Trying to find new ideas for good projects. 

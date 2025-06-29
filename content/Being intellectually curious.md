@@ -1,0 +1,3 @@
+- This looks like learning random things, e.g., by reading textbooks. (If you have recommendations for well-written textbook recommendations, please send my way! I've enjoyed [[Kolmogorov complexity]] recently.)
+- Blogging about interesting topics. Searching for truth by distilling life experiences feels like a pretty neat type of intellectual pursuit. 
+- Chatting with people about philosophy and [[trivia]].
