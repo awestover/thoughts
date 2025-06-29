@@ -110,7 +110,7 @@ Relying on willpower to address this problem is **super dumb**.
 As has been clearly spelled out in this post, relying on willpower has a predictable failure mode. 
 Furthermore, even if you're a high will power person, presumably you have some finite amount of self control. Way waste some of it on a problem that you could solve via a good system? I'm currently feeling that it's super relaxing to not need to fight myself to do the right thing here --- that it just happens by default, like water flowing down a river that is on a hill going downhill. 
 
-# Future steps for Alek
+# Future Steps for Alek
 - plucky or stayfree add block email except on specific times
 - consider deleting messenger and discord accounts (because these are checkable on the web, and because less apps means less work to check them all)
 	- alternatively, a reasonable strategy might be to just block these apps with plucky

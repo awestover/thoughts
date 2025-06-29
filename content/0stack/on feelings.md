@@ -3,7 +3,7 @@
 
 This does not mean feelings are unimportant. But, it is a reminder to be careful how you think about emotions / intuitions / feelings -- they're quite liable to be wrong. Most of this post will be about examples where I think feelings should be given less weight.
 
-### career
+### Career
 The following message is highly prevalent in modern society: 
 > You should do what you enjoy. -Society
 

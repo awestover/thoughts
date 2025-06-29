@@ -33,7 +33,6 @@ Because my default mode of being is not well calibrated to how important I think
 - Schedule recurring social events
 	- An easy way to defeat [[akrasia]] / free up [[human compute is scarce|compute]] :)
 
-
 > Q: tell me more about the "quality-adjusted" part of quality-adjusted-seconds-spent-socializing
 
 See [[talking to people]]

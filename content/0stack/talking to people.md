@@ -5,7 +5,7 @@ There are three types of conversations:
 4. bad conversations
 
 Having some mix of (1), (2) and (3) is healthy and good. (4) should be avoided.
-# strong conversations
+# Strong conversations
 A strong conversation is characterized by discussing **live** topics. Generally this means you have some questions, and the answers matter to you because you will change the way you act in an important way upon resolving the question. The question generally only needs to be live for one person -- the question is important to the other party just in virtue of being important to the first party. Here are some strategies for facilitating such conversations: 
 - Decide at start of conversation whether to have a fun or strong conversation.
 - Good environment. e.g., maybe on a walk or while eating. 
@@ -24,7 +24,7 @@ Example of strong conversation topics that have been interesting for me in the p
 - What [[goodness(universe)|makes the universe good]]
 - How [[how I want to spend my life|should I spend my life?]] (e.g., career)
 
-### advice
+### Advice
 Asking for advice / help about things important to you is a good type of strong conversation. 
 Note that sometimes such a conversation can be extremely short but very valuable.
 
@@ -35,7 +35,7 @@ Some examples of good advice that I've received lately:
 
 Some evidence that this counts as strong conversations is that it results in big action diffs, and takes the form of someone challenging my status quo way of doing things (possibly at my request but still). 
 
-# fun conversations
+# Fun conversations
 In fun conversations your goal isn't to decide on some new course of action or come to some new realization about the universe. It's just to connect with other people -- to [[listening|hear]] their story. Here are some questions that are good for facilitating fun conversations:
 - Give me advice about something random, e.g., what should I get my sister for her bday?
 - "NJeopardy" -- pick some random topic, e.g., "What does Brandon want for xmas?" and have people tell possibly real guesses or possibly fictitious humorous responses for this. 
@@ -55,7 +55,7 @@ In fun conversations your goal isn't to decide on some new course of action or c
 
 If you're having trouble with these topics with someone less talkative, it can be productive to have enthusiastic anecdotes / rants that you share to set the vibe. Also sharing things that I've learned, or ideas that I've heard is a great way to understand ideas better and can be interesting. 
 
-## nice conversations
+## Nice conversations
 This means 关心 people. It's good to do the basics -- asking after projects, health, feelings. 
 
 A 关心 technique that I enjoy, but currently underutilize (although I'm of course mostly writing this as a reminder to myself to update until I'm not undertilizing this technique) is writing people nice letters. This can be as simple as sending my philosophy TA a one sentence email ("I'm writing to thank you for your feedback on my essays about eliminating "weasel words" -- This is improving my writing in a satisfying way!") or as elaborate as writing a one paragraph note on a piece of paper, putting this in an envelope and sending it with instructions not to be opened until some date months in the future!
