@@ -1,4 +1,4 @@
-Sometimes I [[mildly hot takes|believe different things]] than other people that I respect. This is pretty concerning because [[wrong exists]], and I don't want to be wrong, so conditional on me being wrong I'd like to know that I am.
+Sometimes I believe different things than other people that I respect. This is pretty concerning because [[wrong exists]], and I don't want to be wrong, so conditional on me being wrong I'd like to know that I am.
 
 I sometimes enjoy arguments. Talking through an idea with someone, having them push back on places and refining your argument in response, can be helpful. Sometimes I'm also not in the mood to have an argument about something, and in this case having such an argument won't generally result in a [[talking to people|good conversation]].
 

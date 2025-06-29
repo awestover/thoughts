@@ -1,6 +1,4 @@
-Hi all, 
-Sorry it's been a while since I've been posting regularly. 
-I'm officially committing to writing 1 post per week. So, give me a hard time if I forget about this. 
+tl;dr: Some ppl want things to go well for you --- taking advantage of cooperation is great!
 
 One thing I've been thinking about a lot lately is objective functions (i.e., "goals").
 In online 2-player games in computer science, we have to make a choice about how to model the other player. 
@@ -12,9 +10,10 @@ Now, there is a time and place for all of these models I'm sure.
 But I want to start considering the *ally* model more. 
 
 When your prior has large mass on the "other ppl are my allies" branch, it can cause the following things: 
-- generally leads to more honesty / open communication with others
-- probably just leads to nicer interactions over all
-- also hopefully it helps me remember that I have [[Terms for others in my utility function]].
+- Generally leads to more honesty / open communication with others
+- Probably just leads to nicer interactions over all
+- Also hopefully it helps me remember that I have [[Terms for others in my utility function]].
+- Also leads to you asking for help more often, which is a great way to strengthen connections and get help!
 
 Now please, don't take this too far. 
 The universe does not care about you *at all*. 
@@ -31,4 +30,4 @@ Sure fine.  EX: \
 
 Anyways, maybe above example is just evidence for the central claim of [[cognitive distortion list|CBT]]: when you're feeling down, you tend to distort reality and underestimate the potential goodness of everything. 
 
-So I guess my message for today is, if you have reason to suspect that you systematically negatively distort reality, then be a freaking efficient market and *update your beliefs*!
+So I guess my message for today is, if you have reason to suspect that you systematically negatively distort reality, then be a freaking Bayesian and *update your beliefs*!

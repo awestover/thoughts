@@ -1,3 +1,5 @@
+> Exposing your brain to lots of stimuli can wreck your ability to concentrate and stuff.
+
 Consider the following situation. 
 1. You're trying to do something hard but in-line with [[goodness(universe)|your objective function]]. 
 2. Then your brain is like "oh, let's take a 5 minute break and check my email"

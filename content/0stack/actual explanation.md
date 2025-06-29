@@ -1,5 +1,4 @@
-#todo
-attribution: some of Eliezer Yudkowsky's writings (e.g., hpmor, the sequences) have helped make my understanding of this issue more crisp. see e.g., [this](https://www.lesswrong.com/posts/5JDkW4MYXit2CquLs/your-strength-as-a-rationalist)
+> Strive not to find a convincing explanation. Strive instead to have true beliefs. It's much better to be confused and *know* that you're confused than believe an incorrect thing.
 
 Sometimes, you get what you ask(/optimize) for...
 

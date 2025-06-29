@@ -1,3 +1,5 @@
+> If you feel that you are doing something misaligned with your values, consider telling an accountability partner about it about committing to change right now.
+
 A pattern I've noticed in my #life:
 - I notice that I'm doing something unaligned with [[goodness(universe)|my values]].
 - I experience a large amount of cognitive dissonance.

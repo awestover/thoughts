@@ -1,4 +1,4 @@
-Something that I [[mildly hot takes|feel pretty strongly about]] is that technology currently does a lot of harm.
+Something that I feel pretty strongly about is that technology currently does a lot of harm.
 
 Don't misunderstand me -- obviously there is a lot about technology that is amazing. For instance, the ability to keep a blog and share it with people easily is super cool. Medicine is nice, heating is nice, showers are nice. Technology probably makes it possible to mass-produce food. I like my clothes and generally a ton of conveniences that come from technology. I like that I can call friends and family. I like that there are tools like Calendly that let me schedule meetings with people easily. I like fridges. Modern life is convenient and awesome in lots of ways. Most of all, I like vim and being able to have digital record of my [[on writing, blogging and being opinionated|thoughts]].
 

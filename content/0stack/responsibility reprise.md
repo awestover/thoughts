@@ -1,5 +1,6 @@
-GC asked me this question (note: I love being asked interesting questions!)
 > What, if anything/anyone, do you feel a responsibility to? How does it manifest in you emotionally and behaviorally?
+
+-GC asked me this question (note: I love being asked interesting questions!)
 
 Here's a response --- thought I'd share because this seems extremely important. 
 

@@ -1,8 +1,5 @@
-Often, I'll send person X a message like "hey do you want to do activity Y?".
+Often, I'll send person X a message like "hey do you want to do activity Y?". You can imagine situations where you'd like to only give this bid to person X if their answer is yes. In cryptography this is called "ZK-dating" (ok actually I just made this name up).
 
-You can imagine situations where you'd like to only give this bid to person X if their answer is yes. 
-
-In cryptography this is called "ZK-dating" (ok actually I just made this name up).
 Formally, the problem is that Alice and Bob want to compute $A\land B$ together but such that each party learns nothing more than $A \land B$. So basically the question is "hey do you want to go on a date" A is Alice's answer B is Bob's answer. If Bob says no then he learns nothing about Alice's preference. If Bob wanted to learn Alice's preference then I guess he could lie and say yes, but this seems like it'd be pretty awkward in most situations where you'd want to apply this, so I'll assume that this incentives honest behavior. 
 
 This has at least two problems:

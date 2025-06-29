@@ -1,6 +1,6 @@
-Fairly recently I would have strongly endorsed the following claim (e.g., wrt careers):
-
 **Conjecture**: I can hack myself to feel excited about doing lots of things. 
+
+Fairly recently I would have strongly endorsed the above conjecture (e.g., wrt careers).
 
 The rational is, feeling good about doing something is plausibly mostly a function of being good at that thing and acting in a way that's consistent with being excited about it. With a little bit of practice / experience, you can get good at lots of things. It probably also helps if you feel that what you're doing is important. 
 

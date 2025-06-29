@@ -1,7 +1,6 @@
-Note: I'll phrase the #life advice here as advice to myself, but I suspect that it's pretty good advice for you as well.
+**Claim**: I should seek to fill my life with more quality-adjusted-seconds-spent-socializing.
 
-**Claim**: 
-I should seek to fill my life with more quality-adjusted-seconds-spent-socializing.
+Note: I'll phrase the #life advice here as advice to myself, but I suspect that it's pretty good advice for you as well.
 
 **Proof**:
 - This is literally part of [[goodness(universe)]] -- one of my terminal values.

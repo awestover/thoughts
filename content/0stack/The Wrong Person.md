@@ -1,3 +1,7 @@
+Often -- especially when I'm contemplating doing unfamiliar or "uncomfortable" things with regards to mitigating xrisk from AI -- I'll have thoughts basically of the following form: "I shouldn't be doing this --- I'm the **wrong person** to be doing this."
+
+----
+
 I've decided that communicating about [[AI xrisk]] and doing [[MAD Agenda|technical alignment work]] are two of the most important things to spend my time on right now. (The third and final category of things that I think is important to allocate time to atm is having awesome [[talking to people|social]] connections).
 
 Often -- especially when I'm contemplating doing unfamiliar or "uncomfortable" things with regards to mitigating xrisk from AI -- I'll have thoughts basically of the following form:

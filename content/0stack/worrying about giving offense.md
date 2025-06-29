@@ -1,8 +1,7 @@
+tl;dr: it's generally best to communicate clearly and truthfully.
+
 > Q: to what extent should one worry about giving offense?\
 > Q: to what extent should one take offense?
-
-tldr
-- it's generally best to communicate clearly and truthfully.
 
 I think this is kind of the wrong question. 
 Generally your actual perception of someone is the more robust thing, and often people will be able to learn / infer this p well. 
@@ -15,5 +14,3 @@ The diagram is generally,
 
 On the other hand, acting nicely towards ppl can help fuel caring about ppl. 
 acting nice here could look like e.g., learning someones name, saying hi, asking after something they care about, etc. 
-
-

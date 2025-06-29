@@ -1,3 +1,7 @@
+tl;dr: when having a disagreement involving a complex concept X, consider saying what you actually mean by X, or both parties might just be talking past each other!
+
+---
+
 Taboo is one of my favorite techniques. I find taboo extremely useful at resolving confusing problems.
 
 The idea of taboo is as follows:

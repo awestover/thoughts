@@ -1,3 +1,4 @@
+What 
 Humans are all pretty similar. The set of things that you and I both believe is quite large, and not super useful for me to discuss. In this post I'll keep a list of some topics on which I have a strong and non-widely-held view. I've named the post "mildly hot takes" because lots of my views are only radical in the proper context. For example, an opinion like "humanity is >10% likely to end within 5 years" is widely believed by EA's, but not widely believed outside of the EA community.
 
 List: 

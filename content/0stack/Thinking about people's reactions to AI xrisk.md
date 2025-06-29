@@ -1,10 +1,12 @@
-Note -- this post might come across as cynical or critical or not nice. Sorry, I didn't really mean it that way! Consider reading something lighter like [[cooking]] instead. Also -- remark: is "cooking" the only "non-heavy" blog post I've ever written on skyspace3? lol. good for me I guess.
-
-Also consider reading the ending of the blog post -- I basically overturn a lot of the cognitions in the post as irrational.
+How would you like to die? Well, really [[Will humans beat death in the next 30 years?|I'd rather not]]. Okay, so it's a sore subject. Maybe instead let me ask, **how would you like to live**? This seems like a better question for several reasons. For instance, it seems more actionable. If I am to die, I don't think assigning lots of extra weight to that moment is good. If anything that moment should have the least weight, because I'll never remember it. 
 
 ---
 
-How would you like to die? Well, really [[Will humans beat death in the next 30 years?|I'd rather not]]. Okay, so it's a sore subject. Maybe instead let me ask, **how would you like to live**? This seems like a better question for several reasons. For instance, it seems more actionable. If I am to die, I don't think assigning lots of extra weight to that moment is good. If anything that moment should have the least weight, because I'll never remember it. 
+(Note -- this post might come across as cynical or critical or not nice. Sorry, I didn't really mean it that way! Consider reading something lighter like [[cooking]] instead. Also -- remark: is "cooking" the only "non-heavy" blog post I've ever written on skyspace3? lol. good for me I guess.
+
+Also consider reading the ending of the blog post -- I basically overturn a lot of the cognitions in the post as irrational.)
+
+---
 
 Anyways, I've thought about this a bit and have a few answers: 
 - I'd like to live with great [[talking to people|social interactions]].
