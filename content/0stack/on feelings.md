@@ -43,7 +43,7 @@ invite then have "do it" as the default policy.
 ### bad feelings
 Sometimes I'll have bad feelings, e.g., anger or jealousy. But, since feelings truly are a fact about my mind and not the world, if I feel slighted or hurt, then I can choose to just forget this, or to just act as I would if my feelings where otherwise. Feeling disagreeable needn't make me act disagreeable. Feeling like I don't know how to talk about something needn't restrain me.
 
-### alignment
+### Alignment
 One last place where it'd be good for me to remember that "feelings are a fact about the mind, not the world" is how I approach thinking about xrisk.
 
 I'm pretty bought on the arguments that there are some [[AI xrisk|risks]], and I'd like to do something about them. Understanding viscerally and realistically that the situation is dire is important for making sure that I take appropriate actions, to actually try to change things, rather than to just change the way I feel about them -- e.g., make myself feel better. I care about doing things much more than the *feeling* of doing things.
