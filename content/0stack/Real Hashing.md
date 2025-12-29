@@ -182,7 +182,7 @@ $$
 for some $\beta<y/n, \eta < z / n, \chi \in [x]$.
 Then,
 $$
-a-\chi\mod yz \equiv \beta z \frac{yk+1}{z}+\eta y \frac{z \ell+1}{z} =: f(\beta,\eta).
+a-\chi\mod yz \equiv x(\beta z \frac{yk+1}{z}+\eta y \frac{z \ell+1}{z}) =: f(\beta,\eta).
 $$
 I'd like to argue that in the square $(\beta,\eta) \in [y/ n] \times [z / n]$, there are at most $\frac{yz}{n^{3}}$ many  $\beta,\eta$ points such that 
 $$
