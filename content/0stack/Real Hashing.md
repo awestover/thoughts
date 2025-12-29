@@ -3,7 +3,7 @@
 ![[Screenshot 2025-09-27 at 4.33.21 PM.png]]
 
 $\newcommand{\Z}{\mathbb{Z}}$ $\newcommand{\E}{\mathbb{E}}$  $\newcommand{\lcm}{\text{lcm}}$
-## Relation to prior work
+## Relation to prior work 
 **TFAE:**
 - $\bmod 1, a\sim [0,1]$
 - $\bmod n^{100}, a\sim [0,n^{100}]$ (by rescaling distances).
