@@ -1,7 +1,6 @@
-To prove a mathematical result, you need two people: a Generator (G) and a Refuter (R).
+To prove a mathematical result, you need two people: a Generator and a Refuter.
 
-> Thanks to Nathan Sheffield for inspiring many of these ideas. Thanks to Alexa Pan for running a writing exercise that gave me the idea to write this.
-> Notes: this post is unpolished. Also, the idea described here is quite similar (maybe identical) to [this idea](https://www.lesswrong.com/s/pC6DYFLPMTCbEwH8W); but hopefully it's a somewhat different perspective on the idea.
+> Thanks to Nathan Sheffield for inspiring many of these ideas. Thanks to Alexa Pan for running a writing exercise that gave me the idea to write this. Notes: this post is unpolished. Also, the idea described here is quite similar (maybe identical) to [this idea](https://www.lesswrong.com/s/pC6DYFLPMTCbEwH8W); but hopefully it's a somewhat different perspective on the idea.
 ## 1.
 To prove a mathematical result, you need two people: a Generator (G) and a Refuter (R).
 
