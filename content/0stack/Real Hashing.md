@@ -1,7 +1,8 @@
 > Fix $n$. Let $X\subset [n^{5}]$ have size $n$. Consider the following problem: There is a circular race track of circumference $1$. $n$ people, with (distinct) speeds $X$ start at the start of the race track, and run around at their speed, until a random time $a\sim [0,1]$. After this, the runners are at locations $aX \bmod 1$. I then cut the race track into $n$ contiguous chunks, each of length $\frac{1}{n}$ and count how many runners are in each chunk. Let $M$, the "**maxload**", denote the number of runners in the fullest chunk. This is a random variable depending on the time when I stop the runners. In this document I will analyze $\mathbb{E}[M]$.
 
-$\newcommand{\Z}{\mathbb{Z}}$ $\newcommand{\E}{\mathbb{E}}$  $\newcommand{\lcm}{\text{lcm}}$
 ![[Screenshot 2025-09-27 at 4.33.21 PM.png]]
+
+$\newcommand{\Z}{\mathbb{Z}}$ $\newcommand{\E}{\mathbb{E}}$  $\newcommand{\lcm}{\text{lcm}}$
 ## Relation to prior work
 **TFAE:**
 - $\bmod 1, a\sim [0,1]$
