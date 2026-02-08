@@ -1,13 +1,5 @@
-If you have interesting questions about AIS, or about life, please bring them to my attention! Maybe I'll blog about some of these!
 
-- Is adversarial robustness useful?
-	- Could you possibly gain relevant insights from solving it, even if it's not directly useful?
-	- Why don't constitutional classifiers solve this?
-- Are evals useful?
-	- ie METR (note that METR also does other stuff too).
-- Note: over-eager sharing of work is just a way of avoiding responsibility
-
----
+The Gift of the Magi -- did they chose well?
 
 low priority:
 - TG: Would it be better if the USA was the only country with nukes?
