@@ -1,4 +1,4 @@
-In this post I describe 6 virtues which are relevant to having great relationships.
+In this post I describe 7 virtues which are relevant to having great relationships.
 
 Many of these virtues I have learned from AP demonstrating them to me; 多谢 AP!
 
@@ -109,8 +109,11 @@ of themselves that they really admire and wish to be admired is great.
 
 Example:
      You did a great job explaining X. You explained X
-     enthusiasitcally and clearly, I now feel both like I
+     enthusiastically and clearly, I now feel both like I
      understand X and care about it.
+
+# 7. Silliness
+The virtue of silliness is to say totally insane stuff and then laugh a bunch.
 
 # Conclusion
 I've listed some virtues. I hope that articulating them here will
