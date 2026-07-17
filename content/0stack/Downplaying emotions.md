@@ -4,16 +4,19 @@ I have a bad habit of minimizing things: saying that things aren't so bad, when 
 
 Here are some interactions:
 
+Interaction 1:
 - them: how are you doing?
 - me: bad! I have a stomach ache.
 - them: I'm really sorry to hear that, are you doing alright? 
 - me: yeah, dw about it, it's fine. it's not so bad.
 
+Interaction 2:
 - them: how are you doing?
 - me: bad. sad thing X happened. 
 - them: I'm sorry to hear that. How are you doing?
 - me: so it goes, right?
 
+Interaction 3:
 - them: I appreciate X about you.
 - me: aw, that's sweet of you. implied: you're being too generous / nice in giving the compliment.
 ## Why do I respond in such ways?
