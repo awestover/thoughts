@@ -3,19 +3,19 @@ I have a bad habit of minimizing things: saying that things aren't so bad, when 
 > (Note: this post is not very original. you're probably already familiar with the content. it's just sth that was on my mind, so I thought I'd process it quickly, and write a short post about it).
 
 Here are some interactions:
-1. 
-	- them: how are you doing?
-	- me: bad! I have a stomach ache.
-	- them: I'm really sorry to hear that, are you doing alright? 
-	- me: yeah, dw about it, it's fine. it's not so bad.
-2. 
-	- them: how are you doing?
-	- me: bad. sad thing X happened. 
-	- them: I'm sorry to hear that. How are you doing?
-	- me: so it goes, right?
-3. 
-	- them: I appreciate X about you.
-	- me: aw, that's sweet of you. implied: you're being too generous / nice in giving the compliment.
+
+- them: how are you doing?
+- me: bad! I have a stomach ache.
+- them: I'm really sorry to hear that, are you doing alright? 
+- me: yeah, dw about it, it's fine. it's not so bad.
+
+- them: how are you doing?
+- me: bad. sad thing X happened. 
+- them: I'm sorry to hear that. How are you doing?
+- me: so it goes, right?
+
+- them: I appreciate X about you.
+- me: aw, that's sweet of you. implied: you're being too generous / nice in giving the compliment.
 ## Why do I respond in such ways?
 1. Maybe I don't want to cause someone else discomfort. If someone else feels concerned about me, I feel an inclination to tell them "I'm alright" to discharge their responsibility. 
 2. Maybe, it's painful and sad to admit that things will sometimes not be ideal, and I'd rather pretend that this is just a fine state of affairs, or downplay my sadness by saying that other people face something similar. 
