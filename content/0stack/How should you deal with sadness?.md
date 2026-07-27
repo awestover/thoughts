@@ -1,5 +1,4 @@
-**When I'm feeling particularly depressed, I often don't want to feel better.** 
-But, I have some amount of control over how I feel, even when depressed I think. More precisely, I think if there were fairly easy actions I could take that'd make me feel substantially less depressed, it's pretty plausible that planning in advance to take those actions would cause me to in fact take those actions, even if my present person moment didn't feel too motivated to take the action.
+**When I'm feeling particularly depressed, I often don't want to feel better.** But, I have some amount of control over how I feel, even when depressed I think. More precisely, I think if there were fairly easy actions I could take that'd make me feel substantially less depressed, it's pretty plausible that planning in advance to take those actions would cause me to in fact take those actions, even if my present person moment didn't feel too motivated to take the action.
 
 Thus I think it's interesting to understand: 
 1. What is the space of (ideally fairly easy) *actions* I can take that'd affect how I feel (when depressed). 

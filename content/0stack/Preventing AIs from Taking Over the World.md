@@ -1,7 +1,5 @@
 Suppose you want to lower the chance that a misaligned AI takes over the world. One natural approach is to deter AIs from "taking over AI labs", for instance by launching a [rogue internal deployment](https://redwoodresearch.substack.com/p/ai-catastrophes-and-rogue-deployments). But, an under-explored question is, "Are there tractable interventions that decrease $\Pr$("AI takes over the world" $\mid$  "AI takes over an AI lab")?"
 
-> **This is a draft**. I'm interested in feedback. Message me if you want the gdoc to give comments on. Especially if you know anything about computer security (I am planning to learn about computer security and then rewrite the stuff about computer security). Also happy to chat the post!
-
 > Note: Most of the ideas in this post are not original.
 > Thanks to Buck for proposing that I think about this question, and chatting with me about it. 
 > He does not necessarily endorse anything said here, and thinks that the stuff I've said about computer security is wrong.
@@ -153,3 +151,5 @@ Defensive technologies could make it much harder for an AI to successfully takeo
 It seems like there are some tractable interventions here that can avert some catastrophes, which might not happen by default. Worlds where AI has already taken over a lab are quite scary but, these measures may: 
 - Buy humanity more time to figure stuff out, especially in slow take-off worlds where there are no low-hanging novel offense dominant technologies.
 - Give humanity a chance to *react to* instead of *prepare for* threats from advanced AI.
+
+tag:none

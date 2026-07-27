@@ -34,3 +34,4 @@ So limiting news ingestion to like once per month might be reasonable if possibl
 - Do [[acting NOW|act now]]
 
 #life
+tag:none

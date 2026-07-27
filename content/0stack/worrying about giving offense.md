@@ -14,3 +14,5 @@ The diagram is generally,
 
 On the other hand, acting nicely towards ppl can help fuel caring about ppl. 
 acting nice here could look like e.g., learning someones name, saying hi, asking after something they care about, etc. 
+
+tag:none

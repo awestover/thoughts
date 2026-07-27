@@ -34,20 +34,6 @@ but empirically I have a pretty bad track record with this.
 so anyways, let's see if I can remember TAP1 for a week. 
 I'll put reminder to check.
 
-- alkjash suggestion: meta-TAP `/root`
-- unfortunately I only have the RAM to install one TAP rn but I'll get to this one later
+I think another aspect of not taking life seriously is having predictable bugs.  If you have a predictable bug FIX IT FIX IT PLEASE. If your strategy of fixing it has not been working in the past you need a new strategy ([[akrasia]] = there is no *try harder* button). 
 
-______
-
-update re TAP1:
-I think this TAP was too ambitious but kind of worked.
-
-Currently the TAP has worked out more like, sit down at table --> think "I should talk to ppl".
-My rate of following through on this idea is maybe 70%. 
-But I think this has still substantially improved talking to people baseline.
-
----- 
---- 
-I think another aspect of not taking life seriously is having predictable bugs. 
-If you have a predictable bug FIX IT FIX IT PLEASE.
-If your strategy of fixing it has not been  working in the past you need a new strategy ([[akrasia]] = there is no *try harder* button). 
+tag:none

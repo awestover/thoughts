@@ -29,3 +29,5 @@ Interaction 3:
 2. When someone gives you a compliment: It's maybe good to comment on how you feel about the compliment. You might say that you appreciate them noticing, or something, or that you value their opinion (if you do).
 
 Overall, this is just a quick reminder that life is more interesting and meaningful when you're willing to be honest and open with people about how you're feeling. And when you trust that people will care enough to try to understand how you're feeling.
+
+tag:none

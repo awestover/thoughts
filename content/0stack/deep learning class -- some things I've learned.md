@@ -169,3 +169,5 @@ Here's a creepy toaster drawn by ChatGPT:
 - transformers are super data agnostic -- this is great for multi-modal applications!
 - I'm pretty excited about my transformer shortest paths project. 
 - I'm also pretty excited about some model organisms work that I'm going to do soon. 
+
+tag:none

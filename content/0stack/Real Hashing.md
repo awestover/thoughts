@@ -196,3 +196,4 @@ Note that banning $xyz\mathcal{A}$ is certainly going to be necessary, and it's 
 
 By which I mean, I'll think about this more next weekend probably. 
 
+tag:math

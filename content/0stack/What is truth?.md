@@ -140,3 +140,4 @@ A general problem is that it feels like we can say:
 
 - Things are true iff they’re true in all models of ZF (i.e., if they’re provable in ZF). But this seems really bad, because we should allow true statements which aren’t provable. And it’s not clear why we are saying that things like choice are false.   
 - Or, we can fix a particular model of ZF and say that things are true iff they are true in this model. But I don’t know that we can really point to a particular model of ZF (I think it’s probably impossible). So this seems problematic as well.
+
