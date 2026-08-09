@@ -9,7 +9,7 @@ Exercise: Why does the simpler theorem basically imply the main theorem?
 
 We can think of a list sorting algorithm as a "branching program"
 
-![[Screenshot 2026-08-09 at 3.38.06 PM.png]]
+![[Screenshot 2026-08-09 at 3.55.52 PM.png]]
 
 Each state is a configuration that your memory could be in. At each time step, you're at some memory state and then you read an input bit and transition to one of two memory states on the next time step. 
 
