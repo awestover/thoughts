@@ -1,8 +1,9 @@
 I'm Alek. Here's what I want that to mean:
 * I want the quality-weighted quantity of great experience-moments in the universe to be large; I want to contribute to making it larger.
 * I want to love and be loved by a partner with whom I share my life. I describe what this means elsewhere (will link later).
-* I want to do what is right, even when it's awkward, scary, or inconvenient. For instance, I want to be honest. My biggest regrets in life all stem from ignoring cognitive dissonance for far too long. I can't change these mistakes, but I can at least listen to dissonance when I hear it now.
-* I want to be kind, caring, considerate, empathetic, and forgiving. For instance, I want to be the type of person that's happy to help people move, and who would go buy ginger to make ginger tea for my friend if their stomach was upset.
+* I want to do what is right, even when it's awkward, scary, or inconvenient. For instance, I want to be honest. Some of my biggest regrets in life all stem from ignoring cognitive dissonance for far too long. I can't change these mistakes, but I can at least listen to dissonance when I hear it now.
+* I want to be kind, caring, considerate, empathetic, and forgiving. For instance, I want to be happy to help people move, or to make ginger tea for my friend when their stomach is upset. 
+* I want to be good at handling situations where I've hurt someone I care about. Specifically, I want to straightforwardly apologize, I want to understand how they are feeling, and I want to try to make reparations.
 * I want to relish life. To take immense pleasure in simple happenings, such as silly callbacks and jokes, or a dash of good fortune. To enjoy pleasant physical sensations: the wind and ocean spray on my face at the beach, a transcendent sunset, tasty food (Imm Thai yellow curry is currently my favorite food), nice temperatures, a weighted blanket. To appreciate the people around me, and shared experiences with them. To be sincere, passionate and excited about life.
 * I want to be rational in pursuit of my goals, and to have good epistemics.
 * I want to do good work. To be thoughtful and agentic when deciding what to work on, and to diligently execute on my chosen work. Recently, I'm proud of working on [an agreement to avoid a particularly scary type of AI architecture](https://no-opaque-reasoning.surge.sh/).
