@@ -1,8 +1,4 @@
-I'm going to try to release a mini blog post every day this week as part of my program to develop virtue. Might be lower quality than normal. 
-
-Overconfidence has long plagued me. I see the world in one way and think the world must therefore by that way.
-
-This is difficult because sometimes I am just right, and so confidence is positively reinforced. Another difficulty is that when I'm wrong or partially wrong, sometimes in the past (I'm substantially better now) I might try to deflect the pain of this with excuses.
+Overconfidence has long plagued me. I see the world in one way and think the world must therefore by that way. This is difficult because sometimes I am just right, and so confidence is positively reinforced. Another difficulty is that when I'm wrong or partially wrong, sometimes in the past (I'm substantially better now) I might try to deflect the pain of this with excuses.
 
 A frame I like to have on developing virtue is "what prompt prefill would help with this situation?"
 
