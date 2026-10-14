@@ -13,5 +13,3 @@ But Alek, you say, won't "other-focus" mean that people take advantage of me, or
 This is a valid critique. I'm not advocating for people to stop thinking about what they hope or expect other people will give to them. That seems quite healthy to do sometimes.
 
 I'm just advocating that directionally for myself, it might be useful to increase my other-focus and tune down my self-focus right now. I'm also claiming that the ideal settings of other vs self focus might skew more towards other-focus than you'd naively guess.
-
-tag:none
