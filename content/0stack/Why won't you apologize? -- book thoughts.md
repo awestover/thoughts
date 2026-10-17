@@ -20,3 +20,11 @@ To give a good apology you need to understand why the other party felt hurt.
 You must try to get inside their head, live the interaction from their perspective.
 
 A weird trick I'll close with is to consider that the reason the other party was hurt is because they care about you and trusted you a lot. If you remember that this is where they're coming from it might be easier to empathize with them.
+# some misc thoughts on good apologies
+- Good apologies apologize for actions, not the effect the actions had on me. When you say "I regret that you felt sad" it makes it feel like it was my fault for being oversensitive or taking offense when I shouldn't have.
+- Good apologies identify specific actions that you took that you regret. I walk away being convinced that (1) you've actually spent some time reflecting about what you did that wasn't ideal, (2) you in fact understood what you did that was wrong. This gives me more confidence that you might plausibly do less of the bad action in the future.
+- Good apologies explain what actions you might've taken instead of the ones you did.
+- Good apologies don't assume that you understand all the ways you hurt me. Instead, before apologizing you actually try harder to understand why I felt hurt.
+- Good apologies don't include a long list of why everything you did was justified. It's not just that you suppress / redact this list but are saying it in your head. You actually just don't believe that the excuses excuse anything.
+- Good apologies try to make amends for harm caused.
+- Good apologies involve having an actual plan for how you'll avoid doing the harmful thing again in the future.
