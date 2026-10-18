@@ -1,5 +1,5 @@
 When you care for someone, you expend effort on their behalf. There are two importantly different types of effort: effort in service of something useful, and effort that isn't in service of anything useful. I call these "**blue**" effort and "**hashing**" effort.
-- Blue effort refers to effort expended to fulfill a desire of someone. For instance, to find a flower that is just the right shade of blue. I've already discussed in [[microwave your soy milk]] why it is often worthwhile to fulfill fanciness desires, even if they are "frivolous".
+- Blue effort refers to effort expended to fulfill a desire of someone. For instance, to find a flower that is just the right shade of blue. I've already discussed in [[Heat up your water]] why it is often worthwhile to fulfill fanciness desires, even if they are "frivolous".
 - Hashing effort refers to effort that isn't terminally useful. "Mine bitcoin before talking to me".
 
 Here's an example of decomposing an act of caring into blue and hashing components:
