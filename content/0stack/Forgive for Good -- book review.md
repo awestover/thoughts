@@ -13,7 +13,7 @@ We experience pain when we ruminate on ways that people failed to live up to our
 - You will show up on time to an appointment with me.
 - I shouldn't have taken this stupid action.
 
-It is normal and healthy to feel hurt when you are, for instance, betrayed or when a way that you dearly want the world to be has not come to pass. I think one could not truly want things if they weren't willing to experience some pain at not getting them; trust cannot be present if there is no way that the counterparty could hurt you. So, the ability to feel some pain seems good. [[How should you deal with sadness?]] suggests talking to a friend about your pain. However feeling this pain, some people will choose to tell a grievance story for a long time and others will choose to find a forgiveness story.
+It is normal and healthy to feel hurt when you are, for instance, betrayed or when a way that you dearly want the world to be has not come to pass. I think one could not truly want things if they weren't willing to experience some pain at not getting them; trust cannot be present if there is no way that the counterparty could hurt you. So, the ability to feel some pain seems good. [[How should you deal with sadness?]] suggests talking to a friend about your pain. However, after feeling this pain, some people will choose to tell a grievance story for a long time and others will choose to find a forgiveness story.
 
 A grievance story has a villain and a victim, namely you. 
 Why do people tell grievance stories?
@@ -23,14 +23,14 @@ Why do people tell grievance stories?
 - Telling these stories can replace pain with fury for a while, which might feel better.
 - Telling a grievance story is a misguided way at holding onto something that used to be very precious to you.
 - Some might hope that obsessing over a grievance story for long enough could cause someone to apologize to you, even if they are unlikely to actually do so.
-- As long as you tell a grievance story (things you're not responsible for, things it's someone else who has hurt you with), maybe you don't have to face the daunting tasks ahead.
+- As long as you tell a grievance story (which casts you as a victim who has been hurt and isn't responsible for making your life better) you don't have to face the daunting task ahead yet. (Figuring out how to get over it and still make the most of things).
 
 Retelling a grievance story over and over again won't undo the past. In many cases retelling the grievance story won't help the perpetrator come to justice nor will it make the perpetrator apologize to you. 
 
 Luskin proposes replacing grievance stories with forgiveness stories. A forgiveness story has four parts. I'll illustrate them by talking through how we could transform a grievance story about cheating to a forgiveness story. Let's start with the grievance story of "my spouse should not have cheated on me, he's a terrible person, he doesn't care about me at all".
 
 Here's the forgiveness story.
-1. Articulate the particular instantiation your positive intention.
+1. Articulate the particular instantiation of your positive intention.
 	1.  I hoped to form a loving relationship with Bob.
 2. Acknowledge that the universe was not required to make your positive intention come true.
 	1. However, not all marriages continue happily.
