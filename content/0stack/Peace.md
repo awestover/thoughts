@@ -1,5 +1,7 @@
 There's an orientation towards the world that I call "peacefulness" that is important to me. Peace is a bit of a confusing word for this concept, because there are things that don't superficially look "peaceful" which fit my definition of peace. I aspire to always be at peace in the sense that I'll try to point to in this post.
 
+> EDIT: N has convinced me that this post is actually conflating peace, sincerity and thoughtfulness.
+
 > Note: The claim that I always aspire towards peace as gestured at in this post may be controversial. I'm interested in chatting with people about this, and am open to being convinced that peace is not always desirable. 
 
 Here are some **non**-examples of peace I've noticed in myself and others recently:
