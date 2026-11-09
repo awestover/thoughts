@@ -25,3 +25,5 @@ I don't think I have anything particularly good to say about this topic. I guess
 		- [[two mistakes in my plans for mitigating xrisk|Communicate more about important issues in the world, and continue to think about problems with the world]]
 	- **EDIT**: actually, I've recently been feeling more optimistic that I might be able to do something good even if main-line plan doesn't pan out. But I think it's okay to figure that out once/if the need arises. And I'm actually fairly optimistic about the main-line strategy. 
 	- Anyways, I don't claim that this is a very good plan but now that it's articulated it can be refined.
+
+tag:other
