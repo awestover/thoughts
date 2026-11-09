@@ -1,4 +1,4 @@
-Kahneman claims that the remembered valence of a memory depends largely on the peak valence and the final valence. For instance, people remember a surgery more fondly if you add a period of mild discomfort at the end of it! IIUC Kahneman came to this hypothesis via mildly torturing people in different ways and seeing which ones they preferred (and testing some causal interventions). [^1]
+Kahneman claims that the remembered valence of a memory depends largely on the peak valence and the final valence. For instance, people remember a surgery more fondly if you add a period of mild discomfort at the end of it! IIUC Kahneman came to this hypothesis via mildly torturing people in different ways and seeing which ones they preferred (and testing some causal interventions).[^1]
 
 Ultimately, I care about the aggregate quality of observer moments in the universe, not the quality of my memories. However, memories are a hugely important part of my experience! Memory is the reason why N can say "cocoa powder beans" and I'll burst out laughing. It's why I smile when I see an orange (oranges have existed in dozens of happy contexts with P).
 
