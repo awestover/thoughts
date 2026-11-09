@@ -1,7 +1,5 @@
 Kahneman claims that the remembered valence of a memory depends largely on the peak valence and the final valence. For instance, people remember a surgery more fondly if you add a period of mild discomfort at the end of it! IIUC Kahneman came to this hypothesis via mildly torturing people in different ways and seeing which ones they preferred (and testing some causal interventions). [^1]
 
-[^1]: This story only holds for unipolar experiences: experiences whose valence is either largely positive or largely negative. Things are a bit more complicated for multipolar experiences. For multipolar experiences, some notes are: (1) we remember negative valence experiences more. (2) order and trend matter.  - mixed sequence --> final part matters most. - improving sequence is better, even if total is fixed. Relief from pain or fear is a peak, so adding a scary part to a movie can make it better.
-
 Ultimately, I care about the aggregate quality of observer moments in the universe, not the quality of my memories. However, memories are a hugely important part of my experience! Memory is the reason why N can say "cocoa powder beans" and I'll burst out laughing. It's why I smile when I see an orange (oranges have existed in dozens of happy contexts with P).
 
 Therefore, to maximize the quality of my subjective experience it is expedient to understand how to have good memories. This post, loosely inspired by Kahneman's analysis, will think about how to do this.
@@ -54,3 +52,6 @@ Remember that the above advice is supposed to be a directional update, and its p
 ---
 
 In closing, I'd like to say: Walrus, ginger, cat, white shirt, vitamin c, garlic, beach, blackboard, river, star market, kgzw, vanilla twilight, hypercube, bus, cooperate bot, steppenlobster. i miss you guys. but i have some window into these other parts of our 4D picture -- I can see us, and threads of us memory connecting us. the picture is good. i am happy to remember.
+
+
+[^1]: This story only holds for unipolar experiences: experiences whose valence is either largely positive or largely negative. Things are a bit more complicated for multipolar experiences. For multipolar experiences, some notes are: (1) we remember negative valence experiences more. (2) order and trend matter.  - mixed sequence --> final part matters most. - improving sequence is better, even if total is fixed. Relief from pain or fear is a peak, so adding a scary part to a movie can make it better.
