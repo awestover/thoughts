@@ -9,4 +9,4 @@ action: do it!
 
 One should not take the principle of heating up water too far. Opp cost is real. This is just a directional update that I should apply, others might need to reverse this advice.
 
-tag: none
+tag:none
